@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBCS", "IBCS\IBCS.csproj", "{934EEF7A-5B2C-448C-AC14-29B8DD15A046}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBCSTest", "IBCSTest\IBCSTest.csproj", "{086553A9-9A0B-41BC-952A-EDA6F372103A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{934EEF7A-5B2C-448C-AC14-29B8DD15A046}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934EEF7A-5B2C-448C-AC14-29B8DD15A046}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934EEF7A-5B2C-448C-AC14-29B8DD15A046}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934EEF7A-5B2C-448C-AC14-29B8DD15A046}.Release|Any CPU.Build.0 = Release|Any CPU
+		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
