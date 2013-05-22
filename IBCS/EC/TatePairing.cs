@@ -1,9 +1,11 @@
 ﻿using System;
 using IBCS.Math;
 using IBCS.Interfaces;
+using System.Runtime.Serialization;
 
 namespace IBCS.EC
 {
+    [DataContract]
     public class TatePairing : Pairing
     {
         EllipticCurve ec;
@@ -14,6 +16,7 @@ namespace IBCS.EC
         BigInt finalExponent;
         BigInt cof;
 
+        [DataMember]
         public BigInt Cofactor
         {
             get { return this.cof; }
@@ -22,6 +25,7 @@ namespace IBCS.EC
         /* (non-Javadoc)
          * @see uk.ac.ic.doc.jpbc.Pairing#getCurve()
          */
+        [DataMember]
         public EllipticCurve Curve
         {
             get { return this.ec; }
@@ -35,6 +39,7 @@ namespace IBCS.EC
             get { return this.twisted; }
         }
 
+        [DataMember]
         public BigInt GroupOrder
         {
             get { return this.order; }

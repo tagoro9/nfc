@@ -5,6 +5,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBCS", "IBCS\IBCS.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBCSTest", "IBCSTest\IBCSTest.csproj", "{086553A9-9A0B-41BC-952A-EDA6F372103A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PKGServer", "PKGServer\PKGServer.csproj", "{DA3027F7-DE05-45B7-9C4A-0A91691C77E1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,6 +21,10 @@ Global
 		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{086553A9-9A0B-41BC-952A-EDA6F372103A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA3027F7-DE05-45B7-9C4A-0A91691C77E1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA3027F7-DE05-45B7-9C4A-0A91691C77E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA3027F7-DE05-45B7-9C4A-0A91691C77E1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA3027F7-DE05-45B7-9C4A-0A91691C77E1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,9 +1,11 @@
 ﻿using System;
 using IBCS.Interfaces;
 using IBCS.Math;
+using System.Runtime.Serialization;
 
 namespace IBCS.EC
 {
+    [DataContract]
     public class Point
     {
         public static Point INFINITY = new Point();
@@ -14,11 +16,13 @@ namespace IBCS.EC
         }
         private FieldElement x;
         private FieldElement y;
+        [DataMember]
         public FieldElement X
         {
             get { return x; }
             set { x = value; }
         }
+        [DataMember]
         public FieldElement Y
         {
             get { return y; }

@@ -1,13 +1,16 @@
 ﻿using System;
 using IBCS.Interfaces;
+using System.Runtime.Serialization;
 
 namespace IBCS.Math
 {
+    [DataContract]
     public class Fp : Field
     {
         private BigInt r;
         private BigInt inverse2;
 
+        [DataMember]
         public BigInt P
         {
             get { return r; }
@@ -23,7 +26,6 @@ namespace IBCS.Math
          * @param p the characteristics of this field.
          * @exception IllegalArgumentException if <code>p</code> is not prime.
          */
-
         public Fp(BigInt p)
         {
             if (!p.IsProbablePrime(40))

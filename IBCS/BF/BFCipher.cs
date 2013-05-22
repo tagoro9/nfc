@@ -31,6 +31,14 @@ namespace IBCS.BF
 
         }
 
+
+        public static PublicKey ExtractPublic(KeyPair masterKey, String ID)
+        {
+            BFUserPublicKey pk = new BFUserPublicKey(ID, (BFMasterPublicKey)masterKey.Public);
+            return pk;
+        }
+
+
         public static KeyPair Extract(KeyPair masterKey, String ID, Random rnd)
         {
             //user public key is ID+ public parameters

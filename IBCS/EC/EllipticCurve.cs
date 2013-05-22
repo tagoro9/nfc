@@ -2,9 +2,11 @@
 using IBCS.Math;
 using IBCS.Interfaces;
 using IBCS.Util;
+using System.Runtime.Serialization;
 
 namespace IBCS.EC
 {
+    [DataContract]
     public class EllipticCurve
     {
         private Field field;
@@ -20,6 +22,7 @@ namespace IBCS.EC
             get { return opt; }
         }
 
+        [DataMember]
         public Field Field
         {
             get { return field; }
@@ -31,6 +34,7 @@ namespace IBCS.EC
          * @return the coefficient a.
          */
 
+        [DataMember]
         public FieldElement A
         {
             get
@@ -52,6 +56,7 @@ namespace IBCS.EC
          * Y^2=X^3+aX+b;
          * @return the coefficient b.
          */
+        [DataMember]
         public FieldElement B
         {
 

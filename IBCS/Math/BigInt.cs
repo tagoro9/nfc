@@ -1,11 +1,13 @@
 ﻿using System;
 using IBCS.Interfaces;
+using System.Runtime.Serialization;
 
 namespace IBCS.Math
 {
     /// <summary>
     /// Wrapper for the BigInteger class
     /// </summary>
+    [DataContract]
     public class BigInt : FieldElement
     {
         private BigInteger value;
@@ -13,6 +15,12 @@ namespace IBCS.Math
         {
             get { return value; }
             set { this.value = value; }
+        }
+
+        [DataMember(Name="Value")]
+        public string HexValue
+        {
+            get { return this.ToString(16); }
         }
 
 
