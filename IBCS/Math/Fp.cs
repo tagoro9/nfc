@@ -14,6 +14,11 @@ namespace IBCS.Math
         public BigInt P
         {
             get { return r; }
+            set
+            {
+                this.r = value;
+                this.inverse2 = BigInt.ValueOf(2).ModInverse(value);
+            }
         }
 
         public BigInt Inverse2

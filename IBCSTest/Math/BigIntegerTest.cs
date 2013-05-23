@@ -2,6 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using IBCS.Math;
 using IBCS.Util;
+using System.Runtime.Serialization;
 
 namespace IBCSTest.Math
 {
@@ -340,6 +341,5 @@ namespace IBCSTest.Math
             BigInt e = new BigInt("19966ab75a5a93c3e276827e317dcbe3c", 16);
             Assert.AreEqual(e, a.Xor(b));
         }
-
     }
 }

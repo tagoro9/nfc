@@ -26,6 +26,15 @@ namespace IBCS.EC
         public Field Field
         {
             get { return field; }
+            set
+            {
+                field = value;
+                Initialise(field, BigInt.ZERO, BigInt.ZERO, BigInt.ZERO, A, B);
+                if (a4.Equals(this.field.Negate(BigInt.ValueOf(3))))
+                    this.opt = true;
+                else
+                    this.opt = false;
+            }
         }
 
         /**
@@ -49,6 +58,15 @@ namespace IBCS.EC
                     return this.a2;
                 }
             }
+            set
+            {
+                a4 = value;
+                Initialise(field, BigInt.ZERO, BigInt.ZERO, BigInt.ZERO, A, B);
+                if (a4.Equals(this.field.Negate(BigInt.ValueOf(3))))
+                    this.opt = true;
+                else
+                    this.opt = false;
+            }
         }
 
         /**
@@ -63,6 +81,15 @@ namespace IBCS.EC
             get
             {
                 return this.a6;
+            }
+            set
+            {
+                a6 = value;
+                Initialise(field, BigInt.ZERO, BigInt.ZERO, BigInt.ZERO, A, B);
+                if (a4.Equals(this.field.Negate(BigInt.ValueOf(3))))
+                    this.opt = true;
+                else
+                    this.opt = false;
             }
 
         }

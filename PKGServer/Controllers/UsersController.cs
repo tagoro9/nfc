@@ -68,7 +68,8 @@ namespace PKGServer.Controllers
             token.Token = "invalid";
             if (dbUser.Password == user.Password)
             {
-                token.Token= Convert.ToBase64String(AesConfig.EncryptStringToBytes_Aes(user.Email));
+                token.Token = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(user.Email)).Replace("-", string.Empty);
+                //token.Token= Convert.ToBase64String(AesConfig.EncryptStringToBytes_Aes(user.Email));
             }
             return token;
         }

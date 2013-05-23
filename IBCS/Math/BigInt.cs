@@ -21,6 +21,10 @@ namespace IBCS.Math
         public string HexValue
         {
             get { return this.ToString(16); }
+            set
+            {
+                this.Value = new BigInteger(value, 16);
+            }
         }
 
 
@@ -41,7 +45,7 @@ namespace IBCS.Math
             this.value = new BigInteger(val);
         }
 
-        public BigInt(String val, int radix)
+        public BigInt(String val, int radix = 16)
         {
             this.value = new BigInteger(val, radix);
             // TODO Auto-generated constructor stub

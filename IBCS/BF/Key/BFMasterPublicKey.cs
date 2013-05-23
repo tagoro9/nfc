@@ -2,9 +2,11 @@
 using IBCS.Math;
 using IBCS.Interfaces;
 using IBCS.EC;
+using System.Runtime.Serialization;
 
 namespace IBCS.BF.Key
 {
+    [DataContract]
     public class BFMasterPublicKey : PublicKey
     {
         private Pairing e;
@@ -33,19 +35,28 @@ namespace IBCS.BF.Key
             return null;
         }
 
+        [DataMember]
         public Pairing Pairing
         {
             get { return this.e; }
+            set
+            {
+                e = value;
+            }
         }
 
+        [DataMember]
         public Point P
         {
             get { return this.p; }
+            set { p = value; }
         }
 
+        [DataMember]
         public Point Ppub
         {
             get { return this.pPub; }
+            set { pPub = value; }
         }
 
     }
