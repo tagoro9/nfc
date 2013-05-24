@@ -119,13 +119,15 @@ namespace IBCSApp.ViewModels
         /// <summary>
         /// Check if the user is logged in.
         /// </summary>
-        public void CheckLoggedIn()
+        public bool CheckLoggedIn()
         {
             //IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
             if (settingsService.Contains("token"))
             {
                 navService.NavigateToMainPage();
+                return true;
             }
+            return false;
         }
     }
 }

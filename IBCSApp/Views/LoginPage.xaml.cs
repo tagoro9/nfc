@@ -21,7 +21,10 @@ namespace IBCSApp.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            ((VMLoginPage)this.DataContext).CheckLoggedIn();
+            if (!((VMLoginPage)this.DataContext).CheckLoggedIn())
+            {
+                NavigationService.RemoveBackEntry();   
+            }
         }
     }
 }

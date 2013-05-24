@@ -10,6 +10,7 @@ namespace IBCSApp.Services.Settings
     {
         bool Contains(string key);
         object Get(string key);
-        void Set(string key, object val, bool save = true);    
+        void Set(string key, object val, bool save = true);
+        bool Remove(string key);
     }
 }

@@ -8,6 +8,6 @@ namespace IBCSApp.Services.API
 {
     public static class APIInfo
     {
-        public static string APIURL = "http://192.168.1.65:62211/api/";
+        public static string APIURL = "https://pkg.apphb.com/api/";
     }
 }

@@ -66,7 +66,8 @@ namespace IBCSApp.Services.API
 
         private void GetUserKeyCallback(IAsyncResult asyncResult)
         {
-            BFUserPrivateKey key = null;
+            //BFUserPrivateKey key = null;
+            SerializedPrivateKey key = new SerializedPrivateKey();
             if (asyncResult.IsCompleted)
             {
                 HttpWebRequest request = (HttpWebRequest)asyncResult.AsyncState;
@@ -84,7 +85,9 @@ namespace IBCSApp.Services.API
 
                         if (!string.IsNullOrEmpty(result))
                         {
-                            key = JsonConvert.DeserializeObject<BFUserPrivateKey>(result, new KeyConverter());
+                            //key = JsonConvert.DeserializeObject<BFUserPrivateKey>(result, new KeyConverter());
+                            JsonSerializer ser = new JsonSerializer();
+                            key = JsonConvert.DeserializeObject<SerializedPrivateKey>(result);
                         }
                     }
 

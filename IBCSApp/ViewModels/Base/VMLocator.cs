@@ -5,6 +5,7 @@
     using IBCSApp.Services.Navigation;
     using IBCSApp.Services.API;
     using IBCSApp.Services.Settings;
+    using IBCSApp.Services.NFC;
 
     /// <summary>
     /// This class allows us to resolve our ViewModels in one unique point.
@@ -36,6 +37,7 @@
             builder.RegisterType<LoginService>().As<ILoginService>().SingleInstance();
             builder.RegisterType<SettingsService>().As<ISettingsService>().SingleInstance();
             builder.RegisterType<KeysService>().As<IkeysService>().SingleInstance();
+            builder.RegisterType<NFCService>().As<INFCService>().SingleInstance();
             builder.RegisterType<VMMainPage>();
             builder.RegisterType<VMSecondPage>();
             builder.RegisterType<VMLoginPage>();

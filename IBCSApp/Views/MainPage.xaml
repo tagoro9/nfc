@@ -7,13 +7,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:abu="clr-namespace:AppBarUtils;assembly=AppBarUtils"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
-    shell:SystemTray.IsVisible="True"
-    DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
+    DataContext="{Binding MainViewModel, Source={StaticResource Locator}}" shell:SystemTray.IsVisible="True">
     
     <shell:SystemTray.ProgressIndicator>
         <shell:ProgressIndicator IsVisible="{Binding IsBusy}"
@@ -51,6 +52,18 @@
             </Button.CommandParameter>
         </Button>
     </StackPanel>
-    <!-- REPLACE ALL ABOVE WITH REAL CONTENT AND DO AN AWESOME APP -->
+
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="logout"/>
+            </shell:ApplicationBar.MenuItems>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
+
+    <i:Interaction.Behaviors>
+        <abu:AppBarItemCommand Type="MenuItem" Id="logout" Command="{Binding LogOutCommand}"/>
+    </i:Interaction.Behaviors>
+
 
 </phone:PhoneApplicationPage>

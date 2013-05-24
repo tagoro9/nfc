@@ -104,7 +104,9 @@
     <Compile Include="Services\Dispatcher\DispatcherService.cs" />
     <Compile Include="Services\Dispatcher\IDispatcherService.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
+    <Compile Include="Services\NFC\INFCService.cs" />
     <Compile Include="Services\Navigation\NavigationService.cs" />
+    <Compile Include="Services\NFC\NFCService.cs" />
     <Compile Include="Services\Settings\ISettingsService.cs" />
     <Compile Include="Services\Settings\SettingsService.cs" />
     <Compile Include="ViewModels\Base\DelegateCommand.cs" />
@@ -195,6 +197,9 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="AppBarUtils">
+      <HintPath>..\packages\AppBarUtils.2.2\lib\windowsphone8\AppBarUtils.dll</HintPath>
+    </Reference>
     <Reference Include="Autofac, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2012.10.30\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
@@ -202,6 +207,10 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Assets\AppBar\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

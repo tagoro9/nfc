@@ -11,7 +11,7 @@ namespace IBCSApp.Services.API
 {
 
     public delegate void BFMasterPublicKeyArgs(PublicKey key);
-    public delegate void BFUserKeyArgs(BFUserPrivateKey key);
+    public delegate void BFUserKeyArgs(SerializedPrivateKey key);
 
     public interface IkeysService
     {

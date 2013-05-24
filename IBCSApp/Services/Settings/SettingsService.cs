@@ -16,9 +16,18 @@ namespace IBCSApp.Services.Settings
             return settings.Contains(key);
         }
 
+        public bool Remove(string key)
+        {
+            bool rem = settings.Remove(key);
+            settings.Save();
+            return rem;
+        }
+
         public object Get(string key)
         {
-            return settings[key];
+            if (settings.Contains(key))
+                return settings[key];
+            return null;
         }
 
         public void Set(string key, object val, bool save = true)

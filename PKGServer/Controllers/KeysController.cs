@@ -46,10 +46,10 @@ namespace PKGServer.Controllers
         }
 
         [HttpGet, RequireAuthorization]
-        public BFUserPrivateKey Private(string id)
+        public SerializedPrivateKey Private(string id)
         {
             KeyPair user = BFCipher.Extract(master, id, new Random());
-            return (BFUserPrivateKey)user.Private;
+            return ((BFUserPrivateKey)user.Private).Serialize();
         }
 
     }

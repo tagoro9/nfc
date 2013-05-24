@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>AppBarUtils</id>
+    <version>2.2</version>
+    <title>AppBarUtils</title>
+    <authors>Allen Lee</authors>
+    <owners>Allen Lee</owners>
+    <licenseUrl>http://appbarutils.codeplex.com/license</licenseUrl>
+    <projectUrl>http://appbarutils.codeplex.com/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <description>AppBarUtils provides out-of-box app bar behaviors/triggers/actions for Windows Phone SDK 7.1/8.0. They enable you to do command binding (also binding for other properties) for app bar buttons/menu items, make use of the built-in Blend SDK and 3rd party behaviors, and dynamically show different app bars for different pano/pivot items or based on different page states.</description>
+    <releaseNotes>Starting from this release, AppBarUtils supports both Windows Phone SDK 7.1 and 8.0. You can download the dll accordingly.
+
+If you're upgrading an existing app to Windows Phone 8.0, you can just replace the dll without any changes to the existing code. Of course, you need to make sure that you have the correct Blend SDK dll referenced.
+
+The source code contains two testing projects, one for WP SDK 7.1, the other for WP SDK 8.0, which share the same code base. You can refer to these two projects on how to share code across different versions.
+
+Note: Windows Phone SDK 7.1/8.0 is required.</releaseNotes>
+    <copyright />
+    <language />
+  </metadata>
+</package>
