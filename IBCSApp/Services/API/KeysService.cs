@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using IBCS.BF.Key;
-using IBCSApp.Models;
+using IBCSApp.Entities;
 using IBCSApp.Converters;
 using Newtonsoft.Json;
 

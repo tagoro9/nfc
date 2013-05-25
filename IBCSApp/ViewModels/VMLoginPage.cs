@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using IBCSApp.ViewModels.Base;
-using IBCSApp.Models;
+using IBCSApp.Entities;
 using IBCSApp.Services.Navigation;
 using IBCSApp.Services.Settings;
 using IBCSApp.Services.Dispatcher;

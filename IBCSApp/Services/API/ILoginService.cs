@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using IBCSApp.Models;
+using IBCSApp.Entities;
 using System.Threading.Tasks;
 
 namespace IBCSApp.Services.API

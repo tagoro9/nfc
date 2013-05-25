@@ -5,7 +5,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 using System.Threading.Tasks;
-using IBCSApp.Models;
+using IBCSApp.Entities;
 using Newtonsoft.Json;
 
 namespace IBCSApp.Services.API

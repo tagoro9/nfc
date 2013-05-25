@@ -41,6 +41,7 @@
     <Compile Include="BF\Key\BFUserPublicKey.cs" />
     <Compile Include="BF\Key\KeyPair.cs" />
     <Compile Include="BF\Key\SerializedPrivateKey.cs" />
+    <Compile Include="BF\SerializedBFCText.cs" />
     <Compile Include="BF\Util\BFUtil.cs" />
     <Compile Include="EC\EllipticCurve.cs" />
     <Compile Include="EC\JacobPoint.cs" />

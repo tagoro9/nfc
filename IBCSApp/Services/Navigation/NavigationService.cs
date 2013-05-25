@@ -30,5 +30,21 @@
         {
             App.RootFrame.Navigate(new Uri("/Views/LoginPage.xaml", UriKind.Relative));
         }
+
+        /// <summary>
+        /// Method implementation to navigate to page called secure email
+        /// </summary>
+        public void NavigateToSecureEmailPage()
+        {
+            App.RootFrame.Navigate(new Uri("/Views/SecureEmailPage.xaml", UriKind.Relative));
+        }
+
+        /// <summary>
+        /// Method implementation to navigate to page called share secure message
+        /// </summary>
+        public void NavigateToShareSecureMessagePage()
+        {
+            App.RootFrame.Navigate(new Uri("/Views/ShareSecureMessagePage.xaml", UriKind.Relative));
+        }
     }
 }

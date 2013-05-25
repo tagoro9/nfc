@@ -8,6 +8,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using IBCSApp.Resources;
 using System.Windows.Threading;
+using IBCSApp.Mappers;
 
 namespace IBCSApp
 {
@@ -128,7 +129,7 @@ namespace IBCSApp
 
             // Handle navigation failures
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
-
+            RootFrame.UriMapper = new ProtocolUriMapper();
             // Handle reset requests for clearing the backstack
             RootFrame.Navigated += CheckForResetNavigation;
 

@@ -6,6 +6,8 @@
     using IBCSApp.Services.API;
     using IBCSApp.Services.Settings;
     using IBCSApp.Services.NFC;
+    using IBCSApp.Services.Bluetooth;
+    using IBCSApp.Services.BF;
 
     /// <summary>
     /// This class allows us to resolve our ViewModels in one unique point.
@@ -38,10 +40,22 @@
             builder.RegisterType<SettingsService>().As<ISettingsService>().SingleInstance();
             builder.RegisterType<KeysService>().As<IkeysService>().SingleInstance();
             builder.RegisterType<NFCService>().As<INFCService>().SingleInstance();
+            builder.RegisterType<BluetoothService>().As<IBluetoothService>().SingleInstance();
+            builder.RegisterType<BfService>().As<IBfService>().SingleInstance();
             builder.RegisterType<VMMainPage>();
             builder.RegisterType<VMSecondPage>();
             builder.RegisterType<VMLoginPage>();
+            builder.RegisterType<VMSecureEmailPage>();
+            builder.RegisterType<VMShareSecureMessage>();
             container = builder.Build();
+        }
+
+        /// <summary>
+        /// ShareSecureMessagePage ViewModel instance.
+        /// </summary>
+        public VMShareSecureMessage ShareSecureMessageViewModel
+        {
+            get { return this.container.Resolve<VMShareSecureMessage>(); }
         }
 
         /// <summary>
@@ -66,6 +80,14 @@
         public VMSecondPage SecondViewModel
         {
             get { return this.container.Resolve<VMSecondPage>(); }
+        }
+
+        /// <summary>
+        /// SecureEmailPage ViewModel instance.
+        /// </summary>
+        public VMSecureEmailPage SecureEmailViewModel
+        {
+            get { return this.container.Resolve<VMSecureEmailPage>(); }
         }
     }
 }

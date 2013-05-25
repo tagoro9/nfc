@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using IBCS.BF.Key;
 using IBCS.Interfaces;
-using IBCSApp.Models;
+using IBCSApp.Entities;
 
 namespace IBCSApp.Services.API
 {

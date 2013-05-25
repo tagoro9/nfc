@@ -21,5 +21,11 @@
         /// Navigate to login page.
         /// </summary>
         void NavigateToLoginPage();
+        /// <summary>
+        /// Navigate to secure email page.
+        /// </summary>
+        void NavigateToSecureEmailPage();
+
+        void NavigateToShareSecureMessagePage();
     }
 }

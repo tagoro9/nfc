@@ -26,13 +26,13 @@
         </Grid.RowDefinitions>
 
         <StackPanel Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="IBCS" Style="{StaticResource PhoneTextNormalStyle}"/>
-            <TextBlock Text="login" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="{Binding Path=LocalizedResources.LoginPageTitle, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <StackPanel>
-                <TextBlock Text="email"></TextBlock>
+                <TextBlock Text="{Binding Path=LocalizedResources.LoginPageEmail, Source={StaticResource LocalizedStrings}}"></TextBlock>
                 <TextBox Text="{Binding Email, Mode=TwoWay}">
                     <TextBox.InputScope>
                         <InputScope>
@@ -40,10 +40,10 @@
                         </InputScope>
                     </TextBox.InputScope>
                 </TextBox>
-                <TextBlock Text="password"></TextBlock>
+                <TextBlock Text="{Binding Path=LocalizedResources.LoginPagePassword, Source={StaticResource LocalizedStrings}}"></TextBlock>
                 <PasswordBox Password="{Binding Password, Mode=TwoWay}"></PasswordBox>
-                <Button Command="{Binding LoginUserCommand}">Login</Button>
-                <Button>Register</Button>
+                <Button Command="{Binding LoginUserCommand}" Content="{Binding Path=LocalizedResources.LoginPageLoginButton, Source={StaticResource LocalizedStrings}}" />
+                <Button Content="{Binding Path=LocalizedResources.LoginPageSignUpButton, Source={StaticResource LocalizedStrings}}"/>
             </StackPanel>
         </Grid>
     </Grid>

@@ -33,8 +33,9 @@
             <Run Text="If you click the button, the NavigateToSecondPage Command is executed. "/>
             <Run Text="It uses the NavigationService to isolate dependencies and navigate to the new page."/>
         </TextBlock>
-        <Button Content="Navigate to second page" 
-                Command="{Binding NavigateToSecondPageCommand}"/>
+        <Button Content="Secure email" 
+                Command="{Binding NavigateToSecureEmailCommand}"/>
+        <Button Content="share secure message" Command="{Binding NavigateToShareSecureMessageCommand}"></Button>
 
         <TextBlock Margin="12,40,12,0" TextWrapping="Wrap">
             <Run FontWeight="Bold" Text="2.- IsBusy display" Foreground="{StaticResource PhoneAccentBrush}"/>

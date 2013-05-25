@@ -1,6 +1,7 @@
 ﻿using System;
 using IBCS.Interfaces;
 using System.Runtime.Serialization;
+using Org.BouncyCastle.Math;
 
 namespace IBCS.Math
 {
@@ -35,9 +36,7 @@ namespace IBCS.Math
 
         public BigInt(int numBits, Random rnd)
         {
-            BigInteger rand = new BigInteger();
-            rand.genRandomBits(numBits, rnd);
-            this.value = rand;
+            this.value = new BigInteger(numBits, rnd);
         }
 
         public BigInt(byte[] val)
@@ -48,75 +47,68 @@ namespace IBCS.Math
         public BigInt(String val, int radix = 16)
         {
             this.value = new BigInteger(val, radix);
-            // TODO Auto-generated constructor stub
         }
 
+        public BigInt(long val)
+        {
+            this.Value = BigInteger.ValueOf(val);
+        }
 
         public BigInt Abs()
         {
-            return new BigInt(this.value.abs());
+            return new BigInt(this.value.Abs());
         }
 
         public BigInt Add(BigInt val)
         {
-            return new BigInt(Value + val.Value);
+            return new BigInt(Value.Add(val.Value));
         }
 
         public BigInt And(BigInt val)
         {
-            return new BigInt(Value & val.Value);
+            return new BigInt(Value.And(val.Value));
         }
 
         public BigInt AndNot(BigInt val)
         {
-            return new BigInt(this.Value & ~val.Value);
+            return new BigInt(this.Value.AndNot(val.Value));
         }
 
-        public int BitCount() //This could fail
+        public int BitCount()
         {
-            throw new NotImplementedException();
+            return this.Value.BitCount;
         }
 
         public int BitLength()
         {
-            return this.Value.bitCount();
+            return this.Value.BitLength;
         }
 
         public BigInt ClearBit(int n)
         {
-            BigInteger copy = this.Value;
-            copy.unsetBit(Convert.ToUInt16(n));
-            return new BigInt(copy);
+            return new BigInt(this.Value.ClearBit(n));
         }
 
         public int CompareTo(BigInt val)
         {
-            if (this.Value == val.Value)
-                return 0;
-            else if (this.Value > val.Value)
-                return 1;
-            else
-                return -1;
+            return this.Value.CompareTo(val.Value);
         }
 
         public BigInt Divide(BigInt val)
         {
-            return new BigInt(Value / val.Value);
+            return new BigInt(this.Value.Divide(val.Value));
         }
 
         public BigInt[] DivideAndRemainder(BigInt val)
         {
-            BigInteger modulus = Value % val.Value;
-            BigInteger result = Value / val.Value;
-            return new BigInt[2] { new BigInt(result), new BigInt(modulus) };
+            BigInteger[] res = this.Value.DivideAndRemainder(val.Value);
+            return new BigInt[] { new BigInt(res[0]), new BigInt(res[1])};
         }
 
         //public double DoubleValue()
 
         public override bool Equals(Object x)
         {
-            if (GetType() != x.GetType())
-                return false;
             return this.Value.Equals(((BigInt)x).Value);
         }
 
@@ -126,7 +118,7 @@ namespace IBCS.Math
 
         public BigInt Gcd(BigInt val)
         {
-            return new BigInt(Value.gcd(val.Value));
+            return new BigInt(Value.Gcd(val.Value));
         }
 
         //public int GetLowestSetBit();
@@ -138,121 +130,119 @@ namespace IBCS.Math
 
         public int IntValue()
         {
-            return Value.IntValue();
+            return Value.IntValue;
         }
 
         public bool IsProbablePrime(int certainty)
         {
-            return Value.isProbablePrime(certainty);
+            return Value.IsProbablePrime(certainty);
         }
 
         public long LongValue()
         {
-            return Value.LongValue();
+            return Value.LongValue;
         }
 
         public BigInt Max(BigInt val)
         {
-            return new BigInt(Value.max(val.Value));
+            return new BigInt(Value.Max(val.Value));
         }
 
         public BigInt Min(BigInt val)
         {
-            return new BigInt(Value.min(val.Value));
+            return new BigInt(Value.Min(val.Value));
         }
 
         public BigInt Mod(BigInt m)
         {
-            return new BigInt(Value % m.Value);
+            return new BigInt(Value.Mod(m.Value));
         }
 
         public BigInt ModInverse(BigInt m)
         {
-            return new BigInt(Value.modInverse(m.Value));
+            return new BigInt(Value.ModInverse(m.Value));
         }
 
         public BigInt ModPow(BigInt exponent, BigInt m)
         {
-            return new BigInt(Value.modPow(exponent.Value, m.Value));
+            return new BigInt(Value.ModPow(exponent.Value, m.Value));
         }
 
         public BigInt Multiply(BigInt val)
         {
-            return new BigInt(Value * val.Value);
+            return new BigInt(Value.Multiply(val.Value));
         }
 
         public BigInt Negate()
         {
-            return new BigInt(-Value);
+            return new BigInt(Value.Negate());
         }
 
         //public BigInt NextProbablePrime()
 
         public BigInt Not()
         {
-            return new BigInt(~Value);
+            return new BigInt(Value.Not());
         }
 
         public BigInt Or(BigInt val)
         {
-            return new BigInt(Value | val.Value);
+            return new BigInt(Value.Or(val.Value));
         }
 
         public BigInt Pow(int exponent) //This could fail
         {
-            return new BigInt(Value.pow(exponent));
+            return new BigInt(Value.Pow(exponent));
         }
 
         public static BigInt ProbablePrime(int bitLength, Random rnd)
         {
-            return new BigInt(BigInteger.genPseudoPrime(bitLength, 10, rnd));
+            return new BigInt(BigInteger.ProbablePrime(bitLength, rnd));
         }
 
         public BigInt Remainder(BigInt val)
         {
-            return new BigInt(Value % val.Value);
+            return new BigInt(Value.Remainder(val.Value));
         }
 
         public BigInt SetBit(int n)
         {
-            BigInteger copy = Value;
-            copy.setBit(Convert.ToUInt16(n));
-            return new BigInt(copy);
+            return new BigInt(Value.SetBit(n));
         }
 
         public BigInt ShiftLeft(int n)
         {
-            return new BigInt(Value << n);
+            return new BigInt(Value.ShiftLeft(n));
         }
 
         public BigInt ShiftRight(int n)
         {
-            return new BigInt(Value >> n);
+            return new BigInt(Value.ShiftRight(n));
         }
 
         public int Signum() //This could fail
         {
-            return Value.Signum();
+            return Value.SignValue;
         }
 
         public BigInt Subtract(BigInt val)
         {
-            return new BigInt(Value - val.Value);
+            return new BigInt(Value.Subtract(val.Value));
         }
 
         public bool TestBit(int n)
         {
-            return Value.TestBit(Convert.ToUInt16(n));
+            return Value.TestBit(n);
         }
 
         public sbyte[] ToByteArray()
         {
-            return Value.ToSByteArray();
+            return (sbyte[])(Array)Value.ToByteArray();
         }
 
         public byte[] ToUByteArray()
         {
-            return Value.ToByteArray();
+            return Value.ToByteArrayUnsigned();
         }
 
         public override String ToString()
@@ -267,18 +257,18 @@ namespace IBCS.Math
 
         public static BigInt ValueOf(long val)
         {
-            return new BigInt(new BigInteger(val));
+            return new BigInt(BigInteger.ValueOf(val));
         }
 
         public BigInt Xor(BigInt val)
         {
-            return new BigInt(Value ^ val.Value);
+            return new BigInt(Value.Xor(val.Value));
         }
 
-        public static BigInt ONE = new BigInt(new BigInteger(1));
+        public static BigInt ONE = new BigInt(BigInteger.One);
 
-        public static BigInt TEN = new BigInt(new BigInteger(10));
+        public static BigInt TEN = new BigInt(BigInteger.Ten);
 
-        public static BigInt ZERO = new BigInt(new BigInteger(0));
+        public static BigInt ZERO = new BigInt(BigInteger.Zero);
     }
 }

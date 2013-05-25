@@ -134,7 +134,7 @@ using System;
 using System.IO;
 using System.Collections.Generic;
 
-namespace IBCS.Math
+namespace IBCS.Math.Numerics
 {
     public class BigInteger
     {
@@ -1318,43 +1318,43 @@ namespace IBCS.Math
 
         public static BigInteger operator %(BigInteger bi1, BigInteger bi2)
         {
-            BigInteger val = new BigInteger(0);
-            int lastPos = maxLength - 1;
-            if ((bi1.data[lastPos] & 0x80000000) != 0)
-                val = new BigInteger(-1);
-            return -((val + bi1 / bi2) * bi2 - bi1);
-            //BigInteger quotient = new BigInteger();
-            //BigInteger remainder = new BigInteger(bi1);
-
+            //BigInteger val = new BigInteger(0);
             //int lastPos = maxLength - 1;
-            //bool dividendNeg = false;
+            //if ((bi1.data[lastPos] & 0x80000000) != 0)
+            //    val = new BigInteger(-1);
+            //return -((val + bi1 / bi2) * bi2 - bi1);
+            BigInteger quotient = new BigInteger();
+            BigInteger remainder = new BigInteger(bi1);
+
+            int lastPos = maxLength - 1;
+            bool dividendNeg = false;
 
             //if ((bi1.data[lastPos] & 0x80000000) != 0)     // bi1 negative
             //{
+            //    bi1 = -bi1;
             //    dividendNeg = true;
-            //    if (-bi1 < bi2)
-            //        return bi2 + bi1;
             //}
-            //if ((bi2.data[lastPos] & 0x80000000) != 0)     // bi2 negative
-            //    bi2 = -bi2;
+            if ((bi2.data[lastPos] & 0x80000000) != 0)     // bi2 negative
+                bi2 = -bi2;
 
-            ////if (bi1 < bi2)
-            ////{
-            ////    return remainder;
-            ////}
-
-            ////else
-            ////{
-            //    if (bi2.dataLength == 1)
-            //        singleByteDivide(bi1, bi2, quotient, remainder);
-            //    else
-            //        multiByteDivide(bi1, bi2, quotient, remainder);
-
-            //    if (dividendNeg)
-            //        return -remainder;
-
+            //if (bi1 < bi2)
+            //{
             //    return remainder;
-            ////}
+            //}
+
+            //else
+            //{
+                if (bi2.dataLength == 1)
+                    singleByteDivide(bi1, bi2, quotient, remainder);
+                else
+                    multiByteDivide(bi1, bi2, quotient, remainder);
+
+                //if (dividendNeg)
+                //    return -remainder;
+
+                //return remainder;
+                return (remainder >= 0 ? remainder : remainder + bi2);
+            //}
         }
 
 

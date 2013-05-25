@@ -46,11 +46,10 @@ namespace IBCSTest.Math
         }
 
         [TestMethod, TestCategory("Math"), TestCategory("BigInt")]
-        [ExpectedException(typeof(NotImplementedException))]
         public void BitCountTest()
         {
-            BigInt a = new BigInt(1);
-            a.BitCount();
+            BigInt a = new BigInt(123456);
+            Assert.AreEqual(6, a.BitCount());
         }
 
         [TestMethod, TestCategory("Math"), TestCategory("BigInt")]
@@ -320,7 +319,7 @@ namespace IBCSTest.Math
         {
             BigInt a = new BigInt("489a03c58dcf7fcfc97e99ffef0bb4634", 16);
             string r = "1544065694588693922751392396002715190836";
-            string r1 = "489A03C58DCF7FCFC97E99FFEF0BB4634";
+            string r1 = "489a03c58dcf7fcfc97e99ffef0bb4634";
             Assert.AreEqual(r, a.ToString());
             Assert.AreEqual(r1, a.ToString(16));
         }

@@ -15,8 +15,7 @@
     <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
     <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
     <SilverlightApplication>true</SilverlightApplication>
-    <SupportedCultures>
-    </SupportedCultures>
+    <SupportedCultures>es</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
     <XapFilename>WindowsPhone8.PlainMVVM_$(Configuration)_$(Platform).xap</XapFilename>
@@ -94,13 +93,29 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\KeyConverter.cs" />
+    <Compile Include="Entities\Peer.cs" />
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="Models\Token.cs" />
+    <Compile Include="Entities\Token.cs" />
+    <Compile Include="Mappers\ProtocolUriMapper.cs" />
+    <Compile Include="Resources\AppResources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\AppResources.es.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AppResources.es.resx</DependentUpon>
+    </Compile>
     <Compile Include="Services\API\APIInfo.cs" />
     <Compile Include="Services\API\IkeysService.cs" />
     <Compile Include="Services\API\ILoginService.cs" />
     <Compile Include="Services\API\KeysService.cs" />
     <Compile Include="Services\API\LoginService.cs" />
+    <Compile Include="Services\BF\BfService.cs" />
+    <Compile Include="Services\BF\IBfService.cs" />
+    <Compile Include="Services\Bluetooth\BluetoothService.cs" />
+    <Compile Include="Services\Bluetooth\IBluetoothService.cs" />
     <Compile Include="Services\Dispatcher\DispatcherService.cs" />
     <Compile Include="Services\Dispatcher\IDispatcherService.cs" />
     <Compile Include="Services\Navigation\INavigationService.cs" />
@@ -115,6 +130,11 @@
     <Compile Include="ViewModels\Base\VMBase.cs" />
     <Compile Include="ViewModels\Base\VMLocator.cs" />
     <Compile Include="ViewModels\VMMainPage.cs" />
+    <Compile Include="ViewModels\VMSecureEmailPage.cs" />
+    <Compile Include="ViewModels\VMShareSecureMessage.cs" />
+    <Compile Include="Views\DecryptMessage.xaml.cs">
+      <DependentUpon>DecryptMessage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -122,13 +142,14 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\AppResources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>AppResources.resx</DependentUpon>
-    </Compile>
     <Compile Include="Views\SecondPage.xaml.cs">
       <DependentUpon>SecondPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\SecureEmailPage.xaml.cs">
+      <DependentUpon>SecureEmailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ShareSecureMessagePage.xaml.cs">
+      <DependentUpon>ShareSecureMessagePage.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -136,6 +157,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Views\DecryptMessage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -145,6 +170,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\SecondPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SecureEmailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ShareSecureMessagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -185,12 +218,6 @@
     <Content Include="Toolkit.Content\ApplicationBar.Select.png" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\AppResources.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\IBCS\IBCS.csproj">
       <Project>{934EEF7A-5B2C-448C-AC14-29B8DD15A046}</Project>
       <Name>IBCS</Name>
@@ -211,6 +238,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\AppBar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AppResources.es.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.es.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\AppResources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>AppResources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />

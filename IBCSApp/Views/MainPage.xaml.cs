@@ -28,7 +28,7 @@ namespace IBCSApp.Views
                 NavigationService.RemoveBackEntry();   
             }
             ((VMMainPage)this.DataContext).CheckKeys();
-            ((VMMainPage)this.DataContext).StartPublishingIdentity();
+            //((VMMainPage)this.DataContext).StartPublishingIdentity();
         }
     }
 }
