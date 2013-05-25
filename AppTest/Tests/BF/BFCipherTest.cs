@@ -48,5 +48,25 @@ namespace AppTest.Tests.BF
             byte[] result = BFCipher.decrypt(encypted, key);
             Assert.AreEqual(Encoding.UTF8.GetString(message, 0, message.Length), Encoding.UTF8.GetString(result, 0, message.Length));
         }
+
+        [TestMethod]
+        [Description("It should encrypt messages in a reasonable time")]
+        public void CipherInReasonableTimeTest()
+        {
+            int times = 50;
+            int size = 511;
+            Random rnd = new Random();
+            System.Diagnostics.Stopwatch m_watch = new System.Diagnostics.Stopwatch();
+            m_watch.Start();
+            for (int i = 0; i < times; i++)
+            {
+                byte[] message = new byte[size];
+                rnd.NextBytes(message);
+                BFCipher.encrypt(pKey, message, rnd);
+            }
+            m_watch.Stop();
+            string prompt = "Time spent to cipher " + times + " messages of " + size + " bytes:";
+            System.Diagnostics.Debug.WriteLine("{0}  {1} msec", prompt, m_watch.ElapsedMilliseconds);
+        }
     }
 }

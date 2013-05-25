@@ -39,6 +39,9 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\IBCS\Lib\BouncyCastle.Crypto.WP71.dll</HintPath>
     </Reference>
+    <Reference Include="Emil.GMP">
+      <HintPath>..\IBCS\Lib\Emil.GMP.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
   </ItemGroup>
   <Choose>
