@@ -7,14 +7,11 @@ using IBCS.BF.Key;
 
 namespace IBCSApp.Services.BF
 {
-    public delegate void BFCipherText(string ct);
-    public delegate void BFPlainText(string pt);
-
     public interface IBfService
     {
-        event BFCipherText CipherTextCompleted;
-        event BFPlainText DecipherTextCompleted;
-        void CipherText(string message, string identity, SerializedPrivateKey sKey);
-        void DecipherText(string ct, SerializedPrivateKey sKey);
+        Task<string> CipherText(string message, string identity, SerializedPrivateKey sKey);
+        Task<string> DecipherText(string ct, SerializedPrivateKey sKey);
+        Task<string> CipherMessage(byte[] message, string identity, SerializedPrivateKey sKey);
+        Task<byte[]> DecipherMessage(string ct, SerializedPrivateKey sKey);
     }
 }

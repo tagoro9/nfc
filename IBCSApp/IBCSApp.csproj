@@ -121,7 +121,9 @@
     <Compile Include="Services\Navigation\INavigationService.cs" />
     <Compile Include="Services\NFC\INFCService.cs" />
     <Compile Include="Services\Navigation\NavigationService.cs" />
+    <Compile Include="Services\NFC\IPairingService.cs" />
     <Compile Include="Services\NFC\NFCService.cs" />
+    <Compile Include="Services\NFC\PairingService.cs" />
     <Compile Include="Services\Settings\ISettingsService.cs" />
     <Compile Include="Services\Settings\SettingsService.cs" />
     <Compile Include="ViewModels\Base\DelegateCommand.cs" />

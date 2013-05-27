@@ -8,6 +8,7 @@ using PKGServer.Models;
 using System.Security.Cryptography;
 using System.Text;
 using PKGServer.Authorization;
+using System.Web;
 
 namespace PKGServer.Controllers
 {
@@ -36,7 +37,12 @@ namespace PKGServer.Controllers
         [HttpPost]
         public void Create([FromBody]User value)
         {
+            value.Confirmed = 0;
             db.Users.Add(value);
+            string id = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(value.Email)).Replace("-", string.Empty);
+            string link = "http://localhost:62211/users/confirm?id=" + id;
+            Mailer.Mailer.SendMail(value.Email, "PKG Registration", "You have been successfully registered to this PKG, in order to start using your key, you need to activate your account first. To do so click this [link]("+ link + ")");
+                
             db.SaveChanges();
         }
 
@@ -66,12 +72,26 @@ namespace PKGServer.Controllers
                         select m).First();
             TokenString token = new TokenString();
             token.Token = "invalid";
-            if (dbUser.Password == user.Password)
+            if (dbUser.Password == user.Password && dbUser.Confirmed == 1)
             {
                 token.Token = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(user.Email)).Replace("-", string.Empty);
                 //token.Token= Convert.ToBase64String(AesConfig.EncryptStringToBytes_Aes(user.Email));
             }
             return token;
+        }
+
+        //Get api/users/confirm?id=whatever
+        [HttpGet]
+        public string Confirm()
+        {
+            string query = Request.RequestUri.ParseQueryString().Get("id");
+            string email = AesConfig.DecryptStringFromBytes_Aes(AccessTokenValidator.StringToByteArray(query));
+            var dbUser = (from m in db.Users
+                          where m.Email == email
+                          select m).FirstOrDefault();
+            dbUser.Confirmed = 1;
+            db.SaveChanges();
+            return "You have successfully activated yout account";
         }
     }
 }

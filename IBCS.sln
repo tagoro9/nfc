@@ -11,8 +11,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBCSApp", "IBCSApp\IBCSApp.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AppTest", "AppTest\AppTest.csproj", "{855D2CE0-6700-4066-B692-2C0F2F40A14C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Probando", "Probando\Probando.vcxproj", "{2F06E1EE-05F9-430B-87BF-D1F9887DC912}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -127,24 +125,6 @@ Global
 		{855D2CE0-6700-4066-B692-2C0F2F40A14C}.Release|x86.ActiveCfg = Release|x86
 		{855D2CE0-6700-4066-B692-2C0F2F40A14C}.Release|x86.Build.0 = Release|x86
 		{855D2CE0-6700-4066-B692-2C0F2F40A14C}.Release|x86.Deploy.0 = Release|x86
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|Any CPU.ActiveCfg = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|ARM.ActiveCfg = Debug|ARM
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|ARM.Build.0 = Debug|ARM
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|Mixed Platforms.Build.0 = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|Win32.ActiveCfg = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|Win32.Build.0 = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|x86.ActiveCfg = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Debug|x86.Build.0 = Debug|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|Any CPU.ActiveCfg = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|ARM.ActiveCfg = Release|ARM
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|ARM.Build.0 = Release|ARM
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|Mixed Platforms.ActiveCfg = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|Mixed Platforms.Build.0 = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|Win32.ActiveCfg = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|Win32.Build.0 = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|x86.ActiveCfg = Release|Win32
-		{2F06E1EE-05F9-430B-87BF-D1F9887DC912}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

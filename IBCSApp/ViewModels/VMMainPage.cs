@@ -15,15 +15,16 @@
     using IBCSApp.Services.Bluetooth;
     using Windows.Networking.Proximity;
     using System.Collections.Generic;
+    using IBCSApp.Services.BF;
+    using System.Security.Cryptography;
+    using IBCS.BF.Util;
+    using Windows.Networking.Sockets;
 
     /// <summary>
     /// MainPage ViewModel.
     /// </summary>
     public class VMMainPage : VMBase
     {
-        ///NFC message types
-        public static string NFC_IBCS = "Windows.IBCS.Identity";
-
         //Services variables.
         private INavigationService navService;
         private IDispatcherService dispatcherService;
@@ -31,6 +32,12 @@
         private IkeysService keysService;
         private INFCService nfcService;
         private IBluetoothService bluetoothService;
+        private IBfService bfService;
+        private IPairingService pairingService;
+
+        private SerializedPrivateKey sKey;
+        private StreamSocket socket;
+        private AesManaged aes;
 
         //Commands variables.
         private DelegateCommand navigateToSecondPageCommand;
@@ -38,13 +45,20 @@
         private DelegateCommand logOutCommand;
         private DelegateCommand navigateToSecureEmailCommand;
         private DelegateCommand navigateToShareSecureMessageCommand;
+        private DelegateCommand startNfcPairingCommand;
+
+        private string identity;
+        private string key;
+        private string ct;
 
         /// <summary>
         /// Constructor.
         /// </summary>
         /// <param name="navService">Navigation service instance resolved by DI.</param>
         /// <param name="dispatcherService">Dispatcher service instance resolved by DI.</param>
-        public VMMainPage(INavigationService navService, IDispatcherService dispatcherService, ISettingsService settingsService, IkeysService keysService, INFCService nfcService, IBluetoothService bluetoothService)
+        public VMMainPage(INavigationService navService, IDispatcherService dispatcherService,
+            ISettingsService settingsService, IkeysService keysService, INFCService nfcService,
+            IBluetoothService bluetoothService, IBfService bfService, IPairingService pairingService)
         {
             this.navService = navService;
             this.settingsService = settingsService;
@@ -52,12 +66,61 @@
             this.keysService = keysService;
             this.nfcService = nfcService;
             this.bluetoothService = bluetoothService;
+            this.bfService = bfService;
+            this.pairingService = pairingService;
 
             this.navigateToSecondPageCommand = new DelegateCommand(NavigateToSecondPageExecute);
             this.setAsBusyCommand = new DelegateCommand<bool>(SetAsBusyExecte);
             this.logOutCommand = new DelegateCommand(LogOutExecute);
             this.navigateToSecureEmailCommand = new DelegateCommand(NavigateToSecureEmailExecute);
             this.navigateToShareSecureMessageCommand = new DelegateCommand(NavigateToShareSecureMessageExecute);
+            this.startNfcPairingCommand = new DelegateCommand(StartNfcPairingExecute);
+
+            Identity = "no identity...";
+            Key = "no key...";
+        }
+
+        public string Identity
+        {
+            get { return identity; }
+            set
+            {
+                identity = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public string Key
+        {
+            get { return key; }
+            set
+            {
+                key = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public ICommand StartNfcPairingCommand
+        {
+            get { return this.startNfcPairingCommand; }
+        }
+
+        private void StartNfcPairingExecute()
+        {
+            IsBusy = true;
+            pairingService.PairingCompleted += pairingService_PairingCompleted;
+            pairingService.NfcPairDevices();   
+        }
+
+        private void pairingService_PairingCompleted(string otherIdentity, AesManaged aes, StreamSocket socket)
+        {
+            this.socket = socket;
+            this.aes = aes;
+            dispatcherService.CallDispatcher(() => {
+                IsBusy = false;
+                Key = BFUtil.ToHexString(aes.Key);
+                Identity = otherIdentity;
+            });
         }
 
         private void NavigateToShareSecureMessageExecute()
@@ -147,6 +210,10 @@
                 keysService.GetUserKeyCompleted += settingsService_GetUserKeyCompleted;
                 keysService.GetUserKey((string) settingsService.Get("email"), (LoginToken) settingsService.Get("token"));
             }
+            else
+            {
+                sKey = (SerializedPrivateKey) settingsService.Get("private");
+            }
         }
 
         /// <summary>
@@ -156,32 +223,10 @@
         private void settingsService_GetUserKeyCompleted(SerializedPrivateKey key)
         {
             settingsService.Set("private", key);
+            sKey = key;
             dispatcherService.CallDispatcher(() => {
                 IsBusy = false;
             });
-        }
-
-        /// <summary>
-        /// Start publishing the user identity by NFC
-        /// </summary>
-        public void StartPublishingIdentity()
-        {
-            if (nfcService.ConnectDefaultProximityDevice())
-            {
-                nfcService.SubscribeToMessage(NFC_IBCS);
-                nfcService.MessageReceivedCompleted += nfcService_MessageReceivedCompleted;
-                nfcService.PublishTextMessage(NFC_IBCS, (string)settingsService.Get("email"));
-            }
-        }
-
-        /// <summary>
-        /// Handle a message reception through NFC
-        /// </summary>
-        /// <param name="message">Message received over NFC</param>
-        private void nfcService_MessageReceivedCompleted(string message)
-        {
-            //Once we have the identity, we can unsubscribe from that channel
-            //StartBluetoothPairing();
         }
 
         /// <summary>

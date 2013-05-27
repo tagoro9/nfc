@@ -12,11 +12,7 @@ namespace IBCSApp.Services.BF
 {
     public class BfService : IBfService
     {
-        public event BFCipherText CipherTextCompleted;
-
-        public event BFPlainText DecipherTextCompleted;
-
-        public async void CipherText(string message, string identity, SerializedPrivateKey sKey)
+        public async Task<string> CipherText(string message, string identity, SerializedPrivateKey sKey)
         {
             byte[] bMessage = Encoding.UTF8.GetBytes(message);
             var cipherTask = Task<BFCText>.Factory.StartNew(() => {
@@ -26,14 +22,10 @@ namespace IBCSApp.Services.BF
             });
             await cipherTask;
             BFCText cipher = (BFCText) cipherTask.Result;
-            string cipherText = HttpUtility.UrlEncode(JsonConvert.SerializeObject(cipher.Serialize()));
-            if (CipherTextCompleted != null)
-            {
-                CipherTextCompleted(cipherText);
-            }
+            return HttpUtility.UrlEncode(JsonConvert.SerializeObject(cipher.Serialize()));
         }
 
-        public void DecipherText(string ct, SerializedPrivateKey sKey)
+        public async Task<string> DecipherText(string ct, SerializedPrivateKey sKey)
         {
             var decipherTask = Task<byte[]>.Factory.StartNew(() =>
             {
@@ -42,12 +34,37 @@ namespace IBCSApp.Services.BF
                 BFCText cText = new BFCText(ciphered);
                 return BFCipher.decrypt(cText, key);
             });
+            await decipherTask;
             byte[] bMessage = (byte[]) decipherTask.Result;
-            string message = Encoding.UTF8.GetString(bMessage,0, bMessage.Length);
-            if (DecipherTextCompleted != null)
+            return Encoding.UTF8.GetString(bMessage,0, bMessage.Length);
+        }
+
+
+        public async Task<string> CipherMessage(byte[] message, string identity, SerializedPrivateKey sKey)
+        {
+            var cipherTask = Task<BFCText>.Factory.StartNew(() =>
             {
-                DecipherTextCompleted(message);
-            }
+                BFUserPrivateKey key = new BFUserPrivateKey(sKey);
+                BFUserPublicKey pKey = new BFUserPublicKey(identity, key.Param);
+                return BFCipher.encrypt(pKey, message, new Random());
+            });
+            await cipherTask;
+            BFCText cipher = (BFCText)cipherTask.Result;
+            return HttpUtility.UrlEncode(JsonConvert.SerializeObject(cipher.Serialize()));            
+        }
+
+
+        public async Task<byte[]> DecipherMessage(string ct, SerializedPrivateKey sKey)
+        {
+            var decipherTask = Task<byte[]>.Factory.StartNew(() =>
+            {
+                BFUserPrivateKey key = new BFUserPrivateKey(sKey);
+                SerializedBFCText ciphered = (SerializedBFCText)JsonConvert.DeserializeObject(HttpUtility.UrlDecode(ct), typeof(SerializedBFCText));
+                BFCText cText = new BFCText(ciphered);
+                return BFCipher.decrypt(cText, key);
+            });
+            await decipherTask;
+            return (byte[])decipherTask.Result;
         }
     }
 }

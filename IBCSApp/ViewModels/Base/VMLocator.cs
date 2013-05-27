@@ -41,6 +41,7 @@
             builder.RegisterType<KeysService>().As<IkeysService>().SingleInstance();
             builder.RegisterType<NFCService>().As<INFCService>().SingleInstance();
             builder.RegisterType<BluetoothService>().As<IBluetoothService>().SingleInstance();
+            builder.RegisterType<PairingService>().As<IPairingService>().SingleInstance();
             builder.RegisterType<BfService>().As<IBfService>().SingleInstance();
             builder.RegisterType<VMMainPage>();
             builder.RegisterType<VMSecondPage>();

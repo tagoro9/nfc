@@ -40,11 +40,9 @@
         <TextBlock Margin="12,40,12,0" TextWrapping="Wrap">
             <Run FontWeight="Bold" Text="2.- IsBusy display" Foreground="{StaticResource PhoneAccentBrush}"/>
             <LineBreak/>
-            <Run Text="If you click the button, the SetAsBusy Command is executed. "/>
-            <Run Text="It uses the IsBusy property of the ViewModel to display the SystemTray Progress indicator. "/>
-            <Run Text="This way you can see how easy is to give visual cues to the user when your ViewModel is doing a complex operation."/>
+            <Run Text="{Binding Identity, Mode=TwoWay}"/>
+            <Run Text="{Binding Key, Mode=TwoWay}"/>
             <LineBreak/>
-            <Run Text="We use the generic DelegateCommand to pass the IsBusy value from xaml"/>
         </TextBlock>
         <Button Content="Display ProgressIndicator" 
                 Command="{Binding SetAsBusyCommand}">
@@ -52,6 +50,7 @@
                 <system:Boolean>True</system:Boolean>
             </Button.CommandParameter>
         </Button>
+        <Button Content="Start NFC pairing" Command="{Binding StartNfcPairingCommand}"></Button>
     </StackPanel>
 
     <phone:PhoneApplicationPage.ApplicationBar>

@@ -71,9 +71,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>Lib\BouncyCastle.Crypto.WP71.dll</HintPath>
     </Reference>
-    <Reference Include="Emil.GMP">
-      <HintPath>Lib\Emil.GMP.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

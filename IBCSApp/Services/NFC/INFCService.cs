@@ -7,7 +7,7 @@ using Windows.Networking.Proximity;
 
 namespace IBCSApp.Services.NFC
 {
-    public delegate void MessageReceivedArgs(string message);
+    public delegate void MessageReceivedArgs(ProximityMessage message);
 
     public interface INFCService
     {

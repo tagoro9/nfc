@@ -58,6 +58,12 @@ namespace IBCS.BF.Util
             return result;
         }
 
+        public static string ToHexString(byte[] ba)
+        {
+            string hex = BitConverter.ToString(ba);
+            return hex.Replace("-", "");
+        }
+
         public static BigInt HashToField(byte[] toHash, Field field)
         {
             int byteLength = 1 + (field.GetP().BitLength() - 1) / 8;
@@ -93,6 +99,14 @@ namespace IBCS.BF.Util
             Point P = HashToPoint(toHash, ec);
             P = ec.Multiply(P, cofactor);
             return P;
+        }
+
+        public static byte[] Xor(byte[] a, byte[] b)
+        {
+            byte[] r = new byte[a.Length];
+            for (int i = 0; i < a.Length; i++)
+                r[i] = (byte) (a[i] ^ b[i]);
+            return r;
         }
 
         public static byte[] XorTwoByteArrays(byte[] ba1, byte[] ba2)

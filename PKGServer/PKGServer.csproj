@@ -39,6 +39,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AnglicanGeek.MarkdownMailer">
+      <HintPath>..\packages\AnglicanGeek.MarkdownMailer.1.2\lib\net40\AnglicanGeek.MarkdownMailer.dll</HintPath>
+    </Reference>
+    <Reference Include="MarkdownSharp">
+      <HintPath>..\packages\MarkdownSharp.1.13.0.0\lib\35\MarkdownSharp.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -172,30 +178,42 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Mailer\Mailer.cs" />
     <Compile Include="Models\LoginInfo.cs" />
     <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs">
-      <DependentUpon>UsersDBModel.tt</DependentUpon>
+      <DependentUpon>UserDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\UsersDBModel.Context.cs">
+    <Compile Include="Models\UserDbModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UsersDBModel.Context.tt</DependentUpon>
+      <DependentUpon>UserDbModel.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\UsersDBModel.cs">
+    <Compile Include="Models\UserDbModel.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UsersDBModel.tt</DependentUpon>
+      <DependentUpon>UserDbModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\UsersDBModel.Designer.cs">
+    <Compile Include="Models\UserDbModel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>UsersDBModel.edmx</DependentUpon>
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Areas\HelpPage\HelpPage.css" />
+    <Content Include="Content\bootstrap-lightbox.css" />
+    <Content Include="Content\bootstrap-responsive.css" />
+    <Content Include="Content\bootstrap-responsive-min.css" />
+    <Content Include="Content\bootstrap.css" />
+    <Content Include="Content\bootstrap-min.css" />
+    <Content Include="Content\images\bg.jpg" />
+    <Content Include="Content\images\favicon.ico" />
+    <Content Include="Content\images\glyphicons-halflings-white.png" />
+    <Content Include="Content\images\glyphicons-halflings.png" />
+    <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\phone.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
     <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
@@ -263,29 +281,36 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\HelpPageApiModel.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <EntityDeploy Include="Models\UsersDBModel.edmx">
+    <EntityDeploy Include="Models\UserDbModel.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>UsersDBModel.Designer.cs</LastGenOutput>
+      <LastGenOutput>UserDbModel.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <Content Include="Models\UsersDBModel.Context.tt">
+    <Content Include="Models\UserDbModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UsersDBModel.edmx</DependentUpon>
-      <LastGenOutput>UsersDBModel.Context.cs</LastGenOutput>
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
+      <LastGenOutput>UserDbModel.Context.cs</LastGenOutput>
     </Content>
-    <Content Include="Models\UsersDBModel.edmx.diagram">
-      <DependentUpon>UsersDBModel.edmx</DependentUpon>
+    <Content Include="Models\UserDbModel.edmx.diagram">
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
     </Content>
-    <Content Include="Models\UsersDBModel.tt">
+    <Content Include="Models\UserDbModel.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>UsersDBModel.edmx</DependentUpon>
-      <LastGenOutput>UsersDBModel.cs</LastGenOutput>
+      <DependentUpon>UserDbModel.edmx</DependentUpon>
+      <LastGenOutput>UserDbModel.cs</LastGenOutput>
     </Content>
-    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
-    <Content Include="Scripts\jquery-1.8.2.js" />
-    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery-1.9.1.intellisense.js" />
+    <Content Include="Scripts\app.js" />
+    <Content Include="Scripts\bootstrap-lightbox-min.js" />
+    <Content Include="Scripts\bootstrap.js" />
+    <Content Include="Scripts\bootstrap-min.js" />
+    <Content Include="Scripts\countdown.js" />
+    <Content Include="Scripts\jquery-1.9.1.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.js" />
+    <Content Include="Scripts\jquery-1.9.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.js" />
     <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.backstretch-min.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
     <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
     <Content Include="Scripts\jquery.validate.js" />
@@ -295,6 +320,7 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\retina.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

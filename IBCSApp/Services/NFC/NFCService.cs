@@ -54,7 +54,7 @@ namespace IBCSApp.Services.NFC
         {
             if (MessageReceivedCompleted != null)
             {
-                MessageReceivedCompleted(message.DataAsString);
+                MessageReceivedCompleted(message);
             }
         }
 

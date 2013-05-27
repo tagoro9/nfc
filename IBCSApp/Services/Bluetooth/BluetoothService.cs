@@ -7,16 +7,27 @@ using System.Threading.Tasks;
 using System.Windows;
 using Windows.Networking.Proximity;
 using IBCSApp.Resources;
+using IBCSApp.Services.Settings;
+using Windows.Networking.Sockets;
 
 namespace IBCSApp.Services.Bluetooth
 {
     public class BluetoothService : IBluetoothService
     {
+
+        private ISettingsService settingsService;
+
+        public BluetoothService(ISettingsService settingsService)
+        {
+            this.settingsService = settingsService;
+        }
+
         public PeerDiscoveryTypes StartBluetooth()
         {
             PeerDiscoveryTypes type = PeerDiscoveryTypes.None;
 
             PeerFinder.Start();
+            PeerFinder.DisplayName = (string)settingsService.Get("email");
 
             type = PeerFinder.SupportedDiscoveryTypes;
 
@@ -52,6 +63,13 @@ namespace IBCSApp.Services.Bluetooth
             }
 
             return data;
+        }
+
+
+        public async Task<StreamSocket> ConnectToDevice(List<Peer> peers, string identity)
+        {
+            Peer myPeer = peers.First(s => s.Name == identity);
+            return await PeerFinder.ConnectAsync(myPeer.Information);
         }
     }
 }

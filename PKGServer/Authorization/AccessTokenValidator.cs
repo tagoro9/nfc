@@ -17,7 +17,7 @@ namespace PKGServer.Authorization
             return true;
         }
 
-        private static byte[] StringToByteArray(string hex)
+        public static byte[] StringToByteArray(string hex)
         {
             return Enumerable.Range(0, hex.Length)
                              .Where(x => x % 2 == 0)

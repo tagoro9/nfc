@@ -58,11 +58,11 @@ namespace IBCSApp.ViewModels
 
         private void SendSecureEmailExecute()
         {
-            IsBusy = true;
-            ProgressMessage = "Encrypting message...";
-            SerializedPrivateKey sKey = (SerializedPrivateKey) settingsService.Get("private");
-            bfService.CipherTextCompleted += bfService_CipherTextCompleted;
-            bfService.CipherText(EmailBody, DestinataryEmail, sKey);
+            //IsBusy = true;
+            //ProgressMessage = "Encrypting message...";
+            //SerializedPrivateKey sKey = (SerializedPrivateKey) settingsService.Get("private");
+            //bfService.CipherTextCompleted += bfService_CipherTextCompleted;
+            //bfService.CipherText(EmailBody, DestinataryEmail, sKey);
         }
 
         private void bfService_CipherTextCompleted(string ct)
