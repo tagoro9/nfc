@@ -31,7 +31,7 @@
         },
         timer: {
             setup: function () {
-                $('.phone-countdown').countdown("2013/12/25", function (event) { // Be sure to change "2013/12/25" to your launch date!
+                $('.phone-countdown').countdown("2013/06/27", function (event) { // Be sure to change "2013/12/25" to your launch date!
                     var $this = $(this);
                     switch (event.type) {
                         case "seconds":
