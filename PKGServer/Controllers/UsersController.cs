@@ -35,7 +35,7 @@ namespace PKGServer.Controllers
 
         // POST api/users
         [HttpPost]
-        public string Create([FromBody]User value)
+        public string Create([FromBody]User value) 
         {
             value.Confirmed = 0;
             value.Password = PasswordHash.CreateHash(value.Password);
