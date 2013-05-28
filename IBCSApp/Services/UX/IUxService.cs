@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace IBCSApp.Services.API
+namespace IBCSApp.Services.UX
 {
-    public static class APIInfo
+    public interface IUxService
     {
-        public static string APIURL = "https://pkg.apphb.com/api/";
+        void ShowToastNotification(string title, string message);
     }
 }

@@ -106,6 +106,114 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Create.
+        /// </summary>
+        public static string CreateAccountCreate {
+            get {
+                return ResourceManager.GetString("CreateAccountCreate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a You will shortly recieve an email to activate your account..
+        /// </summary>
+        public static string CreateAccountCreatedMessage {
+            get {
+                return ResourceManager.GetString("CreateAccountCreatedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Thanks for signing up!.
+        /// </summary>
+        public static string CreateAccountCreatedTitle {
+            get {
+                return ResourceManager.GetString("CreateAccountCreatedTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Hey, we need both a name and email in order to create your account..
+        /// </summary>
+        public static string CreateAccountDataError {
+            get {
+                return ResourceManager.GetString("CreateAccountDataError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a email.
+        /// </summary>
+        public static string CreateAccountEmail {
+            get {
+                return ResourceManager.GetString("CreateAccountEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a name.
+        /// </summary>
+        public static string CreateAccountName {
+            get {
+                return ResourceManager.GetString("CreateAccountName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a create account.
+        /// </summary>
+        public static string CreateAccountPageTitle {
+            get {
+                return ResourceManager.GetString("CreateAccountPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a password.
+        /// </summary>
+        public static string CreateAccountPassword {
+            get {
+                return ResourceManager.GetString("CreateAccountPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a password confirmation.
+        /// </summary>
+        public static string CreateAccountPasswordConfirmation {
+            get {
+                return ResourceManager.GetString("CreateAccountPasswordConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Oops! It seems like your passwords do not match..
+        /// </summary>
+        public static string CreateAccountPasswordError {
+            get {
+                return ResourceManager.GetString("CreateAccountPasswordError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a I have read and agree to the terms of service.
+        /// </summary>
+        public static string CreateAccountServiceConditions {
+            get {
+                return ResourceManager.GetString("CreateAccountServiceConditions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a You need to accept the terms of service..
+        /// </summary>
+        public static string CreateAccountServiceConditionsError {
+            get {
+                return ResourceManager.GetString("CreateAccountServiceConditionsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a email.
         /// </summary>
         public static string LoginPageEmail {

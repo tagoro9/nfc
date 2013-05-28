@@ -132,6 +132,42 @@
   <data name="BluetoothActivateMessage" xml:space="preserve">
     <value>El Bluetooth está desactivado. Desea activarlo ahora?</value>
   </data>
+  <data name="CreateAccountCreate" xml:space="preserve">
+    <value>Aceptar</value>
+  </data>
+  <data name="CreateAccountCreatedMessage" xml:space="preserve">
+    <value>En breve recibirás un correo para validar tu cuenta.</value>
+  </data>
+  <data name="CreateAccountCreatedTitle" xml:space="preserve">
+    <value>Gracias por tu registro!</value>
+  </data>
+  <data name="CreateAccountDataError" xml:space="preserve">
+    <value>Para poder registrarte necesitamos tu nombre y correo electrónico.</value>
+  </data>
+  <data name="CreateAccountEmail" xml:space="preserve">
+    <value>correo electrónico</value>
+  </data>
+  <data name="CreateAccountName" xml:space="preserve">
+    <value>nombre</value>
+  </data>
+  <data name="CreateAccountPageTitle" xml:space="preserve">
+    <value>crear una cuenta</value>
+  </data>
+  <data name="CreateAccountPassword" xml:space="preserve">
+    <value>contraseña</value>
+  </data>
+  <data name="CreateAccountPasswordConfirmation" xml:space="preserve">
+    <value>confirmar contraseña</value>
+  </data>
+  <data name="CreateAccountPasswordError" xml:space="preserve">
+    <value>Asegúrate de que las contraseñas coinciden.</value>
+  </data>
+  <data name="CreateAccountServiceConditions" xml:space="preserve">
+    <value>He leído y acepto las condiciones del servicio</value>
+  </data>
+  <data name="CreateAccountServiceConditionsError" xml:space="preserve">
+    <value>Para crear tu cuenta necesitas aceptar los términos y condiciones.</value>
+  </data>
   <data name="LoginPageEmail" xml:space="preserve">
     <value>correo</value>
   </data>

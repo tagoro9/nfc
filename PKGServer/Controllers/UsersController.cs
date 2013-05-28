@@ -35,15 +35,22 @@ namespace PKGServer.Controllers
 
         // POST api/users
         [HttpPost]
-        public void Create([FromBody]User value)
+        public string Create([FromBody]User value)
         {
             value.Confirmed = 0;
             db.Users.Add(value);
             string id = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(value.Email)).Replace("-", string.Empty);
             string link = "http://localhost:62211/users/confirm?id=" + id;
-            Mailer.Mailer.SendMail(value.Email, "PKG Registration", "You have been successfully registered to this PKG, in order to start using your key, you need to activate your account first. To do so click this [link]("+ link + ")");
-                
+            try
+            {
+                Mailer.Mailer.SendMail(value.Email, "PKG Registration", "You have been successfully registered to this PKG, in order to start using your key, you need to activate your account first. To do so click this [link](" + link + ")");
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }                
             db.SaveChanges();
+            return "User successfully created";
         }
 
         // PUT api/users/edit/5

@@ -107,11 +107,8 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.es.resx</DependentUpon>
     </Compile>
-    <Compile Include="Services\API\APIInfo.cs" />
-    <Compile Include="Services\API\IkeysService.cs" />
-    <Compile Include="Services\API\ILoginService.cs" />
-    <Compile Include="Services\API\KeysService.cs" />
-    <Compile Include="Services\API\LoginService.cs" />
+    <Compile Include="Services\API\ApiService.cs" />
+    <Compile Include="Services\API\IApiService.cs" />
     <Compile Include="Services\BF\BfService.cs" />
     <Compile Include="Services\BF\IBfService.cs" />
     <Compile Include="Services\Bluetooth\BluetoothService.cs" />
@@ -124,9 +121,12 @@
     <Compile Include="Services\NFC\IPairingService.cs" />
     <Compile Include="Services\NFC\NFCService.cs" />
     <Compile Include="Services\NFC\PairingService.cs" />
+    <Compile Include="Services\UX\IUxService.cs" />
     <Compile Include="Services\Settings\ISettingsService.cs" />
     <Compile Include="Services\Settings\SettingsService.cs" />
+    <Compile Include="Services\UX\UxService.cs" />
     <Compile Include="ViewModels\Base\DelegateCommand.cs" />
+    <Compile Include="ViewModels\VMCreateAccountPage.cs" />
     <Compile Include="ViewModels\VMLoginPage.cs" />
     <Compile Include="ViewModels\VMSecondPage.cs" />
     <Compile Include="ViewModels\Base\VMBase.cs" />
@@ -134,6 +134,9 @@
     <Compile Include="ViewModels\VMMainPage.cs" />
     <Compile Include="ViewModels\VMSecureEmailPage.cs" />
     <Compile Include="ViewModels\VMShareSecureMessage.cs" />
+    <Compile Include="Views\CreateAccountPage.xaml.cs">
+      <DependentUpon>CreateAccountPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\DecryptMessage.xaml.cs">
       <DependentUpon>DecryptMessage.xaml</DependentUpon>
     </Compile>
@@ -159,6 +162,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="Views\CreateAccountPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\DecryptMessage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -196,6 +203,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\logo.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -230,11 +238,17 @@
       <HintPath>..\packages\AppBarUtils.2.2\lib\windowsphone8\AppBarUtils.dll</HintPath>
     </Reference>
     <Reference Include="Autofac, Version=2.6.3.862, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL" />
+    <Reference Include="Coding4Fun.Toolkit.Controls">
+      <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.5\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2012.10.30\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.5.0.5\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp.WindowsPhone">
+      <HintPath>..\packages\RestSharp.104.1\lib\sl4-wp71\RestSharp.WindowsPhone.dll</HintPath>
     </Reference>
     <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
   </ItemGroup>

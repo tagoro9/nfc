@@ -8,6 +8,7 @@
     using IBCSApp.Services.NFC;
     using IBCSApp.Services.Bluetooth;
     using IBCSApp.Services.BF;
+    using IBCSApp.Services.UX;
 
     /// <summary>
     /// This class allows us to resolve our ViewModels in one unique point.
@@ -36,18 +37,19 @@
 
             builder.RegisterType<NavigationService>().As<INavigationService>().SingleInstance();
             builder.RegisterType<DispatcherService>().As<IDispatcherService>().SingleInstance();
-            builder.RegisterType<LoginService>().As<ILoginService>().SingleInstance();
+            builder.RegisterType<ApiService>().As<IApiService>().SingleInstance();
             builder.RegisterType<SettingsService>().As<ISettingsService>().SingleInstance();
-            builder.RegisterType<KeysService>().As<IkeysService>().SingleInstance();
             builder.RegisterType<NFCService>().As<INFCService>().SingleInstance();
             builder.RegisterType<BluetoothService>().As<IBluetoothService>().SingleInstance();
             builder.RegisterType<PairingService>().As<IPairingService>().SingleInstance();
             builder.RegisterType<BfService>().As<IBfService>().SingleInstance();
+            builder.RegisterType<UxService>().As<IUxService>().SingleInstance();
             builder.RegisterType<VMMainPage>();
             builder.RegisterType<VMSecondPage>();
             builder.RegisterType<VMLoginPage>();
             builder.RegisterType<VMSecureEmailPage>();
             builder.RegisterType<VMShareSecureMessage>();
+            builder.RegisterType<VMCreateAccountPage>();
             container = builder.Build();
         }
 
@@ -89,6 +91,14 @@
         public VMSecureEmailPage SecureEmailViewModel
         {
             get { return this.container.Resolve<VMSecureEmailPage>(); }
+        }
+
+        /// <summary>
+        /// CreateAccountPage ViewModel instance.
+        /// </summary>
+        public VMCreateAccountPage CreateAccountViewModel
+        {
+            get { return this.container.Resolve<VMCreateAccountPage>(); }
         }
     }
 }

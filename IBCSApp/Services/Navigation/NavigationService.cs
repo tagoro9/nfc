@@ -26,9 +26,9 @@
         /// <summary>
         /// Method implementation to navigate to page called LoginPage
         /// </summary>
-        public void NavigateToLoginPage()
+        public void NavigateToLoginPage(string param = "")
         {
-            App.RootFrame.Navigate(new Uri("/Views/LoginPage.xaml", UriKind.Relative));
+            App.RootFrame.Navigate(new Uri("/Views/LoginPage.xaml?" + param, UriKind.Relative));
         }
 
         /// <summary>
@@ -45,6 +45,14 @@
         public void NavigateToShareSecureMessagePage()
         {
             App.RootFrame.Navigate(new Uri("/Views/ShareSecureMessagePage.xaml", UriKind.Relative));
+        }
+
+        /// <summary>
+        /// Method implementation to navigate to page called create account
+        /// </summary>
+        public void NavigateToCreateAccountPage()
+        {
+            App.RootFrame.Navigate(new Uri("/Views/CreateAccountPage.xaml", UriKind.Relative));
         }
     }
 }

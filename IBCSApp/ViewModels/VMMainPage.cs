@@ -29,7 +29,7 @@
         private INavigationService navService;
         private IDispatcherService dispatcherService;
         private ISettingsService settingsService;
-        private IkeysService keysService;
+        private IApiService apiService;
         private INFCService nfcService;
         private IBluetoothService bluetoothService;
         private IBfService bfService;
@@ -57,13 +57,13 @@
         /// <param name="navService">Navigation service instance resolved by DI.</param>
         /// <param name="dispatcherService">Dispatcher service instance resolved by DI.</param>
         public VMMainPage(INavigationService navService, IDispatcherService dispatcherService,
-            ISettingsService settingsService, IkeysService keysService, INFCService nfcService,
+            ISettingsService settingsService, IApiService apiService, INFCService nfcService,
             IBluetoothService bluetoothService, IBfService bfService, IPairingService pairingService)
         {
             this.navService = navService;
             this.settingsService = settingsService;
             this.dispatcherService = dispatcherService;
-            this.keysService = keysService;
+            this.apiService = apiService;
             this.nfcService = nfcService;
             this.bluetoothService = bluetoothService;
             this.bfService = bfService;
@@ -207,8 +207,8 @@
             if (!settingsService.Contains("private"))
             {
                 IsBusy = true;
-                keysService.GetUserKeyCompleted += settingsService_GetUserKeyCompleted;
-                keysService.GetUserKey((string) settingsService.Get("email"), (LoginToken) settingsService.Get("token"));
+                apiService.GetUserKeyCompleted += settingsService_GetUserKeyCompleted;
+                apiService.GetUserKey((string) settingsService.Get("email"), (LoginToken) settingsService.Get("token"));
             }
             else
             {

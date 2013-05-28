@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using System.IO.IsolatedStorage;
 using IBCSApp.ViewModels;
+using IBCSApp.Resources;
 
 namespace IBCSApp.Views
 {
@@ -19,9 +20,22 @@ namespace IBCSApp.Views
             InitializeComponent();
         }
 
+        private VMLoginPage ViewModel
+        {
+            get
+            {
+                return this.DataContext as VMLoginPage;
+            }
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (!((VMLoginPage)this.DataContext).CheckLoggedIn())
+            if (NavigationContext.QueryString.Any())
+            {
+                string message = NavigationContext.QueryString["created"];
+                ViewModel.DeliverToastNotification(AppResources.CreateAccountCreatedTitle, AppResources.CreateAccountCreatedMessage);
+            }
+            if (!ViewModel.CheckLoggedIn())
             {
                 NavigationService.RemoveBackEntry();   
             }

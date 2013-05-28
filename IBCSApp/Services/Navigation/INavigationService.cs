@@ -20,12 +20,16 @@
         /// <summary>
         /// Navigate to login page.
         /// </summary>
-        void NavigateToLoginPage();
+        void NavigateToLoginPage(string param = "");
         /// <summary>
         /// Navigate to secure email page.
         /// </summary>
         void NavigateToSecureEmailPage();
 
         void NavigateToShareSecureMessagePage();
+        /// <summary>
+        /// Navigate to create account page
+        /// </summary>
+        void NavigateToCreateAccountPage();
     }
 }

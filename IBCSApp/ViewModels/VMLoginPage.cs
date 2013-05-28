@@ -13,6 +13,7 @@ using System.Net;
 using System.IO;
 using IBCSApp.Services.API;
 using System.IO.IsolatedStorage;
+using IBCSApp.Services.UX;
 
 namespace IBCSApp.ViewModels 
 {
@@ -21,14 +22,15 @@ namespace IBCSApp.ViewModels
         //Services variables.
         private INavigationService navService;
         private IDispatcherService dispatcherService;
-        private ILoginService loginService;
+        private IApiService apiService;
         private ISettingsService settingsService;
+        private IUxService uxService;
 
         //Commands variables.
-        private DelegateCommand navigateToRegisterPageCommand;
-        private DelegateCommand navigateToMainPageCommand;
         private DelegateCommand loginUserCommand;
         private DelegateCommand<bool> setAsBusyCommand;
+        private DelegateCommand createAccountCommand;
+
 
         private string email;
         private string password;
@@ -57,16 +59,33 @@ namespace IBCSApp.ViewModels
         /// </summary>
         /// <param name="navService">Navigation service instance resolved by DI.</param>
         /// <param name="dispatcherService">Dispatcher service instance resolved by DI.</param>
-        public VMLoginPage(INavigationService navService, IDispatcherService dispatcherService, ILoginService loginService, ISettingsService settingsService)
+        public VMLoginPage(INavigationService navService, IDispatcherService dispatcherService, IApiService apiService, ISettingsService settingsService, IUxService uxService)
         {
             this.navService = navService;
             this.dispatcherService = dispatcherService;
-            this.loginService = loginService;
+            this.apiService = apiService;
             this.settingsService = settingsService;
+            this.uxService = uxService;
 
             //this.navigateToRegisterPageCommand = new DelegateCommand(NavigateToRegisterPageExecute);
             this.loginUserCommand = new DelegateCommand(LoginUserExecute);
             this.setAsBusyCommand = new DelegateCommand<bool>(SetAsBusyExecte);
+            this.createAccountCommand = new DelegateCommand(CreateAccountExecute);
+        }
+
+        public void DeliverToastNotification(string title, string message)
+        {
+            this.uxService.ShowToastNotification(title, message);
+        }
+
+        private void CreateAccountExecute()
+        {
+            this.navService.NavigateToCreateAccountPage();
+        }
+
+        public ICommand CreateAccountCommand
+        {
+            get { return this.createAccountCommand; }
         }
 
         /// <summary>
@@ -98,8 +117,8 @@ namespace IBCSApp.ViewModels
         private void LoginUserExecute()
         {
             IsBusy = true;
-            this.loginService.LoginUserCompleted += loginService_LoginUserCompleted;
-            this.loginService.LoginUser(Email, Password);
+            this.apiService.LoginUserCompleted += loginService_LoginUserCompleted;
+            this.apiService.LoginUser(Email, Password);
         }
 
         private void loginService_LoginUserCompleted(LoginToken token, string email)
