@@ -15,7 +15,7 @@ namespace PKGServer.Controllers
     public class UsersController : ApiController
     {
 
-        private db9002ae48e70f46e38530a1c6009ea6b3Entities db = new db9002ae48e70f46e38530a1c6009ea6b3Entities();
+        private db9002ae48e70f46e38530a1c6009ea6b3Entities1 db = new db9002ae48e70f46e38530a1c6009ea6b3Entities1();
 
         // GET api/users
         public IEnumerable<User> Get()
@@ -38,9 +38,10 @@ namespace PKGServer.Controllers
         public string Create([FromBody]User value)
         {
             value.Confirmed = 0;
+            value.Password = PasswordHash.CreateHash(value.Password);
             db.Users.Add(value);
             string id = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(value.Email)).Replace("-", string.Empty);
-            string link = "http://localhost:62211/users/confirm?id=" + id;
+            string link = "https://pkg.apphb.com/#confirm=" + id;
             try
             {
                 Mailer.Mailer.SendMail(value.Email, "PKG Registration", "You have been successfully registered to this PKG, in order to start using your key, you need to activate your account first. To do so click this [link](" + link + ")");
@@ -79,7 +80,7 @@ namespace PKGServer.Controllers
                         select m).First();
             TokenString token = new TokenString();
             token.Token = "invalid";
-            if (dbUser.Password == user.Password && dbUser.Confirmed == 1)
+            if (PasswordHash.ValidatePassword(user.Password,dbUser.Password) && dbUser.Confirmed == 1)
             {
                 token.Token = BitConverter.ToString(AesConfig.EncryptStringToBytes_Aes(user.Email)).Replace("-", string.Empty);
                 //token.Token= Convert.ToBase64String(AesConfig.EncryptStringToBytes_Aes(user.Email));

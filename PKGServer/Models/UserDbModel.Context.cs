@@ -13,10 +13,10 @@ namespace PKGServer.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class db9002ae48e70f46e38530a1c6009ea6b3Entities : DbContext
+    public partial class db9002ae48e70f46e38530a1c6009ea6b3Entities1 : DbContext
     {
-        public db9002ae48e70f46e38530a1c6009ea6b3Entities()
-            : base("name=db9002ae48e70f46e38530a1c6009ea6b3Entities")
+        public db9002ae48e70f46e38530a1c6009ea6b3Entities1()
+            : base("name=db9002ae48e70f46e38530a1c6009ea6b3Entities1")
         {
         }
     

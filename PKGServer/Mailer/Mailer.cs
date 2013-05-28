@@ -12,17 +12,17 @@ namespace PKGServer.Mailer
     {
         private static MailSenderConfiguration Config = new MailSenderConfiguration() {
             DeliveryMethod = SmtpDeliveryMethod.Network,
-            Host = "smtp.gmail.com",
+            Host = "smtp.mailgun.org",
             Port = 587,
             UseDefaultCredentials = false,
-            Credentials = new NetworkCredential("weappin@gmail.com", "s0lut10ns w34pp1n"),
+            Credentials = new NetworkCredential("postmaster@app13244.mailgun.org", "4h-hlrm5dei4"),
             EnableSsl = true
         };
 
         public static void SendMail(string to, string subject, string body)
         {
             var mailer = new MailSender(Config);
-            mailer.Send("weappin@gmail.com", to, subject, body);
+            mailer.Send("noreply@pkg.apphb.com", to, subject, body);
         }
     }
 }

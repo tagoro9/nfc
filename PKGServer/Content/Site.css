@@ -19,6 +19,22 @@ body > .container {
   margin-left: -585px;
 }
 
+p.loading {
+    text-align: center;
+}
+
+.confirmation-content {
+    display: none;
+}
+
+.subscribe p.loading {
+    visibility: hidden;
+}
+
+.account-activated {
+    display: none;
+}
+
 p {
   font-size: 20px;
   color: #fff;

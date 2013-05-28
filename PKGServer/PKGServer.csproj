@@ -171,6 +171,7 @@
     <Compile Include="Authorization\AccessTokenValidator.cs" />
     <Compile Include="Authorization\AesConfig.cs" />
     <Compile Include="Authorization\IAccessTokenValidator.cs" />
+    <Compile Include="Authorization\PasswordHash.cs" />
     <Compile Include="Authorization\RequireAuthorization.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\KeysController.cs" />

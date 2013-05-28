@@ -20,8 +20,10 @@
 					email = $this.find('[name="email"]').val(),
                     name = $this.find('[name="name"]').val(),
 					password = $this.find('[name="password"]').val();
+                $('.subscribe p.loading').css("visibility","visible");
                 $.post("/api/users/create", { Nombre: name, Email: email, Password: password })
                 .done(function (data) {
+
                     $('.subscribe').fadeOut(700, function () { // Fade out our links & "OR" seperator
                         $('.thanks').fadeIn(500); // Fade in thank you content
                     });
@@ -69,7 +71,19 @@
                 });
             }
         },
-        domReady: function () { },
+        domReady: function () {
+            var match = location.hash.match(new RegExp("confirm" + '=([^&]*)'));
+            if (match != null) {
+                var confirm = match[1];
+                $('.initial-content').fadeOut();
+                $('.actions').fadeOut();
+                $('.confirmation-content').fadeIn(100);
+                $.get("api/users/confirm?id=" + confirm).done(function (data) {
+                    $('.before-activating, .confirmation-content p.loading').css("display", "none");
+                    $('.account-activated').css("display", "block");
+                });
+            }
+        },
         windowLoad: function () {
             $('.phone').fadeIn(500, app.phone.init); // When the window has loaded, fade in the phone...
         }
