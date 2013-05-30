@@ -279,7 +279,7 @@
     <value>encrypt</value>
   </data>
   <data name="MainPageNfcLogTitle" xml:space="preserve">
-    <value>This is the fucking title</value>
+    <value>Tap NFC tags or devices to analyze them</value>
   </data>
   <data name="NfcMessageWritten" xml:space="preserve">
     <value>Message written</value>
@@ -292,5 +292,32 @@
   </data>
   <data name="NotifyDeviceDeparted" xml:space="preserve">
     <value>Device / tag departed</value>
+  </data>
+  <data name="MainPageComposerMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MainPageComposerTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="NdefMessageRecordType" xml:space="preserve">
+    <value>Record type</value>
+  </data>
+  <data name="NdefSpAction" xml:space="preserve">
+    <value>Action</value>
+  </data>
+  <data name="NdefSpTitle" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="NdefSpTitles" xml:space="preserve">
+    <value>Titles</value>
+  </data>
+  <data name="NdefSpUri" xml:space="preserve">
+    <value>URI</value>
+  </data>
+  <data name="NfcMessageTooLong" xml:space="preserve">
+    <value>Can't write to tag, message too long.</value>
+  </data>
+  <data name="NoNfcError" xml:space="preserve">
+    <value>Oops! Your device does not support NFC</value>
   </data>
 </root>

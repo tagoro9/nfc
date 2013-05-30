@@ -93,6 +93,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Converters\KeyConverter.cs" />
+    <Compile Include="Converters\StringLengthVisiblityConverter.cs" />
     <Compile Include="Entities\NfcLogItem.cs" />
     <Compile Include="Entities\Peer.cs" />
     <Compile Include="LocalizedStrings.cs" />
@@ -217,8 +218,10 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Icons\crosshair.png" />
+    <Content Include="Assets\Icons\delete.png" />
     <Content Include="Assets\Icons\information.png" />
     <Content Include="Assets\Icons\nfc.png" />
+    <Content Include="Assets\Icons\warning.png" />
     <Content Include="Assets\logo.png" />
     <Content Include="Assets\Tiles\FlipCycleTileLarge.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

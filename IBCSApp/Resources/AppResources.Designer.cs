@@ -466,11 +466,29 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Message.
+        /// </summary>
+        public static string MainPageComposerMessage {
+            get {
+                return ResourceManager.GetString("MainPageComposerMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a write to tag.
         /// </summary>
         public static string MainPageComposerTagButton {
             get {
                 return ResourceManager.GetString("MainPageComposerTagButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Title.
+        /// </summary>
+        public static string MainPageComposerTitle {
+            get {
+                return ResourceManager.GetString("MainPageComposerTitle", resourceCulture);
             }
         }
         
@@ -493,7 +511,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a This is the fucking title.
+        ///   Busca una cadena traducida similar a Tap NFC tags or devices to analyze them.
         /// </summary>
         public static string MainPageNfcLogTitle {
             get {
@@ -507,6 +525,60 @@ namespace IBCSApp.Resources {
         public static string MainPageSocialHeader {
             get {
                 return ResourceManager.GetString("MainPageSocialHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Record type.
+        /// </summary>
+        public static string NdefMessageRecordType {
+            get {
+                return ResourceManager.GetString("NdefMessageRecordType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Action.
+        /// </summary>
+        public static string NdefSpAction {
+            get {
+                return ResourceManager.GetString("NdefSpAction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Title.
+        /// </summary>
+        public static string NdefSpTitle {
+            get {
+                return ResourceManager.GetString("NdefSpTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Titles.
+        /// </summary>
+        public static string NdefSpTitles {
+            get {
+                return ResourceManager.GetString("NdefSpTitles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a URI.
+        /// </summary>
+        public static string NdefSpUri {
+            get {
+                return ResourceManager.GetString("NdefSpUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Can&apos;t write to tag, message too long..
+        /// </summary>
+        public static string NfcMessageTooLong {
+            get {
+                return ResourceManager.GetString("NfcMessageTooLong", resourceCulture);
             }
         }
         
@@ -525,6 +597,15 @@ namespace IBCSApp.Resources {
         public static string NfcWriteableTagSize {
             get {
                 return ResourceManager.GetString("NfcWriteableTagSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Oops! Your device does not support NFC.
+        /// </summary>
+        public static string NoNfcError {
+            get {
+                return ResourceManager.GetString("NoNfcError", resourceCulture);
             }
         }
         

@@ -25,7 +25,8 @@
     using System.Collections.ObjectModel;
     using NdefLibrary.Ndef;
     using System.Runtime.InteropServices.WindowsRuntime;
-    using IBCSApp.Resources; 
+    using IBCSApp.Resources;
+    using System.Globalization; 
 
     /// <summary>
     /// MainPage ViewModel.
@@ -78,6 +79,7 @@
         private string progressMessage;
 
         private string secureNoteText;
+        private string secureNoteTitle;
         private string secureNoteEncryptedText;
         private bool secureNoteEncrypted = false;
         private string shortenedNote;
@@ -86,6 +88,7 @@
         private SerializedPrivateKey myKey;
 
         private bool devicePresent = false;
+        private int tagSize = 0;
 
         private ObservableCollection<NfcLogItem> nfcLogCollection = new ObservableCollection<NfcLogItem>();
 
@@ -133,6 +136,10 @@
                 this.nfcService.SubscribeToMessage("WriteableTag");
                 this.nfcService.SubscribeToMessage("NDEF");
             }
+            else
+            {
+                LogMessage(AppResources.NoNfcError, NfcLogItem.ERROR_ICON);
+            }
 
             myIdentity = (string) settingsService.Get("email");
             myKey = (SerializedPrivateKey) settingsService.Get("private");
@@ -151,7 +158,35 @@
             if (message.MessageType == "WriteableTag")
             {
                 Int32 size = System.BitConverter.ToInt32(message.Data.ToArray(), 0);
+                tagSize = size;
                 LogMessage(AppResources.NfcWriteableTagSize + " " + size + " bytes", NfcLogItem.INFO_ICON);
+            }
+            else if (message.MessageType == "NDEF")
+            {
+                var rawMsg = message.Data.ToArray();
+                var ndefMessage = NdefMessage.FromByteArray(rawMsg);
+
+                // Loop over all records contained in the NDEF message
+                string messageInformation = "";
+                foreach (NdefRecord record in ndefMessage)
+                {
+                    messageInformation = AppResources.NdefMessageRecordType + ": " + Encoding.UTF8.GetString(record.Type, 0, record.Type.Length);
+                    //if the record is a Smart Poster
+                    if (record.CheckSpecializedType(false) == typeof(NdefSpRecord))
+                    {
+                        // Convert and extract Smart Poster info
+                        var spRecord = new NdefSpRecord(record);
+                        string extra = "";
+                        extra += AppResources.NdefSpUri + ": " + spRecord.Uri;
+                        extra += "\n" + AppResources.NdefSpTitles + ": " + spRecord.TitleCount();
+                        extra += "\n" + AppResources.NdefSpTitle + ": " + spRecord.Titles[0].Text;
+                        if (spRecord.ActionInUse())
+                        {
+                            extra += "\n" + AppResources.NdefSpAction + ": " + spRecord.NfcAction;
+                        }
+                        LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
+                    }
+                }
             }
         }
 
@@ -305,9 +340,9 @@
             dispatcherService.CallDispatcher(() => uxService.ShowToastNotification("NFC", AppResources.NotifyDeviceArrived));
         }
 
-        private void LogMessage(string message, string icon = "")
+        private void LogMessage(string message, string icon = "", string extra = "")
         {
-            dispatcherService.CallDispatcher(() => NfcLogCollection.Add(new NfcLogItem(message, icon, DateTime.Now)));
+            dispatcherService.CallDispatcher(() => NfcLogCollection.Add(new NfcLogItem(message, icon, DateTime.Now, extra)));
         }
 
         private void WriteToTagExecute()
@@ -317,13 +352,25 @@
                 Uri = shortenedNote,
                 NfcAction = NdefSpActRecord.NfcActionType.DoAction
             };
-            spRecord.AddTitle(new NdefTextRecord
+            if (SecureNoteTitle != String.Empty && SecureNoteTitle != null)
             {
-                Text = "Not",
-                LanguageCode = "es"
-            });
+                spRecord.AddTitle(new NdefTextRecord
+                {
+                    Text = SecureNoteTitle,
+                    LanguageCode = CultureInfo.CurrentCulture.TwoLetterISOLanguageName
+                });   
+            }
             var msg = new NdefMessage { spRecord };
-            nfcService.WriteNdefMessageToTag(msg);
+            if (tagSize >= msg.ToByteArray().Length)
+            {
+                nfcService.WriteNdefMessageToTag(msg);
+                uxService.ShowToastNotification("NFC", AppResources.NfcMessageWritten);
+            }
+            else
+            {
+                uxService.ShowToastNotification("NFC", AppResources.NfcMessageTooLong);
+                LogMessage(AppResources.NfcMessageWritten, NfcLogItem.WARNING_ICON);
+            }
         }
 
         private void PublishMessageExecute()
@@ -356,6 +403,16 @@
             set
             {
                 nfcLogCollection = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public string SecureNoteTitle
+        {
+            get { return secureNoteTitle; }
+            set
+            {
+                secureNoteTitle = value;
                 RaisePropertyChanged();
             }
         }

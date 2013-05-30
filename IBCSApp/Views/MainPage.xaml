@@ -8,6 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:system="clr-namespace:System;assembly=mscorlib"
     xmlns:abu="clr-namespace:AppBarUtils;assembly=AppBarUtils"
+    xmlns:converters="clr-namespace:IBCSApp.Converters"
     xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
     mc:Ignorable="d"
@@ -40,6 +41,7 @@
 
 
     <phone:PhoneApplicationPage.Resources>
+        <converters:StringLengthVisiblityConverter x:Key="StringLengthVisiblityConverter"></converters:StringLengthVisiblityConverter>
         <Style x:Key="NfcLogStyle" TargetType="ListBox">
             <Setter Property="Margin" Value="12,0,0,12"/>
             <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
@@ -76,12 +78,21 @@
                     <DataTemplate>
                         <StackPanel Margin="0,0,0,8">
                             <StackPanel Orientation="Horizontal">
-                                <Image Source="{Binding Icon}" Width="35"/>
+                                <Rectangle Fill="{StaticResource PhoneForegroundBrush}" Width="35" Height="35" >
+                                    <Rectangle.OpacityMask>
+                                        <ImageBrush ImageSource="{Binding Icon}" />
+                                    </Rectangle.OpacityMask>
+                                </Rectangle>
                                 <TextBlock Text="{Binding Event}"
                                            TextWrapping="Wrap"
                                            FontSize="{StaticResource PhoneFontSizeNormal}"
                                            Foreground="{StaticResource PhoneAccentBrush}" VerticalAlignment="Center"/>
                             </StackPanel>
+                            <TextBlock TextWrapping="Wrap" Margin="50,0,0,0" 
+                                       Visibility="{Binding Extra, Converter={StaticResource StringLengthVisiblityConverter}}"
+                                       FontSize="{StaticResource PhoneFontSizeSmall}"
+                                       Foreground="{StaticResource PhoneSubtleBrush}"
+                                       Text="{Binding Extra}"></TextBlock>
                             <TextBlock Margin="6,0,0,0" Text="{Binding DateAndTime, Converter={StaticResource HourlyDateTimeConverter}}"
                                            FontSize="{StaticResource PhoneFontSizeSmall}"
                                            Foreground="{StaticResource PhoneSubtleBrush}"/>
@@ -112,19 +123,22 @@
             </StackPanel>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageComposerHeader, Source={StaticResource LocalizedStrings}}">
-            <Grid>
-                <Grid.RowDefinitions>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                    <RowDefinition Height="Auto"></RowDefinition>
-                </Grid.RowDefinitions>
-                <toolkit:PhoneTextBox Grid.Row="0" Height="300"
+            <StackPanel>
+                <toolkit:PhoneTextBox Grid.Row="0"
+                                      MaxLength="30"
+                                      LengthIndicatorVisible="True"
+                                      Text="{Binding SecureNoteTitle, Mode=TwoWay}"
+                                      Hint="{Binding Path=LocalizedResources.MainPageComposerTitle, Source={StaticResource LocalizedStrings}}"
+                                      ></toolkit:PhoneTextBox>
+                <TextBlock Text="{Binding Path=LocalizedResources.MainPageComposerMessage, Source={StaticResource LocalizedStrings}}" Margin="12,0,0,0"></TextBlock>
+                <toolkit:PhoneTextBox Grid.Row="1" Height="300"
                                          MaxLength="500"
                                          LengthIndicatorVisible="True"
                                          TextWrapping="Wrap" 
                                          Text="{Binding SecureNoteText, Mode=TwoWay}"
                                          AcceptsReturn="True" />
-                <Button Grid.Row="1" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"></Button>
-            </Grid>
+                <Button Grid.Row="2" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"></Button>
+            </StackPanel>
         </phone:PivotItem>
 
         <i:Interaction.Triggers>

@@ -253,7 +253,7 @@
     <value>log</value>
   </data>
   <data name="MainPageNfcLogTitle" xml:space="preserve">
-    <value>Este es el título explicativo</value>
+    <value>Acerca etiquetas o dispositivos NFC para analizarlos</value>
   </data>
   <data name="MainPageSocialHeader" xml:space="preserve">
     <value>social</value>
@@ -275,5 +275,29 @@
   </data>
   <data name="ResourceLanguage" xml:space="preserve">
     <value>es</value>
+  </data>
+  <data name="MainPageComposerMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="MainPageComposerTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="NdefMessageRecordType" xml:space="preserve">
+    <value>Tipo de registro</value>
+  </data>
+  <data name="NdefSpAction" xml:space="preserve">
+    <value>Acción</value>
+  </data>
+  <data name="NdefSpTitle" xml:space="preserve">
+    <value>Título</value>
+  </data>
+  <data name="NdefSpTitles" xml:space="preserve">
+    <value>Títulos</value>
+  </data>
+  <data name="NfcMessageTooLong" xml:space="preserve">
+    <value>No se puede escribir en la etiqueta, el mensaje es muy largo</value>
+  </data>
+  <data name="NoNfcError" xml:space="preserve">
+    <value>Vaya! Tu dispositivo no soporta NFC</value>
   </data>
 </root>

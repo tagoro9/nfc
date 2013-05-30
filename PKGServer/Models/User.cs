@@ -11,13 +11,19 @@ namespace PKGServer.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.Runtime.Serialization;
     
+    [DataContract]
     public partial class User
     {
+        [DataMember]
         public int Id { get; set; }
+        [DataMember]
         public string Nombre { get; set; }
+        [DataMember]
         public string Email { get; set; }
         public string Password { get; set; }
+        [DataMember]
         public Nullable<byte> Confirmed { get; set; }
     }
 }
