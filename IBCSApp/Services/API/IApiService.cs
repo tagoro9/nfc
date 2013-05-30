@@ -20,6 +20,7 @@ namespace IBCSApp.Services.API
         void GetMasterPublicKey();
         void GetUserKey(string identity, LoginToken token);
         void CreateAccount(string email, string password, string name);
+        Task<string> ShortenUrl(string url);
 
         //Events
         event BFMasterPublicKeyArgs GetMasterPublicKeyCompleted;

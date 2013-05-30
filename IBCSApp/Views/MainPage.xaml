@@ -8,6 +8,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:system="clr-namespace:System;assembly=mscorlib"
     xmlns:abu="clr-namespace:AppBarUtils;assembly=AppBarUtils"
+    xmlns:toolkit="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone.Controls.Toolkit"    
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
@@ -15,55 +16,161 @@
     Foreground="{StaticResource PhoneForegroundBrush}"
     SupportedOrientations="Portrait" Orientation="Portrait"
     DataContext="{Binding MainViewModel, Source={StaticResource Locator}}" shell:SystemTray.IsVisible="True">
-    
+
+    <toolkit:TransitionService.NavigationInTransition>
+        <toolkit:NavigationInTransition>
+            <toolkit:NavigationInTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideRightFadeIn"/>
+            </toolkit:NavigationInTransition.Backward>
+            <toolkit:NavigationInTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeIn"/>
+            </toolkit:NavigationInTransition.Forward>
+        </toolkit:NavigationInTransition>
+    </toolkit:TransitionService.NavigationInTransition>
+    <toolkit:TransitionService.NavigationOutTransition>
+        <toolkit:NavigationOutTransition>
+            <toolkit:NavigationOutTransition.Backward>
+                <toolkit:SlideTransition Mode="SlideRightFadeOut"/>
+            </toolkit:NavigationOutTransition.Backward>
+            <toolkit:NavigationOutTransition.Forward>
+                <toolkit:SlideTransition Mode="SlideLeftFadeOut"/>
+            </toolkit:NavigationOutTransition.Forward>
+        </toolkit:NavigationOutTransition>
+    </toolkit:TransitionService.NavigationOutTransition>
+
+
+    <phone:PhoneApplicationPage.Resources>
+        <Style x:Key="NfcLogStyle" TargetType="ListBox">
+            <Setter Property="Margin" Value="12,0,0,12"/>
+            <Setter Property="FontSize" Value="{StaticResource PhoneFontSizeMediumLarge}"/>
+        </Style>        
+        <toolkit:RelativeTimeConverter x:Key="RelativeTimeConverter"/>
+        <toolkit:HourlyDateTimeConverter x:Key="HourlyDateTimeConverter"/>
+    </phone:PhoneApplicationPage.Resources>
+
     <shell:SystemTray.ProgressIndicator>
         <shell:ProgressIndicator IsVisible="{Binding IsBusy}"
+                                 Text="{Binding ProgressMessage}"
                                  IsIndeterminate="True"></shell:ProgressIndicator>
     </shell:SystemTray.ProgressIndicator>
 
-    <!-- REPLACE ALL BELOW WITH REAL CONTENT AND DO AN AWESOME APP -->
-    <StackPanel x:Name="LayoutRoot" Background="Transparent">
-        <TextBlock Margin="12,0,12,0" TextWrapping="Wrap">
-            <Run FontWeight="Bold" Text="PlainMVVM" Foreground="{StaticResource PhoneAccentBrush}"/>
-            <LineBreak/>
-            <Run FontWeight="Bold" Text="Example main page with MVVM."/>
-            <LineBreak/><LineBreak/>
-            <Run FontWeight="Bold" Text="1.- Navigation" Foreground="{StaticResource PhoneAccentBrush}"/>
-            <LineBreak/>
-            <Run Text="If you click the button, the NavigateToSecondPage Command is executed. "/>
-            <Run Text="It uses the NavigationService to isolate dependencies and navigate to the new page."/>
-        </TextBlock>
-        <Button Content="Secure email" 
-                Command="{Binding NavigateToSecureEmailCommand}"/>
-        <Button Content="share secure message" Command="{Binding NavigateToShareSecureMessageCommand}"></Button>
 
-        <TextBlock Margin="12,40,12,0" TextWrapping="Wrap">
-            <Run FontWeight="Bold" Text="2.- IsBusy display" Foreground="{StaticResource PhoneAccentBrush}"/>
-            <LineBreak/>
-            <Run Text="{Binding Identity, Mode=TwoWay}"/>
-            <Run Text="{Binding Key, Mode=TwoWay}"/>
-            <LineBreak/>
-        </TextBlock>
-        <Button Content="Display ProgressIndicator" 
-                Command="{Binding SetAsBusyCommand}">
-            <Button.CommandParameter>
-                <system:Boolean>True</system:Boolean>
-            </Button.CommandParameter>
-        </Button>
-        <Button Content="Start NFC pairing" Command="{Binding StartNfcPairingCommand}"></Button>
-    </StackPanel>
+    <phone:Pivot x:Name="LayoutRoot" Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
+        <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageNfcLogHeader, Source={StaticResource LocalizedStrings}}">
+            <ListBox ItemsSource="{Binding NfcLogCollection}"  
+                            Style="{StaticResource NfcLogStyle}">
+                <ListBox.Template>
+                    <ControlTemplate>
+                        <ScrollViewer>
+                            <StackPanel>
+                                <TextBlock Margin="0,0,0,24" TextWrapping="Wrap"
+                                               FontSize="{StaticResource PhoneFontSizeNormal}"
+                                               Text="{Binding Path=LocalizedResources.MainPageNfcLogTitle, Source={StaticResource LocalizedStrings}}">
+                                </TextBlock>
+                                <ItemsPresenter/>
+                            </StackPanel>
+                        </ScrollViewer>
+                    </ControlTemplate>
+                </ListBox.Template>
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Margin="0,0,0,8">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{Binding Icon}" Width="35"/>
+                                <TextBlock Text="{Binding Event}"
+                                           TextWrapping="Wrap"
+                                           FontSize="{StaticResource PhoneFontSizeNormal}"
+                                           Foreground="{StaticResource PhoneAccentBrush}" VerticalAlignment="Center"/>
+                            </StackPanel>
+                            <TextBlock Margin="6,0,0,0" Text="{Binding DateAndTime, Converter={StaticResource HourlyDateTimeConverter}}"
+                                           FontSize="{StaticResource PhoneFontSizeSmall}"
+                                           Foreground="{StaticResource PhoneSubtleBrush}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </phone:PivotItem>
+        <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageMailHeader, Source={StaticResource LocalizedStrings}}">
+            <StackPanel>
+                <TextBlock>To:</TextBlock>
+                <Button Command="{Binding AddressChooserCommand}">Add</Button>
+                <TextBlock Text="{Binding DestinataryName}"></TextBlock>
+                <TextBlock>Subject:</TextBlock>
+                <TextBox Text="{Binding EmailSubject, Mode=TwoWay}"></TextBox>
+                <TextBlock>Content</TextBlock>
+                <TextBox Text="{Binding EmailBody, Mode=TwoWay}"></TextBox>
+                <Button Content="Send" Command="{Binding SendSecureEmailCommand}"></Button>
+            </StackPanel>            
+        </phone:PivotItem>
+        <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageSocialHeader, Source={StaticResource LocalizedStrings}}">
+            <StackPanel>
+                <TextBlock>Message</TextBlock>
+                <TextBox Text="{Binding MessageText, Mode=TwoWay}"></TextBox>
+                <TextBlock>Identity</TextBlock>
+                <TextBox Text="{Binding Identity, Mode=TwoWay}"></TextBox>
+                <Button Content="Send" Command="{Binding ShareSecureMessageCommand}"></Button>
+            </StackPanel>
+        </phone:PivotItem>
+        <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageComposerHeader, Source={StaticResource LocalizedStrings}}">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                    <RowDefinition Height="Auto"></RowDefinition>
+                </Grid.RowDefinitions>
+                <toolkit:PhoneTextBox Grid.Row="0" Height="300"
+                                         MaxLength="500"
+                                         LengthIndicatorVisible="True"
+                                         TextWrapping="Wrap" 
+                                         Text="{Binding SecureNoteText, Mode=TwoWay}"
+                                         AcceptsReturn="True" />
+                <Button Grid.Row="1" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"></Button>
+            </Grid>
+        </phone:PivotItem>
 
-    <phone:PhoneApplicationPage.ApplicationBar>
-        <shell:ApplicationBar IsMenuEnabled="True">
+        <i:Interaction.Triggers>
+            <abu:SelectedPivotItemChangedTrigger>
+                <abu:SwitchAppBarAction>
+                    <abu:AppBar Id="0" Mode="Minimized">
+                        <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarClearLog, Source={StaticResource LocalizedStrings}}" Command="{Binding ClearLogCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
+                        </abu:AppBar.MenuItems>
+                    </abu:AppBar>
+                    <abu:AppBar Id="1">
+                        <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
+                        </abu:AppBar.MenuItems>
+                    </abu:AppBar>
+                    <abu:AppBar Id="2" Mode="Minimized">
+                        <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
+                        </abu:AppBar.MenuItems>
+                    </abu:AppBar>
+                    <abu:AppBar Id="3">
+                        <abu:AppBarButton Command="{Binding WriteToTagCommand}" Text="{Binding Path=LocalizedResources.MainPageComposerTagButton, Source={StaticResource LocalizedStrings}}" IconUri="/Assets/AppBar/edit.png"></abu:AppBarButton>
+                        <abu:AppBarButton Command="{Binding PublishMessageCommand}"  Text="{Binding Path=LocalizedResources.MainPageComposerDeviceButton, Source={StaticResource LocalizedStrings}}" IconUri="/Assets/AppBar/share.png"></abu:AppBarButton>
+                        <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
+                        </abu:AppBar.MenuItems>
+                    </abu:AppBar>
+                </abu:SwitchAppBarAction>
+            </abu:SelectedPivotItemChangedTrigger>
+        </i:Interaction.Triggers>
+    </phone:Pivot>
+
+
+    <!--<phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/edit.png" Text="Button 2"/>
             <shell:ApplicationBar.MenuItems>
-                <shell:ApplicationBarMenuItem Text="logout"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 1"/>
+                <shell:ApplicationBarMenuItem Text="MenuItem 2"/>
             </shell:ApplicationBar.MenuItems>
         </shell:ApplicationBar>
-    </phone:PhoneApplicationPage.ApplicationBar>
-
-    <i:Interaction.Behaviors>
-        <abu:AppBarItemCommand Type="MenuItem" Id="logout" Command="{Binding LogOutCommand}"/>
-    </i:Interaction.Behaviors>
-
+    </phone:PhoneApplicationPage.ApplicationBar>-->
 
 </phone:PhoneApplicationPage>

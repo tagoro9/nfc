@@ -31,5 +31,14 @@
         /// Navigate to create account page
         /// </summary>
         void NavigateToCreateAccountPage();
+        /// <summary>
+        /// Navigate to about page
+        /// </summary>
+        void NavigateToAboutPage();
+        /// <summary>
+        /// Navigate to specific uri
+        /// </summary>
+        /// <param name="uri"></param>
+        void NavigateToUri(string uri);
     }
 }

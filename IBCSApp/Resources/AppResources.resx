@@ -191,4 +191,106 @@
   <data name="CreateAccountServiceConditionsError" xml:space="preserve">
     <value>You need to accept the terms of service.</value>
   </data>
+  <data name="AboutPageDeveloper" xml:space="preserve">
+    <value>Developed by Víctor Mora</value>
+  </data>
+  <data name="AboutPageFollow" xml:space="preserve">
+    <value>Follow on Twitter</value>
+  </data>
+  <data name="AboutPageSupportBody" xml:space="preserve">
+    <value>Do you have any idea on how to improve this app? Maybe new features we could add? Found a bug or an issue? Do not hesitate and get in touch so we can all together create a better app!</value>
+  </data>
+  <data name="AboutPageSupportTitle" xml:space="preserve">
+    <value>Support</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AboutPageTwitter" xml:space="preserve">
+    <value>@ViVictorMora</value>
+  </data>
+  <data name="AboutPageVersion" xml:space="preserve">
+    <value>0.0.1</value>
+  </data>
+  <data name="AboutPageWeb" xml:space="preserve">
+    <value>pkg.apphb.com</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>about</value>
+  </data>
+  <data name="AppBarLogout" xml:space="preserve">
+    <value>logout</value>
+  </data>
+  <data name="LoginPageErrorMessage" xml:space="preserve">
+    <value>Check that your email and password are correct</value>
+  </data>
+  <data name="LoginPageErrorTitle" xml:space="preserve">
+    <value>We couldn't log you in.</value>
+  </data>
+  <data name="MainPageComposerDeviceButton" xml:space="preserve">
+    <value>send to device</value>
+  </data>
+  <data name="MainPageComposerHeader" xml:space="preserve">
+    <value>tag composer</value>
+  </data>
+  <data name="MainPageComposerTagButton" xml:space="preserve">
+    <value>write to tag</value>
+  </data>
+  <data name="MainPageMailHeader" xml:space="preserve">
+    <value>mail</value>
+  </data>
+  <data name="MainPageNfcLogHeader" xml:space="preserve">
+    <value>log</value>
+  </data>
+  <data name="MainPageSocialHeader" xml:space="preserve">
+    <value>social</value>
+  </data>
+  <data name="TwitterUrl" xml:space="preserve">
+    <value>https://twitter.com/vivictormora</value>
+  </data>
+  <data name="WebUrl" xml:space="preserve">
+    <value>https://pkg.apphb.com</value>
+  </data>
+  <data name="AppBarClearLog" xml:space="preserve">
+    <value>clear log</value>
+  </data>
+  <data name="AppBarHome" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="DecryptingMessage" xml:space="preserve">
+    <value>decrypting secure note</value>
+  </data>
+  <data name="DecryptMessageMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="DecryptMessageMessageError" xml:space="preserve">
+    <value>Oops! It seems like this message was not intended for you.</value>
+  </data>
+  <data name="DecryptMessagePageTitle" xml:space="preserve">
+    <value>decrypt message</value>
+  </data>
+  <data name="DecryptMessageRecipient" xml:space="preserve">
+    <value>Recipient</value>
+  </data>
+  <data name="EncryptingMessage" xml:space="preserve">
+    <value>encrypting secure note</value>
+  </data>
+  <data name="MainPageComposerEncyptButton" xml:space="preserve">
+    <value>encrypt</value>
+  </data>
+  <data name="MainPageNfcLogTitle" xml:space="preserve">
+    <value>This is the fucking title</value>
+  </data>
+  <data name="NfcMessageWritten" xml:space="preserve">
+    <value>Message written</value>
+  </data>
+  <data name="NfcWriteableTagSize" xml:space="preserve">
+    <value>Writeable tag size:</value>
+  </data>
+  <data name="NotifyDeviceArrived" xml:space="preserve">
+    <value>Device /tag arrived</value>
+  </data>
+  <data name="NotifyDeviceDeparted" xml:space="preserve">
+    <value>Device / tag departed</value>
+  </data>
 </root>

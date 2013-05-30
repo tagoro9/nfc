@@ -30,7 +30,7 @@ namespace IBCSApp.Services.BF
             var decipherTask = Task<byte[]>.Factory.StartNew(() =>
             {
                 BFUserPrivateKey key = new BFUserPrivateKey(sKey);
-                SerializedBFCText ciphered = (SerializedBFCText)JsonConvert.DeserializeObject(HttpUtility.UrlDecode(ct), typeof(SerializedBFCText));
+                SerializedBFCText ciphered = (SerializedBFCText)JsonConvert.DeserializeObject(ct, typeof(SerializedBFCText));
                 BFCText cText = new BFCText(ciphered);
                 return BFCipher.decrypt(cText, key);
             });

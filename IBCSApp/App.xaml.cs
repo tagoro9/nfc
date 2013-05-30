@@ -9,6 +9,7 @@ using Microsoft.Phone.Shell;
 using IBCSApp.Resources;
 using System.Windows.Threading;
 using IBCSApp.Mappers;
+using System.IO.IsolatedStorage;
 
 namespace IBCSApp
 {

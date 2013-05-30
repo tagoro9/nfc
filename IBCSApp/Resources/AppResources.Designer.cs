@@ -61,11 +61,119 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Developed by Víctor Mora.
+        /// </summary>
+        public static string AboutPageDeveloper {
+            get {
+                return ResourceManager.GetString("AboutPageDeveloper", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Follow on Twitter.
+        /// </summary>
+        public static string AboutPageFollow {
+            get {
+                return ResourceManager.GetString("AboutPageFollow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Do you have any idea on how to improve this app? Maybe new features we could add? Found a bug or an issue? Do not hesitate and get in touch so we can all together create a better app!.
+        /// </summary>
+        public static string AboutPageSupportBody {
+            get {
+                return ResourceManager.GetString("AboutPageSupportBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Support.
+        /// </summary>
+        public static string AboutPageSupportTitle {
+            get {
+                return ResourceManager.GetString("AboutPageSupportTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a about.
+        /// </summary>
+        public static string AboutPageTitle {
+            get {
+                return ResourceManager.GetString("AboutPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a @ViVictorMora.
+        /// </summary>
+        public static string AboutPageTwitter {
+            get {
+                return ResourceManager.GetString("AboutPageTwitter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a 0.0.1.
+        /// </summary>
+        public static string AboutPageVersion {
+            get {
+                return ResourceManager.GetString("AboutPageVersion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a pkg.apphb.com.
+        /// </summary>
+        public static string AboutPageWeb {
+            get {
+                return ResourceManager.GetString("AboutPageWeb", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a about.
+        /// </summary>
+        public static string AppBarAbout {
+            get {
+                return ResourceManager.GetString("AppBarAbout", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a add.
         /// </summary>
         public static string AppBarButtonText {
             get {
                 return ResourceManager.GetString("AppBarButtonText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a clear log.
+        /// </summary>
+        public static string AppBarClearLog {
+            get {
+                return ResourceManager.GetString("AppBarClearLog", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Home.
+        /// </summary>
+        public static string AppBarHome {
+            get {
+                return ResourceManager.GetString("AppBarHome", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a logout.
+        /// </summary>
+        public static string AppBarLogout {
+            get {
+                return ResourceManager.GetString("AppBarLogout", resourceCulture);
             }
         }
         
@@ -214,11 +322,83 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a decrypting secure note.
+        /// </summary>
+        public static string DecryptingMessage {
+            get {
+                return ResourceManager.GetString("DecryptingMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Message.
+        /// </summary>
+        public static string DecryptMessageMessage {
+            get {
+                return ResourceManager.GetString("DecryptMessageMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Oops! It seems like this message was not intended for you..
+        /// </summary>
+        public static string DecryptMessageMessageError {
+            get {
+                return ResourceManager.GetString("DecryptMessageMessageError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a decrypt message.
+        /// </summary>
+        public static string DecryptMessagePageTitle {
+            get {
+                return ResourceManager.GetString("DecryptMessagePageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Recipient.
+        /// </summary>
+        public static string DecryptMessageRecipient {
+            get {
+                return ResourceManager.GetString("DecryptMessageRecipient", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a encrypting secure note.
+        /// </summary>
+        public static string EncryptingMessage {
+            get {
+                return ResourceManager.GetString("EncryptingMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a email.
         /// </summary>
         public static string LoginPageEmail {
             get {
                 return ResourceManager.GetString("LoginPageEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Check that your email and password are correct.
+        /// </summary>
+        public static string LoginPageErrorMessage {
+            get {
+                return ResourceManager.GetString("LoginPageErrorMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a We couldn&apos;t log you in..
+        /// </summary>
+        public static string LoginPageErrorTitle {
+            get {
+                return ResourceManager.GetString("LoginPageErrorTitle", resourceCulture);
             }
         }
         
@@ -259,6 +439,114 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a send to device.
+        /// </summary>
+        public static string MainPageComposerDeviceButton {
+            get {
+                return ResourceManager.GetString("MainPageComposerDeviceButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a encrypt.
+        /// </summary>
+        public static string MainPageComposerEncyptButton {
+            get {
+                return ResourceManager.GetString("MainPageComposerEncyptButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a tag composer.
+        /// </summary>
+        public static string MainPageComposerHeader {
+            get {
+                return ResourceManager.GetString("MainPageComposerHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a write to tag.
+        /// </summary>
+        public static string MainPageComposerTagButton {
+            get {
+                return ResourceManager.GetString("MainPageComposerTagButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a mail.
+        /// </summary>
+        public static string MainPageMailHeader {
+            get {
+                return ResourceManager.GetString("MainPageMailHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a log.
+        /// </summary>
+        public static string MainPageNfcLogHeader {
+            get {
+                return ResourceManager.GetString("MainPageNfcLogHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a This is the fucking title.
+        /// </summary>
+        public static string MainPageNfcLogTitle {
+            get {
+                return ResourceManager.GetString("MainPageNfcLogTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a social.
+        /// </summary>
+        public static string MainPageSocialHeader {
+            get {
+                return ResourceManager.GetString("MainPageSocialHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Message written.
+        /// </summary>
+        public static string NfcMessageWritten {
+            get {
+                return ResourceManager.GetString("NfcMessageWritten", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Writeable tag size:.
+        /// </summary>
+        public static string NfcWriteableTagSize {
+            get {
+                return ResourceManager.GetString("NfcWriteableTagSize", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Device /tag arrived.
+        /// </summary>
+        public static string NotifyDeviceArrived {
+            get {
+                return ResourceManager.GetString("NotifyDeviceArrived", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Device / tag departed.
+        /// </summary>
+        public static string NotifyDeviceDeparted {
+            get {
+                return ResourceManager.GetString("NotifyDeviceDeparted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {
@@ -273,6 +561,24 @@ namespace IBCSApp.Resources {
         public static string ResourceLanguage {
             get {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a https://twitter.com/vivictormora.
+        /// </summary>
+        public static string TwitterUrl {
+            get {
+                return ResourceManager.GetString("TwitterUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a https://pkg.apphb.com.
+        /// </summary>
+        public static string WebUrl {
+            get {
+                return ResourceManager.GetString("WebUrl", resourceCulture);
             }
         }
     }

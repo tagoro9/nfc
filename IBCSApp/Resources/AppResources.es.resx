@@ -117,8 +117,35 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AboutPageDeveloper" xml:space="preserve">
+    <value>Desarrollado por Víctor Mora</value>
+  </data>
+  <data name="AboutPageFollow" xml:space="preserve">
+    <value>Seguir en Twitter</value>
+  </data>
+  <data name="AboutPageSupportBody" xml:space="preserve">
+    <value>¿Tienes alguna idea con la que mejorar esta app? ¿Quizás nuevas funcionalidades que pudiéramos añadir? ¿Encontraste algún fallo? No dudes en ponerte en contacto para que podamos seguir mejorando!</value>
+  </data>
+  <data name="AboutPageSupportTitle" xml:space="preserve">
+    <value>Soporte</value>
+  </data>
+  <data name="AboutPageTitle" xml:space="preserve">
+    <value>acerca de</value>
+  </data>
+  <data name="AppBarAbout" xml:space="preserve">
+    <value>acerca de</value>
+  </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
+  </data>
+  <data name="AppBarClearLog" xml:space="preserve">
+    <value>limpiar log</value>
+  </data>
+  <data name="AppBarHome" xml:space="preserve">
+    <value>Inicio</value>
+  </data>
+  <data name="AppBarLogout" xml:space="preserve">
+    <value>salir</value>
   </data>
   <data name="AppBarMenuItemText" xml:space="preserve">
     <value>Menu Item</value>
@@ -168,8 +195,32 @@
   <data name="CreateAccountServiceConditionsError" xml:space="preserve">
     <value>Para crear tu cuenta necesitas aceptar los términos y condiciones.</value>
   </data>
+  <data name="DecryptingMessage" xml:space="preserve">
+    <value>descifrando nota</value>
+  </data>
+  <data name="DecryptMessageMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="DecryptMessageMessageError" xml:space="preserve">
+    <value>Vaya, parece que este mensaje no era para ti y, por tanto, somos incapaces de mostrarlo.</value>
+  </data>
+  <data name="DecryptMessagePageTitle" xml:space="preserve">
+    <value>descifrar mensaje</value>
+  </data>
+  <data name="DecryptMessageRecipient" xml:space="preserve">
+    <value>Destinatario</value>
+  </data>
+  <data name="EncryptingMessage" xml:space="preserve">
+    <value>cifrando nota</value>
+  </data>
   <data name="LoginPageEmail" xml:space="preserve">
     <value>correo</value>
+  </data>
+  <data name="LoginPageErrorMessage" xml:space="preserve">
+    <value>Comprueba que tu correo y contraseña están bien escritos.</value>
+  </data>
+  <data name="LoginPageErrorTitle" xml:space="preserve">
+    <value>No pudimos iniciar sesión.</value>
   </data>
   <data name="LoginPageLoginButton" xml:space="preserve">
     <value>entrar</value>
@@ -182,6 +233,42 @@
   </data>
   <data name="LoginPageTitle" xml:space="preserve">
     <value>login</value>
+  </data>
+  <data name="MainPageComposerDeviceButton" xml:space="preserve">
+    <value>enviar a otro dispositivo</value>
+  </data>
+  <data name="MainPageComposerEncyptButton" xml:space="preserve">
+    <value>cifrar</value>
+  </data>
+  <data name="MainPageComposerHeader" xml:space="preserve">
+    <value>etiquetas</value>
+  </data>
+  <data name="MainPageComposerTagButton" xml:space="preserve">
+    <value>escribir en una etiqueta</value>
+  </data>
+  <data name="MainPageMailHeader" xml:space="preserve">
+    <value>correo</value>
+  </data>
+  <data name="MainPageNfcLogHeader" xml:space="preserve">
+    <value>log</value>
+  </data>
+  <data name="MainPageNfcLogTitle" xml:space="preserve">
+    <value>Este es el título explicativo</value>
+  </data>
+  <data name="MainPageSocialHeader" xml:space="preserve">
+    <value>social</value>
+  </data>
+  <data name="NfcMessageWritten" xml:space="preserve">
+    <value>Mensaje publicado</value>
+  </data>
+  <data name="NfcWriteableTagSize" xml:space="preserve">
+    <value>Tamaño de etiqueta:</value>
+  </data>
+  <data name="NotifyDeviceArrived" xml:space="preserve">
+    <value>Dispositivo / etiqueta próximo</value>
+  </data>
+  <data name="NotifyDeviceDeparted" xml:space="preserve">
+    <value>Dispositivo / etiqueta fuera de alcance</value>
   </data>
   <data name="ResourceFlowDirection" xml:space="preserve">
     <value>LeftToRight</value>

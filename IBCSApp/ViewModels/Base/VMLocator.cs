@@ -50,6 +50,8 @@
             builder.RegisterType<VMSecureEmailPage>();
             builder.RegisterType<VMShareSecureMessage>();
             builder.RegisterType<VMCreateAccountPage>();
+            builder.RegisterType<VMAboutPage>();
+            builder.RegisterType<VMDecryptMessage>();
             container = builder.Build();
         }
 
@@ -99,6 +101,22 @@
         public VMCreateAccountPage CreateAccountViewModel
         {
             get { return this.container.Resolve<VMCreateAccountPage>(); }
+        }
+
+        /// <summary>
+        /// AboutPage ViewModel instance
+        /// </summary>
+        public VMAboutPage AboutViewModel
+        {
+            get { return this.container.Resolve<VMAboutPage>(); }
+        }
+
+        /// <summary>
+        /// DecryptMessage ViewModel instance
+        /// </summary>
+        public VMDecryptMessage DecryptMessageViewModel
+        {
+            get { return this.container.Resolve<VMDecryptMessage>(); }
         }
     }
 }

@@ -42,7 +42,7 @@
                                  IsIndeterminate="True"></shell:ProgressIndicator>
     </shell:SystemTray.ProgressIndicator>
 
-    <Grid x:Name="LayoutRoot" Background="Transparent">
+    <Grid x:Name="LayoutRoot" Background="Transparent" Visibility="Collapsed">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>

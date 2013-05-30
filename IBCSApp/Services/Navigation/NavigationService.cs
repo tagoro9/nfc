@@ -54,5 +54,22 @@
         {
             App.RootFrame.Navigate(new Uri("/Views/CreateAccountPage.xaml", UriKind.Relative));
         }
+
+        /// <summary>
+        /// Method implementation to navigate to page called about
+        /// </summary>
+        public void NavigateToAboutPage()
+        {
+            App.RootFrame.Navigate(new Uri("/Views/AboutPage.xaml", UriKind.Relative));
+        }
+
+        /// <summary>
+        /// Method implementation to navigate to a specific page
+        /// </summary>
+        /// <param name="uri"></param>
+        public void NavigateToUri(string uri)
+        {
+            App.RootFrame.Navigate(new Uri(uri, UriKind.Relative));
+        }
     }
 }

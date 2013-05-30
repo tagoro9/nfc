@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.IsolatedStorage;
 using System.Linq;
 using System.Net;
 using System.Text;
@@ -13,12 +14,22 @@ namespace IBCSApp.Mappers
         public override Uri MapUri(Uri uri)
         {
             string tempUri = HttpUtility.UrlDecode(uri.ToString());
-
+            string destination = tempUri;
             if (tempUri.Contains("ibcs:decrypt"))
             {
-                return new Uri("/Views/DecryptMessage.xaml", UriKind.Relative);
+                destination = "/Views/DecryptMessage.xaml";
+                string query = "?message=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("{"), tempUri.IndexOf("&id") -  tempUri.IndexOf("={") - 1));
+                query += "&id=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("&id=") + 4));
+                destination += query;
+                if (IsolatedStorageSettings.ApplicationSettings.Contains("email"))
+                {
+                    return new Uri(destination, UriKind.Relative);
+                }
+                else
+                {
+                    return new Uri("/Views/LoginPage.xaml?destination=" + destination, UriKind.Relative);  
+                }
             }
-
             return uri;
         }
     }

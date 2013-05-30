@@ -9,6 +9,7 @@ using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using IBCSApp.Resources;
 using IBCSApp.ViewModels;
+using System.Windows.Interactivity;
 
 namespace IBCSApp.Views
 {

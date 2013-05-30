@@ -15,6 +15,7 @@ namespace IBCSApp.Views
 {
     public partial class LoginPage : PhoneApplicationPage
     {
+
         public LoginPage()
         {
             InitializeComponent();
@@ -30,14 +31,29 @@ namespace IBCSApp.Views
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            if (NavigationContext.QueryString.Any())
+            //Clear backstack
+            while (this.NavigationService.BackStack.Any())
+            {
+                this.NavigationService.RemoveBackEntry();
+            }
+
+            if (IsolatedStorageSettings.ApplicationSettings.Contains("email"))
+            {
+                NavigationService.Navigate(new Uri("/Views/MainPage.xaml", UriKind.Relative));
+                return;
+            }
+            else {
+                LayoutRoot.Visibility = System.Windows.Visibility.Visible;    
+            }
+
+            if (NavigationContext.QueryString.ContainsKey("destination"))
+            {
+                ViewModel.Destination = NavigationContext.QueryString["destination"];
+            }
+            else if (NavigationContext.QueryString.ContainsKey("created"))
             {
                 string message = NavigationContext.QueryString["created"];
                 ViewModel.DeliverToastNotification(AppResources.CreateAccountCreatedTitle, AppResources.CreateAccountCreatedMessage);
-            }
-            if (!ViewModel.CheckLoggedIn())
-            {
-                NavigationService.RemoveBackEntry();   
             }
         }
     }

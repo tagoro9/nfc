@@ -13,7 +13,9 @@ namespace IBCSApp.Services.API
     {
 
         public static string APIURL = "https://pkg.apphb.com/api/";
+        public static string SHORTEN_URL = "http://tinyurl.com/api-create.php";
         private RestClient client = new RestClient(APIURL);
+        private RestClient shortenClient = new RestClient(SHORTEN_URL);
 
         //Events
         public event BFMasterPublicKeyArgs GetMasterPublicKeyCompleted;
@@ -64,6 +66,20 @@ namespace IBCSApp.Services.API
                 if (CreateAccountCompleted != null)
                     CreateAccountCompleted();
             });
+        }
+
+
+        public async Task<string> ShortenUrl(string url)
+        {
+            RestRequest request = new RestRequest();
+            request.AddParameter("url", url);
+            var task = new TaskCompletionSource<string>();
+            shortenClient.ExecuteAsync(request, response =>
+            {
+                task.SetResult(response.Content);
+            });
+            string result = await task.Task;
+            return result;
         }
     }
 }

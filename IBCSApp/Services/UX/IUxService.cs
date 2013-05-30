@@ -9,5 +9,6 @@ namespace IBCSApp.Services.UX
     public interface IUxService
     {
         void ShowToastNotification(string title, string message);
+        void ShowMessageBox(string title, string message);
     }
 }

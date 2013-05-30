@@ -14,6 +14,7 @@ using System.IO;
 using IBCSApp.Services.API;
 using System.IO.IsolatedStorage;
 using IBCSApp.Services.UX;
+using IBCSApp.Resources;
 
 namespace IBCSApp.ViewModels 
 {
@@ -31,6 +32,13 @@ namespace IBCSApp.ViewModels
         private DelegateCommand<bool> setAsBusyCommand;
         private DelegateCommand createAccountCommand;
 
+
+        private string destination;
+        public string Destination
+        {
+            get { return destination; }
+            set { destination = value; }
+        }
 
         private string email;
         private string password;
@@ -75,7 +83,8 @@ namespace IBCSApp.ViewModels
 
         public void DeliverToastNotification(string title, string message)
         {
-            this.uxService.ShowToastNotification(title, message);
+            //this.uxService.ShowToastNotification(title, message);
+            this.uxService.ShowMessageBox(title, message);
         }
 
         private void CreateAccountExecute()
@@ -125,28 +134,25 @@ namespace IBCSApp.ViewModels
         {
             this.dispatcherService.CallDispatcher(() =>
             {
-                if (token.Token != "") //Successfully Logged in, store token in settings
+                if (token.Token != "" && token.Token != null) //Successfully Logged in, store token in settings
                 {
                     settingsService.Set("token", token);
                     settingsService.Set("email", email);
-                    navService.NavigateToMainPage();
+                    if (destination != null)
+                    {
+                        navService.NavigateToUri(destination);
+                    }
+                    else
+                    {
+                        navService.NavigateToMainPage();
+                    }
+                }
+                else
+                {
+                    uxService.ShowMessageBox(AppResources.LoginPageErrorTitle, AppResources.LoginPageErrorMessage);
                 }
                 IsBusy = false;
             });
-        }
-
-        /// <summary>
-        /// Check if the user is logged in.
-        /// </summary>
-        public bool CheckLoggedIn()
-        {
-            //IsolatedStorageSettings settings = IsolatedStorageSettings.ApplicationSettings;
-            if (settingsService.Contains("token"))
-            {
-                navService.NavigateToMainPage();
-                return true;
-            }
-            return false;
         }
     }
 }
