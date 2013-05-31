@@ -45,22 +45,12 @@
             builder.RegisterType<BfService>().As<IBfService>().SingleInstance();
             builder.RegisterType<UxService>().As<IUxService>().SingleInstance();
             builder.RegisterType<VMMainPage>();
-            builder.RegisterType<VMSecondPage>();
             builder.RegisterType<VMLoginPage>();
-            builder.RegisterType<VMSecureEmailPage>();
-            builder.RegisterType<VMShareSecureMessage>();
             builder.RegisterType<VMCreateAccountPage>();
             builder.RegisterType<VMAboutPage>();
             builder.RegisterType<VMDecryptMessage>();
+            builder.RegisterType<VMInstructionsPage>();
             container = builder.Build();
-        }
-
-        /// <summary>
-        /// ShareSecureMessagePage ViewModel instance.
-        /// </summary>
-        public VMShareSecureMessage ShareSecureMessageViewModel
-        {
-            get { return this.container.Resolve<VMShareSecureMessage>(); }
         }
 
         /// <summary>
@@ -77,22 +67,6 @@
         public VMMainPage MainViewModel
         {
             get { return this.container.Resolve<VMMainPage>(); }
-        }
-
-        /// <summary>
-        /// SecondPage ViewModel instance.
-        /// </summary>
-        public VMSecondPage SecondViewModel
-        {
-            get { return this.container.Resolve<VMSecondPage>(); }
-        }
-
-        /// <summary>
-        /// SecureEmailPage ViewModel instance.
-        /// </summary>
-        public VMSecureEmailPage SecureEmailViewModel
-        {
-            get { return this.container.Resolve<VMSecureEmailPage>(); }
         }
 
         /// <summary>
@@ -117,6 +91,14 @@
         public VMDecryptMessage DecryptMessageViewModel
         {
             get { return this.container.Resolve<VMDecryptMessage>(); }
+        }
+
+        /// <summary>
+        /// Instructions ViewModel instance
+        /// </summary>
+        public VMInstructionsPage InstructionsViewModel
+        {
+            get { return this.container.Resolve<VMInstructionsPage>(); }
         }
     }
 }

@@ -21,6 +21,14 @@ namespace IBCSApp.Views
             InitializeComponent();
         }
 
+        private VMMainPage ViewModel
+        {
+            get
+            {
+                return this.DataContext as VMMainPage;
+            }
+        }
+
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             var entry = NavigationService.BackStack.FirstOrDefault();
@@ -30,6 +38,11 @@ namespace IBCSApp.Views
             }
             ((VMMainPage)this.DataContext).CheckKeys();
             //((VMMainPage)this.DataContext).StartPublishingIdentity();
+        }
+
+        private void PhoneTextBox_ActionIconTapped(object sender, EventArgs e)
+        {
+            ViewModel.AddressChooserCommand.Execute(null);
         }
     }
 }

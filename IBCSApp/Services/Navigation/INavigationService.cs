@@ -40,5 +40,9 @@
         /// </summary>
         /// <param name="uri"></param>
         void NavigateToUri(string uri);
+        /// <summary>
+        /// Navigate to instructions page
+        /// </summary>
+        void NavigateToInstructionsPage();
     }
 }

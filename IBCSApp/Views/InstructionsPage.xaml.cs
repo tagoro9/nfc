@@ -10,9 +10,9 @@ using Microsoft.Phone.Shell;
 
 namespace IBCSApp.Views
 {
-    public partial class ShareSecureMessagePage : PhoneApplicationPage
+    public partial class InstructionsPage : PhoneApplicationPage
     {
-        public ShareSecureMessagePage()
+        public InstructionsPage()
         {
             InitializeComponent();
         }

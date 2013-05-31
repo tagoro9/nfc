@@ -131,13 +131,11 @@
     <Compile Include="ViewModels\VMAboutPage.cs" />
     <Compile Include="ViewModels\VMCreateAccountPage.cs" />
     <Compile Include="ViewModels\VMDecryptMessage.cs" />
+    <Compile Include="ViewModels\VMInstructionsPage.cs" />
     <Compile Include="ViewModels\VMLoginPage.cs" />
-    <Compile Include="ViewModels\VMSecondPage.cs" />
     <Compile Include="ViewModels\Base\VMBase.cs" />
     <Compile Include="ViewModels\Base\VMLocator.cs" />
     <Compile Include="ViewModels\VMMainPage.cs" />
-    <Compile Include="ViewModels\VMSecureEmailPage.cs" />
-    <Compile Include="ViewModels\VMShareSecureMessage.cs" />
     <Compile Include="Views\AboutPage.xaml.cs">
       <DependentUpon>AboutPage.xaml</DependentUpon>
     </Compile>
@@ -147,6 +145,9 @@
     <Compile Include="Views\DecryptMessage.xaml.cs">
       <DependentUpon>DecryptMessage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\InstructionsPage.xaml.cs">
+      <DependentUpon>InstructionsPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\LoginPage.xaml.cs">
       <DependentUpon>LoginPage.xaml</DependentUpon>
     </Compile>
@@ -154,15 +155,6 @@
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Views\SecondPage.xaml.cs">
-      <DependentUpon>SecondPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\SecureEmailPage.xaml.cs">
-      <DependentUpon>SecureEmailPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\ShareSecureMessagePage.xaml.cs">
-      <DependentUpon>ShareSecureMessagePage.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -181,23 +173,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\InstructionsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\LoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\MainPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\SecondPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\SecureEmailPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\ShareSecureMessagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -217,6 +201,7 @@
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Assets\Icons\add.png" />
     <Content Include="Assets\Icons\crosshair.png" />
     <Content Include="Assets\Icons\delete.png" />
     <Content Include="Assets\Icons\information.png" />
@@ -260,6 +245,7 @@
     <Reference Include="Coding4Fun.Toolkit.Controls">
       <HintPath>..\packages\Coding4Fun.Toolkit.Controls.2.0.5\lib\windowsphone8\Coding4Fun.Toolkit.Controls.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Phone.Controls, Version=8.0.0.0, Culture=neutral, PublicKeyToken=24eec0d8c86cda1e, processorArchitecture=MSIL" />
     <Reference Include="Microsoft.Phone.Controls.Toolkit">
       <HintPath>..\packages\WPtoolkit.4.2012.10.30\lib\wp8\Microsoft.Phone.Controls.Toolkit.dll</HintPath>
     </Reference>

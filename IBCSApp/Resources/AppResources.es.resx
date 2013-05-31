@@ -151,7 +151,7 @@
     <value>Menu Item</value>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>IBCS</value>
+    <value>Nfc Secure Notes</value>
   </data>
   <data name="BluetoothActivateCaption" xml:space="preserve">
     <value>BLUETOOTH</value>
@@ -190,7 +190,7 @@
     <value>Asegúrate de que las contraseñas coinciden.</value>
   </data>
   <data name="CreateAccountServiceConditions" xml:space="preserve">
-    <value>He leído y acepto las condiciones del servicio</value>
+    <value>He leído y acepto las </value>
   </data>
   <data name="CreateAccountServiceConditionsError" xml:space="preserve">
     <value>Para crear tu cuenta necesitas aceptar los términos y condiciones.</value>
@@ -235,7 +235,7 @@
     <value>login</value>
   </data>
   <data name="MainPageComposerDeviceButton" xml:space="preserve">
-    <value>enviar a otro dispositivo</value>
+    <value>enviar a dispositivo</value>
   </data>
   <data name="MainPageComposerEncyptButton" xml:space="preserve">
     <value>cifrar</value>
@@ -244,7 +244,7 @@
     <value>etiquetas</value>
   </data>
   <data name="MainPageComposerTagButton" xml:space="preserve">
-    <value>escribir en una etiqueta</value>
+    <value>escribir etiqueta</value>
   </data>
   <data name="MainPageMailHeader" xml:space="preserve">
     <value>correo</value>
@@ -276,11 +276,56 @@
   <data name="ResourceLanguage" xml:space="preserve">
     <value>es</value>
   </data>
+  <data name="CreateAccountServiceConditionsLink" xml:space="preserve">
+    <value>condiciones del servicio</value>
+  </data>
+  <data name="EncryptingLink" xml:space="preserve">
+    <value>cifrando mensaje</value>
+  </data>
+  <data name="LinkMessage" xml:space="preserve">
+    <value>Mensaje para</value>
+  </data>
+  <data name="LinkTitle" xml:space="preserve">
+    <value>Mensaje cifrado con IBCS</value>
+  </data>
   <data name="MainPageComposerMessage" xml:space="preserve">
     <value>Mensaje</value>
   </data>
+  <data name="MainPageComposerShortenUrl" xml:space="preserve">
+    <value>Acortar url</value>
+  </data>
   <data name="MainPageComposerTitle" xml:space="preserve">
     <value>Título</value>
+  </data>
+  <data name="MainPageMailEncrypting" xml:space="preserve">
+    <value>cifrando mensaje</value>
+  </data>
+  <data name="MainPageMailMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="MainPageMailMessageAd" xml:space="preserve">
+    <value>Este mensaje ha sido cifrado utilizando una sistema de Criptografía Basada en Identidad. Para poder descrifrarlo, por favor, descarga la aplicación IBCS para Windows Phone.</value>
+  </data>
+  <data name="MainPageMailMessageEnd" xml:space="preserve">
+    <value>Este es el final del mensaje. Al hacer click al siguiente enlace, la aplicación descifrará automáticamente el mensaje.</value>
+  </data>
+  <data name="MainPageMailSend" xml:space="preserve">
+    <value>Enviar</value>
+  </data>
+  <data name="MainPageMailSubject" xml:space="preserve">
+    <value>Asunto</value>
+  </data>
+  <data name="MainPageMailTo" xml:space="preserve">
+    <value>Para</value>
+  </data>
+  <data name="MainPageSocialIdentity" xml:space="preserve">
+    <value>Identidad</value>
+  </data>
+  <data name="MainPageSocialMessage" xml:space="preserve">
+    <value>Mensaje</value>
+  </data>
+  <data name="MainPageSocialSendButton" xml:space="preserve">
+    <value>Compartir</value>
   </data>
   <data name="NdefMessageRecordType" xml:space="preserve">
     <value>Tipo de registro</value>
@@ -295,9 +340,30 @@
     <value>Títulos</value>
   </data>
   <data name="NfcMessageTooLong" xml:space="preserve">
-    <value>No se puede escribir en la etiqueta, el mensaje es muy largo</value>
+    <value>No se puede escribir en la etiqueta</value>
   </data>
   <data name="NoNfcError" xml:space="preserve">
     <value>Vaya! Tu dispositivo no soporta NFC</value>
+  </data>
+  <data name="AppBarInstructions" xml:space="preserve">
+    <value>instrucciones</value>
+  </data>
+  <data name="InstructionsPageEmailAndSocial" xml:space="preserve">
+    <value>compartiendo</value>
+  </data>
+  <data name="InstructionsPageIbeTitle" xml:space="preserve">
+    <value>ibe</value>
+  </data>
+  <data name="InstructionsPageNfcTitle" xml:space="preserve">
+    <value>nfc</value>
+  </data>
+  <data name="InstructionsPageReadingTags" xml:space="preserve">
+    <value>leyendo etiquetas</value>
+  </data>
+  <data name="InstructionsPageSecureNotes" xml:space="preserve">
+    <value>notas seguras</value>
+  </data>
+  <data name="InstructionsPageWelcomeTitle" xml:space="preserve">
+    <value>bienvenido</value>
   </data>
 </root>

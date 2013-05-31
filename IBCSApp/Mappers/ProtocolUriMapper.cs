@@ -18,8 +18,16 @@ namespace IBCSApp.Mappers
             if (tempUri.Contains("ibcs:decrypt"))
             {
                 destination = "/Views/DecryptMessage.xaml";
-                string query = "?message=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("{"), tempUri.IndexOf("&id") -  tempUri.IndexOf("={") - 1));
-                query += "&id=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("&id=") + 4));
+                string query = "";
+                if (tempUri.IndexOf("{") == -1)
+                {
+                    query = tempUri.Substring(tempUri.IndexOf("?message="));
+                }
+                else
+                {
+                    query = "?message=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("{"), tempUri.IndexOf("&id") - tempUri.IndexOf("={") - 1));
+                    query += "&id=" + HttpUtility.UrlEncode(tempUri.Substring(tempUri.IndexOf("&id=") + 4));
+                }
                 destination += query;
                 if (IsolatedStorageSettings.ApplicationSettings.Contains("email"))
                 {

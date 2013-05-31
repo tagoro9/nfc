@@ -26,7 +26,8 @@
     using NdefLibrary.Ndef;
     using System.Runtime.InteropServices.WindowsRuntime;
     using IBCSApp.Resources;
-    using System.Globalization; 
+    using System.Globalization;
+    using Microsoft.Phone.UserData; 
 
     /// <summary>
     /// MainPage ViewModel.
@@ -44,12 +45,10 @@
         private IPairingService pairingService;
         private IUxService uxService;
 
-        private SerializedPrivateKey sKey;
         private StreamSocket socket;
         private AesManaged aes;
 
         //Commands variables.
-        private DelegateCommand navigateToSecondPageCommand;
         private DelegateCommand<bool> setAsBusyCommand;
         private DelegateCommand logOutCommand;
         private DelegateCommand navigateToSecureEmailCommand;
@@ -63,19 +62,20 @@
         private DelegateCommand publishMessageCommand;
         private DelegateCommand encryptSecureNoteCommand;
         private DelegateCommand clearLogCommand;
+        private DelegateCommand navigateToInstructionsCommand;
 
         private string identity;
         private string key;
-        private string ct;
         private bool keyAvailable;
 
-        private string messageText;
-        private string messageIdentity;
+        private string messageText = String.Empty;
+        private string messageIdentity = String.Empty;
 
         private string destinataryEmail;
         private string destinataryName;
         private string emailSubject;
         private string emailBody;
+
         private string progressMessage;
 
         private string secureNoteText;
@@ -83,15 +83,17 @@
         private string secureNoteEncryptedText;
         private bool secureNoteEncrypted = false;
         private string shortenedNote;
+        private bool shortenSecureNote = false;
 
         private string myIdentity;
         private SerializedPrivateKey myKey;
+
+        private Contacts contacts;
 
         private bool devicePresent = false;
         private int tagSize = 0;
 
         private ObservableCollection<NfcLogItem> nfcLogCollection = new ObservableCollection<NfcLogItem>();
-
 
         /// <summary>
         /// Constructor.
@@ -112,7 +114,6 @@
             this.pairingService = pairingService;
             this.uxService = uxService;
 
-            this.navigateToSecondPageCommand = new DelegateCommand(NavigateToSecondPageExecute);
             this.setAsBusyCommand = new DelegateCommand<bool>(SetAsBusyExecte);
             this.logOutCommand = new DelegateCommand(LogOutExecute);
             this.navigateToSecureEmailCommand = new DelegateCommand(NavigateToSecureEmailExecute);
@@ -126,6 +127,7 @@
             this.writeToTagCommand = new DelegateCommand(WriteToTagExecute, WriteToTagCanExecute);
             this.encryptSecureNoteCommand = new DelegateCommand(EncryptSecureNoteExecute);
             this.clearLogCommand = new DelegateCommand(ClearLogExecute);
+            this.navigateToInstructionsCommand = new DelegateCommand(NavigateToInstructionsExecite);
 
             if (this.nfcService.ConnectDefaultProximityDevice())
             {
@@ -141,11 +143,14 @@
                 LogMessage(AppResources.NoNfcError, NfcLogItem.ERROR_ICON);
             }
 
-            myIdentity = (string) settingsService.Get("email");
-            myKey = (SerializedPrivateKey) settingsService.Get("private");
+            contacts = new Contacts();
 
-            Identity = "no identity...";
-            Key = "no key...";
+            myIdentity = (string) settingsService.Get("email");
+        }
+
+        private void NavigateToInstructionsExecite()
+        {
+            this.navService.NavigateToInstructionsPage();
         }
 
         private void nfcService_MessagePublishedCompleted()
@@ -211,7 +216,14 @@
             ProgressMessage = AppResources.EncryptingMessage;
             secureNoteEncryptedText = await bfService.CipherText(SecureNoteText, myIdentity, myKey);
             string url = String.Format("ibcs:decrypt?message={0}&id={1}", secureNoteEncryptedText, myIdentity);
-            shortenedNote = await apiService.ShortenUrl(url);
+            if (shortenSecureNote)
+            {
+                shortenedNote = await apiService.ShortenUrl(url);
+            }
+            else
+            {
+                shortenedNote = url;
+            }
             dispatcherService.CallDispatcher(() => {
                 IsBusy = false;
                 ProgressMessage = String.Empty;
@@ -220,19 +232,19 @@
         }
 
         /// <summary>
+        /// Command to be binded in UI, execute navigation to instructions page
+        /// </summary>
+        public ICommand NavigateToInstructionsCommand
+        {
+            get { return this.navigateToInstructionsCommand; }
+        }
+
+        /// <summary>
         /// Command to be binded in UI, log the user out.
         /// </summary>
         public ICommand LogOutCommand
         {
             get { return this.logOutCommand; }
-        }
-
-        /// <summary>
-        /// Command to be binded in UI, execute navigation to second page.
-        /// </summary>
-        public ICommand NavigateToSecondPageCommand
-        {
-            get { return this.navigateToSecondPageCommand; }
         }
 
         /// <summary>
@@ -369,7 +381,7 @@
             else
             {
                 uxService.ShowToastNotification("NFC", AppResources.NfcMessageTooLong);
-                LogMessage(AppResources.NfcMessageWritten, NfcLogItem.WARNING_ICON);
+                LogMessage(AppResources.NfcMessageTooLong, NfcLogItem.WARNING_ICON);
             }
         }
 
@@ -403,6 +415,16 @@
             set
             {
                 nfcLogCollection = value;
+                RaisePropertyChanged();
+            }
+        }
+
+        public bool ShortenSecureNote
+        {
+            get { return shortenSecureNote; }
+            set
+            {
+                shortenSecureNote = value;
                 RaisePropertyChanged();
             }
         }
@@ -527,24 +549,57 @@
             }
         }
 
-        private async void ShareSecureMessageExecute()
+        private void ShareSecureMessageExecute()
         {
-            ShareLinkTask shareLink = new ShareLinkTask();
-            string url = await apiService.ShortenUrl("ibcs:decrypt?message=esto_deberia_ser_el_mensaje_cifrado?id=i_identidad");
-            shareLink.LinkUri = new Uri(url);
-            //shareLink.LinkUri = new Uri("ibcs:decrypt?message=esto_deberia_ser_el_mensaje_cifrado?id=i_identidad");
-            shareLink.Title = "IBCS cencrypted message";
-            shareLink.Message = "Message intended to mi_identidad";
-            shareLink.Show();
+            dispatcherService.CallDispatcher(() => {
+                IsBusy = true;
+                ProgressMessage = AppResources.EncryptingLink;
+            });
+            contacts.SearchCompleted += contacts_SearchCompleted;
+            contacts.SearchAsync(MessageIdentity, FilterKind.EmailAddress, "Search email contacts");
         }
 
-        private void SendSecureEmailExecute()
+        private async void contacts_SearchCompleted(object sender, ContactsSearchEventArgs e)
         {
-            //IsBusy = true;
-            //ProgressMessage = "Encrypting message...";
-            //SerializedPrivateKey sKey = (SerializedPrivateKey) settingsService.Get("private");
-            //bfService.CipherTextCompleted += bfService_CipherTextCompleted;
-            //bfService.CipherText(EmailBody, DestinataryEmail, sKey);
+            ShareLinkTask shareLink = new ShareLinkTask();
+            string cipherText = await bfService.CipherText(MessageText, MessageIdentity, myKey);
+            string url = await apiService.ShortenUrl(String.Format("ibcs:decrypt?message={0}&id={1}", cipherText, MessageIdentity));
+            shareLink.LinkUri = new Uri(url);
+            shareLink.Title = AppResources.LinkTitle;
+            if (e.Results.Any())
+            {
+                shareLink.Message = AppResources.LinkMessage + " " + e.Results.FirstOrDefault().DisplayName;
+            }
+            else
+            {
+                shareLink.Message = AppResources.LinkMessage + " " + MessageIdentity;
+            }
+            shareLink.Show();
+            dispatcherService.CallDispatcher(() =>
+            {
+                IsBusy = false;
+                ProgressMessage = String.Empty;
+            });            
+        }
+
+        private async void SendSecureEmailExecute()
+        {
+            dispatcherService.CallDispatcher(() => {
+                IsBusy = true;
+                ProgressMessage = AppResources.MainPageMailEncrypting;
+            });
+            string cipherText = await bfService.CipherText(EmailBody, DestinataryEmail, myKey);
+            string url = await apiService.ShortenUrl(String.Format("ibcs:decrypt?message={0}&id={1}", cipherText, DestinataryEmail));
+            EmailComposeTask email = new EmailComposeTask();
+            email.To = DestinataryEmail;
+            email.Subject = EmailSubject;
+            email.Body = AppResources.MainPageMailMessageAd + "\n\n" + cipherText + "\n\n" + AppResources.MainPageMailMessageEnd + " " + url;
+            dispatcherService.CallDispatcher(() =>
+            {
+                IsBusy = false;
+                ProgressMessage = String.Empty;
+            });
+            email.Show();
         }
 
         private void AddressChooserExecute()
@@ -671,7 +726,7 @@
             }
             else
             {
-                sKey = (SerializedPrivateKey) settingsService.Get("private");
+                myKey = (SerializedPrivateKey) settingsService.Get("private");
             }
         }
 
@@ -682,7 +737,7 @@
         private void settingsService_GetUserKeyCompleted(SerializedPrivateKey key)
         {
             settingsService.Set("private", key);
-            sKey = key;
+            myKey = key;
             dispatcherService.CallDispatcher(() => {
                 IsBusy = false;
             });

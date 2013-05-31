@@ -169,6 +169,15 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a instructions.
+        /// </summary>
+        public static string AppBarInstructions {
+            get {
+                return ResourceManager.GetString("AppBarInstructions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a logout.
         /// </summary>
         public static string AppBarLogout {
@@ -187,7 +196,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a IBCS.
+        ///   Busca una cadena traducida similar a Nfc Secure Notes.
         /// </summary>
         public static string ApplicationTitle {
             get {
@@ -304,7 +313,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a I have read and agree to the terms of service.
+        ///   Busca una cadena traducida similar a I have read and agree to the .
         /// </summary>
         public static string CreateAccountServiceConditions {
             get {
@@ -318,6 +327,24 @@ namespace IBCSApp.Resources {
         public static string CreateAccountServiceConditionsError {
             get {
                 return ResourceManager.GetString("CreateAccountServiceConditionsError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a terms of service.
+        /// </summary>
+        public static string CreateAccountServiceConditionsLink {
+            get {
+                return ResourceManager.GetString("CreateAccountServiceConditionsLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a http://pkg.apphb.com.
+        /// </summary>
+        public static string CreateAccountServiceConditionsUrl {
+            get {
+                return ResourceManager.GetString("CreateAccountServiceConditionsUrl", resourceCulture);
             }
         }
         
@@ -367,11 +394,92 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a encrypting message.
+        /// </summary>
+        public static string EncryptingLink {
+            get {
+                return ResourceManager.GetString("EncryptingLink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a encrypting secure note.
         /// </summary>
         public static string EncryptingMessage {
             get {
                 return ResourceManager.GetString("EncryptingMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a sharing.
+        /// </summary>
+        public static string InstructionsPageEmailAndSocial {
+            get {
+                return ResourceManager.GetString("InstructionsPageEmailAndSocial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a ibe.
+        /// </summary>
+        public static string InstructionsPageIbeTitle {
+            get {
+                return ResourceManager.GetString("InstructionsPageIbeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a nfc.
+        /// </summary>
+        public static string InstructionsPageNfcTitle {
+            get {
+                return ResourceManager.GetString("InstructionsPageNfcTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a reading tags.
+        /// </summary>
+        public static string InstructionsPageReadingTags {
+            get {
+                return ResourceManager.GetString("InstructionsPageReadingTags", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a secure notes.
+        /// </summary>
+        public static string InstructionsPageSecureNotes {
+            get {
+                return ResourceManager.GetString("InstructionsPageSecureNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a welcome.
+        /// </summary>
+        public static string InstructionsPageWelcomeTitle {
+            get {
+                return ResourceManager.GetString("InstructionsPageWelcomeTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Message intented to.
+        /// </summary>
+        public static string LinkMessage {
+            get {
+                return ResourceManager.GetString("LinkMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a IBCS encrypted message.
+        /// </summary>
+        public static string LinkTitle {
+            get {
+                return ResourceManager.GetString("LinkTitle", resourceCulture);
             }
         }
         
@@ -475,6 +583,15 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Shorten url.
+        /// </summary>
+        public static string MainPageComposerShortenUrl {
+            get {
+                return ResourceManager.GetString("MainPageComposerShortenUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a write to tag.
         /// </summary>
         public static string MainPageComposerTagButton {
@@ -493,11 +610,74 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a encrypting message.
+        /// </summary>
+        public static string MainPageMailEncrypting {
+            get {
+                return ResourceManager.GetString("MainPageMailEncrypting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a mail.
         /// </summary>
         public static string MainPageMailHeader {
             get {
                 return ResourceManager.GetString("MainPageMailHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Message.
+        /// </summary>
+        public static string MainPageMailMessage {
+            get {
+                return ResourceManager.GetString("MainPageMailMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a This message is ciphered using an Identity Based Cryptosystem. In order the decrypt it download the Windows Phone IBCS app!.
+        /// </summary>
+        public static string MainPageMailMessageAd {
+            get {
+                return ResourceManager.GetString("MainPageMailMessageAd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a This is the end of the message. By clicking this link from your phone, the app will automatically decrypt it..
+        /// </summary>
+        public static string MainPageMailMessageEnd {
+            get {
+                return ResourceManager.GetString("MainPageMailMessageEnd", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Send.
+        /// </summary>
+        public static string MainPageMailSend {
+            get {
+                return ResourceManager.GetString("MainPageMailSend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Subject.
+        /// </summary>
+        public static string MainPageMailSubject {
+            get {
+                return ResourceManager.GetString("MainPageMailSubject", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a To.
+        /// </summary>
+        public static string MainPageMailTo {
+            get {
+                return ResourceManager.GetString("MainPageMailTo", resourceCulture);
             }
         }
         
@@ -525,6 +705,33 @@ namespace IBCSApp.Resources {
         public static string MainPageSocialHeader {
             get {
                 return ResourceManager.GetString("MainPageSocialHeader", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Identity.
+        /// </summary>
+        public static string MainPageSocialIdentity {
+            get {
+                return ResourceManager.GetString("MainPageSocialIdentity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Message.
+        /// </summary>
+        public static string MainPageSocialMessage {
+            get {
+                return ResourceManager.GetString("MainPageSocialMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Share.
+        /// </summary>
+        public static string MainPageSocialSendButton {
+            get {
+                return ResourceManager.GetString("MainPageSocialSendButton", resourceCulture);
             }
         }
         
@@ -574,7 +781,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Can&apos;t write to tag, message too long..
+        ///   Busca una cadena traducida similar a Can&apos;t write to tag.
         /// </summary>
         public static string NfcMessageTooLong {
             get {

@@ -33,7 +33,7 @@
         },
         timer: {
             setup: function () {
-                $('.phone-countdown').countdown("2013/06/27", function (event) { // Be sure to change "2013/12/25" to your launch date!
+                $('.phone-countdown').countdown("2013/06/25", function (event) { // Be sure to change "2013/12/25" to your launch date!
                     var $this = $(this);
                     switch (event.type) {
                         case "seconds":
@@ -72,6 +72,7 @@
             }
         },
         domReady: function () {
+            //Check for confirm
             var match = location.hash.match(new RegExp("confirm" + '=([^&]*)'));
             if (match != null) {
                 var confirm = match[1];
@@ -82,6 +83,22 @@
                     $('.before-activating, .confirmation-content p.loading').css("display", "none");
                     $('.account-activated').css("display", "block");
                 });
+            }
+            //Check for privacy
+            var match = location.hash.match(new RegExp("privacy"));
+            if (match != null) {
+                $('.initial-content').fadeOut();
+                $('.actions').fadeOut();
+                $('.title').fadeOut();
+                $('.privacy').fadeIn();
+            }
+            //Check for conditions
+            var match = location.hash.match(new RegExp("conditions"));
+            if (match != null) {
+                $('.initial-content').fadeOut();
+                $('.actions').fadeOut();
+                $('.title').fadeOut();
+                $('.conditions').fadeIn();
             }
         },
         windowLoad: function () {

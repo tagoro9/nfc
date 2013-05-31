@@ -71,5 +71,14 @@
         {
             App.RootFrame.Navigate(new Uri(uri, UriKind.Relative));
         }
+
+
+        /// <summary>
+        /// Method implementation to navigate to page called instructions
+        /// </summary>
+        public void NavigateToInstructionsPage()
+        {
+            App.RootFrame.Navigate(new Uri("/Views/InstructionsPage.xaml", UriKind.Relative));
+        }
     }
 }

@@ -126,7 +126,7 @@
     <comment>Controls the Language and ensures that the font for all elements in the RootFrame aligns with the app's language. Set to the language code of this resource file's language.</comment>
   </data>
   <data name="ApplicationTitle" xml:space="preserve">
-    <value>IBCS</value>
+    <value>Nfc Secure Notes</value>
   </data>
   <data name="AppBarButtonText" xml:space="preserve">
     <value>add</value>
@@ -186,7 +186,7 @@
     <value>Oops! It seems like your passwords do not match.</value>
   </data>
   <data name="CreateAccountServiceConditions" xml:space="preserve">
-    <value>I have read and agree to the terms of service</value>
+    <value>I have read and agree to the </value>
   </data>
   <data name="CreateAccountServiceConditionsError" xml:space="preserve">
     <value>You need to accept the terms of service.</value>
@@ -293,11 +293,59 @@
   <data name="NotifyDeviceDeparted" xml:space="preserve">
     <value>Device / tag departed</value>
   </data>
+  <data name="CreateAccountServiceConditionsLink" xml:space="preserve">
+    <value>terms of service</value>
+  </data>
+  <data name="CreateAccountServiceConditionsUrl" xml:space="preserve">
+    <value>http://pkg.apphb.com</value>
+  </data>
+  <data name="EncryptingLink" xml:space="preserve">
+    <value>encrypting message</value>
+  </data>
+  <data name="LinkMessage" xml:space="preserve">
+    <value>Message intented to</value>
+  </data>
+  <data name="LinkTitle" xml:space="preserve">
+    <value>IBCS encrypted message</value>
+  </data>
   <data name="MainPageComposerMessage" xml:space="preserve">
     <value>Message</value>
   </data>
+  <data name="MainPageComposerShortenUrl" xml:space="preserve">
+    <value>Shorten url</value>
+  </data>
   <data name="MainPageComposerTitle" xml:space="preserve">
     <value>Title</value>
+  </data>
+  <data name="MainPageMailEncrypting" xml:space="preserve">
+    <value>encrypting message</value>
+  </data>
+  <data name="MainPageMailMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MainPageMailMessageAd" xml:space="preserve">
+    <value>This message is ciphered using an Identity Based Cryptosystem. In order the decrypt it download the Windows Phone IBCS app!</value>
+  </data>
+  <data name="MainPageMailMessageEnd" xml:space="preserve">
+    <value>This is the end of the message. By clicking this link from your phone, the app will automatically decrypt it.</value>
+  </data>
+  <data name="MainPageMailSend" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="MainPageMailSubject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="MainPageMailTo" xml:space="preserve">
+    <value>To</value>
+  </data>
+  <data name="MainPageSocialIdentity" xml:space="preserve">
+    <value>Identity</value>
+  </data>
+  <data name="MainPageSocialMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="MainPageSocialSendButton" xml:space="preserve">
+    <value>Share</value>
   </data>
   <data name="NdefMessageRecordType" xml:space="preserve">
     <value>Record type</value>
@@ -315,9 +363,30 @@
     <value>URI</value>
   </data>
   <data name="NfcMessageTooLong" xml:space="preserve">
-    <value>Can't write to tag, message too long.</value>
+    <value>Can't write to tag</value>
   </data>
   <data name="NoNfcError" xml:space="preserve">
     <value>Oops! Your device does not support NFC</value>
+  </data>
+  <data name="AppBarInstructions" xml:space="preserve">
+    <value>instructions</value>
+  </data>
+  <data name="InstructionsPageEmailAndSocial" xml:space="preserve">
+    <value>sharing</value>
+  </data>
+  <data name="InstructionsPageIbeTitle" xml:space="preserve">
+    <value>ibe</value>
+  </data>
+  <data name="InstructionsPageNfcTitle" xml:space="preserve">
+    <value>nfc</value>
+  </data>
+  <data name="InstructionsPageReadingTags" xml:space="preserve">
+    <value>reading tags</value>
+  </data>
+  <data name="InstructionsPageSecureNotes" xml:space="preserve">
+    <value>secure notes</value>
+  </data>
+  <data name="InstructionsPageWelcomeTitle" xml:space="preserve">
+    <value>welcome</value>
   </data>
 </root>

@@ -103,23 +103,68 @@
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageMailHeader, Source={StaticResource LocalizedStrings}}">
             <StackPanel>
-                <TextBlock>To:</TextBlock>
-                <Button Command="{Binding AddressChooserCommand}">Add</Button>
-                <TextBlock Text="{Binding DestinataryName}"></TextBlock>
-                <TextBlock>Subject:</TextBlock>
-                <TextBox Text="{Binding EmailSubject, Mode=TwoWay}"></TextBox>
-                <TextBlock>Content</TextBlock>
-                <TextBox Text="{Binding EmailBody, Mode=TwoWay}"></TextBox>
-                <Button Content="Send" Command="{Binding SendSecureEmailCommand}"></Button>
+                <toolkit:PhoneTextBox Hint="{Binding Path=LocalizedResources.MainPageMailTo, Source={StaticResource LocalizedStrings}}" 
+                                         ActionIcon="/Assets/Icons/add.png"
+                                          Text="{Binding DestinataryEmail,Mode=TwoWay}"
+                                         ActionIconTapped="PhoneTextBox_ActionIconTapped">
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="EmailNameOrAddress" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
+                <toolkit:PhoneTextBox Text="{Binding EmailSubject, Mode=TwoWay}"
+                                      MaxLength="100"
+                                      Hint="{Binding Path=LocalizedResources.MainPageMailSubject, Source={StaticResource LocalizedStrings}}"
+                                      >
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="Text" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
+                <TextBlock Margin="12,0,0,0" Text="{Binding Path=LocalizedResources.MainPageMailMessage, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                <toolkit:PhoneTextBox Text="{Binding EmailBody, Mode=TwoWay}"
+                                      MaxLength="500"
+                                      Height="300"
+                                      LengthIndicatorVisible="True">
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="Text" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
+                <Button Content="{Binding Path=LocalizedResources.MainPageMailSend, Source={StaticResource LocalizedStrings}}" Command="{Binding SendSecureEmailCommand}"></Button>
             </StackPanel>            
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageSocialHeader, Source={StaticResource LocalizedStrings}}">
             <StackPanel>
-                <TextBlock>Message</TextBlock>
-                <TextBox Text="{Binding MessageText, Mode=TwoWay}"></TextBox>
-                <TextBlock>Identity</TextBlock>
-                <TextBox Text="{Binding Identity, Mode=TwoWay}"></TextBox>
-                <Button Content="Send" Command="{Binding ShareSecureMessageCommand}"></Button>
+                <toolkit:PhoneTextBox Grid.Row="0"
+                                      MaxLength="50"
+                                      LengthIndicatorVisible="True"
+                                      Text="{Binding MessageIdentity, Mode=TwoWay}"
+                                      Hint="{Binding Path=LocalizedResources.MainPageSocialIdentity, Source={StaticResource LocalizedStrings}}"
+                                      >
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="EmailNameOrAddress" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>                
+                <TextBlock Text="{Binding Path=LocalizedResources.MainPageSocialMessage, Source={StaticResource LocalizedStrings}}" Margin="12,0,0,0"></TextBlock>
+                <toolkit:PhoneTextBox Grid.Row="1" Height="360"
+                                         MaxLength="500"
+                                         LengthIndicatorVisible="True"
+                                         TextWrapping="Wrap" 
+                                         Text="{Binding MessageText, Mode=TwoWay}"
+                                         AcceptsReturn="True" >
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="Text" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
+                <Button Content="{Binding Path=LocalizedResources.MainPageSocialSendButton, Source={StaticResource LocalizedStrings}}" Command="{Binding ShareSecureMessageCommand}"></Button>
             </StackPanel>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.MainPageComposerHeader, Source={StaticResource LocalizedStrings}}">
@@ -129,15 +174,34 @@
                                       LengthIndicatorVisible="True"
                                       Text="{Binding SecureNoteTitle, Mode=TwoWay}"
                                       Hint="{Binding Path=LocalizedResources.MainPageComposerTitle, Source={StaticResource LocalizedStrings}}"
-                                      ></toolkit:PhoneTextBox>
+                                      >
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="Text" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
                 <TextBlock Text="{Binding Path=LocalizedResources.MainPageComposerMessage, Source={StaticResource LocalizedStrings}}" Margin="12,0,0,0"></TextBlock>
                 <toolkit:PhoneTextBox Grid.Row="1" Height="300"
                                          MaxLength="500"
                                          LengthIndicatorVisible="True"
                                          TextWrapping="Wrap" 
                                          Text="{Binding SecureNoteText, Mode=TwoWay}"
-                                         AcceptsReturn="True" />
-                <Button Grid.Row="2" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"></Button>
+                                         AcceptsReturn="True" >
+                    <TextBox.InputScope>
+                        <InputScope>
+                            <InputScopeName NameValue="Text" />
+                        </InputScope>
+                    </TextBox.InputScope>
+                </toolkit:PhoneTextBox>
+                <Grid Grid.Row="2">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                        <ColumnDefinition Width="*"></ColumnDefinition>
+                    </Grid.ColumnDefinitions>
+                    <CheckBox Width="300" Grid.Column="0" Content="{Binding Path=LocalizedResources.MainPageComposerShortenUrl, Source={StaticResource LocalizedStrings}}" IsChecked="{Binding ShortenSecureNote}"></CheckBox>
+                    <Button Grid.Column="1" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"/>
+                </Grid>
             </StackPanel>
         </phone:PivotItem>
 
@@ -147,18 +211,21 @@
                     <abu:AppBar Id="0" Mode="Minimized">
                         <abu:AppBar.MenuItems>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarClearLog, Source={StaticResource LocalizedStrings}}" Command="{Binding ClearLogCommand}"/>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarInstructions, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToInstructionsCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
                         </abu:AppBar.MenuItems>
                     </abu:AppBar>
-                    <abu:AppBar Id="1">
+                    <abu:AppBar Id="1" Mode="Minimized">
                         <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarInstructions, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToInstructionsCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
                         </abu:AppBar.MenuItems>
                     </abu:AppBar>
                     <abu:AppBar Id="2" Mode="Minimized">
                         <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarInstructions, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToInstructionsCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
                         </abu:AppBar.MenuItems>
@@ -167,6 +234,7 @@
                         <abu:AppBarButton Command="{Binding WriteToTagCommand}" Text="{Binding Path=LocalizedResources.MainPageComposerTagButton, Source={StaticResource LocalizedStrings}}" IconUri="/Assets/AppBar/edit.png"></abu:AppBarButton>
                         <abu:AppBarButton Command="{Binding PublishMessageCommand}"  Text="{Binding Path=LocalizedResources.MainPageComposerDeviceButton, Source={StaticResource LocalizedStrings}}" IconUri="/Assets/AppBar/share.png"></abu:AppBarButton>
                         <abu:AppBar.MenuItems>
+                            <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarInstructions, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToInstructionsCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarAbout, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToAboutCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarLogout, Source={StaticResource LocalizedStrings}}" Command="{Binding LogOutCommand}"/>
                         </abu:AppBar.MenuItems>

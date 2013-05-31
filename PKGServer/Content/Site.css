@@ -19,6 +19,26 @@ body > .container {
   margin-left: -585px;
 }
 
+h2 {
+    color: #fff;
+    font-size: 20px;
+}
+
+li {
+    color: #fff;
+}
+
+.privacy, .conditions {
+    font-size: 15px;
+    max-height: 446px;
+    overflow-y: scroll;
+    display: none;
+}
+
+.privacy p, .conditions p {
+    font-size: 15px;
+}
+
 p.loading {
     text-align: center;
 }

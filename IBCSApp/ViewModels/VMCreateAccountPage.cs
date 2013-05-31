@@ -3,6 +3,7 @@ using IBCSApp.Services.API;
 using IBCSApp.Services.Dispatcher;
 using IBCSApp.Services.Navigation;
 using IBCSApp.ViewModels.Base;
+using Microsoft.Phone.Tasks;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -22,6 +23,7 @@ namespace IBCSApp.ViewModels
 
         //Commands
         private DelegateCommand createAccountCommand;
+        private DelegateCommand navigateToServiceConditionsCommand;
 
         //View data
         private string name;
@@ -37,6 +39,19 @@ namespace IBCSApp.ViewModels
             this.navService = navService;
 
             this.createAccountCommand = new DelegateCommand(CreateAccountExecute);
+            this.navigateToServiceConditionsCommand = new DelegateCommand(NavigateToServiceConditionsExecute);
+        }
+
+        private void NavigateToServiceConditionsExecute()
+        {
+            WebBrowserTask task = new WebBrowserTask();
+            task.Uri = new Uri(AppResources.CreateAccountServiceConditionsUrl);
+            task.Show();
+        }
+
+        public ICommand NavigateToServiceConditionsCommand
+        {
+            get { return navigateToServiceConditionsCommand; }
         }
 
         public string Name
