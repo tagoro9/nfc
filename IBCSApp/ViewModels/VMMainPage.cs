@@ -137,6 +137,8 @@
                 this.nfcService.MessagePublishedCompleted += nfcService_MessagePublishedCompleted;
                 this.nfcService.SubscribeToMessage("WriteableTag");
                 this.nfcService.SubscribeToMessage("NDEF");
+                this.nfcService.SubscribeToMessage("NDEF:Unknown");
+                this.nfcService.SubscribeToMessage("WindowsMime");
             }
             else
             {
@@ -166,6 +168,20 @@
                 tagSize = size;
                 LogMessage(AppResources.NfcWriteableTagSize + " " + size + " bytes", NfcLogItem.INFO_ICON);
             }
+            else if (message.MessageType == "WindowsMime")
+            {
+                var buffer = message.Data.ToArray();
+                int mimesize = 0;
+                for (mimesize = 0; mimesize < 256 && buffer[mimesize] != 0; ++mimesize) {};
+                var mimeType = Encoding.UTF8.GetString(buffer, 0, mimesize);
+                string extra = AppResources.NdefRecordMimeType + ": " + mimeType;
+                LogMessage(AppResources.NdefMessageRecordType + ": WindowsMime", NfcLogItem.INFO_ICON, extra);
+                return;
+            }
+            else if (message.MessageType == "NDEF:Unknown") {
+                LogMessage( AppResources.NdefMessageRecordType + ": " + AppResources.NdefUnknown, NfcLogItem.INFO_ICON);
+                return;
+            }
             else if (message.MessageType == "NDEF")
             {
                 var rawMsg = message.Data.ToArray();
@@ -175,14 +191,14 @@
                 string messageInformation = "";
                 foreach (NdefRecord record in ndefMessage)
                 {
+                    string extra = "";
                     messageInformation = AppResources.NdefMessageRecordType + ": " + Encoding.UTF8.GetString(record.Type, 0, record.Type.Length);
                     //if the record is a Smart Poster
                     if (record.CheckSpecializedType(false) == typeof(NdefSpRecord))
                     {
                         // Convert and extract Smart Poster info
                         var spRecord = new NdefSpRecord(record);
-                        string extra = "";
-                        extra += AppResources.NdefSpUri + ": " + spRecord.Uri;
+                        extra = AppResources.NdefSpUri + ": " + spRecord.Uri;
                         extra += "\n" + AppResources.NdefSpTitles + ": " + spRecord.TitleCount();
                         extra += "\n" + AppResources.NdefSpTitle + ": " + spRecord.Titles[0].Text;
                         if (spRecord.ActionInUse())
@@ -191,7 +207,38 @@
                         }
                         LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
                     }
+                    if (record.CheckSpecializedType(false) == typeof(NdefUriRecord))
+                    {
+                        var uriRecord = new NdefUriRecord(record);
+                        extra = AppResources.NdefSpUri + ": " + uriRecord.Uri;
+                        LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
+                    }
+                    if (record.CheckSpecializedType(false) == typeof(NdefTextRecord))
+                    {
+                        var textRecord = new NdefTextRecord(record);
+                        extra = AppResources.NdefTextRecordText + ": " + textRecord.Text;
+                        extra += "\n" + AppResources.NdefTextRecordLanguage + ": " + textRecord.LanguageCode;
+                        LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
+                    }
+                    if (record.CheckSpecializedType(false) == typeof(NdefLaunchAppRecord))
+                    {
+                        var launchAppRecord = new NdefLaunchAppRecord(record);
+                        foreach (KeyValuePair<string, string> entry in launchAppRecord.PlatformIds)
+                        {
+                            extra += AppResources.NdefLaunchAppRecordPlatform + ": " + entry.Key + "\n";
+                            extra += AppResources.NdefLaunchAppRecordId + ": " + entry.Value + "\n";
+                        }
+                        extra = extra.TrimEnd('\n');
+                        LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
+                    }
+                    if (record.CheckSpecializedType(false) == typeof(NdefAndroidAppRecord))
+                    {
+                        var androidRecord = new NdefAndroidAppRecord(record);
+                        extra = AppResources.NdefAAR + ": " + androidRecord.PackageName;
+                        LogMessage(messageInformation, NfcLogItem.INFO_ICON, extra);
+                    }
                 }
+                return;
             }
         }
 

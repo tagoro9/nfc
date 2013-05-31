@@ -736,11 +736,47 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Package name.
+        /// </summary>
+        public static string NdefAAR {
+            get {
+                return ResourceManager.GetString("NdefAAR", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a App Id.
+        /// </summary>
+        public static string NdefLaunchAppRecordId {
+            get {
+                return ResourceManager.GetString("NdefLaunchAppRecordId", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Platform.
+        /// </summary>
+        public static string NdefLaunchAppRecordPlatform {
+            get {
+                return ResourceManager.GetString("NdefLaunchAppRecordPlatform", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a Record type.
         /// </summary>
         public static string NdefMessageRecordType {
             get {
                 return ResourceManager.GetString("NdefMessageRecordType", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a MIME type.
+        /// </summary>
+        public static string NdefRecordMimeType {
+            get {
+                return ResourceManager.GetString("NdefRecordMimeType", resourceCulture);
             }
         }
         
@@ -777,6 +813,33 @@ namespace IBCSApp.Resources {
         public static string NdefSpUri {
             get {
                 return ResourceManager.GetString("NdefSpUri", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Language code.
+        /// </summary>
+        public static string NdefTextRecordLanguage {
+            get {
+                return ResourceManager.GetString("NdefTextRecordLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Text.
+        /// </summary>
+        public static string NdefTextRecordText {
+            get {
+                return ResourceManager.GetString("NdefTextRecordText", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a NDEF, unknown format.
+        /// </summary>
+        public static string NdefUnknown {
+            get {
+                return ResourceManager.GetString("NdefUnknown", resourceCulture);
             }
         }
         

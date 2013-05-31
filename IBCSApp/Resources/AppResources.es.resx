@@ -366,4 +366,25 @@
   <data name="InstructionsPageWelcomeTitle" xml:space="preserve">
     <value>bienvenido</value>
   </data>
+  <data name="NdefAAR" xml:space="preserve">
+    <value>Nombre del paquete</value>
+  </data>
+  <data name="NdefLaunchAppRecordId" xml:space="preserve">
+    <value>App Id</value>
+  </data>
+  <data name="NdefLaunchAppRecordPlatform" xml:space="preserve">
+    <value>Plataforma</value>
+  </data>
+  <data name="NdefRecordMimeType" xml:space="preserve">
+    <value>Tipo MIME</value>
+  </data>
+  <data name="NdefTextRecordLanguage" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="NdefTextRecordText" xml:space="preserve">
+    <value>Texto</value>
+  </data>
+  <data name="NdefUnknown" xml:space="preserve">
+    <value>NDEF, formato desconocido</value>
+  </data>
 </root>
