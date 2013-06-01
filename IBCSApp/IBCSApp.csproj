@@ -18,7 +18,7 @@
     <SupportedCultures>es%3ben</SupportedCultures>
     <XapOutputs>true</XapOutputs>
     <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
-    <XapFilename>WindowsPhone8.PlainMVVM_$(Configuration)_$(Platform).xap</XapFilename>
+    <XapFilename>NfcSecureNotes.xap</XapFilename>
     <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
     <SilverlightAppEntry>IBCSApp.App</SilverlightAppEntry>
     <ValidateXaml>true</ValidateXaml>
