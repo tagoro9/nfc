@@ -72,7 +72,11 @@
                 <Button Command="{Binding LoginUserCommand}" Content="{Binding Path=LocalizedResources.LoginPageLoginButton, Source={StaticResource LocalizedStrings}}" />
                 <Button Command="{Binding CreateAccountCommand}" Content="{Binding Path=LocalizedResources.LoginPageSignUpButton, Source={StaticResource LocalizedStrings}}"/>
             </StackPanel>
-            <Image x:Name="Logo" Margin="0,0,0,90" VerticalAlignment="Bottom" Grid.Row="1" Source="/Assets/logo.png" Width="100"></Image>
+            <Rectangle x:Name="Logo" Margin="0,0,0,90" Fill="{StaticResource PhoneForegroundBrush}"  VerticalAlignment="Bottom" Grid.Row="1" Width="140" Height="140" >
+                <Rectangle.OpacityMask>
+                    <ImageBrush ImageSource="/Assets/logo.png" />
+                </Rectangle.OpacityMask>
+            </Rectangle>
         </Grid>
     </Grid>
 

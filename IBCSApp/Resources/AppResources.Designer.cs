@@ -79,7 +79,25 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Do you have any idea on how to improve this app? Maybe new features we could add? Found a bug or an issue? Do not hesitate and get in touch so we can all together create a better app!.
+        ///   Busca una cadena traducida similar a Privacy policy.
+        /// </summary>
+        public static string AboutPagePrivacy {
+            get {
+                return ResourceManager.GetString("AboutPagePrivacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a https://pkg.apphb.com/#privacy.
+        /// </summary>
+        public static string AboutPagePrivacyUrl {
+            get {
+                return ResourceManager.GetString("AboutPagePrivacyUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Do you have any idea on how to improve this app? Maybe new features we could add? Found a bug or an issue? Do not hesitate and get in touch through our Twitter account so we can all together create a better app!.
         /// </summary>
         public static string AboutPageSupportBody {
             get {
@@ -115,7 +133,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a 0.0.1.
+        ///   Busca una cadena traducida similar a 1.0.0.0.
         /// </summary>
         public static string AboutPageVersion {
             get {
@@ -412,11 +430,38 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a .
+        /// </summary>
+        public static string InstructionPageNfcP2 {
+            get {
+                return ResourceManager.GetString("InstructionPageNfcP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a sharing.
         /// </summary>
         public static string InstructionsPageEmailAndSocial {
             get {
                 return ResourceManager.GetString("InstructionsPageEmailAndSocial", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Identity Based Encryption is a public cryptographic scheme in which any piece of text can act as a valid public key (e.g email addresses, phone numbers, domain names, dates or a combination of both). Our server, generates the corresponding private keys provided users validate their identities correctly..
+        /// </summary>
+        public static string InstructionsPageIbeP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageIbeP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Forget about key management, certificates and all that stuff. If you want to send a secure message to a friend, you just need to provide their email and the app will take care of the rest. Pretty cool, huh?.
+        /// </summary>
+        public static string InstructionsPageIbeP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageIbeP2", resourceCulture);
             }
         }
         
@@ -430,11 +475,56 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Near Field Communication (NFC) technology makes life easier and more convenient for consumers around the world by making it simpler to make transactions, exchange digital content, and connect electronic devices with a touch..
+        /// </summary>
+        public static string InstructionsPageNfcP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageNfcP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a To use NFC, make sure that &apos;Tap+Send&apos; is activated in your phone settings..
+        /// </summary>
+        public static string InstructionsPageNfcP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageNfcP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a nfc.
         /// </summary>
         public static string InstructionsPageNfcTitle {
             get {
                 return ResourceManager.GetString("InstructionsPageNfcTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a To analyze a NFC tag content simply tap it and move to the log page..
+        /// </summary>
+        public static string InstructionsPageReadingP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageReadingP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a If the tag contains a standarized message (NDEF) then its size and content type will be shown..
+        /// </summary>
+        public static string InstructionsPageReadingP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageReadingP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Note: the Windows Phone 8 operating system does not support parsing propietary or protected tags such as passports or credit cards..
+        /// </summary>
+        public static string InstructionsPageReadingP3 {
+            get {
+                return ResourceManager.GetString("InstructionsPageReadingP3", resourceCulture);
             }
         }
         
@@ -453,6 +543,87 @@ namespace IBCSApp.Resources {
         public static string InstructionsPageSecureNotes {
             get {
                 return ResourceManager.GetString("InstructionsPageSecureNotes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a In order to create a secure note, move to the secure notes page, fill in the title and the content of the note and press encrypt. Whenever a NFC tag or device is close to your phone you will be able to write or send the note..
+        /// </summary>
+        public static string InstructionsPageSecureNotesP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageSecureNotesP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Note: if the NFC tag in which you&apos;re trying to write your note has a small size you should check the &apos;Shorten Url&apos; option to reduce the final size of the message..
+        /// </summary>
+        public static string InstructionsPageSecureNotesP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageSecureNotesP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Besides writing secure notes you can also send secure messages to your contacts by email or by sharing it in social networks..
+        /// </summary>
+        public static string InstructionsPageSharingP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageSharingP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a To do so, simply move to the email or social page, fill the form in and send the message..
+        /// </summary>
+        public static string InstructionsPageSharingP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageSharingP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Note: this version of the app only allows users to have one identity, their registration email. More identities will be supported soon!.
+        /// </summary>
+        public static string InstructionsPageSharingP3 {
+            get {
+                return ResourceManager.GetString("InstructionsPageSharingP3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Nfc Secure Notes will let you store secure notes in NFC tags or send them to other devices. You can also send secure messages to your contacts by email or through social networks..
+        /// </summary>
+        public static string InstructionsPageWelcomeP1 {
+            get {
+                return ResourceManager.GetString("InstructionsPageWelcomeP1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a One of the key features of this app is the use of Identity Based Cryptosystems to protect messages..
+        /// </summary>
+        public static string InstructionsPageWelcomeP2 {
+            get {
+                return ResourceManager.GetString("InstructionsPageWelcomeP2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Just write a message, encrypt it and tap&amp;hold a tag to write the note in it. You can also tap a tag containing a secure note and the app will decrypt it for you..
+        /// </summary>
+        public static string InstructionsPageWelcomeP3 {
+            get {
+                return ResourceManager.GetString("InstructionsPageWelcomeP3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a There is also a tag analyzer which will show you the size and content type of the tags you tap..
+        /// </summary>
+        public static string InstructionsPageWelcomeP4 {
+            get {
+                return ResourceManager.GetString("InstructionsPageWelcomeP4", resourceCulture);
             }
         }
         
@@ -840,6 +1011,15 @@ namespace IBCSApp.Resources {
         public static string NdefUnknown {
             get {
                 return ResourceManager.GetString("NdefUnknown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a Sorry, we are having problems reaching the server. Try again later.
+        /// </summary>
+        public static string NetworkError {
+            get {
+                return ResourceManager.GetString("NetworkError", resourceCulture);
             }
         }
         

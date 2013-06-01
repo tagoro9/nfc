@@ -142,6 +142,7 @@
             }
             else
             {
+                uxService.ShowToastNotification("Error",AppResources.NoNfcError);
                 LogMessage(AppResources.NoNfcError, NfcLogItem.ERROR_ICON);
             }
 

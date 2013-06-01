@@ -134,7 +134,11 @@ namespace IBCSApp.ViewModels
         {
             this.dispatcherService.CallDispatcher(() =>
             {
-                if (token.Token != "" && token.Token != null) //Successfully Logged in, store token in settings
+                if (token == null)
+                {
+                    uxService.ShowMessageBox(AppResources.LoginPageErrorTitle, AppResources.NetworkError);
+                }
+                else if (token.Token != "" && token.Token != null) //Successfully Logged in, store token in settings
                 {
                     settingsService.Set("token", token);
                     settingsService.Set("email", email);

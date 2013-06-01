@@ -15,11 +15,13 @@ namespace IBCSApp.ViewModels
         //Commands
         private DelegateCommand twitterFollowCommand;
         private DelegateCommand goToWebCommand;
+        private DelegateCommand navigateToPrivacyPage;
 
         public VMAboutPage()
         {
             this.twitterFollowCommand = new DelegateCommand(TwitterFollowExecute);
             this.goToWebCommand = new DelegateCommand(GoToWebExecute);
+            this.navigateToPrivacyPage = new DelegateCommand(NavigateToPrivacyPageExecute);
         }
 
         public ICommand TwitterFollowCommand
@@ -29,6 +31,10 @@ namespace IBCSApp.ViewModels
         public ICommand GoToWebCommand
         {
             get { return this.goToWebCommand; }
+        }
+        public ICommand NavigateToPrivacyPage
+        {
+            get { return navigateToPrivacyPage; }
         }
 
         private void GoToWebExecute()
@@ -42,6 +48,13 @@ namespace IBCSApp.ViewModels
         {
             WebBrowserTask task = new WebBrowserTask();
             task.Uri = new Uri(AppResources.TwitterUrl);
+            task.Show();
+        }
+
+        private void NavigateToPrivacyPageExecute()
+        {
+            WebBrowserTask task = new WebBrowserTask();
+            task.Uri = new Uri(AppResources.AboutPagePrivacyUrl);
             task.Show();
         }
 

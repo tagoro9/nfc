@@ -124,7 +124,7 @@
     <value>Seguir en Twitter</value>
   </data>
   <data name="AboutPageSupportBody" xml:space="preserve">
-    <value>¿Tienes alguna idea con la que mejorar esta app? ¿Quizás nuevas funcionalidades que pudiéramos añadir? ¿Encontraste algún fallo? No dudes en ponerte en contacto para que podamos seguir mejorando!</value>
+    <value>¿Tienes alguna idea con la que mejorar esta app? ¿Quizás nuevas funcionalidades que pudiéramos añadir? ¿Encontraste algún fallo? No dudes en ponerte en contacto con nosotros a través de Twitter para que podamos seguir mejorando!</value>
   </data>
   <data name="AboutPageSupportTitle" xml:space="preserve">
     <value>Soporte</value>
@@ -386,5 +386,59 @@
   </data>
   <data name="NdefUnknown" xml:space="preserve">
     <value>NDEF, formato desconocido</value>
+  </data>
+  <data name="InstructionsPageIbeP1" xml:space="preserve">
+    <value>Los Cifrados Basados en Identidad son un conjunto de sistemas criptográficos de clave pública en los que cualquier trozo de texto puede servir como clave pública, es decir, correos electrónicos, números de teléfono o nombres de dominio. Nuestro servidor se encarga  de generar las claves privadas de los usuarios una vez estos han acreditado sus identidades correctamente.</value>
+  </data>
+  <data name="InstructionsPageIbeP2" xml:space="preserve">
+    <value>Olvídate de la gestión de claves, certificados, autoridades certificadoras y todas esas cosas. Si quieres enviar un mensaje cifrado a un amigo solo tienes que dar su correo y la app se encargará del resto. ¿Suena bien no?</value>
+  </data>
+  <data name="InstructionsPageNfcP1" xml:space="preserve">
+    <value>Near Field Communication (NFC) hace la vida más fácil a sus usuarios alrededor del mundo simplificando tareas como pagos o transacciones, intercambio de contenido digital o la conexión entre dos dispositivos simplemente con tocarlos.</value>
+  </data>
+  <data name="InstructionsPageNfcP2" xml:space="preserve">
+    <value>Para usar NFC asegúrate de que "Acercar y enviar" está activado en la configuración del teléfono.</value>
+  </data>
+  <data name="InstructionsPageReadingP1" xml:space="preserve">
+    <value>Para leer y analizar el contenido de una etiqueta NFC simplemente acércala al teléfono y sitúate en la página de log.</value>
+  </data>
+  <data name="InstructionsPageReadingP2" xml:space="preserve">
+    <value>Si la etiqueta contiene un mensaje estandarizado (mensaje NDEF), entonces se mostrará el tipo de contenido que hay almacenado en la misma y su tamaño.</value>
+  </data>
+  <data name="InstructionsPageReadingP3" xml:space="preserve">
+    <value>Ten en cuenta que Windows Phone 8 no es capaz de leer etiquetas propietarias o protegidas como pasaportes o tarjetas de crédito.</value>
+  </data>
+  <data name="InstructionsPageSecureNotesP1" xml:space="preserve">
+    <value>Para crear una nota segura simplemente muévete hasta la página de etiquetas, introduce un título a tu nota, rellena el contenido de la misma y dale a cifrar. Cuando haya una etiqueta o dispositivo NFC próximo podrás escribir o enviar tu nota.</value>
+  </data>
+  <data name="InstructionsPageSecureNotesP2" xml:space="preserve">
+    <value>Ten en cuenta que si la etiqueta NFC en la que pretendes escribir la nota tiene un tamaño reducido, deberás marcar la opción de acortar URL antes de cifrarla para que ocupe menos espacio y quepa en la etiqueta.</value>
+  </data>
+  <data name="InstructionsPageSharingP1" xml:space="preserve">
+    <value>Además de poder guardar tus notas seguras, desde esta app podrás enviar mensajes seguros a tus contactos mediante correo elcetrónico o a través de las redes sociales.</value>
+  </data>
+  <data name="InstructionsPageSharingP2" xml:space="preserve">
+    <value>Para ello, simplemente sitúate en las páginas de correo o social, rellena el formulario y envíalo.</value>
+  </data>
+  <data name="InstructionsPageSharingP3" xml:space="preserve">
+    <value>Ten en cuenta que a día de hoy sólo permitimos a los usuarios dar de alta una única identidad, el correo electrónico con que se registran. ¡En breve habrá más opciones disponibles!</value>
+  </data>
+  <data name="InstructionsPageWelcomeP1" xml:space="preserve">
+    <value>Nfc Secure Notes es una aplicación que te permitirá almacenar tus notas de forma segura en etiquetas NFC así como enviarlas a otros dispositivos, o incluso enviar mensajes cifrados a través de correo electrónico o por medio de las redes sociales.</value>
+  </data>
+  <data name="InstructionsPageWelcomeP2" xml:space="preserve">
+    <value>Una de las claves de esta app es el uso de sistemas de Criptografía Basada en Identidad para el cifrado de los mensajes.</value>
+  </data>
+  <data name="InstructionsPageWelcomeP3" xml:space="preserve">
+    <value>Simplemente escribe un mensaje, cífralo y acerca una etiqueta NFC para almacenar en ella el mensaje, o bien acerca una etiqueta con un mensaje cifrado y la app se abrirá directamente e intentará descifrar el mensaje si era para ti.</value>
+  </data>
+  <data name="InstructionsPageWelcomeP4" xml:space="preserve">
+    <value>Además, se incluye un analizador de etiquetas NFC para poder ver su capacidad y qué tipo de contenido tienen.</value>
+  </data>
+  <data name="NetworkError" xml:space="preserve">
+    <value>Lo sentimos, tenemos problemas para contactar con el servidor. Inténtalo de nuevo más tarde.</value>
+  </data>
+  <data name="AboutPagePrivacy" xml:space="preserve">
+    <value>Política de privacidad</value>
   </data>
 </root>

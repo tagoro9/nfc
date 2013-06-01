@@ -58,12 +58,23 @@
             </Grid.RowDefinitions>
             <Grid Margin="20,0,0,0" Grid.Row="0">
                 <StackPanel Orientation="Horizontal">
-                    <Image Source="/Assets/logo.png" Height="140"></Image>
+                    <Rectangle Fill="{StaticResource PhoneForegroundBrush}" Width="140" Height="140" >
+                        <Rectangle.OpacityMask>
+                            <ImageBrush ImageSource="/Assets/logo.png" />
+                        </Rectangle.OpacityMask>
+                    </Rectangle>
                     <StackPanel Margin="20,0,0,0">
                         <TextBlock Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}" FontSize="25" FontWeight="Bold" Foreground="{StaticResource PhoneAccentBrush}"></TextBlock>
                         <TextBlock Text="{Binding Path=LocalizedResources.AboutPageVersion, Source={StaticResource LocalizedStrings}}"></TextBlock>
                         <TextBlock Text="{Binding Path=LocalizedResources.AboutPageDeveloper, Source={StaticResource LocalizedStrings}}"></TextBlock>
                         <TextBlock Text="{Binding Path=LocalizedResources.AboutPageTwitter, Source={StaticResource LocalizedStrings}}"></TextBlock>
+                        <RichTextBox Margin="-10,0,0,0">
+                            <Paragraph>
+                                <Hyperlink Command="{Binding NavigateToPrivacyPage}">
+                                    <Run Text="{Binding Path=LocalizedResources.AboutPagePrivacy, Source={StaticResource LocalizedStrings}}"></Run>
+                                </Hyperlink>
+                            </Paragraph>
+                        </RichTextBox>
                     </StackPanel>
                 </StackPanel>
             </Grid>

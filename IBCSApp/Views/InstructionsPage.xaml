@@ -45,32 +45,114 @@
     <phone:Pivot x:Name="LayoutRoot" Title="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}">
         <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageWelcomeTitle, Source={StaticResource LocalizedStrings}}">
             <ScrollViewer>
-                
-            </ScrollViewer>
-        </phone:PivotItem>
-        <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageIbeTitle, Source={StaticResource LocalizedStrings}}">
-            <ScrollViewer>
-                
+                <StackPanel>
+                    <Image Source="/Assets/logo.png" Width="150" Margin="0,0,0,15"></Image>
+                    <RichTextBox>
+                        <Paragraph>
+                            <Run Text="{Binding Path=LocalizedResources.InstructionsPageWelcomeP1, Source={StaticResource LocalizedStrings}}">
+                            </Run>
+                            <LineBreak></LineBreak>
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{Binding Path=LocalizedResources.InstructionsPageWelcomeP2, Source={StaticResource LocalizedStrings}}">
+                            </Run>
+                            <LineBreak></LineBreak>
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{Binding Path=LocalizedResources.InstructionsPageWelcomeP3, Source={StaticResource LocalizedStrings}}">
+                            </Run>
+                            <LineBreak></LineBreak>
+                        </Paragraph>
+                        <Paragraph>
+                            <Run Text="{Binding Path=LocalizedResources.InstructionsPageWelcomeP4, Source={StaticResource LocalizedStrings}}">
+                            </Run>
+                        </Paragraph>
+                    </RichTextBox>
+                </StackPanel>
             </ScrollViewer>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageNfcTitle, Source={StaticResource LocalizedStrings}}">
             <ScrollViewer>
-
+                <RichTextBox VerticalAlignment="Top">
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageNfcP1, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageNfcP2, Source={StaticResource LocalizedStrings}}"></Run>
+                    </Paragraph>
+                </RichTextBox>
+            </ScrollViewer>
+        </phone:PivotItem>
+        <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageIbeTitle, Source={StaticResource LocalizedStrings}}">
+            <ScrollViewer>
+                <RichTextBox VerticalAlignment="Top">
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageIbeP1, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageIbeP2, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                    </Paragraph>
+                </RichTextBox>
             </ScrollViewer>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageReadingTags, Source={StaticResource LocalizedStrings}}">
             <ScrollViewer>
-
+                <RichTextBox VerticalAlignment="Top">
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageReadingP1, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageReadingP2, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageReadingP3, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                    </Paragraph>
+                </RichTextBox>
             </ScrollViewer>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageSecureNotes, Source={StaticResource LocalizedStrings}}">
             <ScrollViewer>
-
+                <RichTextBox VerticalAlignment="Top">
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageSecureNotesP1, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageSecureNotesP2, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                    </Paragraph>
+                </RichTextBox>
             </ScrollViewer>
         </phone:PivotItem>
         <phone:PivotItem Header="{Binding Path=LocalizedResources.InstructionsPageEmailAndSocial, Source={StaticResource LocalizedStrings}}">
             <ScrollViewer>
-
+                <RichTextBox VerticalAlignment="Top">
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageSharingP1, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageSharingP2, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                        <LineBreak></LineBreak>
+                    </Paragraph>
+                    <Paragraph>
+                        <Run Text="{Binding Path=LocalizedResources.InstructionsPageSharingP3, Source={StaticResource LocalizedStrings}}">
+                        </Run>
+                    </Paragraph>
+                </RichTextBox>
             </ScrollViewer>
         </phone:PivotItem>
     </phone:Pivot>

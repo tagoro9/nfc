@@ -3,8 +3,9 @@
   <DefaultLanguage xmlns="" code="en-US" />
   <Languages xmlns="">
     <Language code="es" />
+    <Language code="en" />
   </Languages>
-  <App xmlns="" ProductID="{bdab86c0-7b4c-48bf-8d41-4605ee9898f5}" Title="Nfc Secure Notes" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="IBCSApp author" Description="Share content securely using an Identity Based Cryptography Infrastructure." Publisher="IBCSApp" PublisherID="{98a9493c-bb11-475f-8ee3-73954840daca}">
+  <App xmlns="" ProductID="{bdab86c0-7b4c-48bf-8d41-4605ee9898f5}" Title="Nfc Secure Notes" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Victor Mora" Description="Share content securely using an Identity Based Cryptography Infrastructure." Publisher="Victor Mora" PublisherID="{98a9493c-bb11-475f-8ee3-73954840daca}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
@@ -49,5 +50,8 @@
       <ScreenResolution Name="ID_RESOLUTION_HD720P" />
       <ScreenResolution Name="ID_RESOLUTION_WVGA" />
     </ScreenResolutions>
+    <Requirements>
+      <Requirement Name="ID_REQ_NFC" />
+    </Requirements>
   </App>
 </Deployment>
