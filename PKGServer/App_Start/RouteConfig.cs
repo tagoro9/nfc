@@ -13,6 +13,19 @@ namespace PKGServer
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
+
+            routes.MapRoute(
+                name: "Privacy",
+                url: "privacy/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Privacy", id = UrlParameter.Optional }
+            );
+
+            routes.MapRoute(
+                name: "Conditions",
+                url: "conditions/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Conditions", id = UrlParameter.Optional }
+            );
+
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

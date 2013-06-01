@@ -12,5 +12,15 @@ namespace PKGServer.Controllers
         {
             return View();
         }
+
+        public ActionResult Privacy()
+        {
+            return View();
+        }
+
+        public ActionResult Conditions()
+        {
+            return View();
+        }
     }
 }
