@@ -206,15 +206,6 @@
   <data name="AboutPageTitle" xml:space="preserve">
     <value>about</value>
   </data>
-  <data name="AboutPageTwitter" xml:space="preserve">
-    <value>@ViVictorMora</value>
-  </data>
-  <data name="AboutPageVersion" xml:space="preserve">
-    <value>0.0.1</value>
-  </data>
-  <data name="AboutPageWeb" xml:space="preserve">
-    <value>pkg.apphb.com</value>
-  </data>
   <data name="AppBarAbout" xml:space="preserve">
     <value>about</value>
   </data>
@@ -244,12 +235,6 @@
   </data>
   <data name="MainPageSocialHeader" xml:space="preserve">
     <value>social</value>
-  </data>
-  <data name="TwitterUrl" xml:space="preserve">
-    <value>https://twitter.com/vivictormora</value>
-  </data>
-  <data name="WebUrl" xml:space="preserve">
-    <value>https://pkg.apphb.com</value>
   </data>
   <data name="AppBarClearLog" xml:space="preserve">
     <value>clear log</value>
@@ -295,9 +280,6 @@
   </data>
   <data name="CreateAccountServiceConditionsLink" xml:space="preserve">
     <value>terms of service</value>
-  </data>
-  <data name="CreateAccountServiceConditionsUrl" xml:space="preserve">
-    <value>https://pkg.apphb.com/#conditions</value>
   </data>
   <data name="EncryptingLink" xml:space="preserve">
     <value>encrypting message</value>
@@ -410,9 +392,6 @@
   <data name="NdefUnknown" xml:space="preserve">
     <value>NDEF, unknown format</value>
   </data>
-  <data name="InstructionPageNfcP2" xml:space="preserve">
-    <value />
-  </data>
   <data name="InstructionsPageIbeP1" xml:space="preserve">
     <value>Identity Based Encryption is a public cryptographic scheme in which any piece of text can act as a valid public key (e.g email addresses, phone numbers, domain names, dates or a combination of both). Our server, generates the corresponding private keys provided users validate their identities correctly.</value>
   </data>
@@ -466,8 +445,5 @@
   </data>
   <data name="AboutPagePrivacy" xml:space="preserve">
     <value>Privacy policy</value>
-  </data>
-  <data name="AboutPagePrivacyUrl" xml:space="preserve">
-    <value>https://pkg.apphb.com/#privacy</value>
   </data>
 </root>

@@ -297,7 +297,7 @@
     <value>terms of service</value>
   </data>
   <data name="CreateAccountServiceConditionsUrl" xml:space="preserve">
-    <value>https://pkg.apphb.com/#conditions</value>
+    <value>https://pkg.apphb.com/conditions</value>
   </data>
   <data name="EncryptingLink" xml:space="preserve">
     <value>encrypting message</value>
@@ -410,9 +410,6 @@
   <data name="NdefUnknown" xml:space="preserve">
     <value>NDEF, unknown format</value>
   </data>
-  <data name="InstructionPageNfcP2" xml:space="preserve">
-    <value />
-  </data>
   <data name="InstructionsPageIbeP1" xml:space="preserve">
     <value>Identity Based Encryption is a public cryptographic scheme in which any piece of text can act as a valid public key (e.g email addresses, phone numbers, domain names, dates or a combination of both). Our server, generates the corresponding private keys provided users validate their identities correctly.</value>
   </data>
@@ -468,6 +465,6 @@
     <value>Privacy policy</value>
   </data>
   <data name="AboutPagePrivacyUrl" xml:space="preserve">
-    <value>https://pkg.apphb.com/#privacy</value>
+    <value>https://pkg.apphb.com/privacy</value>
   </data>
 </root>

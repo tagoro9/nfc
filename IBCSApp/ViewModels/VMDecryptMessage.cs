@@ -1,5 +1,7 @@
 ﻿using IBCS.BF.Key;
+using IBCSApp.Entities;
 using IBCSApp.Resources;
+using IBCSApp.Services.API;
 using IBCSApp.Services.BF;
 using IBCSApp.Services.Dispatcher;
 using IBCSApp.Services.Navigation;
@@ -21,6 +23,7 @@ namespace IBCSApp.ViewModels
         private IBfService bfService;
         private ISettingsService settingsService;
         private IDispatcherService dispatcherService;
+        private IApiService apiService;
 
         //Commands
         private DelegateCommand navigateToHomeCommand;
@@ -28,6 +31,9 @@ namespace IBCSApp.ViewModels
         private string progressMessage;
         private string myIdentity;
         private SerializedPrivateKey key;
+
+        private string identity;
+        private string ciphertext;
 
         private string recipient;
         private string message;
@@ -45,17 +51,17 @@ namespace IBCSApp.ViewModels
         /// Constructor
         /// </summary>
         /// <param name="navService"></param>
-        public VMDecryptMessage(INavigationService navService, IBfService bfService, ISettingsService settingsService, IDispatcherService dispatcherService)
+        public VMDecryptMessage(INavigationService navService, IBfService bfService, ISettingsService settingsService, IDispatcherService dispatcherService, IApiService apiService)
         {
             this.navService = navService;
             this.bfService = bfService;
             this.settingsService = settingsService;
             this.dispatcherService = dispatcherService;
+            this.apiService = apiService;
 
             this.navigateToHomeCommand = new DelegateCommand(NavigateToHomeExecute);
 
             myIdentity = (string) settingsService.Get("email");
-            key = (SerializedPrivateKey)settingsService.Get("private");
         }
 
         /// <summary>
@@ -119,10 +125,7 @@ namespace IBCSApp.ViewModels
         /// <param name="message"></param>
         public async void DecryptMessage(string identity, string message) 
         {
-            dispatcherService.CallDispatcher(() => {
-                IsBusy = true;
-                ProgressMessage = AppResources.DecryptingMessage;
-            });
+
             if (identity == myIdentity) {
                 string result = await bfService.DecipherText(message, key);
                 Message = result;
@@ -139,5 +142,42 @@ namespace IBCSApp.ViewModels
             });
         }
 
+        /// <summary>
+        /// Method to check if user keys have been obtained
+        /// </summary>
+        public void CheckKeysAndDecrypt(string identity, string message)
+        {
+            dispatcherService.CallDispatcher(() =>
+            {
+                IsBusy = true;
+                ProgressMessage = AppResources.DecryptingMessage;
+            });
+            if (!settingsService.Contains("private"))
+            {
+                apiService.GetUserKeyCompleted += settingsService_GetUserKeyCompleted;
+                this.identity = identity;
+                this.ciphertext = message;
+                apiService.GetUserKey((string)settingsService.Get("email"), (LoginToken)settingsService.Get("token"));
+            }
+            else
+            {
+                key = (SerializedPrivateKey)settingsService.Get("private");
+                DecryptMessage(identity, message);
+            }
+        }
+
+        private void settingsService_GetUserKeyCompleted(SerializedPrivateKey key)
+        {
+            if (key.CurveA == null)
+            {
+                CheckKeysAndDecrypt(identity,ciphertext);
+            }
+            else
+            {
+                settingsService.Set("private", key);
+                this.key = key;
+                DecryptMessage(identity, ciphertext);
+            }
+        }
     }
 }

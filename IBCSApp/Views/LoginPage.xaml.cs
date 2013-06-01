@@ -48,7 +48,7 @@ namespace IBCSApp.Views
 
             if (NavigationContext.QueryString.ContainsKey("destination"))
             {
-                ViewModel.Destination = NavigationContext.QueryString["destination"];
+                ViewModel.Destination = NavigationContext.QueryString["destination"] + "?message=" + HttpUtility.UrlEncode(NavigationContext.QueryString["message"]) + "&id=" + NavigationContext.QueryString["id"];
             }
             else if (NavigationContext.QueryString.ContainsKey("created"))
             {

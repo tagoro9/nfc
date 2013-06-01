@@ -36,7 +36,7 @@ namespace IBCSApp.Views
 
             if (NavigationContext.QueryString.ContainsKey("id") && NavigationContext.QueryString.ContainsKey("message"))
             {
-                ViewModel.DecryptMessage(NavigationContext.QueryString["id"], NavigationContext.QueryString["message"]);
+                ViewModel.CheckKeysAndDecrypt(NavigationContext.QueryString["id"], NavigationContext.QueryString["message"]);
             }
         }
     }

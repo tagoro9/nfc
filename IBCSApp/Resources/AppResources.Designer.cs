@@ -88,7 +88,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a https://pkg.apphb.com/#privacy.
+        ///   Busca una cadena traducida similar a https://pkg.apphb.com/privacy.
         /// </summary>
         public static string AboutPagePrivacyUrl {
             get {
@@ -358,7 +358,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a https://pkg.apphb.com/#conditions.
+        ///   Busca una cadena traducida similar a https://pkg.apphb.com/conditions.
         /// </summary>
         public static string CreateAccountServiceConditionsUrl {
             get {
@@ -426,15 +426,6 @@ namespace IBCSApp.Resources {
         public static string EncryptingMessage {
             get {
                 return ResourceManager.GetString("EncryptingMessage", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Busca una cadena traducida similar a .
-        /// </summary>
-        public static string InstructionPageNfcP2 {
-            get {
-                return ResourceManager.GetString("InstructionPageNfcP2", resourceCulture);
             }
         }
         
