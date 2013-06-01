@@ -340,7 +340,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a http://pkg.apphb.com.
+        ///   Busca una cadena traducida similar a https://pkg.apphb.com/#conditions.
         /// </summary>
         public static string CreateAccountServiceConditionsUrl {
             get {

@@ -297,7 +297,7 @@
     <value>terms of service</value>
   </data>
   <data name="CreateAccountServiceConditionsUrl" xml:space="preserve">
-    <value>http://pkg.apphb.com</value>
+    <value>https://pkg.apphb.com/#conditions</value>
   </data>
   <data name="EncryptingLink" xml:space="preserve">
     <value>encrypting message</value>

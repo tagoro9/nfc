@@ -290,6 +290,13 @@ h1 span {
   .top-logo {
     margin: 0 auto 20px auto;
   }
+
+    .privacy, .conditions {
+    font-size: 15px;
+    max-height: none;
+    overflow: auto;
+    display: none;
+    }
 }
 @media (max-width: 444px) {
   .seperator {
