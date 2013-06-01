@@ -121,11 +121,11 @@
             this.startNfcPairingCommand = new DelegateCommand(StartNfcPairingExecute);
             this.navigateToAboutCommand = new DelegateCommand(NavigateToAboutExecute);
             this.addressChooserCommand = new DelegateCommand(AddressChooserExecute);
-            this.sendSecureEmailCommand = new DelegateCommand(SendSecureEmailExecute);
-            this.shareSecureMessageCommand = new DelegateCommand(ShareSecureMessageExecute);
+            this.sendSecureEmailCommand = new DelegateCommand(SendSecureEmailExecute, SendSecureEmailCanExecute);
+            this.shareSecureMessageCommand = new DelegateCommand(ShareSecureMessageExecute, ShareSecureMessageCanExecute);
             this.publishMessageCommand = new DelegateCommand(PublishMessageExecute, PublishMessageCanExecute);
             this.writeToTagCommand = new DelegateCommand(WriteToTagExecute, WriteToTagCanExecute);
-            this.encryptSecureNoteCommand = new DelegateCommand(EncryptSecureNoteExecute);
+            this.encryptSecureNoteCommand = new DelegateCommand(EncryptSecureNoteExecute, EncryptSecureNoteCanExecute);
             this.clearLogCommand = new DelegateCommand(ClearLogExecute);
             this.navigateToInstructionsCommand = new DelegateCommand(NavigateToInstructionsExecite);
 
@@ -147,7 +147,6 @@
             }
 
             contacts = new Contacts();
-
             myIdentity = (string) settingsService.Get("email");
         }
 
@@ -256,6 +255,31 @@
         private bool PublishMessageCanExecute()
         {
             return (SecureNoteEncrypted && devicePresent);
+        }
+
+        public bool EncryptSecureNoteCanExecute()
+        {
+            if (SecureNoteText == null || SecureNoteText == String.Empty ||SecureNoteTitle == null || SecureNoteTitle == String.Empty)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        private bool SendSecureEmailCanExecute()
+        {
+            if (DestinataryEmail == null || DestinataryEmail == String.Empty || EmailBody == null || EmailBody == String.Empty) {
+                return false;
+            }
+            return true;
+        }
+        private bool ShareSecureMessageCanExecute()
+        {
+            if (MessageText == String.Empty || MessageText == null || MessageIdentity == String.Empty || MessageIdentity == null)
+            {
+                return false;
+            }
+            return true;
         }
 
         private async void EncryptSecureNoteExecute()
@@ -484,6 +508,7 @@
             {
                 secureNoteTitle = value;
                 RaisePropertyChanged();
+                this.encryptSecureNoteCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -524,6 +549,7 @@
                 secureNoteText = value;
                 SecureNoteEncrypted = false;
                 RaisePropertyChanged();
+                this.encryptSecureNoteCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -534,6 +560,7 @@
             {
                 messageText = value;
                 RaisePropertyChanged();
+                this.shareSecureMessageCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -544,6 +571,7 @@
             {
                 messageIdentity = value;
                 RaisePropertyChanged();
+                this.shareSecureMessageCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -574,6 +602,7 @@
             {
                 emailBody = value;
                 RaisePropertyChanged();
+                this.sendSecureEmailCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -584,6 +613,7 @@
             {
                 destinataryEmail = value;
                 RaisePropertyChanged();
+                this.sendSecureEmailCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -784,11 +814,19 @@
         /// <param name="key">IBE User private key the server sent</param>
         private void settingsService_GetUserKeyCompleted(SerializedPrivateKey key)
         {
-            settingsService.Set("private", key);
-            myKey = key;
-            dispatcherService.CallDispatcher(() => {
-                IsBusy = false;
-            });
+            if (key.CurveA == null)
+            {
+                CheckKeys();
+            }
+            else
+            {
+                settingsService.Set("private", key);
+                myKey = key;
+                dispatcherService.CallDispatcher(() =>
+                {
+                    IsBusy = false;
+                });   
+            }
         }
 
         /// <summary>

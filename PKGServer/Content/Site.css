@@ -180,6 +180,8 @@ h1 span {
     z-index: 1;
 }
 .phone .phone-screen .logo {
+    width: 80px;
+    height: 80px;
   position: absolute;
   top: 38px;
   left: 72px;
@@ -194,6 +196,7 @@ h1 span {
   left: 27px;
   width: 100%;
   display: none;
+  z-index: 200;
 }
 .phone-countdown .countdown-item {
   text-align: center;
@@ -209,7 +212,7 @@ h1 span {
   font-size: 18px;
 }
 
-@media (min-width: 980px) and (max-width: 1200px) {
+/*@media (min-width: 980px) and (max-width: 1200px) {
   body > .container {
     position: static;
     top: 0;
@@ -228,8 +231,8 @@ h1 span {
     right: 50px !important;
     margin-right: 0;
   }
-}
-@media (max-width: 979px) and (min-width: 768px) {
+}*/
+/*@media (max-width: 979px) and (min-width: 768px) {
   body > .container {
     position: static;
     top: 0;
@@ -249,8 +252,8 @@ h1 span {
     right: 0 !important;
     margin-right: -150px;
   }
-}
-@media (max-width: 767px) {
+}*/
+@media (max-width: 1214px) {
   body > .container {
     position: static;
     top: 0;
@@ -291,15 +294,22 @@ h1 span {
     margin: 0 auto 20px auto;
   }
 
+  .phone-screen {
+      display: none;
+    }
+
     .privacy, .conditions {
     font-size: 15px;
     max-height: none;
     overflow: auto;
     display: none;
     }
-}
-@media (max-width: 444px) {
-  .seperator {
+     .seperator {
     display: none;
   }
 }
+/*@media (max-width: 444px) {
+  .seperator {
+    display: none;
+  }
+}*/

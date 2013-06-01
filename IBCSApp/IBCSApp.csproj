@@ -187,6 +187,7 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <None Include="IBCSApp_2013_06_01_17_21_33.sap" />
     <None Include="packages.config" />
     <None Include="Properties\AppManifest.xml" />
     <None Include="Properties\WMAppManifest.xml">

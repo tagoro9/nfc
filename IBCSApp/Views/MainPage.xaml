@@ -199,7 +199,7 @@
                         <ColumnDefinition Width="*"></ColumnDefinition>
                         <ColumnDefinition Width="*"></ColumnDefinition>
                     </Grid.ColumnDefinitions>
-                    <CheckBox Width="300" Grid.Column="0" Content="{Binding Path=LocalizedResources.MainPageComposerShortenUrl, Source={StaticResource LocalizedStrings}}" IsChecked="{Binding ShortenSecureNote}"></CheckBox>
+                    <CheckBox Width="300" Grid.Column="0" Content="{Binding Path=LocalizedResources.MainPageComposerShortenUrl, Source={StaticResource LocalizedStrings}}" IsChecked="{Binding ShortenSecureNote,Mode=TwoWay}"></CheckBox>
                     <Button Grid.Column="1" Command="{Binding EncryptSecureNoteCommand}" Content="{Binding Path=LocalizedResources.MainPageComposerEncyptButton, Source={StaticResource LocalizedStrings}}"/>
                 </Grid>
             </StackPanel>

@@ -1060,7 +1060,7 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
-        ///   Busca una cadena traducida similar a Device /tag arrived.
+        ///   Busca una cadena traducida similar a Device / tag arrived.
         /// </summary>
         public static string NotifyDeviceArrived {
             get {

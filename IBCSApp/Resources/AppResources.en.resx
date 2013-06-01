@@ -288,7 +288,7 @@
     <value>Writeable tag size:</value>
   </data>
   <data name="NotifyDeviceArrived" xml:space="preserve">
-    <value>Device /tag arrived</value>
+    <value>Device / tag arrived</value>
   </data>
   <data name="NotifyDeviceDeparted" xml:space="preserve">
     <value>Device / tag departed</value>

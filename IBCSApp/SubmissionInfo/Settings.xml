@@ -1,7 +1,6 @@
 <MarketplaceDetails>
-  <SmallAppTile>
-  </SmallAppTile>
-  <ScreenShots>;;;;;;;;</ScreenShots>
-  <ScreenShotsWXGA>;;;;;;;;</ScreenShotsWXGA>
-  <ScreenShots720P>;;;;;;;;</ScreenShots720P>
+  <SmallAppTile>tienda.png</SmallAppTile>
+  <ScreenShots>composer480.png;decrypt480.png;log480.png;mail480.png;social480.png;welcome480.png;;;</ScreenShots>
+  <ScreenShotsWXGA>composerWXGA.png;decryptWXGA.png;logWXGA.png;mailWXGA.png;socialWXGA.png;welcomeWXGA.png;;;</ScreenShotsWXGA>
+  <ScreenShots720P>composer720.png;decrypt720.png;log720.png;mail720.png;social720.png;welcome720.png;;;</ScreenShots720P>
 </MarketplaceDetails>
