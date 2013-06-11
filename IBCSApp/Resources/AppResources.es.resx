@@ -441,4 +441,16 @@
   <data name="AboutPagePrivacy" xml:space="preserve">
     <value>Política de privacidad</value>
   </data>
+  <data name="MainPageLogPairButton" xml:space="preserve">
+    <value>emparejar</value>
+  </data>
+  <data name="DevicePaired" xml:space="preserve">
+    <value>Dispositivo emparejado</value>
+  </data>
+  <data name="PairingDevicesMessage" xml:space="preserve">
+    <value>emparejando</value>
+  </data>
+  <data name="SessionKey" xml:space="preserve">
+    <value>clave de sesión</value>
+  </data>
 </root>

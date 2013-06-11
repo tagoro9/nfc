@@ -15,6 +15,7 @@ namespace IBCSApp.Entities
         public static string INFO_ICON = ROOT_ICONS + "information.png";
         public static string WARNING_ICON = ROOT_ICONS + "warning.png";
         public static string ERROR_ICON = ROOT_ICONS + "delete.png";
+        public static string BLUETOOTH_ICON = ROOT_ICONS + "bluetooth.png";
 
         public DateTime DateAndTime { get; set; }
         public string Event { get; set; }

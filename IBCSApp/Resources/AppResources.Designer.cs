@@ -412,6 +412,15 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a Device paired.
+        /// </summary>
+        public static string DevicePaired {
+            get {
+                return ResourceManager.GetString("DevicePaired", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a encrypting message.
         /// </summary>
         public static string EncryptingLink {
@@ -772,6 +781,15 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a pair device.
+        /// </summary>
+        public static string MainPageLogPairButton {
+            get {
+                return ResourceManager.GetString("MainPageLogPairButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a encrypting message.
         /// </summary>
         public static string MainPageMailEncrypting {
@@ -1069,6 +1087,15 @@ namespace IBCSApp.Resources {
         }
         
         /// <summary>
+        ///   Busca una cadena traducida similar a pairing devices.
+        /// </summary>
+        public static string PairingDevicesMessage {
+            get {
+                return ResourceManager.GetString("PairingDevicesMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Busca una cadena traducida similar a LeftToRight.
         /// </summary>
         public static string ResourceFlowDirection {
@@ -1083,6 +1110,15 @@ namespace IBCSApp.Resources {
         public static string ResourceLanguage {
             get {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Busca una cadena traducida similar a session key.
+        /// </summary>
+        public static string SessionKey {
+            get {
+                return ResourceManager.GetString("SessionKey", resourceCulture);
             }
         }
         

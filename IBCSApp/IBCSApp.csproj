@@ -203,6 +203,7 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Icons\add.png" />
+    <Content Include="Assets\Icons\bluetooth.png" />
     <Content Include="Assets\Icons\crosshair.png" />
     <Content Include="Assets\Icons\delete.png" />
     <Content Include="Assets\Icons\information.png" />

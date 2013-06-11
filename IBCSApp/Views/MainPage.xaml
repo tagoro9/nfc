@@ -208,7 +208,8 @@
         <i:Interaction.Triggers>
             <abu:SelectedPivotItemChangedTrigger>
                 <abu:SwitchAppBarAction>
-                    <abu:AppBar Id="0" Mode="Minimized">
+                    <abu:AppBar Id="0">
+                        <abu:AppBarButton Command="{Binding PairDeviceDommand}" Text="{Binding Path=LocalizedResources.MainPageLogPairButton, Source={StaticResource LocalizedStrings}}" IconUri="/Assets/Icons/bluetooth.png"></abu:AppBarButton>
                         <abu:AppBar.MenuItems>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarClearLog, Source={StaticResource LocalizedStrings}}" Command="{Binding ClearLogCommand}"/>
                             <abu:AppBarMenuItem Text="{Binding Path=LocalizedResources.AppBarInstructions, Source={StaticResource LocalizedStrings}}" Command="{Binding NavigateToInstructionsCommand}"/>

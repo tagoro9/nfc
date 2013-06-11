@@ -9,6 +9,7 @@ using Windows.Networking.Proximity;
 using IBCSApp.Resources;
 using IBCSApp.Services.Settings;
 using Windows.Networking.Sockets;
+using IBCSApp.Services.Dispatcher;
 
 namespace IBCSApp.Services.Bluetooth
 {
@@ -16,10 +17,12 @@ namespace IBCSApp.Services.Bluetooth
     {
 
         private ISettingsService settingsService;
+        private IDispatcherService dispatcherService;
 
-        public BluetoothService(ISettingsService settingsService)
+        public BluetoothService(ISettingsService settingsService, IDispatcherService dispatcherService)
         {
             this.settingsService = settingsService;
+            this.dispatcherService = dispatcherService;
         }
 
         public PeerDiscoveryTypes StartBluetooth()
@@ -53,15 +56,17 @@ namespace IBCSApp.Services.Bluetooth
             {
                 if ((uint)ex.HResult == 0x8007048F)
                 {
-                    if (MessageBox.Show(AppResources.BluetoothActivateMessage, AppResources.BluetoothActivateCaption, MessageBoxButton.OKCancel) == MessageBoxResult.OK)
-                    {
-                        Microsoft.Phone.Tasks.ConnectionSettingsTask cst = new Microsoft.Phone.Tasks.ConnectionSettingsTask();
-                        cst.ConnectionSettingsType = Microsoft.Phone.Tasks.ConnectionSettingsType.Bluetooth;
-                        cst.Show();
-                    }
+                    dispatcherService.CallDispatcher(() => {
+                        if (MessageBox.Show(AppResources.BluetoothActivateMessage, AppResources.BluetoothActivateCaption, MessageBoxButton.OKCancel) == MessageBoxResult.OK)
+                        {
+                            Microsoft.Phone.Tasks.ConnectionSettingsTask cst = new Microsoft.Phone.Tasks.ConnectionSettingsTask();
+                            cst.ConnectionSettingsType = Microsoft.Phone.Tasks.ConnectionSettingsType.Bluetooth;
+                            cst.Show();
+                        }
+                    });
                 }
+                return null;
             }
-
             return data;
         }
 

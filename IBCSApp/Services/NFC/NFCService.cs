@@ -224,7 +224,14 @@ namespace IBCSApp.Services.NFC
         /// <param name="message"></param>
         private void DeliverTextMessage(string type, string message)
         {
-            pDevice.PublishMessage(type, message, MessageWrittenHandler);
+            if (type != PairingService.NFC_IBCS && type != PairingService.NFC_IBCS_ACK && type != PairingService.NFC_IBCS_KEY && type != PairingService.NFC_IBCS_KEY_ACK)
+            {
+                pDevice.PublishMessage(type, message, MessageWrittenHandler);                
+            }
+            else
+            {
+                pDevice.PublishMessage(type, message);
+            }
         }
 
         /// <summary>

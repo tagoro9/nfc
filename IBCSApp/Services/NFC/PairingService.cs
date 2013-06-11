@@ -32,6 +32,7 @@ namespace IBCSApp.Services.NFC
         private AesManaged aes;
 
         private string identity;
+        private string myIdentity;
         private string ct;
 
         public PairingService(INFCService nfcService, IBfService bfService, ISettingsService settingsService, IBluetoothService bluetoothService)
@@ -58,6 +59,11 @@ namespace IBCSApp.Services.NFC
 
         private async void PairingService_NfcPairingCompleted()
         {
+            //myIdentity = (string)settingsService.Get("email");
+            //int value = String.Compare(myIdentity, identity);
+            //PeerFinder.TriggeredConnectionStateChanged += TriggeredConnectionStateChanged;
+            ////Start advertising this app and waiting for peers
+            //PeerFinder.Start();
             var state = this.bluetoothService.StartBluetooth();
 
             var triggeredConnectSupported = (state & Windows.Networking.Proximity.PeerDiscoveryTypes.Triggered) == Windows.Networking.Proximity.PeerDiscoveryTypes.Triggered;
@@ -73,6 +79,28 @@ namespace IBCSApp.Services.NFC
                 }
             }
         }
+
+        private void TriggeredConnectionStateChanged(object sender, TriggeredConnectionStateChangedEventArgs args)
+        {
+            switch (args.State)
+            {
+                case TriggeredConnectState.PeerFound:   // Tapped another phone
+                    int a = 1;
+                    a++;
+                    break;
+                case TriggeredConnectState.Connecting:
+                    int b = 1;
+                    b++;
+                    break;
+                case TriggeredConnectState.Completed:   // Connection ready to use
+                    // Save socket to fields
+                    StreamSocket socket = args.Socket;
+                    PairingCompleted(identity, aes, socket);
+                    // Listen to incoming socket
+                    break;
+            }   
+        }
+
 
         public event PairingCompletedArgs PairingCompleted;
         private event NfcPairingCompletedArgs NfcPairingCompleted;

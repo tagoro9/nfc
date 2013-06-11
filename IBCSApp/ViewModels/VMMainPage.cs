@@ -27,7 +27,8 @@
     using System.Runtime.InteropServices.WindowsRuntime;
     using IBCSApp.Resources;
     using System.Globalization;
-    using Microsoft.Phone.UserData; 
+    using Microsoft.Phone.UserData;
+    using Windows.Storage.Streams; 
 
     /// <summary>
     /// MainPage ViewModel.
@@ -46,6 +47,8 @@
         private IUxService uxService;
 
         private StreamSocket socket;
+        private DataWriter dataWriter;
+        private DataReader dataReader;
         private AesManaged aes;
 
         //Commands variables.
@@ -63,6 +66,7 @@
         private DelegateCommand encryptSecureNoteCommand;
         private DelegateCommand clearLogCommand;
         private DelegateCommand navigateToInstructionsCommand;
+        private DelegateCommand pairDeviceCommand;
 
         private string identity;
         private string key;
@@ -128,6 +132,7 @@
             this.encryptSecureNoteCommand = new DelegateCommand(EncryptSecureNoteExecute, EncryptSecureNoteCanExecute);
             this.clearLogCommand = new DelegateCommand(ClearLogExecute);
             this.navigateToInstructionsCommand = new DelegateCommand(NavigateToInstructionsExecite);
+            this.pairDeviceCommand = new DelegateCommand(PairDeviceExecute, PairDeviceCanExecute);
 
             if (this.nfcService.ConnectDefaultProximityDevice())
             {
@@ -148,6 +153,19 @@
 
             contacts = new Contacts();
             myIdentity = (string) settingsService.Get("email");
+        }
+
+        private bool PairDeviceCanExecute()
+        {
+            return devicePresent;
+        }
+
+        private void PairDeviceExecute()
+        {
+            IsBusy = true;
+            ProgressMessage = AppResources.PairingDevicesMessage;
+            pairingService.PairingCompleted += pairingService_PairingCompleted;
+            pairingService.NfcPairDevices();
         }
 
         private void NavigateToInstructionsExecite()
@@ -317,6 +335,14 @@
         public ICommand LogOutCommand
         {
             get { return this.logOutCommand; }
+        }
+
+        /// <summary>
+        /// Command to be binded in UI, pair with another devie
+        /// </summary>
+        public ICommand PairDeviceDommand
+        {
+            get { return this.pairDeviceCommand; }
         }
 
         /// <summary>
@@ -522,6 +548,7 @@
                 dispatcherService.CallDispatcher(() => {
                     publishMessageCommand.RaiseCanExecuteChanged();
                     writeToTagCommand.RaiseCanExecuteChanged();
+                    pairDeviceCommand.RaiseCanExecuteChanged();
                 });
             }
         }
@@ -744,6 +771,10 @@
         {
             this.socket = socket;
             this.aes = aes;
+            this.dataWriter = new DataWriter(socket.OutputStream);
+            this.dataReader = new DataReader(socket.InputStream);
+            string sessionKey = AppResources.SessionKey + ": 0x" + BitConverter.ToString(aes.Key).Replace("-", string.Empty);
+            LogMessage(AppResources.DevicePaired, NfcLogItem.BLUETOOTH_ICON, sessionKey);
             dispatcherService.CallDispatcher(() => {
                 IsBusy = false;
                 Key = BFUtil.ToHexString(aes.Key);
