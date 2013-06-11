@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="51a274af-a021-4357-be8a-62eaae67c221"
+  name="Proximity"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="b35a52a8-4b37-4566-8004-dfb7a08dd515"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows.Networking.Proximity"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="fe5d570e-a16d-4fe3-aa8d-9a7c648af704"
+        name="PeerDiscoveryTypes"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="18376107-d901-45f5-8641-6677a0d7eafe"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Kits%2F8.0%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Networking.Proximity Type%3DPeerDiscoveryTypes"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="73dd4757-be21-44ab-b84a-367a15610778"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6828611b-8a98-4ccd-a1db-05b57a4618b4">
+                <propertyInstance
+                  Id="5424eb8e-dafb-4749-a91f-eed9628db7ed"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89c7f09b-26d4-4dc9-84ab-d4f531498c41">
+                <propertyInstance
+                  Id="27dc9ec2-2877-423c-8393-e4442ec364a5"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8aaa956d-ef7e-4489-926a-f335fa8e98f0">
+                <propertyInstance
+                  Id="3756c4ea-6f8e-4831-b322-80249fa6c880"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d53d2520-f039-42fa-b802-57e205f8d4cf"
+        name="ProximityDevice"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="cfbdab6d-eb8b-4bed-b026-1e7d0013dad4"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Kits%2F8.0%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Networking.Proximity Type%3DProximityDevice"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="35186388-4c14-4702-9401-3dce5b153c4d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c9cf48e-e4a3-44c3-8f98-811367088878">
+                <propertyInstance
+                  Id="764009d1-f091-4e4d-b7a1-2cd9b9ae06ac"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a635e24-d3e5-4886-a2ac-333e1f18fbbd">
+                <propertyInstance
+                  Id="94353739-2e25-4d05-8285-efa1dff00f1e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ad2775ca-6ee4-4b25-821e-3cb0e99eeac6">
+                <propertyInstance
+                  Id="0eeade14-20fa-4a0e-b3f4-71e1856a478c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8091af0e-0631-4fcb-bdce-470aa9d17e15">
+                <propertyInstance
+                  Id="c076f89e-6562-4ca0-87f7-dd96a6580dfc"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="229d7484-0a7e-4c39-a917-f9eb1910463e">
+                <propertyInstance
+                  Id="71d1f222-aca8-4163-a580-1e41365bcfb4"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a64addc-6a55-4f29-9d1e-0153183c8ef7"
+        name="ProximityMessage"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="dfa2eba7-de53-4215-9e64-432ee94ce7a2"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Kits%2F8.0%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Networking.Proximity Type%3DProximityMessage"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="78a99a3f-c8bb-40e6-a602-0232847cfec5"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e3f14eb-a16f-4cd8-91c6-beb1d35a7281">
+                <propertyInstance
+                  Id="fb424313-2527-4949-bf19-1db4a1474e70"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="13dc6004-0e3e-4702-931f-c77c820cd35b">
+                <propertyInstance
+                  Id="cd98cee9-877a-4cbc-86ce-38ca6ea2a28c"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="07d0993a-463f-48f8-aa3a-5756312995f1">
+                <propertyInstance
+                  Id="4afe7baf-fd8b-4679-9edd-0887c49c0f4b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22e44eed-6737-49ae-992b-ba093f68db70">
+                <propertyInstance
+                  Id="14c245e0-b1bf-4fdf-9511-bb19f51e0c26"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="193fd017-64d4-4ba7-bd11-8a824ceb6101">
+                <propertyInstance
+                  Id="cd2f6bc1-81b5-4d39-a8c2-add2b19b1a89"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

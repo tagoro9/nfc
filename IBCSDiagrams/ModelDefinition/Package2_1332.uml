@@ -1,0 +1,1162 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="be4ad282-5e46-4cac-8777-a0702d6f16ac"
+  name="Models"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="cb075969-f00c-45ef-b958-d8d9cca89219"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPKGServer.Models"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6578a158-cc80-43b4-9745-31270345c2f3"
+        name="User"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="93e4ba44-3f4c-4856-aa37-9923b6b00098"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a33c0509-1e47-4392-bea3-5fd93875d072"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ff9f7e47-b2e3-4fb7-b59a-3117256c9eed">
+                <propertyInstance
+                  Id="b10f6e09-024c-4e6b-b3f0-28666716e10d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="44ef22d6-12fa-417a-8bd8-df264a4e7011">
+                <propertyInstance
+                  Id="16b74e6b-1a47-4fbe-83f9-2de271d022b5"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d6f737ee-cce1-462d-8cdb-d69187239fd7">
+                <propertyInstance
+                  Id="90ab6eb0-7ef6-408d-95e5-ad3573e3a72c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="77093cf9-454c-40d6-8374-d256c90ef38f">
+                <propertyInstance
+                  Id="4605b553-83d9-4607-b870-ad1f6878b378"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6618ca73-be30-4f49-9586-41de89d1f048">
+                <propertyInstance
+                  Id="d4d4edb1-70f8-4350-91b5-67aa3545520a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="3abc3834-fcec-48df-b979-c9f9e66f0b4d"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Confirmed"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="25e1300b-1c1a-4542-9991-8e0f2ba4496a"
+              LastKnownName="Nullable&lt;Byte‎&gt;"
+              LastKnownLocation="Package4_1033.uml" />
+            <description>La propiedad Confirmed hace referencia al tipo Nullable&lt;Byte‎&gt;.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="625b98df-3fd2-4233-8742-bfab9ad06406"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="a5a4e7fd-fcf7-448d-916c-b21a9162509f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="c0feca1e-e066-4cea-97aa-79e1f17acaca"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b68cba19-a7df-4979-a1b1-2e478f7c6c04"
+                  name="Confirmed"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7366d933-fb8a-468b-a613-d13de3e20070"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ffda5bee-498c-4c8b-a68b-94015bca31b0"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1983d2fc-1b7d-45a7-8825-5ddf64f65771"
+            name="Confirmed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="5665bd51-68be-4563-9aef-b846be860c6f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3DConfirmed"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe21a908-1404-4e76-a50c-b3319296de57"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bf60326e-f7a7-479d-8457-0d637eca0b7b">
+                    <propertyInstance
+                      Id="22688f7c-38e9-4ee2-9f9a-d4f761ef69e4"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="699af0e5-5eac-4a8a-9b2e-7110e3522269">
+                    <propertyInstance
+                      Id="380ec838-7929-4629-aadd-215f8ffbb648"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4dc961a4-fc3d-4057-b921-b82afe733fac">
+                    <propertyInstance
+                      Id="78c0677a-7ca1-4551-a859-03e05a296e00"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ce0664f-f651-4e47-9b72-487eb6254371">
+                    <propertyInstance
+                      Id="87879795-9716-430f-aab9-4c820e2987a6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0b8e8df-eddf-4e51-816e-64e738dcf4b0">
+                    <propertyInstance
+                      Id="20644372-9578-441c-b9ca-cb9f5b7d6efb"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0147a939-e03d-455f-ae9f-094ca76bd0a7">
+                    <propertyInstance
+                      Id="a88da409-b288-4107-880c-c8e50f1784b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a63f815e-d1ec-479f-a978-c87dcd318e36">
+                    <propertyInstance
+                      Id="9a334a9f-5dec-4f82-bc5d-7b6672a27e49"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="25e1300b-1c1a-4542-9991-8e0f2ba4496a"
+                LastKnownName="Nullable&lt;Byte‎&gt;"
+                LastKnownLocation="Package4_1033.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ecdc1f48-d0f1-4b3e-b08e-5f5a90aec0ab"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="de257184-9728-4459-8c89-fc22e00584a1"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3DEmail"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="de41a28d-bffd-4a67-95a3-818f6abfbaf6"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d7843f8-d243-459a-a76c-0e41c944a382">
+                    <propertyInstance
+                      Id="8ab9488f-b3a7-4708-a887-2d46a4682b3b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39f2ba83-ea75-420b-8539-3c723e7ba8f6">
+                    <propertyInstance
+                      Id="1bc522ed-3142-4fa2-9021-798a0abbfb92"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f4a1ce8-5776-4fb2-9efd-97e96ec1cc27">
+                    <propertyInstance
+                      Id="ecf5eeac-e12d-41ed-8d2d-c1f14a810204"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b2048f06-270b-4adb-b5b2-a6ade3684f86">
+                    <propertyInstance
+                      Id="d3114099-70ab-43ab-9151-a61024138982"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ac333bd-293d-4dd3-ab1d-bcf046586417">
+                    <propertyInstance
+                      Id="4cc4e5da-6e2d-4c54-af8b-00fb461dcea3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fd92007-8c3b-47ae-8adb-a2ab6a6ea9ee">
+                    <propertyInstance
+                      Id="9ade22c5-0ff3-4f46-a732-14e775ce91b0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="931a2de7-094a-4743-a744-aa5395bfa4c7">
+                    <propertyInstance
+                      Id="ce85f7f4-e513-4ab9-89ba-93b82f4a4a9d"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="de5319ee-2e90-4cb5-a140-cd7de9858cd2"
+            name="Id"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cfceeb52-732f-4231-8b05-fee39449c8e0"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3DId"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4c1f490-6aa9-43e3-9b61-3f9d267163e5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c80b5551-a885-42f4-9cd4-e567c956b58e">
+                    <propertyInstance
+                      Id="428adf33-7365-4772-9630-514c95846c0d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c42282d3-3c54-47e2-9250-f283d8a98115">
+                    <propertyInstance
+                      Id="793cce75-b11d-4533-a17a-85dbc39785ef"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a98a578-e0c4-4a78-92f0-c5109f5e0bf6">
+                    <propertyInstance
+                      Id="60375eeb-5d96-4491-ae87-e1bf93c6e39e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae56b614-c664-4821-be7b-6e07c8964cae">
+                    <propertyInstance
+                      Id="c68c4c11-b59d-43e9-857f-fc225275d32e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e56ed07-4395-4a22-b219-c13c60db15d6">
+                    <propertyInstance
+                      Id="83ac8496-d3c3-4920-8e34-638bb67fb195"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="694349d7-5e09-4a71-9679-816d05f0fa28">
+                    <propertyInstance
+                      Id="0a47a4c6-9749-49ba-8368-726759490a53"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e1c6db9-5a69-4978-ada0-d1a719d61a2b">
+                    <propertyInstance
+                      Id="14b05609-c7cc-40aa-81cf-325134be2a13"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2c7ab4dd-ac53-4d2e-9c2c-82380a737d3e"
+            name="Nombre"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3f3ffde5-be52-421b-9b63-2e590ec092d7"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3DNombre"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e2e89f8-e1e9-426f-8480-f046d23b51d5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42e20f32-6bb1-44bb-b54f-378a319e636d">
+                    <propertyInstance
+                      Id="967657d0-3ea5-4022-9905-072ffbdf441d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4d2e57a5-7f07-4736-8c78-48fd8dea66ea">
+                    <propertyInstance
+                      Id="1b459425-f54f-4b24-8dc0-a8345e4607b4"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b66ec1a-4c5a-4927-92ec-a86a04683dd0">
+                    <propertyInstance
+                      Id="44bc6565-57ee-4725-91cf-20b7db6ea065"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="195b4f27-b21f-43f6-8852-fc676ca18f6d">
+                    <propertyInstance
+                      Id="0e2fd212-b0cd-4ee8-8829-a8f8811144cc"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="faaad704-f738-4d92-8b26-48278bd35c70">
+                    <propertyInstance
+                      Id="4c2d34b9-0395-483c-ae93-8aba49ab2add"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="af43979c-b2e0-46bd-957b-c1422d8bccfc">
+                    <propertyInstance
+                      Id="6fcf95f2-f6b5-4696-b293-36925f8c2a17"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ae4a006-6c34-49db-a8d9-203626e4840c">
+                    <propertyInstance
+                      Id="72c1917d-3f59-44e2-951b-ba4e09e81d17"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e50fd3b2-3df7-4d4f-bcbb-9f7ba53821ad"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b23490d5-4d51-4517-b2d0-9e6acc343372"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3DPassword"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f6e4d981-c916-48c1-b671-7c197a425a07"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="def8dd0c-2024-4888-87d2-3ea93071b66a">
+                    <propertyInstance
+                      Id="79e3d0a1-13ee-4e5f-9c5c-70395699102e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9f4802e3-30a2-4256-912a-560a2c21f3ad">
+                    <propertyInstance
+                      Id="6d053632-ff3c-4ccc-8fe4-d5dd1c99d80e"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51d349c0-4b09-428a-b273-9e1fd2fd21da">
+                    <propertyInstance
+                      Id="95b0ba6e-426c-450a-91c0-2b8f38450758"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b22b725-07ae-4666-8a95-f10cd107a450">
+                    <propertyInstance
+                      Id="0b62ee5e-d5ec-4e7c-a3ed-46f5bf0cb443"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b1e4487f-5e85-4b71-9624-a03b833379b7">
+                    <propertyInstance
+                      Id="18b0eae9-da6e-4ceb-aafd-f83755760242"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce01951b-bdbc-4c1d-b8f7-bb248131227e">
+                    <propertyInstance
+                      Id="3b92b98b-bbd8-451c-b146-9e673594861e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f2cd0237-69b0-446a-aef9-920b1b0c678f">
+                    <propertyInstance
+                      Id="cbe91bdd-45cf-4b67-92ba-080791f7616e"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cb9821fa-fe86-4790-a0ca-3ea296c2c4a1"
+            name="User"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="12d2b181-481c-4e54-b06e-3852a4c69a84"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fb545682-0694-4101-ba33-e66760cd37fc"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="33fe3a33-7d46-478e-b87d-2695a8cbd3a8">
+                    <propertyInstance
+                      Id="672c591c-15ca-4f2d-88df-69f660b5a1a9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ec63387-5e69-4fc5-b753-2bc08883acea">
+                    <propertyInstance
+                      Id="fbcad575-2313-4338-8e36-9a65e031e1ee"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d10420cf-ebee-4347-85f9-5d099a512345">
+                    <propertyInstance
+                      Id="1350d63b-7f55-4d02-ab00-4021a3e068dd"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c5609604-f874-4951-b41f-59dd9cacbce6">
+                    <propertyInstance
+                      Id="c32401e4-c458-4bd8-a0a3-b773695245e3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e85661eb-df14-4fa7-bd5e-197cfd8b186a">
+                    <propertyInstance
+                      Id="ccf6033e-7831-4619-929b-547009f7366e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1085d659-a1b8-4a82-99dd-6cbc6fbf9f18">
+                    <propertyInstance
+                      Id="dee9508d-a3f5-47fb-b27f-8213ef4ceb4f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="15dc1fa3-6b2f-4dcd-9e1d-1316b93be19c"
+        name="TokenString"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="58e14891-a9e0-4896-833b-ecc037566e9e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DTokenString"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="74ca0680-0fd1-4b6e-b959-a0a40c6e7c66"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fa3f7f28-9320-46b7-b27a-a07333edf984">
+                <propertyInstance
+                  Id="53c41f34-c780-4ef5-96e6-33f8feedc808"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f027ef08-d8b4-4936-983e-a6691e1a423a">
+                <propertyInstance
+                  Id="9efff988-6cde-4190-bc89-3cecb4f9368d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5654b4ef-e25c-4324-b976-cbbfa126c769">
+                <propertyInstance
+                  Id="ccaa0b94-3eb6-43cc-baac-8a89438c4d1f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f3f34a4b-4d64-4ba4-bf61-4e0433d6c611">
+                <propertyInstance
+                  Id="c602ec67-b0f1-44bc-94ab-d6a92ebaf0c7"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="03740cd0-f05e-4a80-9f70-d15915913b8a">
+                <propertyInstance
+                  Id="a5e8b08a-320f-466a-b2a2-0ba99759133f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="2381bab1-db3d-4000-bada-67726c1e14bc"
+            name="Token"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="65123263-ddd2-43a2-8350-ff1a0dede7c8"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DTokenString Member%3DToken"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d4aae2d3-8f90-4ea2-9548-d42c29b57543"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80279e30-6800-49d5-bc15-cf88cc3ce7c3">
+                    <propertyInstance
+                      Id="c5924c76-d8f5-428c-982a-8103d1be3a9d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9e2b8ee-ec6a-4df7-a675-a92fa00b263d">
+                    <propertyInstance
+                      Id="b2956ffd-7fc1-4acc-8366-d65fcd4149fb"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7ed2259-0fc7-4a89-8b5d-8aeae47ae5ef">
+                    <propertyInstance
+                      Id="1f1a22e6-5e6d-4d04-9366-3ceaea508beb"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="df91102a-007b-4c85-bc6e-a8e533659f4f">
+                    <propertyInstance
+                      Id="16658291-123a-4820-908a-2325a34137ed"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9f5c7b1-090f-42ef-ba58-e82f46fb04d4">
+                    <propertyInstance
+                      Id="c2c788db-61c9-466f-916c-bd3a45020331"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="841da279-512a-46fc-995b-e0d043fa9f78">
+                    <propertyInstance
+                      Id="69a8bb37-9133-4890-a7c8-bb926e3d5ab4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6be4c3e-76f8-427a-bbe7-f079e81a1f4d">
+                    <propertyInstance
+                      Id="e477e0ea-179e-4af4-8b0b-72bd0584a81f"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="47f3d6f2-9f9c-47c0-8268-408835cb09e6"
+            name="TokenString"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ede4572d-4253-4f81-8d1a-13414459b735"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DTokenString Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9a9833c-0696-42b2-a4bf-4d9f44de3235"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10547cd1-0290-4cf4-9697-a81ab314d90a">
+                    <propertyInstance
+                      Id="f5ee6877-625c-4888-94b4-1f5c5cf2b245"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7859e19-074c-422d-8088-3b3a513892ef">
+                    <propertyInstance
+                      Id="840bac16-0e6b-478e-ba33-4308cbbf4d51"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b08c1a77-b46c-4a77-a131-a729524389d0">
+                    <propertyInstance
+                      Id="bded4cc0-460a-4b74-a332-fe66373efa9a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7155136-3f74-4498-8709-2ff0032b8714">
+                    <propertyInstance
+                      Id="1b377b41-5315-4dea-b9fe-3f14d54704fc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68745e73-8748-464f-9a83-f5a2aa475f1d">
+                    <propertyInstance
+                      Id="72f78ace-d16e-4014-9fdb-ec72acf5d586"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="37348125-bdcc-4184-8ae2-20b351b00c83">
+                    <propertyInstance
+                      Id="bea7e92e-d6c5-4548-b825-c00b13db7000"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a02d471-ae4e-451e-a7cc-656e66a3b7d6"
+        name="LoginInfo"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9c93275f-3623-46bc-84f7-8092f92369a3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4a41392d-a441-4e05-9e04-074146569875"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e01f7613-d71c-4689-98d2-394e8045af55">
+                <propertyInstance
+                  Id="71e8f77a-f439-4997-88f4-6dd4bf70252a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0c69c2a-754c-4d4d-9fdb-0f6f20ad4c1a">
+                <propertyInstance
+                  Id="17f3c233-ff35-4543-b2cb-b2217edb8559"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="650cb17f-0bc0-4d22-b18b-952f73360986">
+                <propertyInstance
+                  Id="b27acae9-4197-43e5-91f5-9cfdbe658c64"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="789e22fa-f0cf-4c92-a400-357d9890d14e">
+                <propertyInstance
+                  Id="48fbfd0d-eb99-4c3d-9e3c-1e3fb88c9c37"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a6d48e58-a9c5-4de9-8577-5ab4b0632c2f">
+                <propertyInstance
+                  Id="4269afd0-267e-4474-a338-b4eb28613c3c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8d63e453-b666-4924-8dcd-b7761cd1c4cd"
+            name="Email"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3d016c15-a704-4b6b-bd57-d0e2df0d3fd6"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo Member%3DEmail"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="53537067-8667-4f0f-8c0e-7a0403256d0f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f916a672-9cb9-4a64-b43d-7f2650a4c60d">
+                    <propertyInstance
+                      Id="0aa273ac-536a-4c27-b310-3d7d331a2d36"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad1b7edf-09df-4311-89e8-94c53cadfcb6">
+                    <propertyInstance
+                      Id="9b9c3275-bb9b-454f-acc9-0bb83c3000b5"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fdad17e3-aed6-4bb6-a175-396bb6f88af9">
+                    <propertyInstance
+                      Id="293f7ee7-ba8b-4735-b807-286f278f73d8"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="137c8686-d9b6-48e1-b6d3-ffb7fd538ffa">
+                    <propertyInstance
+                      Id="c06272f5-5d0f-44fb-8adc-460707d40701"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="672ee124-21d2-45cd-928b-fe1306144be3">
+                    <propertyInstance
+                      Id="d5b35ccf-c39d-4bec-ba62-feeed7bd6a87"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ed9d468-97af-4b1f-988f-c603ce772d58">
+                    <propertyInstance
+                      Id="b7dc40ba-b8f2-44f2-afb4-61a9e6c3a8fd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="06eb430c-e662-4242-9b19-bf7c458bf87d">
+                    <propertyInstance
+                      Id="f4f7b20a-5e54-4de4-b1c6-0139cc0e62c0"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="fd51ca2e-b20b-4e6b-893b-939f90c38063"
+            name="Password"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="83351c1f-00b1-4a1a-bda5-5f5ae6e0a147"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo Member%3DPassword"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6e13ae1b-a39e-43ea-8586-1552f4953f8f"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39acd204-79af-4299-8bfc-8b9c46725647">
+                    <propertyInstance
+                      Id="4946f974-e2eb-4691-ad87-4c57b06eec70"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28bd2d65-0695-4b27-84e9-ca42026951fc">
+                    <propertyInstance
+                      Id="5927c59f-b961-4b49-bce6-a19046b4e1fd"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="646982fa-3dea-409c-a240-24851195ff7b">
+                    <propertyInstance
+                      Id="1097ddfb-b731-4884-9900-dcec74d04ca5"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="adb279ec-a5f3-40b2-8d10-fc6a61371193">
+                    <propertyInstance
+                      Id="54d1d5f4-dfa3-4d53-92fa-5e8dedebe3a9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8a8b1f0a-3137-4c8f-b723-775b922cbcd7">
+                    <propertyInstance
+                      Id="aa9363e1-057d-401b-8e42-c509982cb1be"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac03fe28-6072-42e2-bab5-a6a1dd8a009c">
+                    <propertyInstance
+                      Id="8efeebdc-1f81-4c94-b212-190f6e26074c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38fc4007-1d24-460a-91aa-08c60a368112">
+                    <propertyInstance
+                      Id="fc6abc09-f71b-40f8-aa0f-f68282f122d9"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fea780a9-6f09-4b80-b5a8-b480a1c2c7ac"
+            name="LoginInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1467e7f2-60a9-40d0-afa5-1424a7a970e8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8f792fd8-ee07-4cdc-9c2e-c0a310a22548"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f36712f7-497d-4006-8169-27a26fc107ba">
+                    <propertyInstance
+                      Id="6a6bbc17-fa45-4791-9813-a26f0c4bfd49"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1cbbbf3-b945-459f-9382-faeb622f90f4">
+                    <propertyInstance
+                      Id="69bdbbd8-6aa0-44bf-853e-b384ccd728aa"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="82cac0ac-1b77-4936-8841-8a90663a9bb9">
+                    <propertyInstance
+                      Id="26568b05-e213-4683-9e47-f521c502036d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8df0ad8d-989f-4cd8-89ee-bc32c9820a5d">
+                    <propertyInstance
+                      Id="727b96fd-c032-4434-aa1f-fcf87324bff1"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a40d974-0612-425a-b3dd-9896ce1c7c15">
+                    <propertyInstance
+                      Id="a6b12947-0d6f-4f7d-b3c0-89f00a8199ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a007c1c-2c7d-4760-891a-fc36ef494e06">
+                    <propertyInstance
+                      Id="c5301f08-5b0a-4cd1-a82b-9aa6c5dc4762"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d507bc3c-a9ff-4454-ad30-3c45bf97caf1"
+        name="db9002ae48e70f46e38530a1c6009ea6b3Entities1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3c53224e-5ba3-4214-ba3a-f6f95d4615f1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3Ddb9002ae48e70f46e38530a1c6009ea6b3Entities1"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a2e42f72-4acb-4d49-b0ee-a6043d00d7d2"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9d6ef936-2f8b-44fd-9e70-b126227e9101">
+                <propertyInstance
+                  Id="ee109d78-78f9-4692-8507-1d3aad96ff41"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6618240c-82c7-4956-8f2c-39a0218cfa29">
+                <propertyInstance
+                  Id="a06313e3-0ca0-4923-b48c-b86d8b21314d"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="aa4392d9-061e-48c1-a2b9-f377bdae367a">
+                <propertyInstance
+                  Id="b3c036d3-2cf2-4f17-854c-544f512a0c89"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="633ecd41-7084-4cb8-aa27-eaa17ecb330f">
+                <propertyInstance
+                  Id="b135e485-6cda-4b8b-9bcc-43d4d17ba55f"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2df4d7bc-cd11-473b-9922-63fe69db9cd6">
+                <propertyInstance
+                  Id="f732edfd-9c7c-4466-a34e-3201f4aa54de"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="ab516f63-69d4-4e1a-9e23-ea4b87c62fd2"
+  name="MarkdownMailer"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0dfbb0b2-8c82-40ed-979e-3ff371b41762"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DAnglicanGeek.MarkdownMailer"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ce576e10-9d3e-4d81-acf1-ec91da5fd6ba"
+        name="MailSenderConfiguration"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0ff76a0f-efc3-408b-b43d-26e663e13743"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2Fpackages%2FAnglicanGeek.MarkdownMailer.1.2%2Flib%2Fnet40%2FAnglicanGeek.MarkdownMailer.dll&quot; Namespace%3DAnglicanGeek.MarkdownMailer Type%3DMailSenderConfiguration"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f29ad774-1aa2-4740-b488-0cef2229b83d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="03cedeb7-4a48-4cf6-bbb6-1f3eeec96c8f">
+                <propertyInstance
+                  Id="5c57ae7e-0a4d-42b9-8c7c-ea21f28232db"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="56401fc3-34d4-48b4-9bf2-666e70e1bca0">
+                <propertyInstance
+                  Id="3373dddb-279f-412c-b579-6182529c6b85"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="afb84568-722c-493f-a210-b87a7d24c5fc">
+                <propertyInstance
+                  Id="186b7301-1c07-43bd-8020-52e9a0e2741e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c7bcaf1c-6ab3-45cf-8768-9d93ced44366">
+                <propertyInstance
+                  Id="3aa59768-d140-4a6e-9ee5-da1993851f64"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="71d23083-9bc3-4669-9835-f453942c2f52">
+                <propertyInstance
+                  Id="6e3a7158-c393-401d-aba9-baaa5aba3bc6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

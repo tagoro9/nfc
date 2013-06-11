@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="65bbb9cb-861c-411b-ad19-83a38859a79e"
+  name="UserData"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8bf44b5b-6d6e-4474-b4bb-61dbaf662ac7"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DMicrosoft.Phone.UserData"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1e6482ec-0159-4fd6-a791-4e240925f090"
+        name="ContactsSearchEventArgs"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="ea865121-b8eb-4c57-bf98-3c3b55124a62"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2FMicrosoft.Phone.dll&quot; Namespace%3DMicrosoft.Phone.UserData Type%3DContactsSearchEventArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5032d1ab-5c8f-4d80-a9d9-1603fd7c9aa3"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="63d0b732-915a-4b26-8765-cd273b3c5cf3">
+                <propertyInstance
+                  Id="e15e75dc-fbb2-4d86-a8b2-513d4056e98f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b3b48c3b-6641-4d97-86f5-0c8a85ebaf07">
+                <propertyInstance
+                  Id="b03d0cc8-8eec-4791-a0f1-01ea994587e6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a3be609e-7c7d-4a9d-8d8e-abe98fa49cec">
+                <propertyInstance
+                  Id="38c312c6-9a02-4cc6-8e0e-eed3e94fa8b4"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70fc17e2-ef60-4fd1-a891-a53e4e4eeec3">
+                <propertyInstance
+                  Id="f5538606-5a63-4815-abbf-b9605de6902e"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d83ab192-a16c-4493-a4cd-6bd8ba8659f0">
+                <propertyInstance
+                  Id="5e78feb7-87d4-4ed2-b40f-7d2d4c5db279"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6b978165-f2fe-4898-8797-3ff07844db72"
+        name="Contacts"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="56d3250f-07ad-40ac-ae89-8b2f4f8cecc0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2FMicrosoft.Phone.dll&quot; Namespace%3DMicrosoft.Phone.UserData Type%3DContacts"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="0512cc73-b82a-485d-9693-50ad7d0d69fb"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e9624ebe-4a2e-46d1-86cd-c36917c35add">
+                <propertyInstance
+                  Id="3ac6c32f-dc7b-4e32-ba03-1b5060b2f43f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="162b19c8-7c0c-46ee-ae06-8803a5f620ce">
+                <propertyInstance
+                  Id="8b0103d4-af5e-4de6-8249-7f999dacd75f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="058d03ac-3034-4fbf-9b80-64d28fdce15c">
+                <propertyInstance
+                  Id="6feedaf4-092b-4b8b-92c3-3e070c50c27f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="05338f32-4931-40c4-89cb-4ee3dff645cc">
+                <propertyInstance
+                  Id="c83d4fd4-bc14-4faf-94ff-fb0537a3c78a"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89fde254-ca4a-4226-b343-0770d23a0cd2">
+                <propertyInstance
+                  Id="5b27590a-0f2d-42a8-a5d0-80427eac9355"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,396 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="b5d0ec2b-6f80-41c6-837f-0aabb36910a8"
+  name="PKGServer"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6901e0dd-19cd-48c7-9539-017af36e455f"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPKGServer"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="703d0e13-eb19-4b32-b8a4-fdc62dd8f738"
+        LastKnownName="Authorization"
+        LastKnownLocation="Package1_1331.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f561e40a-7207-40dd-ab22-09f1d9a79f92"
+        LastKnownName="Controllers"
+        LastKnownLocation="Package1_1332.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="be4ad282-5e46-4cac-8777-a0702d6f16ac"
+        LastKnownName="Models"
+        LastKnownLocation="Package2_1332.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="84b3f9db-13de-46a8-a20e-a89123781341"
+        LastKnownName="Mailer"
+        LastKnownLocation="Package6_1332.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1fad0ac7-d531-448b-886f-37532ac3e6a5"
+        name="RouteConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f5261663-2309-44cb-bcf0-31079163b23f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DRouteConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9d71c839-d4c2-4d0e-a333-58dc9948135d"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="937a2298-b84a-4399-a356-c00b7fdd0c08">
+                <propertyInstance
+                  Id="de89a64a-9b9a-4696-b65c-5f09cfd85149"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c514fc7-742c-48b5-8d69-c7ca79ae1f97">
+                <propertyInstance
+                  Id="ec5a0146-37a0-4316-b5c1-2fbf4bd4af94"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2068fbe1-7190-448d-b2a2-aec32c8d0a23">
+                <propertyInstance
+                  Id="93b3e32b-09ea-467a-80fb-b49aabc181c8"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c687e164-7ad0-4390-bf83-ec23a974f814">
+                <propertyInstance
+                  Id="45c18cf1-5d73-4e0c-bcfb-c9fe437ac596"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="caf660e4-00f3-4d4d-87c7-de046765d718">
+                <propertyInstance
+                  Id="930fb5b8-b463-42bd-ab60-b1b5f5328984"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d8556f88-02a6-4a28-a584-3be9252a8a3a"
+            name="RegisterRoutes"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6ffc69ce-6f30-4cd5-983a-ea2acea1d52b"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a7df802-e96e-4d9e-a68c-fea6a5b37eba"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a58bdb2f-a878-442e-90dd-df8ec7fde505">
+                    <propertyInstance
+                      Id="77386ebe-d58d-4d58-9066-8f325fd8fb51"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eed5e03-2d23-482f-9b83-27c7be9dcb4d">
+                    <propertyInstance
+                      Id="2ebbfb2b-2018-4601-b8a6-9eaed9ac80e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9c3db77-125b-44a6-beca-41f86129b0c3">
+                    <propertyInstance
+                      Id="55cc3db0-a080-4bdf-8144-481f79391a1c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fa4fccc-11ac-4157-8ac6-c7df2fbb5ed5">
+                    <propertyInstance
+                      Id="760c6a07-a6ad-4f57-a0c4-e05785abcd1d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d2789031-c653-49a3-b81f-10ce01b336a7">
+                    <propertyInstance
+                      Id="79310a9c-7c76-4e31-9a56-e5223d9462c2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf62a718-656c-47c4-bf24-da66fcc1702a">
+                    <propertyInstance
+                      Id="eb8d9da1-c5e2-4274-80fa-99b980771c51"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1e349a6-311c-4451-8720-7daed3a99195"
+                  name="routes"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="27e20a73-2be8-4958-8881-1ecf671a19b2"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DRouteConfig Member%3D(Name%3DRegisterRoutes OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2FSystem.Web.dll&quot; Namespace%3DSystem.Web.Routing Type%3DRouteCollection)]) ParameterIdentifier%3Droutes"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="36fc2031-4339-4b07-896e-0b0f14ffa8d7"
+                      LastKnownName="RouteCollection"
+                      LastKnownLocation="Package_1335.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="25bbdd7c-3eca-4d60-b59b-d71ad926fed5"
+            name="RouteConfig"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3f15fb3a-2e4c-441b-9628-824d3667b37a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DRouteConfig Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ed7d5b48-d847-40f3-a976-e2b86b3ad233"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebc92134-d1eb-45b1-ae5a-8175a6398c57">
+                    <propertyInstance
+                      Id="1bdcad8e-7a4c-4d86-9562-73baf3f3fd92"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c415d51-77bb-4f89-9a4d-54f8e480fa0b">
+                    <propertyInstance
+                      Id="018d9afe-93b0-4673-b274-8ac5599fece7"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cb5036a4-ecca-495d-b153-5992d8ae370f">
+                    <propertyInstance
+                      Id="796e6ef4-8f43-4e9d-91dc-70f502948c4c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="60e7757c-7eca-4df3-8bfb-920798748dfe">
+                    <propertyInstance
+                      Id="635af225-e69d-4e2b-bbc7-da0130cf8d9e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="484294ca-f04a-4a07-bdaa-ea92386b16c8">
+                    <propertyInstance
+                      Id="74619680-5522-4323-bd9e-6277f4eadc37"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="129f0594-753a-47a5-ba45-991288712ff5">
+                    <propertyInstance
+                      Id="de7ce35a-4206-49ee-88aa-c79823ba3d4c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2ef36107-25e2-4d75-8d02-3d3f3c896121"
+        name="WebApiConfig"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="75c4f066-61f4-478f-813c-405c57cc2807"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DWebApiConfig"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ea34e859-f47a-42ad-b63d-acd7f5e213a9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="845414a2-25a2-4daa-81aa-3c69a6697fde">
+                <propertyInstance
+                  Id="0fe7b2ab-79cf-4983-ba02-aaf27cfba858"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b797408b-2d19-4c6f-b4df-ebb3db6dc0fb">
+                <propertyInstance
+                  Id="6835372d-26a3-4893-a6f7-701ce2f67e34"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c9c99dd7-61ae-4887-98d2-554d98c30af6">
+                <propertyInstance
+                  Id="a7334796-1342-45f6-bd34-bf1829627788"
+                  name="IsStatic"
+                  value="True" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="99e33917-96c8-49bc-a869-6571c0ba885d">
+                <propertyInstance
+                  Id="b342e9c6-c435-443c-89e1-f16f9a232fd4"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c928f7cd-e28a-46fc-a507-15b8f155159e">
+                <propertyInstance
+                  Id="33ced9b5-2d90-41ca-89f7-a25f064beb29"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="775d4cf7-0680-4168-ae6e-8b609f377d6b"
+            name="Register"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="08e32d4c-ac91-45b5-a169-e67f5d9a72a7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DWebApiConfig Member%3D(Name%3DRegister OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2Fpackages%2FMicrosoft.AspNet.WebApi.Core.4.0.20710.0%2Flib%2Fnet40%2FSystem.Web.Http.dll&quot; Namespace%3DSystem.Web.Http Type%3DHttpConfiguration)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2c1e50b8-0fe7-4a37-a6b1-1cc07bddb5ef"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="27d1f23b-5bb9-40dc-8969-dbaba27281b9">
+                    <propertyInstance
+                      Id="c0a67e18-37e2-415b-bd7c-bf0e1fcdedb6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24d72f8e-9f56-45d1-ac31-eef287436a26">
+                    <propertyInstance
+                      Id="94d7ba37-ec70-44f5-b10a-877feca53f87"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c88140dd-069d-4b8b-923f-572cc9f42dd8">
+                    <propertyInstance
+                      Id="6597060d-db24-4fcf-a9f3-e4b6f2d1cf19"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9bb92b93-6b93-4e90-8925-b06516e4527d">
+                    <propertyInstance
+                      Id="aea42c98-dce6-4378-b909-f73ddf99bb02"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="debb454a-969c-4a0b-b0fe-431a59e5d8dc">
+                    <propertyInstance
+                      Id="f23e8d80-a2a5-462d-802c-0079844c087b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ab2a1815-f2ab-4b6e-b4ac-b9465ac3e3f6">
+                    <propertyInstance
+                      Id="2665026f-70d5-46b0-a6ab-6866b15dc7c8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bcbdd39a-78bb-42a9-90db-b63f1d4b1c05"
+                  name="config"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ca064185-6c10-431d-b4cb-70568e49bda9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer Type%3DWebApiConfig Member%3D(Name%3DRegister OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2Fpackages%2FMicrosoft.AspNet.WebApi.Core.4.0.20710.0%2Flib%2Fnet40%2FSystem.Web.Http.dll&quot; Namespace%3DSystem.Web.Http Type%3DHttpConfiguration)]) ParameterIdentifier%3Dconfig"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b6910938-d519-4d97-b4d0-a02f3b66ced8"
+                      LastKnownName="HttpConfiguration"
+                      LastKnownLocation="Package3_1331.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="324db2d9-c9dc-422d-ba39-60d47d9b9dfc"
+  name="Sockets"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="824fde2f-6456-4e61-83ed-7872f217ac9b"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DWindows.Networking.Sockets"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="6aae20c5-4042-44f3-ad95-eb5e5ac49e7c"
+        name="StreamSocket"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="92e6f13f-e6bb-4d8c-8810-e39a751838f1"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FWindows Phone Kits%2F8.0%2F%2FWindows Metadata%2FWindows.winmd&quot; Namespace%3DWindows.Networking.Sockets Type%3DStreamSocket"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="732da871-d919-4467-a7e8-6f561aa8317b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c58c2387-d1c8-4a39-9c82-8e42e3ef50b5">
+                <propertyInstance
+                  Id="18bf1862-c7f7-4bc9-8ae4-3ecefdfe122b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="70bae2fe-f8b3-4e21-8198-b0c45824c6f5">
+                <propertyInstance
+                  Id="18c87a16-1d6d-4805-9894-a103b43b3bf7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b7410ad-9cfe-4a62-9a30-0dbbe73e2048">
+                <propertyInstance
+                  Id="c4c131ed-be14-4a30-85f6-ddbe79580f1b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b0815fa1-c822-4cff-bedb-4829b17ff543">
+                <propertyInstance
+                  Id="d3b6acdf-2f35-4748-b6d9-e17cc5c3fd83"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="22628d2f-84a9-438a-b8ce-8b1e17997506">
+                <propertyInstance
+                  Id="291f57f4-1b30-4657-b08b-fc20d9de7b2a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

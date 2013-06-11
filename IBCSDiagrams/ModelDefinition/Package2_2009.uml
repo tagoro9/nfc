@@ -1,0 +1,1836 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="b95ed8e8-7ffe-4f77-a918-d3abf5ef7d63"
+  name="Base"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="77d02123-910a-447e-b7a2-f5ebc70151d2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.ViewModels.Base"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="45e40ef8-98b1-40fe-9d71-f6a4e61abc02"
+        name="VMLocator"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9eafcaea-6863-45d7-babd-5da38cb1fb9f"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="567cbcfb-f05c-42eb-a569-ed0c9525d36c"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="018687f6-f038-465b-81a9-78138a2e83ba">
+                <propertyInstance
+                  Id="f4d6b328-3199-4942-a48a-36fe001248c5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6f7cf865-e362-47ea-817f-e37244c6a213">
+                <propertyInstance
+                  Id="75bc654b-584c-4114-a66a-e80a8c876540"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed5d15c0-0bbb-4406-93a1-f9d1d195ded3">
+                <propertyInstance
+                  Id="29afd09c-74be-422e-832c-17c20094adbf"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="de3a442a-d7b6-4e06-ab21-c414536c8474">
+                <propertyInstance
+                  Id="5a8cbd86-499a-4d71-b36d-41c0a85ba8c3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f5120aa-de8d-4b47-83d0-aec2e9590d4a">
+                <propertyInstance
+                  Id="0ffb50ed-5185-413a-a813-60044a4dad08"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="81e55d78-e8e2-459b-937d-8832e7288903"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="LoginViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="63b6e40c-7e8c-41f8-845b-22b468f7d203"
+              LastKnownName="VMLoginPage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad LoginViewModel hace referencia al tipo VMLoginPage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="145b748e-9f45-42b2-a777-b687d262e636"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="09a65a92-918a-4d97-8f4b-a4794527d734"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="17d57293-562e-4d48-bae0-f6bb2c20a7f6"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0475768d-1151-4bf5-bf54-ea83f0bf715a"
+                  name="LoginViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fb25bef1-27d6-44be-bc3a-0cc46c92ab3e"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e23a5f03-42a0-459d-b04e-4ccb9b455244"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="76ace907-e0ed-4ec4-9245-895785dd9cf5"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="MainViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ff22f1f0-0dd9-4967-a1b8-7f20797516f7"
+              LastKnownName="VMMainPage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad MainViewModel hace referencia al tipo VMMainPage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0092fa47-8541-4db8-a965-77992fcd724c"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1bc43aff-5155-4e0a-8a32-cb3a98c6ce44"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="25e5c940-4f0a-42bf-837b-8a14355eac43"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab0a6ffa-3f59-4eef-a109-1a01b9498e3c"
+                  name="MainViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="ac0c19d8-9033-41a9-8e50-0b2617310806"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="06348876-ceb3-4847-be43-bec50740d9f6"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="b89e42b9-76aa-4cc0-ac7b-250ea8d12848"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="CreateAccountViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="f48c2da5-032d-46aa-9a5b-1ee46aaba77a"
+              LastKnownName="VMCreateAccountPage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad CreateAccountViewModel hace referencia al tipo VMCreateAccountPage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cff56537-5a9b-43f1-b18f-b0bc2dd2eb1c"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="fa54e959-7276-42e8-9545-bfeb96ba7433"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="3ea8acde-ce82-491f-9db5-7d067cc64987"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e4c3c138-1e28-4521-b178-8fda7b68e704"
+                  name="CreateAccountViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="24b89045-a796-4e63-ad76-c6f63d87f5dd"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="59439eb7-27f4-4720-948b-4ee70144193c"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3bc8d711-0d84-42e3-9d1e-23c27d4cfbed"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="AboutViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="8040eac2-05d2-44be-ba72-6e2142e5a032"
+              LastKnownName="VMAboutPage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad AboutViewModel hace referencia al tipo VMAboutPage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3bcdeff0-9a0b-4259-b503-8bc0610ed764"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="6b606ff5-e040-4f4a-a891-bff65953dc3e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="19088b2f-0b13-44a6-bb23-5541f35986fe"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="28baf735-6d34-4b7b-ab2d-45f86001f641"
+                  name="AboutViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="dada0ccc-3b8b-4dc1-b1f5-48aff9d5e597"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="5949c142-f27b-4fdc-8c28-bb686cbfe3c3"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="fb6ef14b-ef92-4339-80e8-7ff91c42dfea"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="DecryptMessageViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="4eaf3d6f-3c3b-45c4-8261-ddaad9822509"
+              LastKnownName="VMDecryptMessage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad DecryptMessageViewModel hace referencia al tipo VMDecryptMessage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7c8c1aa4-8ba9-4122-8795-eff1ea250594"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="c8040921-24bf-4717-a4a6-53015c77f56b"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0918ed6e-3387-485c-b15e-9885ffe05c65"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f4b090a3-f06b-4210-9e1b-ba90f9c3fcdd"
+                  name="DecryptMessageViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="188754c9-4f98-4111-8b02-d781b28bdd97"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="8817c5d9-244f-4ae4-9928-e4e53078db28"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="363feb70-42fe-4307-9a3e-4d8e6b8d5ac7"
+            isDerived="false"
+            sourceEndRoleName="VMLocator"
+            targetEndRoleName="InstructionsViewModel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="713a6ce8-2473-4b18-a224-5bc0031c9b72"
+              LastKnownName="VMInstructionsPage"
+              LastKnownLocation="Package1_2009.uml" />
+            <description>La propiedad InstructionsViewModel hace referencia al tipo VMInstructionsPage.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d815c23-2894-49f8-a04f-4a7bc696b2f1"
+                  name="VMLocator"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="8f03d506-142f-49a0-b6e8-44b2eaa60fde"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="11fe7e06-96fc-4bf8-a5ab-e4b97cfbe90a"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d22467ca-4346-4841-87b7-f053fb06c35f"
+                  name="InstructionsViewModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="d6d422cc-51cc-45d5-9447-04ceeabe9fe2"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="425c0532-93bd-4df3-ae50-2e2a45150349"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="6790984e-b16a-4456-b210-f9a2fd67866b"
+            name="LoginViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="38a65e05-fcfb-4b10-ba26-660df09282aa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DLoginViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="292a3130-f47a-49b8-a3e2-e598ef8f6e71"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9d25d74a-8741-43a8-8108-a6cae12caa75">
+                    <propertyInstance
+                      Id="7b134d74-91e8-48f8-a995-24499f1777fa"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8ba0b90b-d1c8-49a3-a341-1a91022ec1f4">
+                    <propertyInstance
+                      Id="4d43dcaa-742d-435f-b4c8-9ac8213787e8"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d207c8dd-b4c5-4a96-adf5-93b02d08274f">
+                    <propertyInstance
+                      Id="018ef85f-8fde-4984-b578-ed4d1e8278df"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6730f472-d7cd-42ed-b73e-a5fc77451462">
+                    <propertyInstance
+                      Id="e6b2f160-d638-44d2-b0ed-a5dc8c61df09"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="466f18dc-9d6e-4e69-ab64-b5a720b59ae1">
+                    <propertyInstance
+                      Id="29509178-fe4d-45d1-a4d3-61207a5726d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="418bcb22-62d1-4929-b4f1-c3dfbac0fbe2">
+                    <propertyInstance
+                      Id="a8ea7f73-8be1-469f-89ad-9273ea4a3e59"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d702f58f-49a1-4fc1-b50c-a490327010d0">
+                    <propertyInstance
+                      Id="0e93f094-e796-448d-9ff7-4ab964ea566b"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="63b6e40c-7e8c-41f8-845b-22b468f7d203"
+                LastKnownName="VMLoginPage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="065451dd-cc40-4b2c-ab9a-78886b4e682a"
+            name="MainViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1d225260-2134-4269-9df9-deaa844069db"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DMainViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="042c9750-29ab-46ff-b70d-760f4d983700"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6946046e-72be-4d98-862d-4ad2ceff5a94">
+                    <propertyInstance
+                      Id="36bffc7c-0a5d-4c49-bec1-e745a1dcda1a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fcc081d1-d86d-46f9-8921-71d65a89357c">
+                    <propertyInstance
+                      Id="5195b087-8ead-4911-a7d1-ab3fd6db9494"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5fb61b6c-3d29-4cd2-b8be-05eb9e599cc1">
+                    <propertyInstance
+                      Id="bd45cc27-2bbe-4135-96fd-2ba18f70ea2e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04809a2a-8026-4bfb-b76d-97d4eb5aa378">
+                    <propertyInstance
+                      Id="8981bc1d-7dd3-49cf-978f-5266989b896d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d0a927a2-2131-4651-b080-0d8b42a19e1a">
+                    <propertyInstance
+                      Id="a349de5d-97ca-444c-8058-389d85f9a181"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1dd70105-2d97-4eea-b938-98137ebb5581">
+                    <propertyInstance
+                      Id="f27b6e49-7d10-4c53-95d4-a7553b45547a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2d5939d9-118e-436b-9834-524f9873e3e9">
+                    <propertyInstance
+                      Id="103227eb-b45e-4ef3-8303-8edb3693496d"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ff22f1f0-0dd9-4967-a1b8-7f20797516f7"
+                LastKnownName="VMMainPage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="34d0030d-9323-4c98-b08d-62056f6d5b55"
+            name="CreateAccountViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1945f64a-a3d4-42e1-ac85-612aaebd5675"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DCreateAccountViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="7e38c558-1478-4a61-a921-d017f375d551"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae1b7206-eb2a-42f3-8aab-1bfce074a3b9">
+                    <propertyInstance
+                      Id="6e7c3ac1-5bcb-48f0-9574-951f200bf30f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f70fa295-2e7f-42cb-b02b-b77ae675023a">
+                    <propertyInstance
+                      Id="02f39bd3-0ee1-484b-8410-6919268c2b82"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5da50bfa-f773-40df-bc3c-ce482e9a07ac">
+                    <propertyInstance
+                      Id="5325a23c-5870-4972-82c8-e6eaced93d9b"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67b5e696-4d91-4156-9961-38796b095800">
+                    <propertyInstance
+                      Id="03333f8f-eee2-46e3-a8b2-4ccfe965a3c9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f5acf2b-de1a-48a5-828f-21d582fa43ec">
+                    <propertyInstance
+                      Id="67a8eb48-f149-4457-8a49-393b47c7d44b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebe2c6cf-4671-42ac-84c7-077ddbb75449">
+                    <propertyInstance
+                      Id="206704e7-5cce-490a-8799-52d772472644"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="601394c7-c6f1-41fb-9ee1-1ab2e599c9a5">
+                    <propertyInstance
+                      Id="87e03da2-c931-4ba2-a788-e318de81752c"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="f48c2da5-032d-46aa-9a5b-1ee46aaba77a"
+                LastKnownName="VMCreateAccountPage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2eeed59b-f3ec-4dbf-b5b8-0f161aa5cbd0"
+            name="AboutViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="6dd0fe87-a2bb-44e0-9214-4f0d6439e98f"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DAboutViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="87e23106-8ecc-44e7-9a7b-c5f7e5b05f35"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a7a0758-cc50-4d06-9929-f68066180211">
+                    <propertyInstance
+                      Id="8b98b93e-1218-44ee-8718-0519bc3c85d9"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b7f67dc-b330-4e0d-aa1a-137a2df7ae9b">
+                    <propertyInstance
+                      Id="9574b584-13ac-44ae-b29e-ae7db6fd77f6"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="830587c8-71e1-4eeb-a76f-b477c6146855">
+                    <propertyInstance
+                      Id="4f1ce8b9-c759-489b-a914-235f3c4dfaea"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42138050-6dd9-4e54-a4fd-4691df31e076">
+                    <propertyInstance
+                      Id="869e8f21-252f-44dd-9a98-fe1d7cabb3c7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a640a4db-c99e-4677-9171-160d1b5d68e2">
+                    <propertyInstance
+                      Id="b095e067-cc12-40aa-9d62-9e569bc4463c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de3ff091-061a-4f66-afa2-2f6cc17ba390">
+                    <propertyInstance
+                      Id="015dcc4c-8bf7-4813-86dc-b12fa045b5ac"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b86b4a1-81ed-4afb-b7d1-f37a840eb8c5">
+                    <propertyInstance
+                      Id="fabfdb5c-6225-459f-a302-161b0bab6b45"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="8040eac2-05d2-44be-ba72-6e2142e5a032"
+                LastKnownName="VMAboutPage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="67234c0a-be1e-404d-b263-2889f6f7aea0"
+            name="DecryptMessageViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fb21b495-f078-4b37-ab11-c247db82e140"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DDecryptMessageViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="09a5fb16-aaaf-4ca8-86bc-4dab5434955c"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="70354927-ba39-4463-9f86-e5e18fcdf0e8">
+                    <propertyInstance
+                      Id="0f0c8b28-1291-4471-b78e-f203675d4b06"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="617c7fc4-4a67-4857-8be4-642ae8a6e329">
+                    <propertyInstance
+                      Id="37467fba-3525-49dc-a027-def3a1ab8a37"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="440b8eb5-8f69-4e04-9388-0f4be811e242">
+                    <propertyInstance
+                      Id="cef05d23-fbbe-404e-be93-48cb45f1d42e"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae69671e-7fb4-4c1f-a044-49272280d33a">
+                    <propertyInstance
+                      Id="08ce5b66-90b8-4ed0-8ce1-2e3b1686f0bf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5323a3ed-f6de-4c6e-8f6e-ef5e8002b253">
+                    <propertyInstance
+                      Id="ecdf0508-c5a9-4d12-b379-d6af8fbc34e4"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9433b8cf-704d-49ed-ac78-040f96e1e7f7">
+                    <propertyInstance
+                      Id="2a9b9553-8ba6-40dc-80ef-ffacba682761"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d114e7c-a102-436e-915d-60988825a018">
+                    <propertyInstance
+                      Id="8c5df3ce-4522-4fcd-840e-555095dc1d1c"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="4eaf3d6f-3c3b-45c4-8261-ddaad9822509"
+                LastKnownName="VMDecryptMessage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="33fd6fd0-8039-4e43-bb6b-4b374571f753"
+            name="InstructionsViewModel"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="09dda892-74dd-48d0-968c-a1335af7effa"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DInstructionsViewModel"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4ef1a602-a161-47df-9076-45ce42e5c703"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c01354b1-f826-4a55-90f3-206208b8fc94">
+                    <propertyInstance
+                      Id="f7111d53-e527-4cb5-ba76-c885af2703e0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45ded873-7838-4f5b-aa3b-a8c1c923e01c">
+                    <propertyInstance
+                      Id="51c6838a-2888-4d2e-bcb2-c10ea18dd50f"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f59c59c2-cc73-4642-9b03-c1fedb36c498">
+                    <propertyInstance
+                      Id="ad79f45f-f1fe-4e03-b635-9daa077daf15"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6a5f1b7-80b8-4d8a-a028-77f77d2fdce3">
+                    <propertyInstance
+                      Id="eeb6c7f7-dfca-4da8-b988-d36518432ffe"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63f007cb-a188-4a1c-a67a-4090f72fbdb6">
+                    <propertyInstance
+                      Id="4d47baa8-8ea7-4250-8027-1948dabc6173"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6974b083-b2b4-4d88-b321-70ecc6837851">
+                    <propertyInstance
+                      Id="eb877c56-4b59-4975-beea-5f5a51c6c6a9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b01423fc-1d8d-418d-9088-0b73c87d881d">
+                    <propertyInstance
+                      Id="d91bf587-7300-4f7c-af15-86319a6e427a"
+                      name="Set"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="713a6ce8-2473-4b18-a224-5bc0031c9b72"
+                LastKnownName="VMInstructionsPage"
+                LastKnownLocation="Package1_2009.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="05a81913-ec9a-492f-bb65-68d55f66e92b"
+            name="container"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="de4a19f2-b9f0-4aea-9a7f-5c0ac68ac096"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3Dcontainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0714e910-c378-41ae-844c-d132d306458b"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="236de9a2-b879-458a-bb57-fb5f6f84ff53">
+                    <propertyInstance
+                      Id="5adf4dd6-af78-48ff-8a5d-eebd0dfb980e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="989de540-e314-4da3-90ff-09c785953998">
+                    <propertyInstance
+                      Id="e0a2cbc5-a702-452a-81ad-c54f4a78e956"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e79560b1-604c-46db-9dd6-4696ef6a30e4">
+                    <propertyInstance
+                      Id="6447ccd8-9868-432a-9056-d66c02103ef9"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c017006e-87fc-4378-94fd-b00640d04209">
+                    <propertyInstance
+                      Id="6dbd1057-bb31-4e44-b532-224f35a979dc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2fac6a80-74e8-4ce7-b8fa-ee266d1dcaca">
+                    <propertyInstance
+                      Id="db497427-05f6-4e84-8439-bebd9c353429"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="3809fa05-4bf8-47b7-98e7-ee65c83938b7"
+                LastKnownName="IContainer"
+                LastKnownLocation="Package3_2009.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="66e05411-9db2-414c-b9e1-e61e6fd9b382"
+            name="VMLocator"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="42cd900f-4d6a-46a8-a5d8-2ffa5821ca64"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="10611599-863f-4b87-8b11-8b2dcbf3e526"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d4c35f7a-7ad4-4fdf-9243-94ff3b929861">
+                    <propertyInstance
+                      Id="fedb378b-ad06-44c4-b1b5-a20f4cdcc22e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b61a03b9-7638-465c-abef-cd3beebbb855">
+                    <propertyInstance
+                      Id="51c6cf82-de32-41d2-a4d2-f449e11d857f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c057924-b02f-4225-aed3-6c2c8be7f381">
+                    <propertyInstance
+                      Id="c7bcf669-c565-4ff4-aa1f-38677b9c364b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a719773d-9a89-424e-a7cc-aa922eb6e488">
+                    <propertyInstance
+                      Id="5d782e06-2b5a-4c9d-bf11-a96abfccfd33"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12210890-f42c-4196-96ab-40c728710c97">
+                    <propertyInstance
+                      Id="501611cb-1408-419d-9b56-60dca26d401a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7be59c4-010b-4108-88df-b6bc035d096f">
+                    <propertyInstance
+                      Id="e6f628c1-2009-4fd8-ad50-aaae75f094d3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6bd5dfc2-1d6d-4312-9d39-6059b6cc13d3"
+            name="BuildContainer"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d4146b48-1521-4707-9666-9ee8de7db8d5"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMLocator Member%3DBuildContainer"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc0dc4ff-ef28-4608-a8c9-8d4be92739d2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f0fb823-2027-4de1-ae99-ad2f7c50511b">
+                    <propertyInstance
+                      Id="405ac46d-a88c-4729-9b66-e0c55220bb38"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8471de35-90cb-4bc3-a1c5-bf39b1c6f489">
+                    <propertyInstance
+                      Id="6218cfae-5088-4c87-bdc6-6152fa0c5306"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48801629-c225-4aa6-ae56-de7e3431b084">
+                    <propertyInstance
+                      Id="35ff6183-61b1-4b0d-b990-4c5658e9e388"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a6f51645-5bd5-44fc-9a44-253541e32882">
+                    <propertyInstance
+                      Id="f6bf3e06-d0d1-4b29-a809-807316388e18"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2427d753-01d5-4ac7-b02f-047c34024bde">
+                    <propertyInstance
+                      Id="b2027f8d-a52b-42f7-8d83-37f86e86572d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ee1a499-8ba2-4c65-ac7f-111d90072b3d">
+                    <propertyInstance
+                      Id="9a39ec4b-27a3-4baa-b01c-9b72bf5a312e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="534a9204-bc37-4bb4-8b85-d49a3edc4230"
+        name="VMBase"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2610d92d-1506-4f3b-84e8-e24c53d10079"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="f18bae89-8173-4972-98f3-a513bdcfb537"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1b428cac-dfe0-49d0-ae4b-73715887a2c6">
+                <propertyInstance
+                  Id="3f627590-d281-42cc-9bc1-94229efd2d90"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6acb9cf4-e497-40b6-813c-c9f384f1854c">
+                <propertyInstance
+                  Id="130a6f0c-142b-4b2d-b15a-b07e82fece59"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="dbd8a88c-0479-4983-8422-7a2d92f981a5">
+                <propertyInstance
+                  Id="b4c18c86-52f2-4e16-8524-d93cc426dd14"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73fcfcfd-9412-4b24-9d2b-6c05deb35d88">
+                <propertyInstance
+                  Id="62b56493-bf88-4208-a5b7-d0e09679933d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="747f9515-3a91-4ec1-8f1d-1bff8f934391">
+                <propertyInstance
+                  Id="b7b366ae-d833-40b1-851e-3e0fd1a36a54"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="ee5740ad-0d7d-4fa7-be0e-fdf282b4ec65">
+            <interfaceMoniker
+              Id="f298207e-9a4a-49fe-88da-5ff3b2ef3885"
+              LastKnownName="INotifyPropertyChanged"
+              LastKnownLocation="Package_2012.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1292d95c-aad4-4aa5-9814-fc2e39eb3331"
+            name="IsBusy"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="cf045b55-2ec9-4726-83d0-e7dc6b17d361"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3DIsBusy"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe25d9bb-8c73-4a9b-8154-0e7fff79d394"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2096819c-252e-4767-b7f7-0a6477394332">
+                    <propertyInstance
+                      Id="339b14ce-8d2d-43a3-8fef-85bcff08e572"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e2cfb13e-2098-4c54-8c6e-38f959b70280">
+                    <propertyInstance
+                      Id="98e0aec0-49aa-4afc-bddb-3b59b521e4a1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c35ff69a-61ea-4316-ad8d-16e26e00251e">
+                    <propertyInstance
+                      Id="f36fd758-7eec-42ab-9efd-201d2287e2d7"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f63d4854-2b9f-45a8-a617-b1dc5835c69b">
+                    <propertyInstance
+                      Id="bb951ed9-ccee-4ddf-8b02-e53be4db5b0b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b8d94dc-f420-4d48-b21a-00f102742412">
+                    <propertyInstance
+                      Id="a713ee50-49f8-480c-8686-9257179c160b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24230c34-84aa-47ca-ba1e-4fe02b4b9fb3">
+                    <propertyInstance
+                      Id="fa7c48f4-674e-4655-946d-441f8d22a112"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6dcbdd3c-8bb4-4534-9125-8e8d46d2c78e">
+                    <propertyInstance
+                      Id="5405173a-90ff-4946-8189-47b5095d2f11"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="0a4e08d0-1f52-4b6c-9157-ecf054e9a870"
+            name="PropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="4aab2df6-657a-4d94-91a5-27370c20fb7e"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3DPropertyChanged"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b237571-7ba2-4b07-b20e-04da3df414b6"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9eaa8794-1cff-47bb-8e2c-284bea3cc77e">
+                    <propertyInstance
+                      Id="a25d51a5-0d07-4865-86e4-3250c8513ea4"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4fedf3f2-9c92-4f55-bbfc-3ffb168b61ad">
+                    <propertyInstance
+                      Id="d372ec06-5b53-4ff7-8fc8-4413e9cac89c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fba3c566-1a68-411f-a06e-5f2832c6811b">
+                    <propertyInstance
+                      Id="d0bc46d1-7cfe-446c-8671-510c526ffa4f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12b77a2c-6709-49f9-ac20-1bb090f90a3b">
+                    <propertyInstance
+                      Id="bd223dcd-78ef-4c3c-92e0-e95eb352c8d6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b411d529-d05a-4b9b-856e-0231af6fe1ae">
+                    <propertyInstance
+                      Id="f7606fc3-b3d3-4e1e-b233-2451e28be463"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="c76ad847-1705-4c70-92ef-1408d479cb55"
+                LastKnownName="PropertyChangedEventHandler"
+                LastKnownLocation="Package_2012.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="36af75d1-e26d-43ba-baab-714d5e84556b"
+            name="isBusy"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="ed6c3f21-453b-4269-b7ec-45a1318b5794"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3DisBusy"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="84bfbeb5-b020-49c7-837e-2ad05e01a196"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f64351df-f3b9-4acd-a960-dbbd30ec105a">
+                    <propertyInstance
+                      Id="e628d85e-cf78-441b-83c8-d1f214edd3d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="97a92b6a-0166-4224-a1ce-e137eb76e52e">
+                    <propertyInstance
+                      Id="c5321172-8504-49ee-b7eb-563912105cbc"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="060dce48-6ed3-45d0-8a32-84a5d77feedd">
+                    <propertyInstance
+                      Id="adef7b5d-ab1a-4756-9f40-fa52bc25e821"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="76b0e5af-dd46-4a15-8bf6-9ddbc4ca6226">
+                    <propertyInstance
+                      Id="51ebff99-7255-42a6-b2f8-3b5761156b69"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6eb30a93-36dc-4b0c-a4d6-097591fab415">
+                    <propertyInstance
+                      Id="c3a822d3-8362-4b10-806b-62c610e4680e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c9c2fc9d-52df-43e0-b999-2a5299079dfc"
+            name="RaisePropertyChanged"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e020ae59-571f-4803-a571-09eab29c8643"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3D(Name%3DRaisePropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="5b176f46-2469-4503-bf73-93bf1605b828"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="80b47965-e5d9-4b08-b1c8-c4ce0fd51027">
+                    <propertyInstance
+                      Id="85872ef0-47b8-454b-8618-f075bfc08076"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="001b7448-5706-4ddf-bfa4-d283b03927f9">
+                    <propertyInstance
+                      Id="4cf8067f-d060-4542-8004-dc7356440374"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c17ef3fd-0bd6-4bb8-92a9-43265ffddaee">
+                    <propertyInstance
+                      Id="4cf2213c-d41f-4dff-9121-dfdad0a3e810"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3baa134-a065-4e94-8082-3f6b0836b8b6">
+                    <propertyInstance
+                      Id="67329350-5280-4784-a8c6-30955ff9e673"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cff8e0b-782f-4ca4-8a15-b58bb3bc8a11">
+                    <propertyInstance
+                      Id="6f065c9d-24a2-479a-8631-27138824a8c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51053b30-84c2-462d-bfee-28a08776e12f">
+                    <propertyInstance
+                      Id="85156cbd-d64c-4fad-a1c0-b206c080c3d9"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c00abae8-8570-424f-a0ea-ba2c000dc680"
+                  name="propertyName"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ae7344e5-cc20-42c1-8cac-85cc4e256691"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3D(Name%3DRaisePropertyChanged OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3DpropertyName"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="39ab8fad-c859-4431-bd00-bdf14a5c4f00"
+            name="VMBase"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="81ec494c-403a-46f9-a233-5b829b6646c8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DVMBase Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3ad744fa-f329-44ab-ad1a-c042754055ff"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e6fdf644-9ecd-4b58-b68f-57fb96308cd5">
+                    <propertyInstance
+                      Id="5b0836d2-c20b-4b72-ba2c-d9e545ecc5b1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="768bd696-e5e5-4b8e-b6e8-5c5e7d01a080">
+                    <propertyInstance
+                      Id="210740f4-40a3-46c0-ac0b-4f0148ebbdb3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9bd24ad-d8d1-4210-8e96-c455ff6d5892">
+                    <propertyInstance
+                      Id="44d7c89a-be4a-4e59-b64c-db4ce6f94014"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4b04a56c-ac4e-4667-873b-f82de6351610">
+                    <propertyInstance
+                      Id="5e0b77d6-0454-4844-af17-83653301be90"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a9c96e1-8145-4a91-84b2-c9dec7094fe8">
+                    <propertyInstance
+                      Id="0280c20e-607b-4e39-bbd2-022a3860a8cb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="17b7428b-826f-4b60-ad83-e0851d837604">
+                    <propertyInstance
+                      Id="286efb8a-9893-4f26-89cb-05a7933a1055"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96c86eaf-2749-4d18-b6e2-c7bf71437052"
+        name="DelegateCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="3d30f208-5c3e-45d9-af13-3055d0624eef"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3DDelegateCommand"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ec900522-c685-4bef-8fb0-172da7ea0949"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3b44d00b-24ad-461a-9978-07cd030b1cf4">
+                <propertyInstance
+                  Id="79b637da-a029-4907-a031-656e798fb490"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a9d4bf89-1f62-4f00-b02d-077f8b7ae6d9">
+                <propertyInstance
+                  Id="b915e948-6d48-4145-bc7d-2c84ac6104b7"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3623e058-24da-4a8c-9f95-70a50dc5aa30">
+                <propertyInstance
+                  Id="cc13b698-2219-465a-bf3e-7dcfda45f7d0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7aafcc8-a7c0-473a-a40d-8a7a5153fa71">
+                <propertyInstance
+                  Id="7c6e2468-7e28-411a-9706-ebaebc1e2dce"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b990b87-76ad-41e6-aec5-b83e1bdd82a4">
+                <propertyInstance
+                  Id="3f6bff8c-f49d-415d-9964-83464a7baed7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="49f85d65-ac2b-40ff-8ce5-6c6445f5254e">
+            <interfaceMoniker
+              Id="77ff9b38-d3bc-4235-a483-65735ceb1759"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package1_2109.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a667d009-bb8b-4bc6-9a7e-a9bc8978ce5c"
+        name="DelegateCommand&lt;Boolean‎&gt;"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a43c6021-dcfe-4024-a5cb-124bcc676554"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cb027816-087a-4bff-9e90-92e197159745">
+                <propertyInstance
+                  Id="62733c20-280a-4077-9f68-747a87de7908"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a922f54-8741-405e-871d-b1221ab17ae7">
+                <propertyInstance
+                  Id="a0745db1-3a99-48c0-82d1-d54d1fe9795e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="eaff3379-2f22-4c28-bfee-65ea7551f956">
+                <propertyInstance
+                  Id="ea22d7f5-b992-48a0-a027-820a9722792c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c69eea9-133a-414a-b6e6-63ae01a22946">
+                <propertyInstance
+                  Id="6acbd750-ce0a-4f8a-b988-d8a32c6a34b3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="837863d7-f33e-4d44-b9c0-05c2c9d92b16">
+                <propertyInstance
+                  Id="db51ff59-1fd0-43f9-a957-e67e4c6add0f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="6bf4034f-32de-4ec3-a165-3352c45aa302">
+            <interfaceMoniker
+              Id="77ff9b38-d3bc-4235-a483-65735ceb1759"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package1_2109.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <signatures>
+          <templateBinding
+            Id="bee09b6b-ac3a-48b8-9ec4-22d867539b03">
+            <redefinableTemplateSignatureMoniker
+              Id="d225a2c5-9a34-41fd-a119-1f0e5f24d6c8"
+              LastKnownLocation="Package2_2009.uml" />
+            <relationshipOwnedElementsInternal>
+              <templateBindingHasTemplateParameterSubstitution>
+                <templateParameterSubstitution
+                  Id="e5c319c5-4ffa-4b1f-a91e-9e3d3982a2bf">
+                  <actuals>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </actuals>
+                  <formal>
+                    <classifierTemplateParameterMoniker
+                      Id="3d68bc84-10d7-4005-ad91-8fa157e7b65a"
+                      LastKnownLocation="Package2_2009.uml" />
+                  </formal>
+                </templateParameterSubstitution>
+              </templateBindingHasTemplateParameterSubstitution>
+            </relationshipOwnedElementsInternal>
+          </templateBinding>
+        </signatures>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26329855-e85a-4cc1-9e1c-a84ac646f7e8"
+        name="DelegateCommand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="09703a6f-faf6-4a5a-8721-3889629b1d94"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3D(Name%3DDelegateCommand GenericParameterCount%3D1)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5422df49-d09b-453a-b1c7-580856ca54a6"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d9d20504-67b9-44ae-8dbe-1c6aaf5a8ef9">
+                <propertyInstance
+                  Id="b7a12c32-a81a-40c3-b09f-29d07dfbc04f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="067b3f19-03a7-4b3d-8152-d3ba602c3db2">
+                <propertyInstance
+                  Id="ed343092-68f2-4478-aca4-f9bfe0df0cfd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4f3fdb93-75ee-44e5-978f-9fd684609021">
+                <propertyInstance
+                  Id="8ed53413-889c-4f15-bb12-3963aac1fb3e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9b031625-8b5a-4c51-9e44-6e72ddc31b9b">
+                <propertyInstance
+                  Id="214f63a9-864c-417b-b424-8be5a5b19e74"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e0ffcf3e-fa60-4ac3-8b8b-8add6e2a0641">
+                <propertyInstance
+                  Id="76ef16e5-9d71-4d30-9f4e-11274168e059"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="10015703-17c0-4abd-8346-648fe438e485">
+            <interfaceMoniker
+              Id="77ff9b38-d3bc-4235-a483-65735ceb1759"
+              LastKnownName="ICommand"
+              LastKnownLocation="Package1_2109.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedRedefinableTemplateSignatureInternal>
+          <redefinableTemplateSignature
+            Id="d225a2c5-9a34-41fd-a119-1f0e5f24d6c8"
+            parameters=""
+            name="RedefinableTemplateSignature1"
+            isLeaf="false">
+            <ownedParameters>
+              <classifierTemplateParameter
+                Id="3d68bc84-10d7-4005-ad91-8fa157e7b65a">
+                <referencesInternal>
+                  <reference
+                    Id="c85225d2-b511-4a17-b4bf-5f687621d1a3"
+                    handle="viewcode://./CodeSchema_GenericParameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.ViewModels.Base Type%3D(Name%3DDelegateCommand GenericParameterCount%3D1) ParameterIdentifier%3D0"
+                    tag="ViewCode" />
+                </referencesInternal>
+                <ownedParameterableElement>
+                  <class
+                    Id="21395849-a485-48a6-ae18-52cec1c50c9c"
+                    name="T"
+                    isAbstract="false"
+                    isLeaf="false"
+                    isActiveClass="false" />
+                </ownedParameterableElement>
+              </classifierTemplateParameter>
+            </ownedParameters>
+          </redefinableTemplateSignature>
+        </ownedRedefinableTemplateSignatureInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

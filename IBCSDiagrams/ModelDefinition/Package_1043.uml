@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="3caa765a-df78-4819-8fee-d8b29747e3a6"
+  name="Math"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="0097a33b-0faa-4888-8e75-a92b3a7525c2"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DOrg.BouncyCastle.Math"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="f6a41e05-458d-47d2-8d04-97c4c2fd6b27"
+        name="BigInteger"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d9ba3822-cd42-4909-a68e-e1a0716d31c0"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2FLib%2FBouncyCastle.Crypto.WP71.dll&quot; Namespace%3DOrg.BouncyCastle.Math Type%3DBigInteger"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1ea086ef-6c34-4c9c-9534-460306020b0a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b420a0ff-1c75-4e53-8331-bd42a56e7d33">
+                <propertyInstance
+                  Id="d962649e-7f77-41ea-b2d5-527561d7b3ea"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cfc8412d-61f0-4432-a9f0-6fb5a9f7a92a">
+                <propertyInstance
+                  Id="7ff49fe4-0d31-4f7d-84c3-783dfca6aa9e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f110b4f-c895-4158-a859-9d8935e85453">
+                <propertyInstance
+                  Id="dd13af44-79ca-4215-8ea5-2b60b4b7c81c"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bc6e5cd8-2470-42a0-9a24-77b794602155">
+                <propertyInstance
+                  Id="3aa48c41-4d62-456e-a5c4-17b451a57606"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="86153a33-47f8-41af-a1d8-a86d808e584c">
+                <propertyInstance
+                  Id="fadaa33e-ca26-4596-a5bf-63c42bc6bc6e"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

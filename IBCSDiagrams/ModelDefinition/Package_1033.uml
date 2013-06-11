@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="076b02ef-9037-4af2-8ea8-dd35ff53ad5e"
+  name="IBCS"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="3e814776-529c-434d-a4d8-3ea338b2f323"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCS"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="fbafae40-4f0d-4269-8d11-0b0ad29116e1"
+        LastKnownName="EC"
+        LastKnownLocation="Package1_1033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c53298fe-8fa6-497b-8c84-a5599ebae34a"
+        LastKnownName="Math"
+        LastKnownLocation="Package2_1033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="73f45eef-b036-4ea3-b210-ce0718856d54"
+        LastKnownName="Interfaces"
+        LastKnownLocation="Package3_1033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="47b684fb-3a63-4089-b0fd-ee9c78b79666"
+        LastKnownName="BF"
+        LastKnownLocation="Package_1034.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="5ddcb2d7-58ac-4e6e-b803-469969d3a89b"
+        LastKnownName="Util"
+        LastKnownLocation="Package_1147.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="92a5a4b8-c35d-47dd-b842-54d10e16b01d"
+  name="IBCSDiagrams" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="27e23006-f8ad-4d6d-8be6-12c05246e9ae">
+      <profileInstance
+        Id="3d869e19-29c0-40df-9689-a989b1b01786"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="076b02ef-9037-4af2-8ea8-dd35ff53ad5e"
+        LastKnownName="IBCS"
+        LastKnownLocation="Package_1033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c905374d-4c68-4d3b-93cb-96fc9257e321"
+        LastKnownName="System"
+        LastKnownLocation="Package4_1033.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="bcdce2bd-e9b9-4044-931a-26c8f4911e01"
+        LastKnownName="Org"
+        LastKnownLocation="Package_1042.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="b5d0ec2b-6f80-41c6-837f-0aabb36910a8"
+        LastKnownName="PKGServer"
+        LastKnownLocation="Package_1331.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c8163d07-1314-47e9-b908-07a5b1f0067a"
+        LastKnownName="AnglicanGeek"
+        LastKnownLocation="Package7_1332.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="abed5941-9580-419a-96a7-0a4545ac22a2"
+        name="Usuario"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="83c09af5-d8f5-4827-ab91-7f0840bbdeb9"
+        LastKnownName="IBCSApp"
+        LastKnownLocation="Package_2009.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="97deccfb-02e7-47c8-992c-111d47e96257"
+        LastKnownName="Autofac"
+        LastKnownLocation="Package3_2009.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="a0833998-405f-4385-b389-b67d86e5ee10"
+        LastKnownName="RestSharp"
+        LastKnownLocation="Package5_2013.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="ed9a26e5-1a5f-4516-8017-c48d9ecac4f9"
+        LastKnownName="Windows"
+        LastKnownLocation="Package2_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2d7f03cd-4c31-41df-bcdb-8aa30abad94d"
+        LastKnownName="NdefLibrary"
+        LastKnownLocation="Package9_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="d3816a7e-e8fb-4d20-839f-4f333986b06c"
+        LastKnownName="Microsoft"
+        LastKnownLocation="Package2_2109.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

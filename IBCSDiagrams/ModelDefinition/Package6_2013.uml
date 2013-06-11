@@ -1,0 +1,1239 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="11d0c861-e753-4fde-809c-3f0a1304abca"
+  name="BF"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="6c0e8afd-17d8-4b7f-b7c4-559d0b3794fe"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Services.BF"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="bf8b2a37-1756-4f65-b007-cd28d6747f00"
+        name="BfService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="bf46cfb9-35fb-42a5-a868-b17a6d4476ed"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="988ec146-9991-48f1-bd77-af0f6db708ac"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0781b974-8243-492c-8250-306ae37103af">
+                <propertyInstance
+                  Id="85f790e7-eeb3-4599-9e7f-f2ad65011730"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="acd0a6d9-d09c-40fe-bc3c-cba36e9de162">
+                <propertyInstance
+                  Id="e2e066ea-c203-43a5-b06c-df56d0c16733"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0fa53efd-fe04-47f6-a72b-5361dfd1b978">
+                <propertyInstance
+                  Id="49ec351c-6272-4e7f-b68c-4de4ea10ad2b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ce58e3c-0577-451b-bfe6-ee6eef314cd3">
+                <propertyInstance
+                  Id="2b8dbede-a07e-4dd3-a5df-c87e73f910e5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="453d634c-2c44-4560-891d-8c8abb4351ec">
+                <propertyInstance
+                  Id="5740fbed-8116-467d-8b35-8bef31bd9151"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="89fd61e6-3c5f-4c38-8224-1ff5f9bc7762">
+            <interfaceMoniker
+              Id="cad47ee1-664e-4a90-bf28-a50d41dfbc8f"
+              LastKnownName="IBfService"
+              LastKnownLocation="Package6_2013.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9dd2a12c-5d19-42c1-a2c9-4e52df1160de"
+            name="CipherMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="87f4f539-f303-4d37-90e8-ce6d287da583"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="07e72c24-f09d-40cc-82d4-87c93e7c645e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66459367-dad1-4f2b-aeb9-ea04ba8665f3">
+                    <propertyInstance
+                      Id="796e0138-a228-4dd0-b036-a2ba71035277"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="620a768a-f372-4ee2-be14-a53a7fb31502">
+                    <propertyInstance
+                      Id="5f8e9548-93a5-4958-82a3-ad4b0f31f74f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="642451a2-3efd-4194-bdb6-c970f93857ff">
+                    <propertyInstance
+                      Id="5a3f3ed5-a9c2-4476-8d49-c151be587575"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b2fc4b2-d592-4428-b83d-bec6dfa442f5">
+                    <propertyInstance
+                      Id="d113c7a5-6efd-4cd9-ba8d-f3601062d2f8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4898d516-0fa3-4b07-9f4a-1936b0afb316">
+                    <propertyInstance
+                      Id="b686bb8c-29f8-40e1-9904-f4323215e20b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a32fb9a8-50d3-4cf5-bd84-92dbde024f01">
+                    <propertyInstance
+                      Id="24882fbd-a0ad-422f-bcba-d8fe8c8bf524"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9848ba0b-1967-4a09-91d4-09419e53b919"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="86c3f4ad-f801-45a3-8818-8edde67e5f1b"
+                  name="message"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="9a1c5143-8f4b-4f73-a6f2-879387c53408"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="b8eef7d1-5279-477f-856e-1388169e178f"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="14a225d7-3d28-4fad-bc13-f7aaea0cee4b"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fc761af7-10d1-41f5-80fa-0cf6f9af3a01"
+                      LastKnownName="Byte"
+                      LastKnownLocation="Package4_1033.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3efd46c2-90b9-452d-9246-165ceff3265c"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="23feb25f-5cbd-4aa5-ad30-b46ced1d134f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="362e8017-844d-4bf3-9f5c-ab0eb7c7fcef"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="56082d51-5db3-4619-b19a-e9be32933513"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="59a547ba-4058-49a8-be8d-9a0ddb064d8e"
+            name="CipherText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="35e66561-6b49-4c2f-853e-f6471466e3ee"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f748887c-ae35-4ba2-a5bd-4b09d91008c0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e2cee05-e1e8-4fae-ab0c-894243d350ce">
+                    <propertyInstance
+                      Id="0f5730c4-80e1-43a1-8c8b-451689260e36"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c4f3f13a-909e-4fde-b8bb-b8d13ba4006d">
+                    <propertyInstance
+                      Id="38aa0137-d27c-406f-ba4f-7708bce595de"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e4268c3-8ac9-46f9-ad77-bc1fd0c7321e">
+                    <propertyInstance
+                      Id="b59454cc-2a50-448a-96dc-833e263e605e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="517dd9c2-7eff-4ef8-8e22-1da8373b9459">
+                    <propertyInstance
+                      Id="18acb045-1646-40a0-93ae-dc0a157c82ed"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f188b779-3fe9-43b3-ad96-da1ac20718ed">
+                    <propertyInstance
+                      Id="58928b17-1a04-4ae7-b9de-7f31cd4cddfd"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="744dae42-f358-44be-bdb3-6f7ff97cb800">
+                    <propertyInstance
+                      Id="ea17bd20-e55d-4ac9-a680-443413c441c5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="44db140a-04ef-4c11-8b02-cb55ec5b3843"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7e287f54-8aed-470f-9726-3bd304c42c49"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4956741b-c838-4208-8c9b-65af1221cfce"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f63a6d6a-02eb-4e59-bcce-bdd1afb66d69"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d8d3071c-1f57-4144-bff7-da41c8edc1ec"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec740b7c-939d-47f9-87ad-22e44731cfe3"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="008c5b66-1810-4356-b3c6-ece0d9e3f594"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="632e98f3-5980-4af0-857f-6a029ffca852"
+            name="DecipherMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="de02a0a4-b819-41a8-974c-f62d03c3f887"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="27c0950b-3d02-43d7-b1e0-d28380e95694"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4a9c47fb-090b-44b6-a07a-de35e3ac9e52">
+                    <propertyInstance
+                      Id="db638c02-257e-4e67-b4b8-4f5ae1204601"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="56211f64-c362-4ef2-8b8e-5c7dc4920d86">
+                    <propertyInstance
+                      Id="8b5869f4-76a6-4442-83d1-485687a8eb94"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="803bc89c-45b6-4502-aa77-6c02bab753a7">
+                    <propertyInstance
+                      Id="d04f38e2-b728-4522-9aee-5d31c654e870"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c093c142-da68-4e2d-818a-e954e947a571">
+                    <propertyInstance
+                      Id="4620d5e3-374e-49a5-beb2-aee54b180b6e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea316517-852f-406f-b096-4e430451170d">
+                    <propertyInstance
+                      Id="3b2f75bd-9498-4f70-9c4c-31097eb942ba"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8675242-2fc6-4e19-9197-9d7a137ef05c">
+                    <propertyInstance
+                      Id="ac6f4cb8-35d1-4792-b034-618f1221251e"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c57c95a3-5924-4d3a-8d1a-5c5a5228723e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0d757393-5728-4e1c-a58b-2cabd9f8ba79"
+                      LastKnownName="Task&lt;Byte‎[]‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bc1dd10d-fa83-4220-94a3-54932a536ed2"
+                  name="ct"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="365cd6ef-cbcf-421a-b552-d9a793bf2a2f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dct"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f687baa6-2c8a-43f2-961c-9a701629b5de"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="70e704c5-5d7f-413f-8c5a-e83b24b28455"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9036510b-ab36-4005-814c-8b585d086b86"
+            name="DecipherText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="00064547-9482-4bdd-ac68-b1786e8b0806"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="61afdac9-d137-4c0d-b42b-53c7bfa14e88"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bca006ce-50a5-4053-9c08-f2a07379e191">
+                    <propertyInstance
+                      Id="210d2ad7-9f22-4472-b53c-0452ee2e0e3a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be1d413f-03a4-45cf-8031-c80b26a18396">
+                    <propertyInstance
+                      Id="4885c944-918e-4434-8c37-26faeafea631"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d8534d4-7342-4cd4-910e-d302d898f9b0">
+                    <propertyInstance
+                      Id="d80bb1d2-8502-446a-a0ea-907981b632d8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10ae29ea-10e8-460a-bfc0-5934f3ed5516">
+                    <propertyInstance
+                      Id="b76859b2-b819-40e1-adbb-3379ebfd230d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4c783ac-43b9-4088-8b01-3c1c19941bf8">
+                    <propertyInstance
+                      Id="f2884149-28c8-48f8-8201-3acee44cc5f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e802e24-2f2b-46c4-a35b-11ff7a61f495">
+                    <propertyInstance
+                      Id="3d883430-1cd9-4b38-aa37-c84b8b6fde9c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a9b3f63c-a21f-468f-9459-9ed5aa99514c"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="02f1f5a6-6a8d-4add-b256-bcefccd2cbb5"
+                  name="ct"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a14db041-607a-4938-8d76-e4dbb500071b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dct"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f21cc2fd-cfec-406f-8a3b-2faa60169fe6"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7de72008-4b98-44f9-a8f7-db91c4266d1d"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="dd80bdda-8c9b-48a2-97b2-e1bcdff083a7"
+            name="BfService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0af9f435-937a-4a3f-ba39-e41dc71742f7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DBfService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="47f15f7b-eb3a-4606-9a07-abf29a89d077"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0205351d-9a38-476f-8bcd-1181051fedf5">
+                    <propertyInstance
+                      Id="5236033a-03e1-4d5d-8ddb-6d7de990b461"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18666751-df9c-41c6-a8c9-2eb8a80914cd">
+                    <propertyInstance
+                      Id="b55b545a-9a43-4e9a-9cf3-dc84f87ac5a6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa5ab946-f325-484c-96cd-17c6879911ec">
+                    <propertyInstance
+                      Id="8bfbbe68-bb85-4fe9-b1f7-5c6d259f1222"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4502f4e1-3aea-4080-9c62-c23776b60ec2">
+                    <propertyInstance
+                      Id="37b4ffae-cbc8-4ffb-bb77-b6ae48f1f544"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4483954e-cb44-4de8-9f2e-4101854c51a5">
+                    <propertyInstance
+                      Id="992856d1-3a38-46b4-822e-30dfc4fa74f3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24b7c4f1-583d-4d67-bab8-eed88d6e3632">
+                    <propertyInstance
+                      Id="840afd1f-c2c5-4f8f-9f6f-91fb1c7b0c94"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="cad47ee1-664e-4a90-bf28-a50d41dfbc8f"
+        name="IBfService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="6be450ef-b42f-464e-985e-a4405b73e04d"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b335aa8f-ff08-4a97-b8da-e49ce99ef902"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7b78c7a9-e124-4e3e-be55-bd37906794b3">
+                <propertyInstance
+                  Id="16b15285-e7e2-408c-8503-067bfd6d8453"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a42f1b0b-236d-4c8a-914b-aea5b435779a">
+                <propertyInstance
+                  Id="0fef280f-009f-4c58-82a8-0aea76146537"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="335ae139-763f-4248-8dea-4f4ad0384679">
+                <propertyInstance
+                  Id="65bd903f-9666-430c-b72c-8473365627a0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb9d5c24-8c7e-4e64-bc86-d438a2df4271">
+                <propertyInstance
+                  Id="2d91d036-32d6-4151-9098-240eabef7fa6"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="b67215d2-fb25-489e-8bc1-cdc1d6f31f5d"
+            name="CipherMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="657a3830-64e6-4bd9-bc02-b3b0463abbe0"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9e11ee28-d60b-44d6-9290-792fbe9ae057"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a74d49c-3a5a-4606-8966-f8c138559845">
+                    <propertyInstance
+                      Id="6db6d242-cddd-44ad-9911-bed21b732958"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fdf5623-daa7-4154-851d-f9ccb5a11ead">
+                    <propertyInstance
+                      Id="b0eba746-c691-4d5f-aeed-165b47d2bcb2"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d79c9fa9-d2b6-4116-90af-3247f42fd987">
+                    <propertyInstance
+                      Id="37118240-3ada-4f3c-b8d7-b152318817b1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="19c11e32-8243-44a6-ab6f-23b6f92901f2">
+                    <propertyInstance
+                      Id="65a43e82-f09d-48f5-99ac-072fbf91fc75"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a4310a59-3791-4040-a6bf-2dce22364f0e">
+                    <propertyInstance
+                      Id="05219827-72c8-4aec-990b-943071b32184"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0ab8c8ab-1668-493e-a00a-256ea04798fc">
+                    <propertyInstance
+                      Id="affc3ad6-fe54-4a0d-97e6-cc1b7136b911"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="925a1989-d466-4523-ab3f-6a01a8c14930"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="735c75a3-d4d1-46be-acb5-36c368d5c01c"
+                  name="message"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="e995c222-6ab1-4cd6-8c7f-320326a9cd8a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="4187d432-a036-427c-a276-c1d329339a86"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bb46a96f-d304-4ee4-8b99-6671c06d13b3"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="fc761af7-10d1-41f5-80fa-0cf6f9af3a01"
+                      LastKnownName="Byte"
+                      LastKnownLocation="Package4_1033.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fed2a4a9-4e31-4da2-8019-b7d5e53ec0d4"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c0dab6f2-b1b6-4102-a543-14ddeea9eca6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f9f48019-720e-4ff6-b58d-c329fcebc15f"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="498d837f-5f6c-49c5-84d6-34e191374b31"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DByte ArrayRank%3D1 ParentType%3DByte))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="30c7c3e1-40e9-419c-8829-a9c1577d7809"
+            name="CipherText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="df3c4e5f-e053-4801-af89-0642e892ab33"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="503d5482-6716-43bc-ba22-21668915945a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ece86564-d138-4906-a085-5e297984ddc3">
+                    <propertyInstance
+                      Id="b7ec1ff2-862c-4116-aa58-1c677cf2be2f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c38fba02-0039-4840-935e-9efc6bd703df">
+                    <propertyInstance
+                      Id="e0c9ec66-7617-41a4-a5fb-54d139254ae9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8eb11e6f-463a-44bd-bc0e-e09378476ccf">
+                    <propertyInstance
+                      Id="570ebcb6-b756-4c32-96c3-91dbc75f73d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62f67089-d3d9-4f21-b80b-25f7f3a0c57d">
+                    <propertyInstance
+                      Id="8dc4ffc6-aef0-46d0-99df-6e01ee9113a7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d12db5ef-1ba9-4343-800a-72654cb141a0">
+                    <propertyInstance
+                      Id="49885123-994e-4eb2-96f4-78a74ec2edf7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9f36859-3532-40cb-9885-92eebebaf00a">
+                    <propertyInstance
+                      Id="4ce5fce1-fc7e-4f8d-aa0d-d62266d4fd3c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2f037b9e-ce06-47ff-b766-5ec1e61c03a3"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="613ce20d-4b91-4d0c-8fc8-6d3ca2b9914d"
+                  name="message"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f9f24824-c7c1-4db7-a8dd-96eebfe1be2f"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dmessage"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cbe61e4f-2e3d-4bae-a2d2-152009511cf7"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="d86a19af-bd02-4718-a98c-dcf7fb748054"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="db23c3af-6e71-4f2c-9be1-e0ff07db8786"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ba7a324d-7c21-437b-ba2f-8b25a84a611a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DCipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d9a005c6-b5eb-40dd-8d60-1e02fc39c621"
+            name="DecipherMessage"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4f564ccf-dded-4c7e-af08-fffb3ae73e1c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="18ff0f0f-c3f0-4ca3-85a6-1f878102e6ee"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ccd0267-0611-4452-a836-a1f67ae4b396">
+                    <propertyInstance
+                      Id="95d9d63c-16e1-43e1-8b8a-610ba8d1ce8c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0861ae95-fd0a-46a2-9b41-bf9deae4581b">
+                    <propertyInstance
+                      Id="3964d307-7dda-4fc4-80fc-c0b27218a721"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a3ff8a3-522a-4ff0-b175-0e12671be297">
+                    <propertyInstance
+                      Id="3f5b5cf5-51eb-4a27-a6cf-249f4c761f6a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7ca856f-1e85-4956-92af-329a017ad3e1">
+                    <propertyInstance
+                      Id="69d5b71d-8ffc-4654-845e-62a76d0c1b97"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8c8d22f-f425-4fff-891f-6f97f4ad617c">
+                    <propertyInstance
+                      Id="976cd635-ddde-442b-8de7-2fa9402c3389"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d13170bb-7a79-4677-91d8-7b573d264b3f">
+                    <propertyInstance
+                      Id="fa5d0f7b-5233-47fd-9a7f-2e5ea233d907"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0b3c91a6-07e7-43b1-8535-06f980a0a87b"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="0d757393-5728-4e1c-a58b-2cabd9f8ba79"
+                      LastKnownName="Task&lt;Byte‎[]‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d49afbaa-c235-4b35-8a14-4194373b9616"
+                  name="ct"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="522de4d0-5198-44a7-afd7-c622b233b61b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dct"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d4f374da-6576-4083-8671-6ca929e8b9f8"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="65556bac-ae3c-46fa-98e4-2cc11f2066e4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherMessage OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="906fcb68-5011-4790-8713-0cae14f028a1"
+            name="DecipherText"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e79aa182-a1d3-456a-86bc-0aa42557d1f3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cfee5294-b52c-4fdd-a7a6-4746b822f1c0"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc121765-0f0e-48c5-8056-36ee12993392">
+                    <propertyInstance
+                      Id="24e60338-7554-4fa4-bcab-cae92eb7cf41"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c7f1851f-d1c5-4e0d-a638-e6664c644f03">
+                    <propertyInstance
+                      Id="904e28e2-8572-493a-9396-73c9b8863550"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ef770704-0d2a-4fe4-9faa-ac0c18171b10">
+                    <propertyInstance
+                      Id="ab2e7683-e627-457b-bfc4-8e8dbb20284b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="995a4c49-a72d-48ff-8167-8c42e1ca7904">
+                    <propertyInstance
+                      Id="d6372ab2-d896-4c1c-bbac-37dd8756fdf3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28edb492-069f-4cec-bef3-a08e4d126227">
+                    <propertyInstance
+                      Id="f30599ce-0a3e-4b5f-a151-143890c98d90"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9e3db74-6ed1-4ab6-ba81-5ab06f05b5b7">
+                    <propertyInstance
+                      Id="b8b9516b-b8fb-4a06-a3c3-11a403decfb2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2d9a7e42-568a-4f9b-a13b-49ae9cb21281"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="754551cf-c49a-432f-a369-f8a3d8bcf7a2"
+                  name="ct"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c95a4dea-21ea-469c-b3b2-4764a8baf24a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3Dct"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6276fc6b-3644-44e1-82cc-da72b58e8cc6"
+                  name="sKey"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6fbc6899-cb0c-484c-820d-bdf1b7dbe0ca"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.BF Type%3DIBfService Member%3D(Name%3DDecipherText OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCS%2Fbin%2FRelease%2FIBCS.dll&quot; Namespace%3DIBCS.BF.Key Type%3DSerializedPrivateKey)]) ParameterIdentifier%3DsKey"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

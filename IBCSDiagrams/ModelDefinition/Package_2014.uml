@@ -1,0 +1,841 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="6ef5d911-d59f-4bbe-b9b1-a2d514bedcdb"
+  name="Bluetooth"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="ba65f635-484e-4383-b4ad-41ab5f2ddda9"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Services.Bluetooth"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="1f5d8b7d-11bb-43ce-92d9-770393bee6ba"
+        name="BluetoothService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9ff23f8c-f322-4aed-bc2d-d0da0b0d59b5"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5b527c98-cd69-4b82-a5df-58b45de01b0a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="94ed5fb6-b36f-4395-acaa-6faf5d04e2db">
+                <propertyInstance
+                  Id="f4214b6c-b955-4d2a-86dc-fcb410869121"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2ead2c14-7c87-4b58-a35a-5dd0474377b3">
+                <propertyInstance
+                  Id="75d33c1f-07e6-4e64-a07a-415f52cf26cd"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a05889a2-8529-4030-9d27-61ec6999b615">
+                <propertyInstance
+                  Id="cf0acec9-602d-4996-92c5-6e4de6d49823"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ee07153-9a66-45ee-a9fd-74e9a137bbad">
+                <propertyInstance
+                  Id="6197859e-cb29-41b2-ae29-4432b0604645"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="73f1cd2f-4bf2-47d9-b070-dad3a8b1aaba">
+                <propertyInstance
+                  Id="612c7211-f47c-4994-99f1-0c1154a086ef"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2334661c-826a-4cc2-b78c-2d072dd4bab5">
+            <interfaceMoniker
+              Id="ec48ca43-6d5d-42bd-b572-c4e2427d5dd6"
+              LastKnownName="IBluetoothService"
+              LastKnownLocation="Package_2014.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5b263315-3fa8-4e90-8cda-616168a979f3"
+            name="settingsService"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="3893a634-bc7c-4620-a144-5aa5f7bc4ed6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3DsettingsService"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0de4d7f5-b326-4278-bde8-c17604f23ccd"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="966b5c3e-6119-4d42-b617-ac308c0c8f62">
+                    <propertyInstance
+                      Id="26b79fde-75ff-4abd-bc51-174eac348560"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="72c310d4-fe65-4e76-a65c-27d64850a9a7">
+                    <propertyInstance
+                      Id="a20a485b-7a41-4562-bbc4-205b771ad20e"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3ae9c1fe-6ab5-4b4b-a99a-3fbdaec98564">
+                    <propertyInstance
+                      Id="557f2fa5-643c-435e-becf-6cbc128cdc12"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1da87760-b617-4413-b631-d049ff53fed4">
+                    <propertyInstance
+                      Id="6fc82c22-3841-4111-948a-4a74b3e4c92c"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5746a79c-01e2-45fa-9e78-23ef268be84c">
+                    <propertyInstance
+                      Id="584d473a-6da1-4c56-996b-ec99a38bb51f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="98ec2ab5-ec4f-4c16-aead-de143a615f92"
+                LastKnownName="ISettingsService"
+                LastKnownLocation="Package1_2014.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="064508e3-0255-46ca-9b38-d947c9699ba2"
+            name="BluetoothService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="72f4333b-d02b-4d79-b4be-768abd0327f3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Settings Type%3DISettingsService)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="08e89939-c4e6-453d-9c77-5a4644659f4c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9c031ca4-80d5-41e9-b941-49f1c9863672">
+                    <propertyInstance
+                      Id="0804f01e-da52-41c8-9849-58aaf46a4a96"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f6c8eea-4b0d-4dff-bf11-2640bdc4ba13">
+                    <propertyInstance
+                      Id="f646247a-11ec-48f1-b394-4618801cb24c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7da9c14-a627-42bb-b5d4-3a13cf56df7b">
+                    <propertyInstance
+                      Id="46d09e74-d522-44b3-b86b-18ea8caadb5d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0db395ea-93b8-4927-a9db-06dd846a577d">
+                    <propertyInstance
+                      Id="defb679e-b9ad-482d-a0de-26bf2417dc6f"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c31b1d72-6f98-495d-a7d8-85c545709ccb">
+                    <propertyInstance
+                      Id="9275c137-cf17-4c25-bd4d-6c5142d99fdf"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="840687f3-7a2d-4b45-9ccb-9c08caeaef1e">
+                    <propertyInstance
+                      Id="74e56bce-f62c-468d-86cb-4039201b4496"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="cef35550-fa19-40be-a6c4-5aadcce2c8b3"
+                  name="settingsService"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="37e37982-7dce-47f9-b0cb-61fe077b0630"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Settings Type%3DISettingsService)]) ParameterIdentifier%3DsettingsService"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="98ec2ab5-ec4f-4c16-aead-de143a615f92"
+                      LastKnownName="ISettingsService"
+                      LastKnownLocation="Package1_2014.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="95705d02-f9f8-4c7e-ae8d-e2f6d9278b52"
+            name="ConnectToDevice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e08fd46e-30ce-40a3-9d97-fcb1153010d6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="138848d5-b4ab-402b-8718-61513e3254a5"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee5c95d4-5484-4e8b-8130-df1e3638b694">
+                    <propertyInstance
+                      Id="00a545f1-2a23-4ece-a00a-9b2afc676b82"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="52497421-a6ac-4399-889e-d5dd49edbee0">
+                    <propertyInstance
+                      Id="acdb5bca-6520-4063-8e77-549e39e5fe13"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3c8c09c7-fad5-4b1d-934f-e61ff4ac4db1">
+                    <propertyInstance
+                      Id="fcc8fb67-e252-4f4e-b271-c44fc4d8f29a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b6f3d0c-b785-4448-a86d-582b15923a81">
+                    <propertyInstance
+                      Id="3b6d309c-01e3-4fb7-8993-e872e7f20dd8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bef14045-f593-4262-a07b-040df07b8c88">
+                    <propertyInstance
+                      Id="dbdd62a8-073d-4cc7-89d9-e29db77bec2a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="342b402f-96d0-4617-b528-fbffdf7d9dbd">
+                    <propertyInstance
+                      Id="9662a2a1-55e9-4b3e-b20c-98d06ff5129f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="549d4dcd-d95d-46fd-8be9-e850ae2e4505"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0ea89d8-6589-43c0-8354-c019901dde92"
+                      LastKnownName="Task&lt;StreamSocket‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f4e78e6a-a0ea-47e1-8246-098453abd533"
+                  name="peers"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b757ef9-6727-4cf5-93e6-a50758c45b56"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpeers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="744f604d-fecf-4f36-bacd-00b9b3083210"
+                      LastKnownName="List&lt;Peer‎&gt;"
+                      LastKnownLocation="Package4_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="540c184d-c5f7-40cd-9969-1ec10d3aa075"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="18ef5df9-11ee-45ff-9cea-ee0142fa158c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="8a1d9d92-5ab8-419c-ac51-4673ef580bc0"
+            name="FindPeers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4ab535de-f132-48eb-b20f-f619aec8951d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3DFindPeers"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="380feab1-6993-402b-ae8c-21a2c6f2c398"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bdc84fe4-e449-4fa9-a8f3-cd8d48fb522e">
+                    <propertyInstance
+                      Id="c075558d-c58a-42ff-9b9e-0caa7956f484"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a02c52dc-2e92-4450-b5f1-2aa7e37c7521">
+                    <propertyInstance
+                      Id="e75f8540-7cf5-40d2-9291-38d6d4d83d97"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a7c7b109-60c4-4152-ab9b-de9f962667f9">
+                    <propertyInstance
+                      Id="132c00ea-ec75-4680-83c3-42a960cacc1d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b4079b1-e468-46c0-8c88-1662e822a72b">
+                    <propertyInstance
+                      Id="5b9f840c-b6fa-451a-acc6-979d5646b1f8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9ed3cf7-f06f-4c00-a87e-22bdc628cea8">
+                    <propertyInstance
+                      Id="f07c8f39-88f3-4ff5-8a34-b881878e36d9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04f778b1-8351-49b9-ba6e-91d0906dcf50">
+                    <propertyInstance
+                      Id="8bebc751-7d64-4734-bdcd-c20dec799589"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="67165a4e-cf1b-47a4-a896-71b1a6284d00"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f9adbb4f-c706-428a-938b-d54906c93f8a"
+                      LastKnownName="Task&lt;List‎&lt;Peer‎&gt;‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c001e229-0eab-421e-bf06-bdb896a9e1f8"
+            name="StartBluetooth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="3f58a4e5-7787-415e-9a7e-e7b8a76c7e6c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DBluetoothService Member%3DStartBluetooth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b1457ef0-de1f-4cf6-a2e9-09581d1e7fac"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e94fd38f-6ec2-46bc-8721-94d071a73459">
+                    <propertyInstance
+                      Id="c593909f-4880-4c44-a7e6-3279e30321d1"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69070c50-c078-4029-a981-eece3036b321">
+                    <propertyInstance
+                      Id="3bd4d685-3d6e-4383-8d26-b48e8425b82b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c418e20b-2549-4696-8008-94f1f7f831d0">
+                    <propertyInstance
+                      Id="b1081536-3371-45ad-9729-c154ec0381ed"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dcdfca12-0a56-41dc-8ae8-3728d636a80e">
+                    <propertyInstance
+                      Id="2407c2d5-c27e-4196-ac70-3d4e7bf258ba"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8acabe6-0078-4342-94ae-8a7f13446f55">
+                    <propertyInstance
+                      Id="4b738e07-3cd5-4710-91c2-632eb745250a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f2f4a9e-ba27-42fa-84a3-ef5d405ffbf2">
+                    <propertyInstance
+                      Id="30acdf74-77a7-4fb8-bebd-50161d49f034"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cb246ef-6ded-4e3f-8e37-430a052fbed1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="fe5d570e-a16d-4fe3-aa8d-9a7c648af704"
+                      LastKnownName="PeerDiscoveryTypes"
+                      LastKnownLocation="Package5_2014.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ec48ca43-6d5d-42bd-b572-c4e2427d5dd6"
+        name="IBluetoothService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="8a2d2219-9114-49c5-91e6-610a47fb5c80"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="bb228251-848c-4931-a2d2-25e87d11f300"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="682ab927-f6fc-43ad-aff4-636125b403d4">
+                <propertyInstance
+                  Id="67504cb3-c6fc-43ad-a86e-5819b5384248"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="600754b1-d01c-4e11-af5f-28f3e74e3346">
+                <propertyInstance
+                  Id="e513a1be-f17a-4122-ad5f-ab7d1cfd0c6b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="389aa7f0-84d4-4150-860e-8133c8f8c169">
+                <propertyInstance
+                  Id="01d661e0-39ad-4c61-a38b-ca449e0429e8"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="72cdc587-fea9-4b59-826a-89c74cb1d024">
+                <propertyInstance
+                  Id="61857fb2-347d-44ca-9202-807bbf5f79ae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="34bc2b19-b506-4a42-9a38-cbf280ce6686"
+            name="ConnectToDevice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d378d7a6-847b-4ded-981c-06bb0719d9bc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32352a4f-09e3-40ca-8dd1-7cd0a0cc034b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71de4ebc-593a-43b6-9c74-56b61c0e64d1">
+                    <propertyInstance
+                      Id="e4a880af-c9a8-4461-948d-772495d4aa71"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd682746-4df0-476d-b803-ff488194628d">
+                    <propertyInstance
+                      Id="bb3d1ae3-7bc4-49fa-817f-ff34ab3ea64f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9a29b0cb-3999-44d5-a408-5c0eb3898113">
+                    <propertyInstance
+                      Id="dab9a508-6cd8-49cd-a5f8-c4915abb9ec4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c11b51f0-9f55-426e-80ba-643694e87dc4">
+                    <propertyInstance
+                      Id="6701872a-f57b-407b-a42c-2ab2fff81449"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="34b3ddad-2fd5-419f-bd6f-56197a17f626">
+                    <propertyInstance
+                      Id="c6ef4f5a-d43a-459a-8a18-88e1fe9a4c0f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8b4aff8-d06d-460d-9e7f-d8c1d1e5ec07">
+                    <propertyInstance
+                      Id="4f31e6a0-6ff6-44ba-a576-049d29b3bd2d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9ffef48a-c59d-4d8b-be6f-517c2c69d62e"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="b0ea89d8-6589-43c0-8354-c019901dde92"
+                      LastKnownName="Task&lt;StreamSocket‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d1ef0ec3-9ba0-4cc5-ae27-7565242057e8"
+                  name="peers"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="2e2eaa49-da08-4c8e-846b-c079231a38b8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpeers"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="744f604d-fecf-4f36-bacd-00b9b3083210"
+                      LastKnownName="List&lt;Peer‎&gt;"
+                      LastKnownLocation="Package4_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="68d1fa9f-ce7e-4c83-9deb-bb2f4a453f2d"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="43c20d4c-a6f5-4af4-b895-317e91bccfea"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService Member%3D(Name%3DConnectToDevice OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem.Collections.Generic Type%3D(Name%3DList GenericParameterCount%3D1 GenericArguments%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer)]))%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="32f8e7c6-59ac-42cb-bbce-18c85776e89b"
+            name="FindPeers"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="597787c1-6008-4959-b730-bc16c82c1b1d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService Member%3DFindPeers"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="da93e65e-71f7-44fa-90fd-a18f43f5d6b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f179290-8f09-4a50-8dd3-3eec095b185a">
+                    <propertyInstance
+                      Id="b0935482-be94-49d5-b7d3-6c80f18a8715"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="347f8b62-39b1-4aab-a870-4fe222173525">
+                    <propertyInstance
+                      Id="50d46e43-f9d2-4f66-849f-c5a7fb61f584"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14eb2ebe-d744-4816-9fd3-e74e8740491b">
+                    <propertyInstance
+                      Id="d93694d3-0de9-4084-acc4-8f89d42fb051"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5a89506b-88f6-42d3-b5ff-3f21fe1c95ad">
+                    <propertyInstance
+                      Id="74274a25-48e1-4d91-9163-9d8f8a1e409c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95483679-1800-4e1a-91bc-978d7d2efece">
+                    <propertyInstance
+                      Id="942719c1-ad26-4a3b-83c5-d59f4bcf195c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c0673f0f-06f5-4472-bdb5-c6e934ae9e10">
+                    <propertyInstance
+                      Id="7640cc0f-0d70-409a-bfe5-94cb4a0ac3a8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1bb88ad5-14cd-42c9-b797-ed0e1a4458eb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f9adbb4f-c706-428a-938b-d54906c93f8a"
+                      LastKnownName="Task&lt;List‎&lt;Peer‎&gt;‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="40f3369d-b428-4720-9ab4-1f8fbdc5415b"
+            name="StartBluetooth"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="bef1f7a2-8051-4f46-9698-32704082eae4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Bluetooth Type%3DIBluetoothService Member%3DStartBluetooth"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3aee4fbe-9206-4047-8b34-18feadeb91f9"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9325218-37d9-4ff2-8312-d41d202fdc3e">
+                    <propertyInstance
+                      Id="8427eb4b-87c1-40f7-a9f7-a5c87bd3ebdf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ee9e1a1-701d-4663-8c11-ec9f9aae06f9">
+                    <propertyInstance
+                      Id="f30dbd16-f90a-4928-93c1-8fafbea04f7e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cab6fba-68cc-4730-b986-93f5b9aa9b54">
+                    <propertyInstance
+                      Id="177e66ef-1d55-425b-8f60-a0b701952261"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c62f8d84-3601-421e-a87a-e43dd7db3777">
+                    <propertyInstance
+                      Id="5f67261e-3da9-4ab4-ae80-c7b9b50e362c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66707245-6794-44f5-b7a4-6b282b165a06">
+                    <propertyInstance
+                      Id="751d4af4-ff1b-4561-b4ff-5986966e9e44"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2f98d1b3-98e7-44a6-876f-4f703eb22755">
+                    <propertyInstance
+                      Id="49a5fb47-48ac-4b38-90c3-757347fa9d14"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="f896907b-b064-45cb-a2b3-9958c61f6cef"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="fe5d570e-a16d-4fe3-aa8d-9a7c648af704"
+                      LastKnownName="PeerDiscoveryTypes"
+                      LastKnownLocation="Package5_2014.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

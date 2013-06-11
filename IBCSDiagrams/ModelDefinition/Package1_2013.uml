@@ -1,0 +1,2169 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="f81af8b1-d5e9-49e9-ba9d-9bc79a9a460d"
+  name="API"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="77c2128b-9267-4272-a560-5ab416698b5e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Services.API"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="5fbd5f1d-8525-483f-92bc-9cc8b3618f54"
+        name="ApiService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="9ff25829-bc96-47fa-978b-824f3d6fa2ff"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="56cb0b1c-bccf-4aa9-8d4a-4fd8c58fac0e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b20cd90b-d1d3-4241-941a-4f725fafbc96">
+                <propertyInstance
+                  Id="3b86ea58-543d-433f-afd2-b4a7478d514b"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e603bbb2-a880-4936-9b9f-30e3fe887b2b">
+                <propertyInstance
+                  Id="056fc56b-f66d-4fbe-953f-8443a979bb4f"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="907950bd-7197-4b6e-b758-97190a0680c6">
+                <propertyInstance
+                  Id="f6bb5c6b-a29c-4576-9d16-0e035c529ab6"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8ad48ea7-6b3d-48c6-b86d-c8c00eedf937">
+                <propertyInstance
+                  Id="9f200030-c790-4a57-9d07-4225d1800ada"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="981b1699-9d82-4239-879f-8a81e848ad8f">
+                <propertyInstance
+                  Id="8db82194-9252-4548-a2b1-6fa40effa1c7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="2da1e807-c8a3-46cd-9248-55fb37b07f49">
+            <interfaceMoniker
+              Id="ab2f7293-28a6-46f6-852e-574b16a119a4"
+              LastKnownName="IApiService"
+              LastKnownLocation="Package1_2013.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e262b89e-3d63-4cbc-9449-048d489e0735"
+            name="APIURL"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c00edafb-ea7d-45a5-b83c-7c7357de4a90"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DAPIURL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="108fe04a-1b80-4a21-a50f-fa4dbbbe18b2"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4fc9f37-bdb8-40fa-b18f-fe5b01693e7d">
+                    <propertyInstance
+                      Id="ca0d7aa1-6f4e-4352-8a94-1a0f70f76cb2"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8c28cf1-250c-4a5f-8a5a-d731d70b3f10">
+                    <propertyInstance
+                      Id="def15c55-3010-4e1a-a723-d5490eb97eac"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e07548b3-f20b-4843-8da8-e97f7c5606e1">
+                    <propertyInstance
+                      Id="6004754d-f03d-47a5-8a16-9b9137f1a9fd"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="298dd5ce-77f9-4905-8f83-8eb0dcb59350">
+                    <propertyInstance
+                      Id="a255a1e4-b841-4391-81c8-78cfd38fa0a0"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b4863a2-edc3-4ce6-96f1-e63efd5dad8c">
+                    <propertyInstance
+                      Id="58c778d5-a6a2-4002-b464-3e8d90f2d08b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="065a8b3a-e066-4474-95b0-7fa53ace2943"
+            name="CreateAccountCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b4a2c649-c7e8-4ec4-bccc-b9a0920aff8d"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DCreateAccountCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="01a3c120-06e4-47d2-a1ac-8838907f12f3"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ba01cf4-6c2c-450f-825d-414483873d52">
+                    <propertyInstance
+                      Id="1802def7-1e98-44f7-84f9-8bd3bf41dcc4"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="84cd48ab-67d4-42e5-a303-ebe3ea4dfe89">
+                    <propertyInstance
+                      Id="5bed5b95-3db5-4479-9cbd-d00c72c77d3b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1060a24-c806-44a5-9887-a90ecdc78bdd">
+                    <propertyInstance
+                      Id="8f5051c0-546d-4692-9d38-3e36cf8552f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="efde3009-3703-4316-87ae-432e70303523">
+                    <propertyInstance
+                      Id="672849a6-316a-4d95-b31e-24ea72448a31"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c37221ee-0611-45ce-b3e8-bca6a48dacab">
+                    <propertyInstance
+                      Id="c9869d4c-947d-4466-bc23-64ba0a8e9787"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="87cb891a-0974-481c-b055-2577e954ec23"
+                LastKnownName="CreateAccountArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5d3eb0c8-f62c-49e5-b258-77b7a57729dd"
+            name="GetMasterPublicKeyCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fd0791fb-76af-4e7b-979a-1e03ff2bba81"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DGetMasterPublicKeyCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="15abdf5f-b9e6-4e74-88db-b3141196d896"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c164cbdf-0b5d-4d94-894e-c590964cb348">
+                    <propertyInstance
+                      Id="e4ef6723-85a2-493e-98d3-10fd5e63131d"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b62d5359-09f2-405f-90ae-015942b09ef5">
+                    <propertyInstance
+                      Id="8b47beb3-8a68-418e-9be3-7a7979a17c25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13d17de4-9f83-432e-834f-380955fac9d7">
+                    <propertyInstance
+                      Id="7678f959-190e-4ead-8bf5-bb8fb335fa01"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f280155d-7979-43a6-a0a8-5075b1e2f6f4">
+                    <propertyInstance
+                      Id="1b602d9d-0588-4f68-a569-ca7a386defe8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3d0e22a9-196b-40c6-a024-d2ead688f089">
+                    <propertyInstance
+                      Id="5be0cb3d-d372-40b5-a551-10fc52cfab74"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="df7b0ed9-f67b-448b-88c5-b7df1c175ded"
+                LastKnownName="BFMasterPublicKeyArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6c7cef08-6d5b-44ff-9fb3-8008fc50862f"
+            name="GetUserKeyCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="e03e7220-309c-4988-9a0e-0368e06622f1"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DGetUserKeyCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="182fbb36-424b-4bda-968d-396c82bdc490"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f4317e9a-8409-4291-8cf6-84971076eee4">
+                    <propertyInstance
+                      Id="b20f6e19-a97e-46f5-a149-e1585b68ec6e"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8544cbeb-1be2-4814-9a01-c5d73836dfcf">
+                    <propertyInstance
+                      Id="1eba26c1-3fe3-4629-98f8-775fe2528318"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="16a8f3c7-2dcd-473f-ad23-54330916d6f0">
+                    <propertyInstance
+                      Id="07a7888d-5347-4eb8-b938-a044416abb44"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ca6e4d2-6aa9-4ec2-810d-ef6acef80511">
+                    <propertyInstance
+                      Id="72d723f8-b4f1-4d25-a172-430f3094b6c6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b47e86be-7791-4f4c-85d4-527348a79c64">
+                    <propertyInstance
+                      Id="4d44a404-7d09-41ab-b303-0ef5443628d1"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="aa73cecd-1e69-4f0b-ae3b-0c5f632250a8"
+                LastKnownName="BFUserKeyArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="acad446a-99f3-4b94-9c04-81553fcc6dc5"
+            name="LoginUserCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="185b7578-6932-48d5-9f31-17ee3150beea"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DLoginUserCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1855b1e3-74a0-4ba3-af3b-a1ba364b54f5"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6fee87e7-f5bc-4f62-9a15-11be7f3d3320">
+                    <propertyInstance
+                      Id="e17b4664-de6e-4413-b93e-b8563842d837"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8e054a45-9b57-4f98-924f-d4b0b39370eb">
+                    <propertyInstance
+                      Id="31a970d3-3df0-4cae-ae4e-f31c07bba6e6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="939133b5-7b83-4957-b253-6f13c12385d5">
+                    <propertyInstance
+                      Id="3ef1e608-a0ba-4128-95b9-4474549c2cb2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c6e69da-ab60-4fd3-ab96-12023002fee6">
+                    <propertyInstance
+                      Id="fa773986-ba9a-448b-8f1d-7f0a9d606b80"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c6be3db8-60aa-4fab-a1e8-b474216ef25f">
+                    <propertyInstance
+                      Id="4fb8971e-fd7a-4549-b268-bd0ddbae474f"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b8a51f61-cd39-472c-b825-d041f9480ec1"
+                LastKnownName="LoginUserArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="2a154979-de23-474b-ac05-5c5771353877"
+            name="SHORTEN_URL"
+            isLeaf="false"
+            isStatic="true"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7fffc93b-a572-4c0c-9597-c481cda2535e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DSHORTEN_URL"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8e25f10e-e383-4c86-b577-f289449349ff"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5d7cc2ee-fde6-418d-bb68-8fba72cb00f3">
+                    <propertyInstance
+                      Id="29bed75e-109b-48d8-8db6-4c0d13341f53"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e5ca8b44-f4ec-4344-aba2-94537410e310">
+                    <propertyInstance
+                      Id="c76542d5-6757-4548-a430-62abd824705c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2681546f-94d8-4aab-b628-45c99d171738">
+                    <propertyInstance
+                      Id="b48de8fa-de8e-405d-95fb-45a6e4365989"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e1d1777-56d4-4393-9a0a-040129e1bdab">
+                    <propertyInstance
+                      Id="5a98fa75-79d7-4ea5-a10f-65e5cfa73dc7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68f7f30a-6efc-414b-8679-4913d496f834">
+                    <propertyInstance
+                      Id="28045806-0bf8-44b4-a8d5-eb4e3f6e7965"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="IBCSDiagrams.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="442dcead-6efb-4c90-ab9a-ceea20317334"
+            name="client"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="d90dc41d-d41e-44a6-a7ae-7045c711abeb"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3Dclient"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="68c3717a-94d0-4fb8-9c73-87cf5e097579"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11f939d2-bf1a-402a-9b05-90b998bb290f">
+                    <propertyInstance
+                      Id="d50d7da5-5440-4115-8b1b-2edd1a9ea65c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ebe8f3b6-c18a-458d-a83b-110cf20116d9">
+                    <propertyInstance
+                      Id="afff9601-8a6a-4deb-840e-8e43ca4bf164"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f3362081-18e8-4aa3-ba85-68cacce656e0">
+                    <propertyInstance
+                      Id="3b9504fe-62ca-4e05-931e-8e287ce738ab"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2ded3182-9610-42cb-b58c-063856c904c9">
+                    <propertyInstance
+                      Id="00625041-c705-44c8-8c6e-3740462c9b06"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba7ae8d7-082f-4e6b-a34c-4844afc39550">
+                    <propertyInstance
+                      Id="2fb075a1-310d-4dd3-bad4-a0ecd89fd3c9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="130f0a7d-655a-4351-8b7b-5988e768e863"
+                LastKnownName="RestClient"
+                LastKnownLocation="Package5_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8e57e78b-cb62-4551-b977-b357cc02caf2"
+            name="shortenClient"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="1800bf39-020a-4a62-978d-b53c467255f6"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DshortenClient"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="612ef714-ace3-441e-b392-a290bfe66d63"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7b44b53e-3aeb-4a70-9b08-63a362575bd6">
+                    <propertyInstance
+                      Id="db02d1de-ef8d-4dc5-b5b8-cbad371cb531"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88d98fa6-f61d-4917-8dc5-f43ff486aea9">
+                    <propertyInstance
+                      Id="1af645dd-8ff5-41da-8fa2-739e16a28225"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31c8eb9c-e993-44e2-9541-a4aaad7655bd">
+                    <propertyInstance
+                      Id="fd6694ee-43ba-4f30-9fdd-d8c6f9276d16"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0977dba3-09c6-4656-aeff-88b7406786b7">
+                    <propertyInstance
+                      Id="0b1999d5-44f1-4ef3-a840-5865251b6abc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8753f559-21f8-4955-aacc-74be6ac6db8e">
+                    <propertyInstance
+                      Id="ffa7aff2-b763-4aec-850c-e36ba9896632"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="130f0a7d-655a-4351-8b7b-5988e768e863"
+                LastKnownName="RestClient"
+                LastKnownLocation="Package5_2013.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="15f78c05-0488-472b-853e-f43d983c63d8"
+            name="CreateAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="5a24c9c1-3baa-47e3-a1cd-853478852cf8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dda62600-964d-4697-a40e-30a341ecb8ff"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="705e43dd-edbb-421f-bd0d-20980adf287b">
+                    <propertyInstance
+                      Id="e5e476d2-bf59-4ef1-8578-17ae56f47b71"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3821bc22-1688-4970-a5ad-fd5f378c1a54">
+                    <propertyInstance
+                      Id="93846d13-4134-46a6-bce8-0787aa124e4b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="797f7604-5f81-4973-9be9-44f8b5ac7558">
+                    <propertyInstance
+                      Id="1b127e0f-273e-49ea-b167-86e14cdec6ca"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8b3200f8-28b4-4bcb-9121-3dba80d13d5e">
+                    <propertyInstance
+                      Id="5469eef6-f3f8-4c5a-991d-2e736aaa0754"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d88c0a54-fe97-4f6c-ba03-625b711f4231">
+                    <propertyInstance
+                      Id="cd184850-1690-433f-9ed6-236763b806e0"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="722d3720-0527-49f0-bcb5-1bb02f15bdaa">
+                    <propertyInstance
+                      Id="ff838b5c-b1ec-4ea2-9f0f-046404f70275"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bde965dc-e9d0-401b-8955-5bbd46f7d032"
+                  name="email"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7d8d05c5-fad2-425b-856a-52306cf0105e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Demail"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="13e40f99-8f06-4d14-aa51-b04ac3d15a3e"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7b4553d3-14c7-4706-b8c2-7b9630271bb9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d3f51b5e-5b05-45d6-bf01-c064f51a1f22"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="1b879f2e-8bcc-4a8d-af05-b819dec6db43"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d132f1c3-d356-44cd-aaad-29daa39db0a2"
+            name="GetUserKey"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="274f8261-6676-40c7-b580-bbd945b041e4"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="21de2324-0838-4b5a-be69-58e03a2b854e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02fe9dde-72af-40fc-80ad-ad66e6f1cd27">
+                    <propertyInstance
+                      Id="82e79681-5b73-4c4b-9f16-3bd590336f19"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="92d974a3-9336-4c79-a903-9e888573386d">
+                    <propertyInstance
+                      Id="4120c020-ccc8-46fe-8ec3-17a4863ee163"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="052c6c67-33ed-43c3-a520-87e3d503a6e1">
+                    <propertyInstance
+                      Id="2ae0f105-e612-4af2-a59d-80ddc8fddf28"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="788cf4dc-e333-439c-ac86-a2e1b6bc7b21">
+                    <propertyInstance
+                      Id="57ce306e-3c85-406b-bc6a-8a05e460e0a5"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e50ce76f-ec99-4900-bdea-4e91bb927420">
+                    <propertyInstance
+                      Id="5fd5537a-3aea-42c6-af51-0923ca1c64f7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63340f80-c353-464d-b06c-079855f165da">
+                    <propertyInstance
+                      Id="8b3f53e0-a90d-49d0-b68f-4dbae25f4a62"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a5a8d2a-cb2c-4ed3-9192-d9237ae53334"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4aface9e-07ab-45a0-b7a6-167657d2ffc8"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5727e2ed-90e5-4f93-b04d-515e8f7f74b2"
+                  name="token"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9421579d-9757-4150-b2ee-08c0e6daccfb"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)]) ParameterIdentifier%3Dtoken"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a2bd938-9942-40c6-b4d7-2f5a98309dce"
+                      LastKnownName="LoginToken"
+                      LastKnownLocation="Package2_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="59b4d25b-f9da-4b77-ab2a-2c6d75450255"
+            name="LoginUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4ba7c5ac-5596-4816-adf7-9053324b78ae"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dd162bc2-cb41-4809-bf0f-ff7621d083d8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf72d513-a045-4c7d-9030-8ee35faaec32">
+                    <propertyInstance
+                      Id="f5db9609-2b6e-4dca-8c63-58d30babee4f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36bb47c6-5446-42e8-84a1-366b0f6e3c1e">
+                    <propertyInstance
+                      Id="5e6fea75-e69c-49f0-88d0-ecc6ad58695f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e3e6f161-1b95-479b-a180-377dd923c929">
+                    <propertyInstance
+                      Id="13b989c6-f635-4f95-851a-1d06a7ad0a5d"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1b55ae2c-d0a8-4b90-8a06-d6fed26beac3">
+                    <propertyInstance
+                      Id="5596c5e4-4c95-4464-bce2-8cd6c1d21379"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6efb37ac-61f0-402f-a202-f7d7cb49aa4b">
+                    <propertyInstance
+                      Id="ed246372-cf5e-4a33-8de2-3b51ed4ef27f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8204cf9-1d21-49fa-b802-5bd36dee37ec">
+                    <propertyInstance
+                      Id="d14bf561-8c71-4b51-8067-311cccfcbad1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="de3c43e0-0652-4585-b188-bd7dc84fba71"
+                  name="email"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="ea4abffc-ac99-40bb-bfef-115faa8f4255"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Demail"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ec59c739-4ce7-4847-9009-5696085693e5"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0f91abd7-c544-4e9c-985a-45a80110c75c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d3cd37b9-bd0b-4968-98ca-b4c960ee513a"
+            name="ShortenUrl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="07f1a616-58ab-4829-bceb-6d64a0bd3b4c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DShortenUrl OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9fdcd8b4-e907-4a73-81bb-92eac07f56e2"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c3d1c84-a160-44c8-8487-ffb6af5fa404">
+                    <propertyInstance
+                      Id="ffe8a0e0-28ab-4371-afae-811e1c6c5b4a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1806a4f3-04e8-47c5-b8ed-027028b70448">
+                    <propertyInstance
+                      Id="f426e1fe-193a-4128-bc3c-ed8db3bfdc0a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff27b87c-9e2e-4e41-afb1-ef768f69925f">
+                    <propertyInstance
+                      Id="88a971ae-6615-4cfe-89f6-5b9c62d61301"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77f4af63-ff7d-4d8d-985b-92280a7e6440">
+                    <propertyInstance
+                      Id="fded72bd-1e02-4e1e-a49c-2f0732e7e931"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b4ac5f4-4686-4058-8acf-ecb4e5343941">
+                    <propertyInstance
+                      Id="09cc66b3-6e7c-47cc-92b5-1bb0259b1662"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc7d7fae-05f8-428b-bfa1-7382ed8a6a4c">
+                    <propertyInstance
+                      Id="1c383050-3982-4951-8bd8-48e744659e16"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d080bbb1-c4e5-49dc-8bab-329541fd58c9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="eb81c074-68bf-4d5b-8de6-e220fcc9c438"
+                  name="url"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="4fd5a972-e3ad-448e-97d8-1d3614b807f5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D(Name%3DShortenUrl OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Durl"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4a8a6361-18ff-4079-b7cf-c980026d3981"
+            name="ApiService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e72cdfb2-b68e-448d-9604-6adbcd2a2d16"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1abb7a7a-7e46-4438-bac6-3208b3c6667c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="95ae5008-f5e2-4328-9670-862427cf9b5f">
+                    <propertyInstance
+                      Id="0bd09355-9b70-47fb-84dc-0c6b06784483"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dbb4ba56-c1b2-47a4-a95e-b7db083be9fa">
+                    <propertyInstance
+                      Id="d3511082-a158-4ea6-96de-7926618c0fc6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba898004-057c-4e06-8175-687a79b322d9">
+                    <propertyInstance
+                      Id="90f6b744-8f20-4028-885c-b84bf30035a8"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="91ef4cb6-1d6a-4864-8d35-90e1e7421a3d">
+                    <propertyInstance
+                      Id="9cfadf81-082a-4cb4-83ac-6164443b5393"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cdd71f90-51f9-483d-bbdb-83e5b9ef8e7d">
+                    <propertyInstance
+                      Id="85372269-4fc4-433e-88c0-e22f525748d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="676c7bb3-3080-417d-9ac1-545e16335149">
+                    <propertyInstance
+                      Id="20875e64-66fc-4d69-9efe-4d82063eddfd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="89e7bc41-6db5-4557-9fec-724465a96a47"
+            name="GetMasterPublicKey"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="41052059-f7da-409b-8d65-a1e258558afa"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DApiService Member%3DGetMasterPublicKey"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c9caab4f-2c1f-4f8d-8d77-56b184f8286c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d947fc86-9431-4e88-816e-0bf8776e201d">
+                    <propertyInstance
+                      Id="0ed1b164-7949-48fd-a17a-04ffe7b86861"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c247c2e4-31d5-4dbd-b5f6-69142114bd89">
+                    <propertyInstance
+                      Id="a4d1a84b-8512-4279-b4b4-e35c77eff7e1"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ba5a58c0-08b3-477e-9e12-aab1d83d9ecb">
+                    <propertyInstance
+                      Id="6d0ec080-7706-4dcf-a0c6-fa817ff12caf"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f62110e4-4658-44ac-a853-3b46babe46ba">
+                    <propertyInstance
+                      Id="5bbd0f56-deb6-473f-ab86-6d82ace18f1c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="25221ef5-19c6-4275-b324-ae4e3541ef35">
+                    <propertyInstance
+                      Id="cae4df8c-fe83-4c66-8d2a-eb4131440422"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4f81aef1-9de6-43a4-b51f-fc146d15882b">
+                    <propertyInstance
+                      Id="c4bed07a-c161-4d87-9f0b-b6aa8dc52fd7"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="87cb891a-0974-481c-b055-2577e954ec23"
+        name="CreateAccountArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="df1b5921-a384-48a9-899c-240a5d4e926c"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DCreateAccountArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="d748da22-95e7-4bc0-80cc-7342b2607c6d"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0e755825-5bdd-486d-acbf-edc98d06e691">
+                <propertyInstance
+                  Id="6860e53c-36fe-4f8b-ae22-9d18e86c1b5f"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="da9255ed-fc40-48ea-a5d7-caa667cf5c46">
+                <propertyInstance
+                  Id="82d77748-d5d9-45a9-9fca-a77bd5acd120"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0392337d-d556-4c50-9789-194288cf1dcd">
+                <propertyInstance
+                  Id="49d1ebbb-7fe4-4ab9-926d-c50bfb176756"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="df7b0ed9-f67b-448b-88c5-b7df1c175ded"
+        name="BFMasterPublicKeyArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="98db8913-2673-432a-a557-c674647c98f6"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DBFMasterPublicKeyArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="1b7f6465-6f33-4ec0-b010-6ced3f4e429a"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4c2df90c-8d33-4791-b30d-1f1340a0ab43">
+                <propertyInstance
+                  Id="31ba36c8-0d40-4193-9094-6b98947e8962"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1c98ad12-0928-41f7-af0f-9807935f16a3">
+                <propertyInstance
+                  Id="431c115b-d342-4b27-958e-397d1b45f136"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cede9ad2-c523-4e29-9345-ff925844c08d">
+                <propertyInstance
+                  Id="65bfa744-b249-45fe-b507-3d4fdb705c41"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="aa73cecd-1e69-4f0b-ae3b-0c5f632250a8"
+        name="BFUserKeyArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="5ea93702-c8b2-4277-8ab0-72d008a43b53"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DBFUserKeyArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="feb26976-bf79-476c-aeab-424575bd609a"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3cd31251-95e3-4441-bca2-4a71703085b7">
+                <propertyInstance
+                  Id="bd8ff301-3af7-4a23-95ab-b835a9daaa61"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ed0a5036-10dd-4886-ba4b-75e3ae0c8823">
+                <propertyInstance
+                  Id="cce39be0-62ea-4704-83f0-783c9418e16c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bb78d3f3-e81f-45e0-9864-15ca1d4ceefa">
+                <propertyInstance
+                  Id="7ba8b2df-b18f-40ad-9064-5413a87da51a"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b8a51f61-cd39-472c-b825-d041f9480ec1"
+        name="LoginUserArgs"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="7e243558-25ee-4852-a0fe-e4fe189031c5"
+            handle="viewcode://./CodeSchema_Delegate?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DLoginUserArgs"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="21495654-78ce-459e-833a-a0dc40dde08a"
+            name="delegate"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06886f40-ca20-42d5-b125-119b372aa49f">
+                <propertyInstance
+                  Id="69dac4e6-2dfd-4f27-bd57-365182f74de5"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="254b1116-3ae0-4a64-9c23-609dd20699f7">
+                <propertyInstance
+                  Id="b41f9841-68b6-4b63-aa0e-2181573a590c"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b6d0cea6-2a6a-4f8b-be46-e2194afe62d2">
+                <propertyInstance
+                  Id="2e9b47cd-fd69-4b96-95c0-b98207c4a833"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="ab2f7293-28a6-46f6-852e-574b16a119a4"
+        name="IApiService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="fb479eeb-110b-4af8-b500-f0f8456b9037"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="34cd02f4-3b1a-4c11-b4e8-79add3a618e5"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="af8dd5a9-2243-48db-8871-afca29cbaff4">
+                <propertyInstance
+                  Id="c7883e0d-3971-47e5-b130-e019d94079dc"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7cf94c33-0e04-47a1-8837-8e4985bb5abc">
+                <propertyInstance
+                  Id="fd4ba95d-03ac-427a-a45f-08a2af58196e"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="90994122-b453-407f-b222-d01a252e3193">
+                <propertyInstance
+                  Id="1013c434-04d2-406c-b751-78199858e6f5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="04d33d43-f44e-4625-88ac-9cbc23b8f9ee">
+                <propertyInstance
+                  Id="cd02c330-fa27-486e-b6fa-cf05d0ea1656"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributes>
+          <property
+            Id="a4d52011-e8d5-4c3c-94c9-552837c73777"
+            name="CreateAccountCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="35c66cf4-e663-455b-93aa-1dc6e3808b5b"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3DCreateAccountCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a02fbf5b-51f5-445a-8a0b-a838da4f9865"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f032f6d6-1d10-40cf-a489-9969ed7c5a4d">
+                    <propertyInstance
+                      Id="1d63a702-c49c-42c0-bc52-1fffe2c0bde2"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b9f18a39-f919-4afc-83c9-e7cbe750f5d9">
+                    <propertyInstance
+                      Id="12264413-6f9c-4083-b760-317a491f448e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4738ed28-5f56-4861-a05a-5838ce66f03e">
+                    <propertyInstance
+                      Id="64fe3075-f336-424f-849c-7c7069755e7f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85926b22-1756-435b-9560-690737cc41f5">
+                    <propertyInstance
+                      Id="8bb4e220-31f3-44b9-9dec-4fbecf4011f2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0ea570b-e12d-43c4-8253-386b6af92222">
+                    <propertyInstance
+                      Id="e0a29a1d-5417-4105-bec0-95f22d25337d"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="87cb891a-0974-481c-b055-2577e954ec23"
+                LastKnownName="CreateAccountArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e5734baa-34fd-4014-aa47-7053b47ba8c2"
+            name="GetMasterPublicKeyCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="fbe429cd-422e-423c-8335-20a848f05f84"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3DGetMasterPublicKeyCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="dcb10ed4-f029-43b7-a43a-bdec844ab6b7"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="315ccf18-6a71-48ca-8085-f4effb46736e">
+                    <propertyInstance
+                      Id="82088b3f-d37d-41a9-a056-6603526131e5"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="50d1d0c1-4aec-4177-be19-936a1ac13a6c">
+                    <propertyInstance
+                      Id="cc435c6a-a5b0-478b-aed3-37ec5926050d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="308b34fe-c704-4e06-80ef-476b2cc547a4">
+                    <propertyInstance
+                      Id="8d1e2e78-0b13-46f3-9d18-ceefdc3cbbb9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21a4d739-371b-4f26-ab1c-2ad7d9493bbf">
+                    <propertyInstance
+                      Id="3abd9f67-3d80-44c0-9ba1-f64f86edf6b1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="02ca9107-883a-4657-9753-d830049f2007">
+                    <propertyInstance
+                      Id="9634959f-1157-455e-8a1f-cdd50a7b503d"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="df7b0ed9-f67b-448b-88c5-b7df1c175ded"
+                LastKnownName="BFMasterPublicKeyArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="9d973e45-4de5-4cdd-9812-82000045f689"
+            name="GetUserKeyCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="400a9e54-c6ea-4fa9-81b7-7287699ac261"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3DGetUserKeyCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d2eb82ce-822d-408d-aa7c-9f64a9f0b6b4"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88a72a0f-b47d-49bc-8d42-047409a850d3">
+                    <propertyInstance
+                      Id="b6686934-b8a2-42de-9a08-6f0a34577a0e"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="179210bd-ada8-4fd0-955a-31627ad1d9fe">
+                    <propertyInstance
+                      Id="e0b1bdf1-6f84-43dd-a54d-76ffe2ac12ea"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6163b430-56f3-4c12-b7e9-49f9f5fb3e43">
+                    <propertyInstance
+                      Id="b3bdeb44-f892-4886-8878-3b63cf1249f5"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bda5dbaf-4ca2-4dfd-91b7-da50f3dad2e9">
+                    <propertyInstance
+                      Id="35b2f0a1-0a57-43e2-bbad-4aaffd717510"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4d1fdd0-d3b4-42cd-b39c-72870dfc9635">
+                    <propertyInstance
+                      Id="4f70e9b7-6a10-4757-8e38-52e0bf1b7f82"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="aa73cecd-1e69-4f0b-ae3b-0c5f632250a8"
+                LastKnownName="BFUserKeyArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ba396878-d66b-4129-9edd-21e24dd195bb"
+            name="LoginUserCompleted"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="b04abf67-2751-43ea-b0fe-db53de6ac9a8"
+                handle="viewcode://./CodeSchema_Event?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3DLoginUserCompleted"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0462d5f8-ee83-4253-b195-50b9a65d806a"
+                name="event"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="310fa565-371d-49ee-ab02-7b540dad6609">
+                    <propertyInstance
+                      Id="474a7146-0b75-4269-b1d5-98c13c946e72"
+                      name="Add"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e72b0f4f-45e4-47bb-8023-3500be5d541c">
+                    <propertyInstance
+                      Id="914323d2-2f6d-42f9-9301-cabf92674696"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="848402c0-826a-4846-966b-4e4db6128f08">
+                    <propertyInstance
+                      Id="890c7c64-b11c-436f-ba9c-8184ba67c15f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1f00eae4-339d-493a-8a00-16e8be316613">
+                    <propertyInstance
+                      Id="aed3a49d-02ad-4baa-9fd1-bf57de0f7fdb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c81af946-79f8-4713-bf8b-c2450b49bd02">
+                    <propertyInstance
+                      Id="ed25fb11-04c0-4a90-990b-82ce1e6ad045"
+                      name="Remove"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="b8a51f61-cd39-472c-b825-d041f9480ec1"
+                LastKnownName="LoginUserArgs"
+                LastKnownLocation="Package1_2013.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="7e386f77-df73-42b8-b00e-855dd8bfb1d1"
+            name="CreateAccount"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="af77f274-cdc4-4a0c-ba4d-d1458c114dd7"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fdcdf32e-a5be-4e01-b69b-b64f8856dc2f"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b132e3a-b208-4824-9396-cf70770d3414">
+                    <propertyInstance
+                      Id="5f4d9b8f-5868-4171-96af-ac8a725c5e5a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3cd279bd-e071-43c0-b385-07066f1330ec">
+                    <propertyInstance
+                      Id="a6842a40-2246-4736-9c49-f4e7e871900a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="21400f67-2303-43f0-adf7-2ceef1553ac3">
+                    <propertyInstance
+                      Id="5b3a2d79-3b1d-4a01-a897-db61ae3a3744"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07e34de3-09c9-4360-aee5-7f61655f53c6">
+                    <propertyInstance
+                      Id="b9373840-afab-451c-8a90-f56ea21d3c15"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="183edf5e-7d02-4233-877c-edfc379322ab">
+                    <propertyInstance
+                      Id="5e61762e-1131-49d8-aead-8109dcf7fc1a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7a4f607-b212-4f01-bdd2-db483c443ede">
+                    <propertyInstance
+                      Id="91e56f79-1bf4-4517-8598-31b13b02948b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be30c89b-7723-4b1e-a949-92cd76e19a59"
+                  name="email"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="145bb7e8-a4af-4e48-8b37-c83be9fe6e5e"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Demail"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="2cb30c43-fe88-45f7-ae78-2634d16a1708"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="a9c83b7b-e22a-4cb6-acfa-673b418d49cd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="58834c24-629a-479a-96f4-6bacc3798a5b"
+                  name="name"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="acf58c2d-ec0a-4a7a-b11c-ec733257b9a9"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DCreateAccount OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dname"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="92174020-0e15-4cb2-bffa-df877736ad1d"
+            name="GetUserKey"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="9a4ae5f4-a0f3-4c75-b3a2-def598e6f847"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b47620d-3ea8-4f68-bb21-feccfa368176"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="38d20ab0-fddd-4025-9978-b15fe4f43afe">
+                    <propertyInstance
+                      Id="a108f8a4-2877-4928-8756-bbeb307a0941"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05f4bfed-b14f-42fb-bfdd-052fb51f6acf">
+                    <propertyInstance
+                      Id="651afdc8-94ea-48a2-a0e0-d71404544f8b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db397739-8ec6-474b-b6e7-5ee0c9351353">
+                    <propertyInstance
+                      Id="95f04602-c161-47d0-9953-7c427ed1a5b9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ca04419-a564-44c0-b10c-9c0a1b01e1ea">
+                    <propertyInstance
+                      Id="115673f0-fce1-4ea2-b43f-f65daa78f67b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8cd703fb-0429-447d-b7f5-9f0bdd7cbdc5">
+                    <propertyInstance
+                      Id="261134b0-17c9-48e0-86eb-51d2b2a5a52d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eb70c780-e216-43da-aa83-20339f27a15f">
+                    <propertyInstance
+                      Id="a084b7de-979b-4b11-a2bf-1f6305cb2dd3"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8075c16e-3853-4d6c-bc54-a51289b564f2"
+                  name="identity"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3852d02c-c668-4e82-b36d-467c0f450f5b"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)]) ParameterIdentifier%3Didentity"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e523eff0-4440-4ca1-aabd-8ab201d35822"
+                  name="token"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7ebd2663-68e5-477f-baf8-dc2b8812cf50"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DGetUserKey OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken)]) ParameterIdentifier%3Dtoken"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="7a2bd938-9942-40c6-b4d7-2f5a98309dce"
+                      LastKnownName="LoginToken"
+                      LastKnownLocation="Package2_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="bf8d5d05-497c-4de5-9874-fe32faa80f8a"
+            name="LoginUser"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="21ea9430-0ba4-479e-b7eb-e20f3ebeb590"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f9664885-a6d7-4cbb-9f75-1b2b6eec289c"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fa9e6037-dc70-449f-8cd0-73eca28e50e9">
+                    <propertyInstance
+                      Id="a16bbabe-0d38-4bf9-9c49-318d3d37ab77"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1225360-09ba-424b-b7fc-75b538332482">
+                    <propertyInstance
+                      Id="7927b384-cacd-4161-92af-ec29dab3eb04"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2a6dfc69-6285-4c9f-86fe-831f74b85260">
+                    <propertyInstance
+                      Id="5316e75b-35be-4dd1-8d1a-afb68647a9f7"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="753defe2-0402-46ae-926b-1a9b7e4c3265">
+                    <propertyInstance
+                      Id="9c99c889-a4a6-46a5-a3c7-dd805aa0a67c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="20e131a2-2d8f-488b-8f37-4323263d7cd5">
+                    <propertyInstance
+                      Id="870e90c3-5ccf-4303-a21b-a4749d5d2825"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbbb9743-7125-45e4-be80-45d76f07fe1b">
+                    <propertyInstance
+                      Id="c5eb288f-49b2-4be8-bab7-5a8d537ac5a5"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d7f7743a-5226-4774-8872-70439ae46384"
+                  name="email"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0ce82725-1152-4ce7-90cd-ec31f611f953"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Demail"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="e831103f-8f80-464d-bcd0-d73ac04718ea"
+                  name="password"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="16c525e8-2772-464c-8493-b38a5b3eafb6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DLoginUser OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dpassword"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e5685f01-3d3b-4a97-a852-26f5c0008da6"
+            name="ShortenUrl"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c960e2ee-a40c-47e5-ab34-fd5a58911a03"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DShortenUrl OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3826ff10-9a65-47ba-b465-41ee4f256754"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ccd91ff6-d807-4aab-ad46-e2ca34a296b0">
+                    <propertyInstance
+                      Id="54c65844-6209-45d5-a0c6-fb9043dc8028"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a18e7734-65ff-4635-b6cb-73575ade115e">
+                    <propertyInstance
+                      Id="53236f78-a92e-457e-99ea-d485f7031fcb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e315861-b262-45ca-9ce4-011e1cf8497e">
+                    <propertyInstance
+                      Id="7fd5b195-796d-4a55-94b9-90d5bc688071"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="bd1f388b-f194-4875-bb07-2f07881ff7e3">
+                    <propertyInstance
+                      Id="1d85b2ea-1a19-4615-965a-ec882c780b8e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b16fd383-c3c5-42be-bcab-a90ff834886c">
+                    <propertyInstance
+                      Id="c7da32cd-ef8b-4e33-8dc0-201bcca5eec4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48310899-dc70-44ae-b18f-7f9b486deab9">
+                    <propertyInstance
+                      Id="9319b66e-4210-482e-9423-3da94c950616"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5477ce3-18f7-4070-85ba-c7810f5d9a1a"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ed493bdb-438a-4c5e-bf58-5d6f7dab1251"
+                      LastKnownName="Task&lt;String‎&gt;"
+                      LastKnownLocation="Package4_2013.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d9f77931-bafa-4503-aa91-96edc031cba9"
+                  name="url"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bc0026ae-2b96-4f75-a184-e79526b2eef5"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3D(Name%3DShortenUrl OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Durl"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="afcc262e-4710-4f44-99a9-6c6618d44dd9"
+            name="GetMasterPublicKey"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7486d708-c1f5-4bfd-82a2-f6a3db2730dd"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.API Type%3DIApiService Member%3DGetMasterPublicKey"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="af4822e2-883f-4ee1-a18a-26097252a5b3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="13a9d6f2-42c0-4a32-b41c-1c5bb243e393">
+                    <propertyInstance
+                      Id="da5f5d74-4ab4-46f0-8109-b7659f3589d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e69849b-46b2-4acd-9e4a-2967ac0f157f">
+                    <propertyInstance
+                      Id="f42cfc1f-ffe5-4ba2-bad4-812e02c84f40"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03d51295-6a12-4e54-99aa-d3c3e120c891">
+                    <propertyInstance
+                      Id="7ef6d5a6-80ea-4bd3-b661-dc765fade537"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f0d4a70c-2f51-4b51-a41d-c0853eef4171">
+                    <propertyInstance
+                      Id="611a386a-0cda-4542-82e0-03f40631f3ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a5a6ac4-7072-40a7-90b9-2e9477031391">
+                    <propertyInstance
+                      Id="543b6e43-f115-4373-a25a-71209b9126d3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9ce8c94c-65df-4960-bbbd-d6291b4a41fd">
+                    <propertyInstance
+                      Id="17c8830f-59fe-4cc1-a323-8a4a93fa320f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

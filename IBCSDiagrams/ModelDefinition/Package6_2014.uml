@@ -1,0 +1,373 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="be19678e-8836-4288-8a77-a48ed6c3ad26"
+  name="Dispatcher"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="9790263a-3d38-4901-b5dd-3b8847b4b63c"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Services.Dispatcher"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7e60dd03-2238-4250-870d-b67f26c75ca5"
+        name="DispatcherService"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="d3b3f4c8-c547-4b91-b855-9412ab73ff2b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DDispatcherService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="a7c5fd7d-e739-4065-b2ed-54badf6d67bd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8859f9c9-8b04-4431-a0f5-d98084ff6ab1">
+                <propertyInstance
+                  Id="370f8c8e-7796-4071-9e26-d4372f9c60e2"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="912db730-5594-488b-afe6-e19c21d229ca">
+                <propertyInstance
+                  Id="1e62db64-b20b-4429-9c3d-f239e06f3b83"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ca483562-9748-43ad-ade8-6f7fd5b22882">
+                <propertyInstance
+                  Id="80229cc7-2fc9-4544-8e9b-0038c639fd3b"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5303986f-ed51-4036-a1d0-494478c0d054">
+                <propertyInstance
+                  Id="49a00baf-4f95-45d2-982c-c2465bc9fcce"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1689cd2d-0610-4d00-a432-fce0080d917f">
+                <propertyInstance
+                  Id="768e22af-983d-4ecb-8c7c-7bfb2804cf6d"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <suppliersInternal>
+          <interfaceRealization
+            Id="e67c98ef-8dc4-40d9-9579-0679353d0b46">
+            <interfaceMoniker
+              Id="00433e85-cb77-45dc-b5c7-799bbaa2d435"
+              LastKnownName="IDispatcherService"
+              LastKnownLocation="Package6_2014.uml" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="98622c65-a460-41c2-8b6a-07e2e87ffbb3"
+            name="CallDispatcher"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="76f2decb-858c-4769-8ad0-412a97b2defe"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DDispatcherService Member%3D(Name%3DCallDispatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="80ee9b6e-0a1b-4e35-88e6-fe62c936c969"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b7dd88ad-c1f1-44bb-a068-346643c0011c">
+                    <propertyInstance
+                      Id="c3d1a00f-571c-4774-816f-6b5c16a8b268"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6ec808f5-abfa-4570-a91b-7ce574698d77">
+                    <propertyInstance
+                      Id="a1834db7-e9cc-4b5b-addf-f9e675713eea"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea931a2e-2800-426f-88fc-4fb5cb3df4ea">
+                    <propertyInstance
+                      Id="294e62b8-76a9-4808-99a6-18a8f35eca7b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bf6b7ee-7b79-487e-a707-5f01f7a2689c">
+                    <propertyInstance
+                      Id="6ae1247f-05c3-49e7-b2a8-26928089e35e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b0cbfebd-4061-4d76-a86f-69fb15531dc5">
+                    <propertyInstance
+                      Id="edec0014-1fa2-4cd8-8512-2676667f8e6c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d572f12-cd8f-4953-8f4c-2df908abf145">
+                    <propertyInstance
+                      Id="27644dd7-9728-4a99-86bd-766561732b16"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="20603e41-7bb7-4032-836d-5325158ae6a6"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f0147245-d3f0-42b7-87e3-14cd3de11a71"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DDispatcherService Member%3D(Name%3DCallDispatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1528167e-d4ce-4706-b4b6-d16840ead8e8"
+                      LastKnownName="Action"
+                      LastKnownLocation="Package4_1033.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="74d482df-d8ce-48a0-9005-c014e392194c"
+            name="DispatcherService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="e5619c66-cae9-44ee-9649-ba954f4f3e47"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DDispatcherService Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ddab5800-17a6-421b-a387-74861df847da"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f096fbbf-97a5-4139-9827-8336b493dca0">
+                    <propertyInstance
+                      Id="bbdb9100-e331-4fb7-b1a9-18c19ec4fc1b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3e1fe0e7-b291-4e7c-8680-4924f49c428b">
+                    <propertyInstance
+                      Id="2f002ddc-9ec1-4724-92f0-2b85338b5344"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="220a62de-1831-49de-bfef-94698b5e96ee">
+                    <propertyInstance
+                      Id="58947266-a9df-4ccb-8d4c-3a7bbf65d54e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7e4246ba-f8a3-4359-8336-286077f1a5e5">
+                    <propertyInstance
+                      Id="5e319bdc-d4df-4f01-8766-54b512246012"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="231769b5-7c1b-4d06-9fc2-487ecc72033a">
+                    <propertyInstance
+                      Id="86492082-0687-40c5-b1e2-c2f312ba0aab"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6398c73f-95e4-45fa-85c1-1ec759bb2692">
+                    <propertyInstance
+                      Id="106826dc-af94-4c38-b7e0-157b529dfd54"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="00433e85-cb77-45dc-b5c7-799bbaa2d435"
+        name="IDispatcherService"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="a81c27ad-44ec-424f-b247-9e5caebc307a"
+            handle="viewcode://./CodeSchema_Interface?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DIDispatcherService"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="57484229-f64d-45bc-b449-febb036fb35a"
+            name="interface"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c2926594-3a2d-44e1-8ffb-717c7b381530">
+                <propertyInstance
+                  Id="20cc4ff9-7d9f-498a-a59a-b8d1cba51736"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5b161c4b-3374-4f58-98cd-c0f5bd71f968">
+                <propertyInstance
+                  Id="c3a0b580-80e4-4fbf-9974-a507af9aefc8"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b63dc192-9451-4f90-83db-18ec0ab76826">
+                <propertyInstance
+                  Id="c01581c5-ee57-446c-a9e9-80480de85dc0"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c164bf1-95c1-4a4b-87a0-8a2266a6f617">
+                <propertyInstance
+                  Id="1b1ec9b3-1853-4cea-a5ae-ae60a07fbc39"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperations>
+          <operation
+            Id="7b292f7a-f11d-4d72-8293-5f57f0f8ff7b"
+            name="CallDispatcher"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="403c94ca-a61c-4108-9f2d-f0dbdca8ab35"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DIDispatcherService Member%3D(Name%3DCallDispatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a667f6a7-0900-4c7d-951b-dd2fff061471"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a8519fde-ee09-42ab-8eec-40d411ba2d46">
+                    <propertyInstance
+                      Id="cfd974ad-fb9b-439c-8b76-6484c1a9c914"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18666a1a-4baa-4992-84a8-ef0b1932f8bf">
+                    <propertyInstance
+                      Id="f01a26cf-03bd-488c-8a0e-5740d0a18c98"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31624e35-ffb8-4688-a16f-f972b785594d">
+                    <propertyInstance
+                      Id="5f491021-623e-4d47-8eae-24e46299d04a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3398e573-9b20-4cce-a08f-c76764cc039b">
+                    <propertyInstance
+                      Id="045ab35d-b091-4b99-8901-c4cf3d1f29c3"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da0f5f0b-9096-478b-a5b0-a114c1243ffa">
+                    <propertyInstance
+                      Id="581bd258-2727-4f7e-9cc7-c03202b7a48c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7fa590a6-4638-412f-8aa8-0e4753208635">
+                    <propertyInstance
+                      Id="724283f3-b02d-4706-b4d0-660372226145"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d28d2e7b-488d-4609-bd65-4d6a5da916d5"
+                  name="action"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bc9a9c8a-2415-4bf5-9dad-f35f88c158dd"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Services.Dispatcher Type%3DIDispatcherService Member%3D(Name%3DCallDispatcher OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2FWindowsPhone%2Fv8.0%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DAction)]) ParameterIdentifier%3Daction"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="1528167e-d4ce-4706-b4b6-d16840ead8e8"
+                      LastKnownName="Action"
+                      LastKnownLocation="Package4_1033.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

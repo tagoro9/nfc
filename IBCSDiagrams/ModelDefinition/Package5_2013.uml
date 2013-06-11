@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="a0833998-405f-4385-b389-b67d86e5ee10"
+  name="RestSharp"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="512e1fa1-7508-47d6-8e43-5dc5b26a91af"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DRestSharp"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="130f0a7d-655a-4351-8b7b-5988e768e863"
+        name="RestClient"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="65ae3092-1af0-40e0-8383-97cf1a30c540"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2Fpackages%2FRestSharp.104.1%2Flib%2Fsl4-wp71%2FRestSharp.WindowsPhone.dll&quot; Namespace%3DRestSharp Type%3DRestClient"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e7f0ca4d-b80b-467b-a15d-94699a8f739e"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9cd54d08-a96e-4408-bffb-de2c839a9e24">
+                <propertyInstance
+                  Id="fc0e8f20-7fb2-402e-8b2b-14cfcc9c387a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="efb1ebfa-5563-405f-abe0-cd54149946d9">
+                <propertyInstance
+                  Id="7cb47635-31b1-4c8d-bfd5-a1153d7012e6"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8581ea2b-7d4b-4ed9-b6f7-9d436b3fef5e">
+                <propertyInstance
+                  Id="d2582633-64f3-484e-869b-fb97aa1d637e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c06885fe-3656-48db-a904-9f1438c21ab5">
+                <propertyInstance
+                  Id="40722eec-31e6-454d-a715-0313c3205580"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0c06bf8b-59ab-493e-bbb1-b92566d3811f">
+                <propertyInstance
+                  Id="6f0097a7-723c-4104-af4b-ab89f9d89988"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

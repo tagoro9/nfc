@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="83c09af5-d8f5-4827-ab91-7f0840bbdeb9"
+  name="IBCSApp"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="69ab36e7-c8b4-43ae-8e9d-eecc9ec96e28"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e3d3dbf1-189c-40f5-bc82-f02703b4c138"
+        LastKnownName="ViewModels"
+        LastKnownLocation="Package1_2009.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="c5fd8014-1b82-4743-aca2-24d5c6158ffb"
+        LastKnownName="Services"
+        LastKnownLocation="Package_2013.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="e2fabdb1-85b2-4428-842a-8c1e638b4b68"
+        LastKnownName="Entities"
+        LastKnownLocation="Package2_2013.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

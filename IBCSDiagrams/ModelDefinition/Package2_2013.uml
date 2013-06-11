@@ -1,0 +1,189 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="e2fabdb1-85b2-4428-842a-8c1e638b4b68"
+  name="Entities"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="51a305b5-871d-4e38-87c1-3c8b1dd3c914"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Entities"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="7a2bd938-9942-40c6-b4d7-2f5a98309dce"
+        name="LoginToken"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="e614a728-947f-4860-aacc-5cf8b8feb816"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DLoginToken"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="44a425d7-6b56-4351-8812-46bc86ffa6a9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="f6c57a1f-0ebd-4972-ab1a-bbe8b7422b09">
+                <propertyInstance
+                  Id="245a249e-4c2b-4127-8d02-8d4042a3e3fd"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="cfb17895-7364-4832-89c4-b322dbd89150">
+                <propertyInstance
+                  Id="ffe91716-a422-4976-bf0e-6b229a5033f9"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="ef32709b-44c0-498d-92d6-d63854f94177">
+                <propertyInstance
+                  Id="16ef481d-9fb3-4ecf-b7ad-a30cc675346a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2b02789e-6fa3-4497-b14c-bada1c2c6fc6">
+                <propertyInstance
+                  Id="784b48eb-5f10-4834-9abd-f3e0d9d688bd"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="987eda54-962f-4bfd-9f0d-8848ac110c09">
+                <propertyInstance
+                  Id="62bb475b-3b95-4225-addd-4db64dab71e0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="92955c0d-50e0-4bcb-9aba-981ff03cc15b"
+        name="Peer"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="74c41b3c-31f4-49f1-ac10-8b81b547ce66"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DPeer"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="19892db3-a00c-4876-9f70-3b1d92c24b4a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="191df0da-38a2-4ce8-9fdc-d5e22489ee68">
+                <propertyInstance
+                  Id="ded9825d-1f2b-4af2-8345-5b9f18903d2d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8120bea0-4851-4362-b776-6e9c096026b6">
+                <propertyInstance
+                  Id="20508f64-9c91-43ac-bfe6-92b32e763011"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="e75182ce-f22d-4f0d-832e-58d86bfc4873">
+                <propertyInstance
+                  Id="cacadf3a-6d92-4381-94d5-43acb66fef31"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="1f77a2de-df82-45b7-819c-707c01d205ce">
+                <propertyInstance
+                  Id="9a09898c-040f-4e53-8030-f07d037df74d"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="521fc6b3-79b6-41ec-8400-34eb5f40a150">
+                <propertyInstance
+                  Id="6075920e-5230-426b-bfbe-d42688ea6338"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b1a67c46-7a87-418c-82c8-6ba8c5afb197"
+        name="NfcLogItem"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="aeaef1d2-ae59-4a5a-818a-c227ac886a09"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FIBCSApp%2FBin%2FRelease%2FIBCSApp.dll&quot; Namespace%3DIBCSApp.Entities Type%3DNfcLogItem"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="dfde4f8c-e6b6-4b72-89f0-8568d09644ec"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7007b607-9540-4cb1-b1e6-01adb77f079a">
+                <propertyInstance
+                  Id="72e4d1b2-0350-432b-85c0-6a0020f4654d"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7d45c6b3-a47e-483a-b719-7168f204fde0">
+                <propertyInstance
+                  Id="3054f755-d843-41c7-8fa4-c064129d87ef"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="80e1c1d6-705c-4d30-9cb3-a22f75a20511">
+                <propertyInstance
+                  Id="fdbe9b48-a793-42bc-b40a-d07e79b0042a"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a7c52747-e806-4cda-ac3b-3ab3d2304840">
+                <propertyInstance
+                  Id="8b4ef09a-620e-482b-9e08-f8739d343677"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="36f4babe-dbb2-45ed-8b40-c5ef034090a0">
+                <propertyInstance
+                  Id="7bd733b2-f792-4420-b492-74b69f2c3c50"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

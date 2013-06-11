@@ -1,0 +1,1713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="f561e40a-7207-40dd-ab22-09f1d9a79f92"
+  name="Controllers"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="d2aaab0c-c89d-4ac9-a35f-49bce6dfdeb5"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DPKGServer.Controllers"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="90601a51-adbe-4b85-a91c-d155ad6487b9"
+        name="KeysController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="25e7e7d1-aef3-4a05-99bf-c906ff00b8c3"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="949de547-2836-4d04-ae74-cb75581b93c8"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4a7c260f-7665-4685-a1e7-bf5c2159d68c">
+                <propertyInstance
+                  Id="2811b914-d9b9-4101-ad54-9ac03e26cda7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2d4d2960-02a6-4159-b459-21e1e8f502bd">
+                <propertyInstance
+                  Id="70c2a8ff-0446-4714-940e-5bb67cb69125"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3ddb334d-2f39-449f-814a-9bc42dc1dfc8">
+                <propertyInstance
+                  Id="42d289e2-46f1-488b-b0a6-71344dea0d65"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="583a651b-90dd-4405-bc59-f4cbfc5147e3">
+                <propertyInstance
+                  Id="9c0f903f-dce7-46cb-84e5-1ee3a6116b80"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="a0d116e1-c0b8-4524-a9c2-9fd17f543691">
+                <propertyInstance
+                  Id="4d5c34c6-b199-4543-b067-da4012c11371"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="2ef2a72c-7d56-424f-9660-03db9a228e93"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e77b7d81-91ac-4255-a03d-38e65c4673b8"
+              LastKnownName="ApiController"
+              LastKnownLocation="Package3_1331.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="c645908e-23ce-4d8a-a96b-1bc8408ff41e"
+            name="master"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="20d8c4c8-4327-4340-b575-72cb3fef3ec0"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3Dmaster"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32a2b34b-ec89-448c-ae7d-ec6667fcd56c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d68fbf4c-bdd3-425a-9447-6e8420ae3f5b">
+                    <propertyInstance
+                      Id="9d9788f0-3129-4d57-8094-78328a6b7ac7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="274ad78f-fe0f-4995-b941-95c26d94c815">
+                    <propertyInstance
+                      Id="b7efaf4a-988b-4126-b2ef-fa5b7082952c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ded46b5f-cca3-4f1a-833e-521a3392dd1d">
+                    <propertyInstance
+                      Id="dff63c89-4208-4822-8ca2-8efe4060ffd3"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="db020faa-a133-4db4-86d1-3f7d2115b7ce">
+                    <propertyInstance
+                      Id="021e3f26-23f5-4a8d-85db-0896030404fc"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a5ce2d6-325d-40a2-b497-c335c87b175a">
+                    <propertyInstance
+                      Id="f0761dee-f45b-4539-8436-5ec871ba6b5a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d112b290-d2c2-4cce-9bb1-62fe91038a62"
+                LastKnownName="KeyPair"
+                LastKnownLocation="Package1_1034.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="5aa84fd7-b1d6-4776-a3d2-82ab6e6ac0e9"
+            name="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="701a9b1b-847e-46c5-9a7d-06be4657813a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3D(Name%3DPrivate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="52ac5da2-271b-44bc-be89-29c999b54c76"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c8adb468-756a-48d1-8e5d-6caab6930352">
+                    <propertyInstance
+                      Id="49804e3e-a57b-470d-987a-b96f1b620f25"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61fe37fe-323a-4737-9ff0-bababd524361">
+                    <propertyInstance
+                      Id="9540a372-dae3-4b3b-8f42-61809c1aa9eb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b8925b3f-e8c1-42b5-b6f7-7895a5f6fa13">
+                    <propertyInstance
+                      Id="72ea071f-b43e-4ed4-999e-b86b0c4392f0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ec080820-499c-4165-afc3-d39f96262eb2">
+                    <propertyInstance
+                      Id="f1a46b1b-c003-49f6-af83-26bcedb8e410"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0576e428-31d2-49af-8c65-37933e63c545">
+                    <propertyInstance
+                      Id="5342612e-eda0-4b75-b166-4d1460cc818d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c92911f-e9b4-41a5-9bb3-8173ab5e3e1c">
+                    <propertyInstance
+                      Id="8b1d479e-3703-4ef1-84f0-3d05ff10f991"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ad365095-c2a9-473f-b3ce-e2b321861683"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="9a998c46-3cf6-4542-a15c-543c7938727a"
+                      LastKnownName="SerializedPrivateKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a054697f-202d-4d49-b307-6c10dfdea409"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9307113f-7cdb-4d3d-8167-9c6021f49461"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3D(Name%3DPrivate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9e268bcb-0cd6-4b6e-8c35-5d29088abcbc"
+            name="Public"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="8468b86d-abb7-4ddb-bf10-dca8b7b6905c"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3D(Name%3DPublic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9b6098ac-bf69-4258-9463-c3ca1c933a87"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f78e1d22-55f1-430a-b13f-17e8a01e8035">
+                    <propertyInstance
+                      Id="e21fffd5-08fc-4637-930d-cbfeae55c29b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29f80af5-a350-4969-bbbe-068937a3efcc">
+                    <propertyInstance
+                      Id="be6e65fd-7051-4d39-8c49-588272f5885f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a96f4ed3-6a31-4e9c-b332-398a5624d014">
+                    <propertyInstance
+                      Id="b001fb1c-a7b7-40e0-9b74-46f7b2596c9c"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad42b69b-1a11-4bb0-a5a1-33a05783a80b">
+                    <propertyInstance
+                      Id="b8891f90-9ae4-4565-9a26-901696a82e0d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="14d77d6e-89ea-46bd-98c7-cdf86f7fe0a0">
+                    <propertyInstance
+                      Id="0e92afba-abaa-4e12-bc7c-fcdc701a6c7c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="373e9c86-af16-46f3-86cd-831adc27adc8">
+                    <propertyInstance
+                      Id="d1c5df5e-2584-4132-a6c9-83cd50101b54"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="22a89758-a730-41dc-a2d5-1e1d30a2d388"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="79445ce6-7300-49ab-b7e3-1f06228ab31e"
+                      LastKnownName="BFUserPublicKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dce52c21-4a32-4221-bb51-35aca4427723"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="beac7e00-c00a-4773-8806-86b5593c814c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3D(Name%3DPublic OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7d442acf-7752-42d4-bcf9-9f096709da0b"
+            name="KeysController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="96ae44d3-37d8-4939-a450-6fb03a600195"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b5c3da85-f40c-4ee1-8ff4-9692e3b0df71"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1094779-ec58-4daf-a027-0661d7979411">
+                    <propertyInstance
+                      Id="131d11e7-3117-4bbe-a600-63b52caa686c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9e35854c-a1c3-47ef-9220-8609700662b2">
+                    <propertyInstance
+                      Id="1c56544b-8837-4129-a6e6-f8f24cc85c3d"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83a2ce8e-b16c-44fb-9355-0f19c2878095">
+                    <propertyInstance
+                      Id="20033333-2179-4de9-8588-49d502931564"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e3e2c0a-d137-4d6e-aa63-f0b3a6a681b4">
+                    <propertyInstance
+                      Id="f2599919-0842-4004-a721-9a51073bb74b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="03f16889-cb8a-4e20-a6f0-13cc79a44522">
+                    <propertyInstance
+                      Id="97df5631-5433-4d4d-b234-74ed7721a03f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="63b28893-c1d4-4b49-87d1-d9f91e6fb42f">
+                    <propertyInstance
+                      Id="1f4ff49a-3f33-42af-8293-3a2634c87978"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="aa8d97ad-5924-4b6f-a73b-13ca5eebc559"
+            name="Public"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="a9c7da52-d3b9-4fea-912d-d1f5cd6b9c54"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DKeysController Member%3DPublic"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1361dde3-2712-48cd-aaf1-e227ae24dc42"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c1dce80d-16d8-441b-bbda-1fccd4f6f791">
+                    <propertyInstance
+                      Id="74995081-30ae-4491-ae57-12d83cf48200"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e606b69-a896-47df-9094-c58b7b43abaf">
+                    <propertyInstance
+                      Id="d5a1d1a1-264c-401e-adcb-7ffd0adef9bf"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45a865e4-0015-4707-b0ec-7b0db5ea6378">
+                    <propertyInstance
+                      Id="6de26c21-ccfa-4f08-903b-e1a44771ac66"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="44078b64-d669-4c85-9d78-d61741bb2856">
+                    <propertyInstance
+                      Id="fd0da695-07f7-49ca-bf8e-38dedd921dbd"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="67b16203-cce3-4b4b-a022-588b57648c42">
+                    <propertyInstance
+                      Id="d52c03b7-a621-46a6-a172-ece4aa66a06e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fea3ddf1-976c-4cef-9f5a-d808148881ca">
+                    <propertyInstance
+                      Id="e04ebba5-8810-4066-9c4b-0192b6c94153"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2e240d7-5307-4ad1-aac5-7084414646d9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="212efae1-baf3-4ea5-8698-7a6d38449239"
+                      LastKnownName="BFMasterPublicKey"
+                      LastKnownLocation="Package1_1034.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="525961f2-0473-415f-a2c7-57cbfd36d0f8"
+        name="UsersController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="b2faa9ed-2b7f-4a09-9174-50856412bc3c"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="ea600803-5cc5-4bbf-8531-c36ef1081508"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="12887dd7-c69f-418b-a4ca-7affe6d686ef">
+                <propertyInstance
+                  Id="0c50da3a-c131-49ec-8025-5f7c915e775e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c0bbb6ce-14c1-424c-9cf4-bc80796f1f64">
+                <propertyInstance
+                  Id="4340a3e8-6c20-4fe0-81d6-57cb1d0b64e4"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d3fbeca0-0e7b-439b-ab02-608493e5c44b">
+                <propertyInstance
+                  Id="9538d613-ea46-4471-a772-2120c3fe223e"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="11e6bcf4-e1c1-45ed-8573-d7bdcaa9e996">
+                <propertyInstance
+                  Id="7f5e4336-8fcb-4898-aaa2-a799aea966c5"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3560d230-9d59-4207-9bbc-d926c335462c">
+                <propertyInstance
+                  Id="89fec453-81fe-4190-8057-0a9590ace1a2"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="caf902d8-e1c2-4a1d-8eeb-8348becd724d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e77b7d81-91ac-4255-a03d-38e65c4673b8"
+              LastKnownName="ApiController"
+              LastKnownLocation="Package3_1331.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="8fc9751a-e57f-45c6-be18-54570fbc0392"
+            name="db"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="7605a0b2-3276-4d35-bedc-ec9a4175f8ff"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3Ddb"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="35e1bdab-fbd2-4cc8-aeb0-7e4aa0c1a3df"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="696b92a5-0e28-4c6c-ae41-315720519adc">
+                    <propertyInstance
+                      Id="3a226fb8-30b7-4f6a-8eec-beb4e93a5491"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96084fbc-ceb9-452d-8d48-73bcd94e3135">
+                    <propertyInstance
+                      Id="757b209a-f7ea-4792-88b0-e1b9a88a8fe1"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="119371a9-e0bf-4506-ac36-696f909a106b">
+                    <propertyInstance
+                      Id="6b065258-6c68-45d7-affa-f79b21d69d8c"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6db935ea-8a3a-4324-bf4e-5659fcc69338">
+                    <propertyInstance
+                      Id="a9b2f111-1766-49c2-9cf8-57e62b99b97a"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8cd5aaf-af0e-48de-89be-cb4a98a9e8d4">
+                    <propertyInstance
+                      Id="eac24725-ccf9-40ca-bfca-ea531817107c"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="d507bc3c-a9ff-4454-ad30-3c45bf97caf1"
+                LastKnownName="db9002ae48e70f46e38530a1c6009ea6b3Entities1"
+                LastKnownLocation="Package2_1332.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d54aa412-d508-4790-9ad1-1d6c550c07e9"
+            name="Create"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1cec89f5-ed2e-4319-8d26-b530aab7308d"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c3839d81-722f-4894-93ea-d03156ab94d3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="131b53e1-d688-47e3-9333-41b9a826c3ac">
+                    <propertyInstance
+                      Id="a15a98dc-8715-49b7-8c0e-d98c5b9419b3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a93da1e7-ebc7-4684-8bb1-1266c682d702">
+                    <propertyInstance
+                      Id="9668969a-09b2-473a-a48b-bec6fb6f9c10"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fd52a4c6-d558-49ed-9e02-59c89ab0916c">
+                    <propertyInstance
+                      Id="ff87c742-6040-41a3-9c58-aead1d38fbea"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1e2a1a73-6693-4a84-a20b-1165c5de4d7d">
+                    <propertyInstance
+                      Id="cf382eec-ac23-4dda-bf7f-40e4c5e35c0c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="71235cd0-0d22-4e58-a737-a3bdec08988a">
+                    <propertyInstance
+                      Id="e00aca64-c99f-435d-94fc-f1b33a51d05d"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="68f2ce7e-80ad-444f-bb09-899ab87f54dc">
+                    <propertyInstance
+                      Id="cd140485-36db-419a-8527-7a469052496d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8bd301c8-afc1-4c2a-8a8c-b666de3437b5"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18c5131d-4dc5-4f52-a62d-71ece729d417"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="7a43c351-2ab2-4482-a023-967722e33772"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DCreate OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6578a158-cc80-43b4-9745-31270345c2f3"
+                      LastKnownName="User"
+                      LastKnownLocation="Package2_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="9a76581c-68df-4c57-ba48-d22a2abacaf8"
+            name="Delete"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="55f73047-ecda-45ef-b1c1-d4b1db660bf2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a4e8699-2467-4a06-b0e8-d0ffd10f8fc7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15ca1e10-426c-4191-b401-bbceac5cfec9">
+                    <propertyInstance
+                      Id="d4ef7123-7f7a-409d-82cb-a6f33e3c47f3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2b89f4df-77dc-4516-a7f0-cc5d883cbe91">
+                    <propertyInstance
+                      Id="6e07a18a-6ed6-4063-9bd1-7cc98f323f7e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d8abd93a-37d3-4855-ae03-7f994b020435">
+                    <propertyInstance
+                      Id="2de2d614-cd8f-4399-9f8d-ac51dc8076f4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1288134a-cbdf-48e0-9464-f5b8af687242">
+                    <propertyInstance
+                      Id="228f8cab-0f70-4ed4-b6fd-7392088069af"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="eeba7c2c-3ce7-4398-a647-1bf55012f0dc">
+                    <propertyInstance
+                      Id="9cc9404e-ba9b-444b-a265-2e730f766cc7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cfbb6b1-a7ba-48a5-ae63-446491843785">
+                    <propertyInstance
+                      Id="1ed92047-2ab6-4fe2-8d92-6a944fc1f528"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6220fec6-d92f-4045-b875-0b1f0d800183"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3b4c314b-c98c-4b7d-b35d-578bf14f9c0c"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DDelete OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f3a9dc1c-bcea-4c40-9be2-72b9dcc2aae2"
+            name="Edit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d63d4b59-2f68-459b-9564-a90d15f383d3"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1ea97294-38cb-4d71-aeea-fc2c6734e941"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6e97c439-a4e0-4189-9550-61e6ab495957">
+                    <propertyInstance
+                      Id="91b044bd-d05b-4042-ba9b-c7be506057d0"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4c8d8977-d1cc-40c0-b931-91e0dcccf93e">
+                    <propertyInstance
+                      Id="7248eca9-cd3b-46db-ab3d-87eccf3ce24c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2c681f35-db00-4619-847b-86a411566fc1">
+                    <propertyInstance
+                      Id="c21b5d2c-fe58-4fb0-b57c-a1abd6cda434"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e89154a-e571-4e0a-859c-dc54cfbd2e06">
+                    <propertyInstance
+                      Id="89618858-73c4-436e-91f1-d24d9bb9b303"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f1d57ea7-af5b-4589-9dc5-5d3cf1203e9a">
+                    <propertyInstance
+                      Id="a7811c40-615d-45c8-918f-50d29124c170"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22eba864-1b9c-403f-9db1-e4197930ef5f">
+                    <propertyInstance
+                      Id="9510f01c-a38f-4f77-a27f-b19f1123aa78"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8e303e05-f1a9-4d76-a1c8-ba01a7981fc5"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bda9c953-18cb-41ae-a74e-ccbb16dec9f6"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="663132a0-e6fc-4c15-a8f6-35094a498ad9"
+                  name="value"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="fdc65754-512b-4e22-ac62-407153c6c268"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DEdit OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DUser)]) ParameterIdentifier%3Dvalue"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6578a158-cc80-43b4-9745-31270345c2f3"
+                      LastKnownName="User"
+                      LastKnownLocation="Package2_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f6c28d4-effd-4771-aa4b-95d0aeb60acf"
+            name="Login"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="db38e4d2-35a3-4b97-a982-530885d9d8db"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="309d448f-855c-4048-a217-745c7beafae7"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ad8b33e2-0e23-497a-8bca-8e57a14c8508">
+                    <propertyInstance
+                      Id="0d227a23-4f27-4aa4-b44a-38320df5feae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e8712585-e588-4178-936a-1da06b1e8d53">
+                    <propertyInstance
+                      Id="bb56f6ba-7186-4215-9742-7dde3cd66e40"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f9d894f7-f56e-4d7f-a6f2-f8a222134851">
+                    <propertyInstance
+                      Id="dab0b962-1dac-45a9-9ab7-f334f4544d54"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aaac0898-f6d5-45c6-b2f9-4c466a0bc585">
+                    <propertyInstance
+                      Id="8b4817c9-51b6-46ff-bcd7-b0a337eb755c"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6b1a6e16-1bc3-4b51-89bf-7ebdd08c7113">
+                    <propertyInstance
+                      Id="25446cf5-c99a-4a18-bc7a-ae441db96068"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5044d76a-35c9-41e0-a4a4-cd63c679727c">
+                    <propertyInstance
+                      Id="395d9d27-ae95-406e-bd20-3928e997b906"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="dcf4f1eb-c0fc-4406-aa8e-14daf8638b06"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="15dc1fa3-6b2f-4dcd-9e1d-1316b93be19c"
+                      LastKnownName="TokenString"
+                      LastKnownLocation="Package2_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4e190bae-7117-4172-837d-0b05e29ef5aa"
+                  name="user"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="87d2832e-704e-48b2-8882-429047be8dfc"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DLogin OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Models Type%3DLoginInfo)]) ParameterIdentifier%3Duser"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="8a02d471-ae4e-451e-a7cc-656e66a3b7d6"
+                      LastKnownName="LoginInfo"
+                      LastKnownLocation="Package2_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="ef15dcca-7cbe-4ff8-91ae-edfcb392dd9a"
+            name="View"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="10da1d44-5dba-48cc-9f2e-ae683e0be766"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DView OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="17028338-9933-49e6-a94d-5c637beed1d3"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61193b6f-eb7d-4afe-93af-47348aaffc76">
+                    <propertyInstance
+                      Id="9c6e8d5d-29cc-40ed-9412-0bdc98bfefe7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="43171577-b04c-4a09-8515-27dba129460d">
+                    <propertyInstance
+                      Id="28eb8ed1-35db-4f02-a0f6-7b42fedcd309"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fed50fc3-6e80-4bee-a726-1f61c876620e">
+                    <propertyInstance
+                      Id="0341cba0-86bc-4465-bf57-2e1482d32df4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a8b0499-f259-407e-8c5d-0962cee42a32">
+                    <propertyInstance
+                      Id="a6b9990c-e4a6-4fe6-a37e-c3dd389bc10d"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="29ca016d-012d-461e-b70b-70bc3434d078">
+                    <propertyInstance
+                      Id="14785cb3-1e47-4570-bc40-f02cb7711e6e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b4c2eff-4425-4438-833b-ddfefa82610d">
+                    <propertyInstance
+                      Id="bf97c63c-8725-4d6c-a4f3-7b21dbd3a380"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="18720a75-273f-446b-946a-eacfc132e7cb"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="6578a158-cc80-43b4-9745-31270345c2f3"
+                      LastKnownName="User"
+                      LastKnownLocation="Package2_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fb706a76-c360-4586-8f91-a2d7670efba7"
+                  name="id"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="9bab05b7-2972-4df2-9699-798056136490"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D(Name%3DView OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Did"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4e21e09c-798a-4a5d-bd11-3d5e40bd7f4b"
+            name="UsersController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="ba9e8395-bbc8-43f0-984c-15e8ed550f33"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="19700ec3-e3d0-450d-93bc-8f1b2a3fdded"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="40eee043-915e-4a72-8e8e-b0f48674fe2e">
+                    <propertyInstance
+                      Id="320c6755-b636-48ed-bd4f-d2ea58a5a9bc"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2570d7cf-eb62-48fc-aee4-892303229f8d">
+                    <propertyInstance
+                      Id="53c967d4-1cc8-4d41-bff4-d5c5398779ff"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c55eef07-83d6-4b24-b086-e2047e1358a4">
+                    <propertyInstance
+                      Id="bed62fbf-70b7-43ff-999b-313d4d66c23e"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0274365d-388a-4631-bf58-45ed14f29078">
+                    <propertyInstance
+                      Id="39f93e70-8f73-4561-811b-3fa1cbf8c807"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="41301502-83b5-48cc-85df-3de1c2299fde">
+                    <propertyInstance
+                      Id="28c3b101-4ee8-4978-b81f-3fe9534dc3da"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ff7e8a5f-4ecd-42f6-8eb5-0e12213b7938">
+                    <propertyInstance
+                      Id="b4312b81-7e94-421f-8be1-ab860540c60b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="2856d53b-4f4f-49d4-b16c-a9aad8045589"
+            name="Confirm"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="45fd2153-de9c-4d57-802d-5959687f1f0a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3DConfirm"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6c1b35f3-a08f-4f7d-9818-0d5006e28590"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3545403c-2b79-4611-81e3-7ed29922b6bb">
+                    <propertyInstance
+                      Id="21225cb5-a50e-4845-ae96-274dfdc46d30"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dca04603-10bf-47a5-b1f8-3e837b406acf">
+                    <propertyInstance
+                      Id="93fa8c89-8741-470f-8ca3-e5d5c4745881"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="42fb1a3d-30f1-4997-9477-4e791fb2f264">
+                    <propertyInstance
+                      Id="ff632266-cbca-44fe-817a-4d44bc47a56f"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="552cd789-f32c-4aa3-89bf-5ff3c87b6609">
+                    <propertyInstance
+                      Id="94133dae-1223-4987-864f-3a8f2589d190"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fb26e827-610a-4c5b-bba3-e4817d09474e">
+                    <propertyInstance
+                      Id="af09fe3c-76b5-41b6-90fe-c0bfcd564c02"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4e093108-c29d-4654-825d-7f557af87eee">
+                    <propertyInstance
+                      Id="9bde0624-dde0-40ca-b85b-bcc3c59129e8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3d0732be-dcfd-453f-b05d-7c1acd0e4b70"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="IBCSDiagrams.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4511b36d-24a1-4fa7-bbd8-9c2e77155845"
+            name="Get"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="38f5c68b-3ee0-48a9-aabd-c3de83abb2ce"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DUsersController Member%3DGet"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="3b093566-0f01-430d-8b4d-4bc24967524e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7ad9ba30-e213-4d9c-8f3b-d872382998c3">
+                    <propertyInstance
+                      Id="cb3e6d32-92bc-42f8-b0cb-742f4852ce45"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59d7db01-40fc-4873-9419-8f5b5004b387">
+                    <propertyInstance
+                      Id="2e9c0b29-0f8e-4eb5-88bc-c64b24309886"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="510acd38-28c1-4667-aa3f-25db83909608">
+                    <propertyInstance
+                      Id="6cade9f9-4679-4091-a48f-21049ec718d0"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8418d847-ea88-48eb-b425-12277df0ae01">
+                    <propertyInstance
+                      Id="56b008c6-ce15-4f84-a30f-c54f474bcbfc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1010b7f1-2957-464a-88b4-d0056a54dfe2">
+                    <propertyInstance
+                      Id="883b98f9-bced-48fd-9910-6f9cd3ebc593"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="716a50ac-b13e-44d5-8286-56219eef98ec">
+                    <propertyInstance
+                      Id="3c9f50f8-d80f-4a7d-b824-40e3649f1b4f"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7476311f-9d05-4008-b6b7-21f853ff40f9"
+                  direction="Return">
+                  <type_NamedElement>
+                    <interfaceMoniker
+                      Id="258e4bc2-bd66-485c-b97c-612cf78d6d2b"
+                      LastKnownName="IEnumerable&lt;User‎&gt;"
+                      LastKnownLocation="Package4_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2d6de1ef-e46b-42f0-970f-ed681ae930f6"
+        name="HomeController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="aed1134e-0e07-407a-ac8b-c7ca981a972b"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DHomeController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="76e0b0e1-a189-4913-9c53-2454cfccc1dd"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="06aec092-5279-43bb-a607-e8fa216a1d42">
+                <propertyInstance
+                  Id="25506305-1916-4183-9f44-10ceb1551014"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="26c5e13e-7b35-4757-a396-3bbcd6f30f70">
+                <propertyInstance
+                  Id="1ccccbde-27ed-493c-8e77-af7bbb375134"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="60b3980b-71f0-4bfc-93f3-78265de1259e">
+                <propertyInstance
+                  Id="faab6a40-47bb-45d4-9845-d68fc912f909"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="41b488db-f2c5-4ea8-9309-21bdd8cfc92f">
+                <propertyInstance
+                  Id="4339799c-3421-4998-96be-06f3b0315023"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="75286912-c02e-4720-ab8b-8a0be537e730">
+                <propertyInstance
+                  Id="15ec2e1d-5e6f-4984-9fac-40fcbde3864c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <generalsInternal>
+          <generalization
+            Id="5e76a477-0cf9-4048-bb93-f31ab7122830"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e9ec710d-bcec-48ab-a6c7-d7af58ff4967"
+              LastKnownName="Controller"
+              LastKnownLocation="Package5_1332.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="85336b4f-b6f8-4968-8e55-cf89436b8c7b"
+            name="HomeController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="4335aa9c-f0ae-4720-b0df-36510f658a22"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DHomeController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4555905-68cc-49e6-87bd-bea59e264da4"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d911007b-790b-442e-ada7-000e53e44890">
+                    <propertyInstance
+                      Id="b0437226-cf6e-4ebc-ba95-a21307ea8f46"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0f329f4c-a1f1-468a-8ee6-2c4d52876dbe">
+                    <propertyInstance
+                      Id="6bbdd06d-881b-4aa1-8a73-48728c5a98eb"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7de46f43-2701-419e-81aa-d00ead70d884">
+                    <propertyInstance
+                      Id="d04820ca-b07d-4dc0-a059-0be1aa29563a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2365c57c-8cf8-494c-9530-7c470c01a1cf">
+                    <propertyInstance
+                      Id="dbb9f1d0-410f-4442-8e6f-cba62b7bb0ea"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="54db0ba2-72b4-4085-844c-fb517034f7af">
+                    <propertyInstance
+                      Id="2c4861b7-8628-40f0-814b-c052f87ecb15"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ee31b015-add4-4dc0-a112-7df370651703">
+                    <propertyInstance
+                      Id="70cc60fb-3e8a-432f-bc27-544c1e5862cd"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="73f6e685-cbfd-443c-a600-be5eb8b944cc"
+            name="Conditions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="68a384d3-d3bb-4a6b-b487-53c13296f966"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DHomeController Member%3DConditions"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6d6257a9-0acc-4c6c-918e-d3f27fe9f845"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a06c457e-f246-4b8c-a8ba-2cea5e7629d0">
+                    <propertyInstance
+                      Id="ac83475f-cf6a-4bb3-9b08-950c5a61461a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="12ae5952-b032-433b-b18f-ac163be37327">
+                    <propertyInstance
+                      Id="1c8b2cd9-525a-4667-8cfa-4ed1b7aeb964"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="de5d8c4a-6fcd-48d7-806c-fd66bdfb68c7">
+                    <propertyInstance
+                      Id="9e7dae57-9b20-4c02-9c88-9929b506e867"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cd783ed7-fcd4-43ab-99d6-4a24d30d72bc">
+                    <propertyInstance
+                      Id="f37a91fe-c562-4752-950b-9dc69ac2d2e0"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dedd6b62-9f89-483c-8215-1e5af7c62176">
+                    <propertyInstance
+                      Id="ac31ab84-e5f3-42c4-9f5e-c4b421c5e5e6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b02425ab-2fd2-41f1-af0a-5513f778ac36">
+                    <propertyInstance
+                      Id="ddd8d043-7287-4d36-b73c-0fe37d24031c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f22c6fa-3f83-4d78-850d-143dd3bbcf69"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85928ca4-046b-4d4a-b5d0-9fd644d775a1"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package5_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="f4a9d7f7-b202-406d-bf5b-82db23b94d7a"
+            name="Index"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="d8be7005-2f2e-4785-bea3-8cb2869fc6c2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DHomeController Member%3DIndex"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="40d7b975-f18d-4b2b-8b9e-f8d39f936493"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7315c76-940b-409a-8bbb-e142b11877f2">
+                    <propertyInstance
+                      Id="41d6a41d-8e40-4f26-bbf5-f771eb9fd5ae"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="786152ca-270d-49f7-8c66-ed8bc71d0506">
+                    <propertyInstance
+                      Id="3191a317-640f-4b37-849a-1502b5476518"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7bef87dc-a62f-42e1-81a7-708e28c0e98d">
+                    <propertyInstance
+                      Id="8a074355-6e5a-4078-ac3d-dac625060f41"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b34e30c-ba5c-40e0-b8e2-574072213153">
+                    <propertyInstance
+                      Id="bc886322-9d15-4d99-b0a3-9cff409f4631"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5b0836b-e8b5-4add-9c5b-55550e103479">
+                    <propertyInstance
+                      Id="17c43732-1a57-41d5-b39c-0a8b9b568c6b"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7a158ca2-483c-4473-8b25-e97f48c968cf">
+                    <propertyInstance
+                      Id="cda5a436-67ed-4cb1-9718-29af08f0ef64"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d5d3b0a2-bb5e-4950-9b9e-9d7fa8312b24"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85928ca4-046b-4d4a-b5d0-9fd644d775a1"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package5_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="e68862ea-b36d-4796-b137-4310530b84bb"
+            name="Privacy"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="76389ae2-9f2a-4179-91cb-69431f207a02"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2FVictor%2Fdocuments%2Fvisual studio 2012%2FProjects%2FIBCS%2FPKGServer%2Fbin%2FPKGServer.dll&quot; Namespace%3DPKGServer.Controllers Type%3DHomeController Member%3DPrivacy"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="323271b8-b950-418d-bf62-c9965bbbfd21"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="48d90022-3d59-48f3-8206-d1cd67062742">
+                    <propertyInstance
+                      Id="660aefe2-bbe2-4bd7-820d-3f9b030a362b"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8630a2ae-a460-4497-926e-02a347601d91">
+                    <propertyInstance
+                      Id="8693ed43-7ebf-42c1-8dc5-05543b010ad9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a9d87ce6-f12e-4225-9945-f2657979e0e9">
+                    <propertyInstance
+                      Id="be615088-e676-4f88-82cd-4e09cfa1d752"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31c6a5f7-35cb-4a58-8240-7d96c2b2aa49">
+                    <propertyInstance
+                      Id="781dbd45-27b1-4c6f-bf89-a9459690262b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ca06b971-bb25-4957-89ed-5303fff3efca">
+                    <propertyInstance
+                      Id="3c6d233a-b21a-4514-bf00-0a46ee6f3737"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9604127d-1392-4d57-bf6d-c2d486e2da95">
+                    <propertyInstance
+                      Id="8d04733b-39ac-48a4-85fe-136d3c3716d2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a2c6170f-e764-4c6c-afce-c152edbc3af8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="85928ca4-046b-4d4a-b5d0-9fd644d775a1"
+                      LastKnownName="ActionResult"
+                      LastKnownLocation="Package5_1332.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

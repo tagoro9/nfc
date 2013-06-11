@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="c5fd8014-1b82-4743-aca2-24d5c6158ffb"
+  name="Services"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="8f499502-7e96-4e32-9786-f52775e0e89a"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DIBCSApp.Services"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f81af8b1-d5e9-49e9-ba9d-9bc79a9a460d"
+        LastKnownName="API"
+        LastKnownLocation="Package1_2013.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="11d0c861-e753-4fde-809c-3f0a1304abca"
+        LastKnownName="BF"
+        LastKnownLocation="Package6_2013.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6ef5d911-d59f-4bbe-b9b1-a2d514bedcdb"
+        LastKnownName="Bluetooth"
+        LastKnownLocation="Package_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="12713680-d3d4-468c-9a5a-74fc735e4aea"
+        LastKnownName="Settings"
+        LastKnownLocation="Package1_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="be19678e-8836-4288-8a77-a48ed6c3ad26"
+        LastKnownName="Dispatcher"
+        LastKnownLocation="Package6_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="21c3f8a6-350b-4038-ae59-415eedb3931c"
+        LastKnownName="Navigation"
+        LastKnownLocation="Package7_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="f94dad58-73ed-426e-bdbc-954e6aa61c3d"
+        LastKnownName="NFC"
+        LastKnownLocation="Package8_2014.uml" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="2bf5ad5d-e3ed-4201-9f7f-00528fc2673e"
+        LastKnownName="UX"
+        LastKnownLocation="Package2_2015.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
