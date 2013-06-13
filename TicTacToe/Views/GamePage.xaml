@@ -1,0 +1,172 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="TicTacToe.Views.GamePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:system="clr-namespace:System;assembly=mscorlib"
+    xmlns:local="clr-namespace:TicTacToe"
+    xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+    xmlns:ic="clr-namespace:Microsoft.Expression.Interactivity.Core;assembly=Microsoft.Expression.Interactions"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    shell:SystemTray.IsVisible="True"
+    DataContext="{Binding MainViewModel, Source={StaticResource Locator}}">
+
+    <shell:SystemTray.ProgressIndicator>
+        <shell:ProgressIndicator IsVisible="{Binding IsBusy}"
+                                 IsIndeterminate="True"></shell:ProgressIndicator>
+    </shell:SystemTray.ProgressIndicator>
+
+    <StackPanel x:Name="LayoutRoot">
+        <TextBlock Text="TicTacToe" Style="{StaticResource PhoneTextNormalStyle}"/>
+        <TextBlock Text="the game" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        <Border Margin="0,50,0,0" Width="380" BorderBrush="{StaticResource PhoneInverseBackgroundBrush}" BorderThickness="5">
+            <Grid Margin="0,0,0,0"  Background="{StaticResource PhoneInverseBackgroundBrush}" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="120"/>
+                    <RowDefinition Height="10"/>
+                    <RowDefinition Height="120"/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="120"/>
+                    <ColumnDefinition Width="10"/>
+                    <ColumnDefinition Width="120"/>
+                </Grid.ColumnDefinitions>
+                <!--First row-->
+                <Grid Background="{StaticResource PhoneBackgroundBrush}"  Grid.Row="0" Grid.Column="0">
+                    <TextBlock x:Name="position1" Text="{Binding GameArray[1]}" Foreground="{StaticResource PhoneAccentBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>1</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid  Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="2" Grid.Column="0">
+                    <TextBlock x:Name="position2" Text="{Binding GameArray[2]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>2</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="4" Grid.Column="0">
+                    <TextBlock x:Name="position3" Text="{Binding GameArray[3]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}" >
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>3</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}"  Grid.Row="0" Grid.Column="2">
+                    <TextBlock x:Name="position4" Text="{Binding GameArray[4]}" Foreground="{StaticResource PhoneAccentBrush}" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>4</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="2" Grid.Column="2">
+                    <TextBlock x:Name="position5" Text="{Binding GameArray[5]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>5</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="4" Grid.Column="2">
+                    <TextBlock x:Name="position6" Text="{Binding GameArray[6]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>6</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="0" Grid.Column="4">
+                    <TextBlock x:Name="position7" Text="{Binding GameArray[7]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>7</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="2" Grid.Column="4">
+                    <TextBlock x:Name="position8" Text="{Binding GameArray[8]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>8</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+                <Grid Background="{StaticResource PhoneBackgroundBrush}" Grid.Row="4" Grid.Column="4">
+                    <TextBlock x:Name="position9" Text="{Binding GameArray[9]}" Foreground="{StaticResource PhoneAccentBrush}"  HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="72" FontWeight="Bold" Width="120" Height="120" TextAlignment="Center">
+                    <i:Interaction.Triggers>
+                        <i:EventTrigger EventName="Tap">
+                            <i:InvokeCommandAction Command="{Binding TappedElementCommand}">
+                                <i:InvokeCommandAction.CommandParameter>
+                                    <system:Int32>9</system:Int32>
+                                </i:InvokeCommandAction.CommandParameter>
+                            </i:InvokeCommandAction>                            
+                        </i:EventTrigger>
+                    </i:Interaction.Triggers>
+                    </TextBlock>
+                </Grid>
+            </Grid>
+        </Border>
+        <TextBlock Margin="0,30,0,0" Text="{Binding LogInfo}" TextWrapping="Wrap" TextAlignment="Center"></TextBlock>
+        <StackPanel Margin="0,30,0,0" Orientation="Horizontal" HorizontalAlignment="Center">
+            <Button Content="Reset" Command="{Binding ResetGameCommand}"></Button>
+        </StackPanel>
+    </StackPanel>
+
+</phone:PhoneApplicationPage>
