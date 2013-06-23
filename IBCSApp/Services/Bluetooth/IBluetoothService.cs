@@ -16,6 +16,6 @@ namespace IBCSApp.Services.Bluetooth
         Task<List<Peer>> FindPeers();
         //Task<List<Peer>> FindHardwarePeers();
 
-        Task<StreamSocket> ConnectToDevice(List<Peer> peers, string identity);
+        Task<StreamSocket> ConnectToDevice(PeerInformation peer);
     }
 }

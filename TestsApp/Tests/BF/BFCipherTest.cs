@@ -54,6 +54,7 @@ namespace TestsApp.Tests.BF
         {
             int times = 50;
             int size = 511;
+            long[] measures = new long[50];
             Random rnd = new Random();
             System.Diagnostics.Stopwatch m_watch = new System.Diagnostics.Stopwatch();
             m_watch.Start();
@@ -61,9 +62,12 @@ namespace TestsApp.Tests.BF
             {
                 byte[] message = new byte[size];
                 rnd.NextBytes(message);
+                m_watch.Reset();
+                m_watch.Start();
                 BFCipher.encrypt(pKey, message, rnd);
+                measures[i] = m_watch.ElapsedMilliseconds;
+                m_watch.Stop();
             }
-            m_watch.Stop();
             string prompt = "Time spent to cipher " + times + " messages of " + size + " bytes:";
             System.Diagnostics.Debug.WriteLine("{0}  {1} msec", prompt, m_watch.ElapsedMilliseconds);
         }

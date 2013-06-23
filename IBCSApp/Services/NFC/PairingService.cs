@@ -35,6 +35,8 @@ namespace IBCSApp.Services.NFC
         private string myIdentity;
         private string ct;
 
+        private StreamSocket socket;
+
         public PairingService(INFCService nfcService, IBfService bfService, ISettingsService settingsService, IBluetoothService bluetoothService)
         {
             this.nfcService = nfcService;
@@ -53,31 +55,13 @@ namespace IBCSApp.Services.NFC
                 nfcService.SubscribeToMessage(NFC_IBCS_ACK);
                 nfcService.MessageReceivedCompleted += nfcService_MessageReceivedCompleted;
                 NfcPairingCompleted += PairingService_NfcPairingCompleted;
-                nfcService.PublishTextMessage(NFC_IBCS, (string) settingsService.Get("email"));
-            }
+                nfcService.PublishTextMessage(NFC_IBCS, (string)settingsService.Get("email"));
+            } 
         }
 
-        private async void PairingService_NfcPairingCompleted()
+        private void PairingService_NfcPairingCompleted()
         {
-            //myIdentity = (string)settingsService.Get("email");
-            //int value = String.Compare(myIdentity, identity);
-            //PeerFinder.TriggeredConnectionStateChanged += TriggeredConnectionStateChanged;
-            ////Start advertising this app and waiting for peers
-            //PeerFinder.Start();
-            var state = this.bluetoothService.StartBluetooth();
-
-            var triggeredConnectSupported = (state & Windows.Networking.Proximity.PeerDiscoveryTypes.Triggered) == Windows.Networking.Proximity.PeerDiscoveryTypes.Triggered;
-            var browseConnectSupported = (state & Windows.Networking.Proximity.PeerDiscoveryTypes.Browse) == Windows.Networking.Proximity.PeerDiscoveryTypes.Browse;
-
-            if (browseConnectSupported)
-            {
-                List<Peer> peers = await this.bluetoothService.FindPeers();
-                StreamSocket socket = await bluetoothService.ConnectToDevice(peers, identity);
-                if (PairingCompleted != null)
-                {
-                    PairingCompleted(identity, aes, socket);
-                }
-            }
+            PairingCompleted(identity, aes, socket);
         }
 
         private void TriggeredConnectionStateChanged(object sender, TriggeredConnectionStateChangedEventArgs args)
@@ -85,17 +69,13 @@ namespace IBCSApp.Services.NFC
             switch (args.State)
             {
                 case TriggeredConnectState.PeerFound:   // Tapped another phone
-                    int a = 1;
-                    a++;
                     break;
                 case TriggeredConnectState.Connecting:
-                    int b = 1;
-                    b++;
                     break;
                 case TriggeredConnectState.Completed:   // Connection ready to use
                     // Save socket to fields
-                    StreamSocket socket = args.Socket;
-                    PairingCompleted(identity, aes, socket);
+                    socket = args.Socket;
+                    nfcService.PublishTextMessage(NFC_IBCS_ACK, (string)settingsService.Get("email"));
                     // Listen to incoming socket
                     break;
             }   
@@ -111,8 +91,9 @@ namespace IBCSApp.Services.NFC
             {
                 case NFC_IBCS:
                     {
+                        PeerFinder.TriggeredConnectionStateChanged += TriggeredConnectionStateChanged;
+                        PeerFinder.Start();
                         nfcService.UnsubscribeForMessage(NFC_IBCS);
-                        nfcService.PublishTextMessage(NFC_IBCS_ACK, (string) settingsService.Get("email"));
                         break;
                     }
                 case NFC_IBCS_ACK:

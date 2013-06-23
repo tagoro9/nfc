@@ -133,6 +133,7 @@
             this.clearLogCommand = new DelegateCommand(ClearLogExecute);
             this.navigateToInstructionsCommand = new DelegateCommand(NavigateToInstructionsExecite);
             this.pairDeviceCommand = new DelegateCommand(PairDeviceExecute, PairDeviceCanExecute);
+            //this.pairDeviceCommand = new DelegateCommand(PairDeviceExecute);
 
             if (this.nfcService.ConnectDefaultProximityDevice())
             {
@@ -775,10 +776,9 @@
             this.dataReader = new DataReader(socket.InputStream);
             string sessionKey = AppResources.SessionKey + ": 0x" + BitConverter.ToString(aes.Key).Replace("-", string.Empty);
             LogMessage(AppResources.DevicePaired, NfcLogItem.BLUETOOTH_ICON, sessionKey);
-            dispatcherService.CallDispatcher(() => {
+            dispatcherService.CallDispatcher(() =>
+            {
                 IsBusy = false;
-                Key = BFUtil.ToHexString(aes.Key);
-                Identity = otherIdentity;
             });
         }
 
